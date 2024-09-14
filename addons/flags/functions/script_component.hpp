@@ -1,0 +1,1 @@
+#include "\z\lxir\addons\flags\script_component.hpp"

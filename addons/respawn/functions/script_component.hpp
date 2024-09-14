@@ -1,0 +1,1 @@
+#include "\z\lxir\addons\respawn\script_component.hpp"

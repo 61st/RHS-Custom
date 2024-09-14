@@ -1,0 +1,1 @@
+#include "\z\lxir\addons\common\script_component.hpp"
