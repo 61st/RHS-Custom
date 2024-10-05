@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [_unit] call FUNC(setUnilxircuracy)
+ * [_unit] call FUNC(setUnilximcuracy)
  */
 
 params ["_unit", ["_reset", false]];

@@ -6,7 +6,7 @@
  * True if player is the logged in admin, or in the authorized player tech list <BOOL>
  *
  * Example:
- * [] call lxir_common_fnc_isTech
+ * [] call lxim_common_fnc_isTech
  *
  * Public: Yes
  */

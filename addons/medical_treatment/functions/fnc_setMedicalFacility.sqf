@@ -17,7 +17,7 @@ _object setTriggerActivation ["ANYPLAYER", "PRESENT", true];
 _object setTriggerStatements [
     "player in thisList",
     "
-    [player] call lxir_medical_treatment_fnc_FacilityHeal;
+    [player] call lxim_medical_treatment_fnc_FacilityHeal;
     ",
     ""
 ];

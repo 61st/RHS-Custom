@@ -12,7 +12,7 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxir_main"
+            "lxim_main"
         };
         authorUrl = URL;
         author = QAUTHOR;

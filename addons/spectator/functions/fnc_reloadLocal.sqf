@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call lxir_spectator_fnc_reloadLocal
+ * call lxim_spectator_fnc_reloadLocal
  *
  * Public: No
  */

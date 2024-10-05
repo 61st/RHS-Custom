@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [_wire, _obstacle] call lxir_breaching_fnc_handleBreachDeleted
+ * [_wire, _obstacle] call lxim_breaching_fnc_handleBreachDeleted
  *
  * Public: No
  */

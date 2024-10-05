@@ -49,7 +49,7 @@ class CfgWeapons {
             opticsPPEffects[] = {"QACEGVAR(vector,OpticsRadBlur1)"};
             disableTilt = 1;
         };
-        weaponInfoType = "LXIR_RscOptics_vector";
+        weaponInfoType = "LXIM_RscOptics_vector";
         class WeaponSlotsInfo {
             mass = 20;
         };

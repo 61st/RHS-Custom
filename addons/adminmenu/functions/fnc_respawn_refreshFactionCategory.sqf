@@ -1,10 +1,10 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_display"];
 
 
-private _control = (_display displayCtrl IDC_LXIR_ADMINMENU_RESP_FACTION);
+private _control = (_display displayCtrl IDC_LXIM_ADMINMENU_RESP_FACTION);
 lbClear _control;
 
 private _activeFactionCategory = GVAR(currentFactionCategory);
@@ -14,7 +14,7 @@ private _factions = [];
 /* Fill Faction categories */
 private _playerFactions = [] call CBA_fnc_hashCreate;
 {
-    private _faction = _x getVariable ["lxir_assigngear_faction",""];
+    private _faction = _x getVariable ["lxim_assigngear_faction",""];
     if (_faction != "") then {
         if ([_playerFactions,_faction] call CBA_fnc_hashHasKey) then {
             private _value = [_playerFactions,_faction] call CBA_fnc_hashGet;

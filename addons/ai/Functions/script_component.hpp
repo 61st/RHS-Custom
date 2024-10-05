@@ -1,1 +1,1 @@
-#include "\z\lxir\addons\ai\script_component.hpp"
+#include "\z\lxim\addons\ai\script_component.hpp"

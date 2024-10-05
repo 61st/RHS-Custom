@@ -1,10 +1,10 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_display"];
 
 
-private _control = (_display displayCtrl IDC_LXIR_ADMINMENU_RESP_FACTIONCATEGORY);
+private _control = (_display displayCtrl IDC_LXIM_ADMINMENU_RESP_FACTIONCATEGORY);
 private _newIdx = (lbCurSel _control);
 GVAR(currentFactionCategory) = _control lbData _newIdx;
 GVAR(lastFactionSelection) set [0,_newIdx];

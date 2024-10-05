@@ -1,6 +1,6 @@
 class GVAR(modal)
 {
-    idd = IDD_LXIR_ADMINMENU;
+    idd = IDD_LXIM_ADMINMENU;
     movingEnable = 0;
     enableDisplay = 1;
     enableSimulation = 1;
@@ -11,7 +11,7 @@ class GVAR(modal)
     {
         class Background: RscText
         {
-            idc = IDC_LXIR_ADMINMENU_MODAL_BACK;
+            idc = IDC_LXIM_ADMINMENU_MODAL_BACK;
             colorBackground[] = {0, 0, 0, 0};
             x = "1 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX + (safezoneW - ((safezoneW / safezoneH) min 1.2))/2)";
             y = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
@@ -20,7 +20,7 @@ class GVAR(modal)
         };
         class TitleBackground: RscText
         {
-            idc = IDC_LXIR_ADMINMENU_MODAL_TBACK;
+            idc = IDC_LXIM_ADMINMENU_MODAL_TBACK;
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.8])"};
             x = "1.5 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX + (safezoneW - ((safezoneW / safezoneH) min 1.2))/2)";
             y = "2.6 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
@@ -29,7 +29,7 @@ class GVAR(modal)
         };
         class Title: RscTitle
         {
-            idc = IDC_LXIR_ADMINMENU_MODAL_TITLE;
+            idc = IDC_LXIM_ADMINMENU_MODAL_TITLE;
             text = "61st Mechanized Infantry BattalionAdmin Menu";
             style = 0;
             colorBackground[] = {0, 0, 0, 0};
@@ -40,7 +40,7 @@ class GVAR(modal)
         };
         class GroupBackground: RscText
         {
-            idc = IDC_LXIR_ADMINMENU_MODAL_GBACK;
+            idc = IDC_LXIM_ADMINMENU_MODAL_GBACK;
             colorBackground[] = {0, 0, 0, 0.8};
             shadow = 2;
             colorShadow[] = {1, 1, 1, 1};
@@ -52,7 +52,7 @@ class GVAR(modal)
         };
         class Group: RscControlsGroup
         {
-            idc = IDC_LXIR_ADMINMENU_G_MODAL;
+            idc = IDC_LXIM_ADMINMENU_G_MODAL;
             x = "1.6 * (((safezoneW / safezoneH) min 1.2) / 40) + (safezoneX + (safezoneW - ((safezoneW / safezoneH) min 1.2))/2)";
             y = "3.8 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
             w = "36.8 * (((safezoneW / safezoneH) min 1.2) / 40)";
@@ -61,13 +61,13 @@ class GVAR(modal)
         };
         class Close
         {
-            idc = IDC_LXIR_ADMINMENU_MODAL_CLOSE;
+            idc = IDC_LXIM_ADMINMENU_MODAL_CLOSE;
             type = 1;
             style = "48 + 2048";
             text = "\a3\ui_f\data\GUI\Rsc\RscDisplayArcadeMap\top_close_gs.paa";
             tooltip = "Close Utility";
             onMouseButtonClick = "closeDialog 1;";
-            sizeEx = QUOTE(LXIR_ADMINMENU_STD_SIZEX);
+            sizeEx = QUOTE(LXIM_ADMINMENU_STD_SIZEX);
             font = "RobotoCondensed";
             colorBackground[] = {0, 0, 0, 0};
             colorBackgroundActive[] = {0, 0, 0, 0};

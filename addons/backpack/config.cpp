@@ -87,7 +87,7 @@ class CfgPatches {
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"lxir_main", "A3_Characters_F", "A3_Characters_F_Enoch","A3_Supplies_F_Enoch_Bags"};
+        requiredAddons[] = {"lxim_main", "A3_Characters_F", "A3_Characters_F_Enoch","A3_Supplies_F_Enoch_Bags"};
         author = "";
         authors[] = {""};
         VERSION_CONFIG;

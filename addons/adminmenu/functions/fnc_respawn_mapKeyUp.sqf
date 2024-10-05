@@ -1,5 +1,5 @@
 
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 
@@ -16,7 +16,7 @@ if (_type == 28) then {
             _position = GVAR(respawnMousePos);
             _halo = GVAR(respawnHalo);
         } else {
-            private _var = missionNamespace getVariable[format["lxir_respawnPoint%1",GVAR(respawnMousePos)],objNull];
+            private _var = missionNamespace getVariable[format["lxim_respawnPoint%1",GVAR(respawnMousePos)],objNull];
             if (!isNull _var) then {
                 _position = position _var;
             };
@@ -48,9 +48,9 @@ if (_type == 28) then {
         GVAR(selectedRespawnGroup) = [];
 
         // Close the Map
-        ((findDisplay IDC_LXIR_ADMINMENU_RESP_MAP_DISPLAY) displayCtrl IDC_LXIR_ADMINMENU_RESP_MAP_CONTROL) ctrlShow false;
-        ((findDisplay IDC_LXIR_ADMINMENU_RESP_MAP_DISPLAY) displayCtrl IDC_LXIR_ADMINMENU_RESP_MAP_CONTROL) mapCenterOnCamera false;
-        closeDialog IDC_LXIR_ADMINMENU_RESP_MAP_DISPLAY;
+        ((findDisplay IDC_LXIM_ADMINMENU_RESP_MAP_DISPLAY) displayCtrl IDC_LXIM_ADMINMENU_RESP_MAP_CONTROL) ctrlShow false;
+        ((findDisplay IDC_LXIM_ADMINMENU_RESP_MAP_DISPLAY) displayCtrl IDC_LXIM_ADMINMENU_RESP_MAP_CONTROL) mapCenterOnCamera false;
+        closeDialog IDC_LXIM_ADMINMENU_RESP_MAP_DISPLAY;
     };
 };
 //SPACEBAR (HALO TOGGLE)

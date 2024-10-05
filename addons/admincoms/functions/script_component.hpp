@@ -1,1 +1,1 @@
-#include "\z\lxir\addons\admincoms\script_component.hpp"
+#include "\z\lxim\addons\admincoms\script_component.hpp"

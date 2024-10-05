@@ -1,5 +1,5 @@
 /*
-Function: LXIR_fncFindReplaceString
+Function: LXIM_fncFindReplaceString
 
 Description:
     Finds and replaces a certain substring in a given string with a different
@@ -19,7 +19,7 @@ Examples:
     (begin example)
         [
             "123456123", "123", "abc", 1, true
-        ] call LXIR_fnc_FindReplaceString; // returns "abc456123"
+        ] call LXIM_fnc_FindReplaceString; // returns "abc456123"
     (end)
 
 Author:

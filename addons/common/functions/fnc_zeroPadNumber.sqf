@@ -9,8 +9,8 @@
  * A two digit zero padded string representation of the provided number <STRING>
  *
  * Examples:
- * [5] call lxir_common_fnc_zeroPadNumber; // returns "05"
- * [17] call lxir_common_fnc_zeroPadNumber; // return "17"
+ * [5] call lxim_common_fnc_zeroPadNumber; // returns "05"
+ * [17] call lxim_common_fnc_zeroPadNumber; // return "17"
  *
  * Public: Yes
  */

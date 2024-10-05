@@ -1,1 +1,1 @@
-#include "\z\lxir\addons\respawn\script_component.hpp"
+#include "\z\lxim\addons\respawn\script_component.hpp"

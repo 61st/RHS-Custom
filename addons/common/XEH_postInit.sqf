@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 ["unit", {
-    lxir_unit = (_this select 0);
+    lxim_unit = (_this select 0);
 }, true] call CBA_fnc_addPlayerEventHandler;
 
 GVAR(playerStartingSide) = sideUnknown;
@@ -30,7 +30,7 @@ if (hasInterface) then {
     }, true] call CBA_fnc_addPlayerEventHandler;
 };
 
-["lxir_adminMsg", {
+["lxim_adminMsg", {
     params ["_msg", ["_from", "?"], ["_to", ""]];
     if (hasInterface) then {
         if ((_to == profileName) || {_to == "#ALL"} || {(GVAR(showNotifcations)) && {[] call FUNC(isAuthorized)}}) then {
@@ -38,14 +38,14 @@ if (hasInterface) then {
         };
     };
     if (isServer) then {
-        diag_log text format ["[61st] lxir_adminMsg EH: %1", _this];
+        diag_log text format ["[61st] lxim_adminMsg EH: %1", _this];
     };
 }] call CBA_fnc_addEventHandler;
 
-["lxir_missionHint", {
+["lxim_missionHint", {
     //side is 0-dead, 1-dead+alive or actuall side like east/west
     params ["_msg", ["_side", 1, [sideEnemy, 0]], ["_rankMin", 0]];
-    TRACE_3("lxir_missionHint eh",_msg,_side,_rankMin);
+    TRACE_3("lxim_missionHint eh",_msg,_side,_rankMin);
     if (hasInterface) then {
         if ((_side isEqualTo 1) || {(!alive player) && {_side isEqualTo 0}} || {_side isEqualTo GVAR(playerStartingSide)}) then {
             private _playerRank = if (alive player) then {rankId player} else {999};
@@ -55,6 +55,6 @@ if (hasInterface) then {
         };
     };
     if (isServer) then {
-        diag_log text format ["[61st] lxir_missionHint EH: %1", _this];
+        diag_log text format ["[61st] lxim_missionHint EH: %1", _this];
     };
 }] call CBA_fnc_addEventHandler;

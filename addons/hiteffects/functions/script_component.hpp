@@ -1,1 +1,1 @@
-#include "\z\lxir\addons\hiteffects\script_component.hpp"
+#include "\z\lxim\addons\hiteffects\script_component.hpp"

@@ -10,7 +10,7 @@
  * None
  *
  * Examples:
- * [player, "Naloxone"] call lxir_miscMedical_fnc_Naloxone;
+ * [player, "Naloxone"] call lxim_miscMedical_fnc_Naloxone;
  *
  */
 

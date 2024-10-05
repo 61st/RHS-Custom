@@ -19,7 +19,7 @@ class ACEGVAR(medical_treatment,actions) {
         displayName = "Inject Naloxone";
         displayNameProgress = "Injecting Naloxone";
         condition = "ace_medical_treatment_advancedMedication";
-        items[] = {"lxir_naloxone"};
+        items[] = {"lxim_naloxone"};
         litter[] = {{"ACE_MedicalLitter_atropine"}};
     };
 

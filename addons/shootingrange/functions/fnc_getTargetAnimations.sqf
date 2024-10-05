@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * _anims = target call lxir_shootingrange_fnc_getTargetAnimations;
+ * _anims = target call lxim_shootingrange_fnc_getTargetAnimations;
  *
  * Public: No
  */

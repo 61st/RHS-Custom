@@ -1,4 +1,4 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 
@@ -9,7 +9,7 @@ if (_type == 20) then {
         hint "Nothing selected to Trigger";
         
     } else {
-        if (typeOf GVAR(adminEyeSelectedObj) == "lxir_ai_wavespawn") then {
+        if (typeOf GVAR(adminEyeSelectedObj) == "lxim_ai_wavespawn") then {
             // Wave spawner trigger.
 
             [EFUNC(ai,spawnWave),[GVAR(adminEyeSelectedObj)]] call CBA_fnc_execNextFrame;
@@ -23,11 +23,11 @@ if (_type == 20) then {
                     private _statements = triggerStatements _trigger;
                     
                     private _activation = triggerActivation _trigger;
-                    _trigger setVariable ["lxir_trigger_serialised",[_statements,triggerTimeout _trigger, +_activation]];
+                    _trigger setVariable ["lxim_trigger_serialised",[_statements,triggerTimeout _trigger, +_activation]];
                     
                     _activation set[2,false];
                     _trigger setTriggerActivation _activation;
-                    _trigger setTriggerStatements ["true","[thisTrigger] call lxir_adminmenu_fnc_adminEye_restoreTrigger",""];
+                    _trigger setTriggerStatements ["true","[thisTrigger] call lxim_adminmenu_fnc_adminEye_restoreTrigger",""];
                 }, [GVAR(adminEyeSelectedObj)]] call CBA_fnc_execNextFrame;
             };
         };

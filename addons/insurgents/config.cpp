@@ -11,7 +11,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxir_common"
+            "lxim_common"
         };
         author = QAUTHOR;
         authors[] = {"veteran29"};

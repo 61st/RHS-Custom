@@ -11,8 +11,8 @@
  * Random number between the min (inclusive) and the max (exclusive): <NUMBER>
  *
  * Examples:
- * [0, 1] call lxir_common_fnc_getBoundedRandom; // random number between 0 and 1
- * [2, 5] call lxir_common_fnc_getBoundedRandom; // random number between 2 and 5
+ * [0, 1] call lxim_common_fnc_getBoundedRandom; // random number between 0 and 1
+ * [2, 5] call lxim_common_fnc_getBoundedRandom; // random number between 2 and 5
  *
  * Public: Yes
  */

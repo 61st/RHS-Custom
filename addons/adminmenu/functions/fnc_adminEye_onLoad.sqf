@@ -1,12 +1,12 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 
 
-private _mapCtrl = ((findDisplay IDC_LXIR_ADMINMENU_ADME_MAP_DISPLAY) displayCtrl IDC_LXIR_ADMINMENU_ADME_MAP_CONTROL);//_this select 0;//
+private _mapCtrl = ((findDisplay IDC_LXIM_ADMINMENU_ADME_MAP_DISPLAY) displayCtrl IDC_LXIM_ADMINMENU_ADME_MAP_CONTROL);//_this select 0;//
 private _pos = [0,0,5000];
 
-if (alive player && !(player isKindOf "lxir_spectator_unit")) then {
+if (alive player && !(player isKindOf "lxim_spectator_unit")) then {
     _pos = getPos player;  
 } else {
     if (count playableUnits > 0) then {

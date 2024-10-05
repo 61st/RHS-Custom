@@ -1,13 +1,13 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 /* ----------------------------------------------------------------------------
-Internal Function: LXIR_adminmenu_fnc_messageLog_printAll
+Internal Function: LXIM_adminmenu_fnc_messageLog_printAll
 
 Description:
     Prints current admin log to RPT
 
 Examples:
     (begin example)
-        [] call LXIR_adminmenu_fnc_messageLog_printAll;
+        [] call LXIM_adminmenu_fnc_messageLog_printAll;
     (end)
 
 Author:

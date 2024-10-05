@@ -3,7 +3,7 @@
 GVAR(logs) = [];
 
 if (hasInterface) then {
-    ["lxir_adminMsg", {
+    ["lxim_adminMsg", {
         if ([] call EFUNC(common,isAuthorized)) then {
             TRACE_1("Adding Log",_this);
             params ["_msg", ["_from", "?"], ["_to", ""]];

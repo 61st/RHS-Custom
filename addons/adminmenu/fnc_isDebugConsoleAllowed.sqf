@@ -1,3 +1,3 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 [] call FUNC(isAuthorized)

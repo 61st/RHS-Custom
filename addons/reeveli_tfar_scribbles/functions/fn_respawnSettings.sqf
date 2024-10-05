@@ -28,7 +28,7 @@ player addEventHandler ["Killed", {
 
     if (call TFAR_fnc_haveLRRadio) then
     {
-        player setVariable ["lxir_radio_settings",(call TFAR_fnc_activeLRRadio) call TFAR_fnc_getLrSettings];
+        player setVariable ["lxim_radio_settings",(call TFAR_fnc_activeLRRadio) call TFAR_fnc_getLrSettings];
         diag_log "Rev_TFAR_fnc_respawnSettings: LR settings saved on 'Killed', EH ID32";
     };
 }];
@@ -40,7 +40,7 @@ player addEventHandler ["Respawn", {
     [
         {!isNil {player call TFAR_fnc_backpackLR}},
         {
-            private _settings = player getVariable ["lxir_radio_settings",[]];
+            private _settings = player getVariable ["lxim_radio_settings",[]];
             if (count _settings > 0) then {[call TFAR_fnc_activeLrRadio, _settings] call TFAR_fnc_setLrSettings;};
             diag_log "Rev_TFAR_fnc_respawnSettings: LR settings restored on 'Respawn', EH ID33";
         },

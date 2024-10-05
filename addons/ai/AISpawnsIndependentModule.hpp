@@ -1,7 +1,7 @@
-class LXIR_ModuleAISpawnsIndependent: Module_F {
+class LXIM_ModuleAISpawnsIndependent: Module_F {
     scope = 2;
     displayName = "AI Spawn - Independent";
-    icon = "\z\lxir\addons\media\images\icons\ai_INDEP.paa";
+    icon = "\z\lxim\addons\media\images\icons\ai_INDEP.paa";
     category = QPREFIX;
     function = QFUNC(moduleAISpawns);
     functionPriority = 2;
@@ -11,13 +11,13 @@ class LXIR_ModuleAISpawnsIndependent: Module_F {
     is3DEN = 0;
     class Attributes: AttributesBase {
         class ObjName: Edit {
-                property = "LXIR_AI_ObjName";
+                property = "LXIM_AI_ObjName";
                 displayName = "Objective Name";
                 tooltip = "Name of Objective/Spawn Position.";
                 defaultValue = """Objective 1""";
             };
         class EnemyType: Combo {
-                property = "LXIR_AI_EnemyType";
+                property = "LXIM_AI_EnemyType";
                 displayName = "Enemy Faction";
                 tooltip = "Enemy Faction Type for this Module.";
                 defaultValue = """IND_C_F""";
@@ -60,7 +60,7 @@ class LXIR_ModuleAISpawnsIndependent: Module_F {
                 };    
             };
         class GarrRadius: Edit {
-                property = "LXIR_AI_GarRadius";
+                property = "LXIM_AI_GarRadius";
                 displayName = "Garrison Radius";
                 tooltip = "AI Garrison radius from this module.";
                 typeName = "NUMBER";
@@ -68,14 +68,14 @@ class LXIR_ModuleAISpawnsIndependent: Module_F {
             };
 
         class GarrisonedGroupsMin: Edit {
-            property = "LXIR_AI_GarrisonedGroupsMin";
+            property = "LXIM_AI_GarrisonedGroupsMin";
             displayName = "Min Garrisoned Groups";
             description = "Minimum Number of Garrisoned AI Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class GarrisonedGroupsMax: Edit {
-            property = "LXIR_AI_GarrisonedGroupsMax";
+            property = "LXIM_AI_GarrisonedGroupsMax";
             displayName = "Max Garrisoned Groups";
             description = "Maximum Number of Garrisoned AI Groups to Spawn";
             typeName = "Number";
@@ -83,7 +83,7 @@ class LXIR_ModuleAISpawnsIndependent: Module_F {
         };
         
         class PatrolMethod: Combo {
-                property = "LXIR_AI_PatrolMethod";
+                property = "LXIM_AI_PatrolMethod";
                 displayName = "Patrol Method";
                 tooltip = "Method to use for plotting patrol paths";
                 defaultValue = """RANDOM""";
@@ -93,7 +93,7 @@ class LXIR_ModuleAISpawnsIndependent: Module_F {
                 };
             };
         class Radius: Edit {
-                property = "LXIR_AI_Radius";
+                property = "LXIM_AI_Radius";
                 displayName = "Patrol Radius";
                 tooltip = "AI Patrol radius from this module.";
                 typeName = "NUMBER";
@@ -101,126 +101,126 @@ class LXIR_ModuleAISpawnsIndependent: Module_F {
             };
 
         class EIPatrolsMin: Edit {
-            property = "LXIR_AI_EIPatrolsMin";
+            property = "LXIM_AI_EIPatrolsMin";
             displayName = "Min Infantry Patrols";
             description = "Minimum Number of Infantry Patrol Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EIPatrolsMax: Edit {
-            property = "LXIR_AI_EIPatrolsMax";
+            property = "LXIM_AI_EIPatrolsMax";
             displayName = "Max Infantry Patrols";
             description = "Maximum Number of Infantry Patrol Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EIAAMin: Edit {
-            property = "LXIR_AI_EIAAMin";
+            property = "LXIM_AI_EIAAMin";
             displayName = "Min AA Infantry";
             description = "Minimum Number of AA Infantry Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EIAAMax: Edit {
-            property = "LXIR_AI_EIAAMax";
+            property = "LXIM_AI_EIAAMax";
             displayName = "Max AA Infantry";
             description = "Maximum Number of AA Infantry Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EIATMin: Edit {
-            property = "LXIR_AI_EIATMin";
+            property = "LXIM_AI_EIATMin";
             displayName = "Min AT Infantry";
             description = "Minimum Number of AT Infantry Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EIATMax: Edit {
-            property = "LXIR_AI_EIATMax";
+            property = "LXIM_AI_EIATMax";
             displayName = "Max AT Infantry";
             description = "Maximum Number of AT Infantry Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EISniperMin: Edit {
-            property = "LXIR_AI_EISniperMin";
+            property = "LXIM_AI_EISniperMin";
             displayName = "Min Sniper Teams";
             description = "Minimum Number of Sniper Teams to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EISniperMax: Edit {
-            property = "LXIR_AI_EISniperMax";
+            property = "LXIM_AI_EISniperMax";
             displayName = "Max Sniper Teams";
             description = "Maximum Number of Sniper Teams to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehAAMin: Edit {
-            property = "LXIR_AI_VehAAMin";
+            property = "LXIM_AI_VehAAMin";
             displayName = "Min AA Vehicles";
             description = "Minimum Number of AA Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehAAMax: Edit {
-            property = "LXIR_AI_VehAAMax";
+            property = "LXIM_AI_VehAAMax";
             displayName = "Max AA Vehicles";
             description = "Maximum Number of AA Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehLightMin: Edit {
-            property = "LXIR_AI_VehLightMin";
+            property = "LXIM_AI_VehLightMin";
             displayName = "Min Light Vehicles";
             description = "Minimum Number of Light Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehLightMax: Edit {
-            property = "LXIR_AI_VehLightMax";
+            property = "LXIM_AI_VehLightMax";
             displayName = "Max Light Vehicles";
             description = "Maximum Number of Light Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehMRAPMin: Edit {
-            property = "LXIR_AI_VehMRAPMin";
+            property = "LXIM_AI_VehMRAPMin";
             displayName = "Min MRAPs";
             description = "Minimum Number of MRAPs to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehMRAPMax: Edit {
-            property = "LXIR_AI_VehMRAPMax";
+            property = "LXIM_AI_VehMRAPMax";
             displayName = "Max MRAPs";
             description = "Maximum Number of MRAPs to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };  
         class VehHeavyMin: Edit {
-            property = "LXIR_AI_VehHeavyMin";
+            property = "LXIM_AI_VehHeavyMin";
             displayName = "Min Heavy Vehicles";
             description = "Minimum Number of Heavy Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehHeavyMax: Edit {
-            property = "LXIR_AI_VehHeavyMax";
+            property = "LXIM_AI_VehHeavyMax";
             displayName = "Max Heavy Vehicles";
             description = "Maximum Number of Heavy Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehRandomMin: Edit {
-            property = "LXIR_AI_VehRandomMin";
+            property = "LXIM_AI_VehRandomMin";
             displayName = "Min Random Vehicles";
             description = "Minimum Number of Random Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehRandomMax: Edit {
-            property = "LXIR_AI_VehRandomMax";
+            property = "LXIM_AI_VehRandomMax";
             displayName = "Max Random Vehicles";
             description = "Maximum Number of Random Vehicles to Spawn";
             typeName = "Number";

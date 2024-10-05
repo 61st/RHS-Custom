@@ -1,4 +1,4 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 /*
     Modified by Bear for 61st Mechanized Infantry Battalion Admin Menu

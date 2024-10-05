@@ -16,11 +16,11 @@
 
         LOG("FatalInjury - check condition");
         private _timeLeft = _unit getVariable ["ace_medical_statemachine_cardiacArrestTimeLeft", -1];
-        private _lastUpdate = _unit getVariable ["lxir_medical_cardiacArrestLastUpdate", -1];
+        private _lastUpdate = _unit getVariable ["lxim_medical_cardiacArrestLastUpdate", -1];
 
         if (_timeLeft > 0 && {_lastUpdate + 1 < CBA_missionTime}) then {
             private _reducedTimeLeft = _timeLeft * GVAR(fatalInjuriesCardiacArrestTimeCoefficient); // 5min -> 1min (example)
-            _unit setVariable ["lxir_medical_cardiacArrestLastUpdate", CBA_missionTime];
+            _unit setVariable ["lxim_medical_cardiacArrestLastUpdate", CBA_missionTime];
             _unit setVariable ["ace_medical_statemachine_cardiacArrestTimeLeft", _reducedTimeLeft];
 
             // Log state

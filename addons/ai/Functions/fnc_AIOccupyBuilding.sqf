@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
-Function: call lxir_ai_fnc_AIOccupyBuilding
+Function: call lxim_ai_fnc_AIOccupyBuilding
 
 
 Description:
@@ -21,7 +21,7 @@ Return Value:
 
 Example:
     (begin example)
-        [position, nil, [unit1, unit2, unit3, unitN], 200, 1, false] call lxir_ai_fnc_AIOccupyBuilding
+        [position, nil, [unit1, unit2, unit3, unitN], 200, 1, false] call lxim_ai_fnc_AIOccupyBuilding
     (end)
 
 Author:
@@ -43,13 +43,13 @@ _origUnits  = _unitsArray + [];
 _unitsArray = _unitsArray select {alive _x && {!isPlayer _x}};
 
 if (_startingPos isEqualTo [0,0,0]) exitWith {
-    diag_log "[LXIR_ai_fnc_AIOccupyBuilding] Error: Position provided is invalid";
-    systemChat "[LXIR_ai_fnc_AIOccupyBuilding] Error: Position provided is invalid";
+    diag_log "[LXIM_ai_fnc_AIOccupyBuilding] Error: Position provided is invalid";
+    systemChat "[LXIM_ai_fnc_AIOccupyBuilding] Error: Position provided is invalid";
 };
 
 if (count _unitsArray == 0 || {isNull (_unitsArray select 0)}) exitWith {
-    diag_log "[LXIR_ai_fnc_AIOccupyBuilding] Error: No unit provided";
-    systemChat "[LXIR_ai_fnc_AIOccupyBuilding] Error: No unit provided";
+    diag_log "[LXIM_ai_fnc_AIOccupyBuilding] Error: No unit provided";
+    systemChat "[LXIM_ai_fnc_AIOccupyBuilding] Error: No unit provided";
 };
 
 private _buildings = [];
@@ -64,8 +64,8 @@ _buildings =
 _buildings = _buildings call BIS_fnc_arrayShuffle;
 
 if (count _buildings == 0) exitWith {
-    diag_log "[LXIR_ai_fnc_AIOccupyBuilding] Error: No valid building found";
-    systemChat "[LXIR_ai_fnc_AIOccupyBuilding] Error: No valid building found";
+    diag_log "[LXIM_ai_fnc_AIOccupyBuilding] Error: No valid building found";
+    systemChat "[LXIM_ai_fnc_AIOccupyBuilding] Error: No valid building found";
     _unitsArray
 };
 
@@ -113,8 +113,8 @@ private _count = 0;
 {_count = _count + count _x;} forEach _buildingsIndexes;
 private _leftOverAICount = (count _unitsArray) - _count;
 if (_leftOverAICount > 0) then {
-    diag_log "[LXIR_ai_fnc_AIOccupyBuilding] Warning: not enough positions to place all units";
-    systemChat "[LXIR_ai_fnc_AIOccupyBuilding] Warning: not enough positions to place all units";
+    diag_log "[LXIM_ai_fnc_AIOccupyBuilding] Warning: not enough positions to place all units";
+    systemChat "[LXIM_ai_fnc_AIOccupyBuilding] Warning: not enough positions to place all units";
 };
 
 private _placedUnits = [];

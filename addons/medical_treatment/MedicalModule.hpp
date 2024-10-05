@@ -13,10 +13,10 @@
  * Public: No
  */
 
-class lxir_ModuleMedical: Module_F {
+class lxim_ModuleMedical: Module_F {
     scope = 2;
     displayName = "Medical Facility";
-    icon = "\z\lxir\addons\media\images\icons\MedicalArea.paa";
+    icon = "\z\lxim\addons\media\images\icons\MedicalArea.paa";
     category = QPREFIX;
     function = QFUNC(moduleMedicalFacility);
     functionPriority = 4;

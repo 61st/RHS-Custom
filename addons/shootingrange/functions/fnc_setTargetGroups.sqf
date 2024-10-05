@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [[target1, target2], [invalidTarget1, invalidTarget2], [marker1, marker2]] call lxir_shootingrange_fnc_setTargetGroups;
+ * [[target1, target2], [invalidTarget1, invalidTarget2], [marker1, marker2]] call lxim_shootingrange_fnc_setTargetGroups;
  *
  * Public: No
  */

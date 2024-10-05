@@ -27,15 +27,15 @@
 #define ACELSTRING(module,string)   QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,module),string))
 #define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))
 
-// LXIR macros
+// LXIM macros
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
 
 // Extension macros
 #define EXT "61st Mechanized Infantry Battalion_mods"
 #define EXT_LOG "61st Mechanized Infantry Battalion_mods_log"
 
-// LXIR Debug macros
-#include "\z\lxir\addons\main\script_debug.hpp"
+// LXIM Debug macros
+#include "\z\lxim\addons\main\script_debug.hpp"
 
 // Items
 #define ITEMS_2(var) QUOTE(var), QUOTE(var)

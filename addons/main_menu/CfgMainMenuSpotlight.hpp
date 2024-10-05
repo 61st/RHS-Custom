@@ -4,7 +4,7 @@ class CfgMainMenuSpotlight {
     class GVAR(server1) {
         text = "61st Ops Server";
         textIsQuote = 0;
-        picture = QUOTE(z\lxir\addons\media\images\logo_512.paa);
+        picture = QUOTE(z\lxim\addons\media\images\logo_512.paa);
         action = QUOTE(_this call (uiNamespace getVariable QQFUNC(join)));
         actionText = CSTRING(SpotlightHeader);
         condition = QUOTE(true);
@@ -12,7 +12,7 @@ class CfgMainMenuSpotlight {
     class GVAR(server2) {
         text = "61st Training Server";
         textIsQuote = 0;
-        picture = QUOTE(z\lxir\addons\media\images\logo_512.paa);
+        picture = QUOTE(z\lxim\addons\media\images\logo_512.paa);
         action = QUOTE(_this call (uiNamespace getVariable QQFUNC(join2)));
         actionText = CSTRING(SpotlightHeader);
         condition = QUOTE(true);

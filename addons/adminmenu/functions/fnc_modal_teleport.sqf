@@ -1,4 +1,4 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_ctrlGroup"];
@@ -13,7 +13,7 @@ _ctrlGroup ctrlEnable false;
 private _display = uiNamespace getVariable [QGVAR(modalDisplay), displayNull];
 private _ctrlMap = _display ctrlCreate ["RscMapControl", -1];
 GVAR(utilityTabControls) pushBack _ctrlMap;
-_ctrlMap ctrlSetPosition [_ctrlGrpX, _ctrlGrpY, _ctrlGrpWidth, _ctrlGrpHeight - (2.2 * LXIR_ADMINMENU_STD_HEIGHT)];
+_ctrlMap ctrlSetPosition [_ctrlGrpX, _ctrlGrpY, _ctrlGrpWidth, _ctrlGrpHeight - (2.2 * LXIM_ADMINMENU_STD_HEIGHT)];
 _ctrlMap ctrlCommit 0;
 if (!isNull cameraOn) then {
     _ctrlMap ctrlMapAnimAdd [0, ctrlMapScale _ctrlMap, cameraOn];
@@ -126,7 +126,7 @@ _ctrlMap ctrlAddEventHandler ["draw", {
 
 private _ctrlCheckDrawAllSides = _display ctrlCreate ["RscCheckBox", -1];
 GVAR(utilityTabControls) pushBack _ctrlCheckDrawAllSides;
-_ctrlCheckDrawAllSides ctrlSetPosition [_ctrlGrpX, _ctrlGrpY + _ctrlGrpHeight - (2.2 * LXIR_ADMINMENU_STD_HEIGHT), LXIR_ADMINMENU_STD_WIDTH, LXIR_ADMINMENU_STD_HEIGHT];
+_ctrlCheckDrawAllSides ctrlSetPosition [_ctrlGrpX, _ctrlGrpY + _ctrlGrpHeight - (2.2 * LXIM_ADMINMENU_STD_HEIGHT), LXIM_ADMINMENU_STD_WIDTH, LXIM_ADMINMENU_STD_HEIGHT];
 _ctrlCheckDrawAllSides ctrlCommit 0;
 _ctrlCheckDrawAllSides ctrlAddEventHandler ["CheckedChanged", {
     GVAR(utility_teleport_drawEnemy) = param [1];
@@ -134,14 +134,14 @@ _ctrlCheckDrawAllSides ctrlAddEventHandler ["CheckedChanged", {
 
 private _ctrlLabelDrawAllSides = _display ctrlCreate [QGVAR(RscText), -1];
 GVAR(utilityTabControls) pushBack _ctrlLabelDrawAllSides;
-_ctrlLabelDrawAllSides ctrlSetPosition [_ctrlGrpX + LXIR_ADMINMENU_STD_WIDTH, _ctrlGrpY + _ctrlGrpHeight - (2.2 * LXIR_ADMINMENU_STD_HEIGHT), (0.2 * _ctrlGrpWidth) - LXIR_ADMINMENU_STD_WIDTH, LXIR_ADMINMENU_STD_HEIGHT];
+_ctrlLabelDrawAllSides ctrlSetPosition [_ctrlGrpX + LXIM_ADMINMENU_STD_WIDTH, _ctrlGrpY + _ctrlGrpHeight - (2.2 * LXIM_ADMINMENU_STD_HEIGHT), (0.2 * _ctrlGrpWidth) - LXIM_ADMINMENU_STD_WIDTH, LXIM_ADMINMENU_STD_HEIGHT];
 _ctrlLabelDrawAllSides ctrlCommit 0;
 _ctrlLabelDrawAllSides ctrlSetText "Draw enemy units on map";
 
-//private _paradropCheckX = (ctrlPosition _ctrlLabelDrawAllSides) select 0 + ctrlTextWidth _ctrlLabelDrawAllSides + LXIR_ADMINMENU_STD_WIDTH;
+//private _paradropCheckX = (ctrlPosition _ctrlLabelDrawAllSides) select 0 + ctrlTextWidth _ctrlLabelDrawAllSides + LXIM_ADMINMENU_STD_WIDTH;
 private _ctrlCheckParadropInfantry = _display ctrlCreate ["RscCheckBox", -1];
 GVAR(utilityTabControls) pushBack _ctrlCheckParadropInfantry;
-_ctrlCheckParadropInfantry ctrlSetPosition [_ctrlGrpX + (0.2 * _ctrlGrpWidth), _ctrlGrpY + _ctrlGrpHeight - (2.2 * LXIR_ADMINMENU_STD_HEIGHT), LXIR_ADMINMENU_STD_WIDTH, LXIR_ADMINMENU_STD_HEIGHT];
+_ctrlCheckParadropInfantry ctrlSetPosition [_ctrlGrpX + (0.2 * _ctrlGrpWidth), _ctrlGrpY + _ctrlGrpHeight - (2.2 * LXIM_ADMINMENU_STD_HEIGHT), LXIM_ADMINMENU_STD_WIDTH, LXIM_ADMINMENU_STD_HEIGHT];
 _ctrlCheckParadropInfantry ctrlCommit 0;
 _ctrlCheckParadropInfantry ctrlAddEventHandler ["CheckedChanged", {
     GVAR(utility_teleport_paradrop) = param [1];
@@ -149,19 +149,19 @@ _ctrlCheckParadropInfantry ctrlAddEventHandler ["CheckedChanged", {
 
 private _ctrlLabelParadropInfantry = _display ctrlCreate [QGVAR(RscText), -1];
 GVAR(utilityTabControls) pushBack _ctrlLabelParadropInfantry;
-_ctrlLabelParadropInfantry ctrlSetPosition [_ctrlGrpX + (0.2 * _ctrlGrpWidth) + LXIR_ADMINMENU_STD_WIDTH, _ctrlGrpY + _ctrlGrpHeight - (2.2 * LXIR_ADMINMENU_STD_HEIGHT), (0.2 * _ctrlGrpWidth) - LXIR_ADMINMENU_STD_WIDTH, LXIR_ADMINMENU_STD_HEIGHT];
+_ctrlLabelParadropInfantry ctrlSetPosition [_ctrlGrpX + (0.2 * _ctrlGrpWidth) + LXIM_ADMINMENU_STD_WIDTH, _ctrlGrpY + _ctrlGrpHeight - (2.2 * LXIM_ADMINMENU_STD_HEIGHT), (0.2 * _ctrlGrpWidth) - LXIM_ADMINMENU_STD_WIDTH, LXIM_ADMINMENU_STD_HEIGHT];
 _ctrlLabelParadropInfantry ctrlCommit 0;
 _ctrlLabelParadropInfantry ctrlSetText "Drop infantry in parachute";
 
 private _ctrlHint = _display ctrlCreate [QGVAR(RscText), -1];
 GVAR(utilityTabControls) pushBack _ctrlHint;
-_ctrlHint ctrlSetPosition [_ctrlGrpX, _ctrlGrpY + _ctrlGrpHeight - LXIR_ADMINMENU_STD_HEIGHT, 0.8 * _ctrlGrpWidth, LXIR_ADMINMENU_STD_HEIGHT];
+_ctrlHint ctrlSetPosition [_ctrlGrpX, _ctrlGrpY + _ctrlGrpHeight - LXIM_ADMINMENU_STD_HEIGHT, 0.8 * _ctrlGrpWidth, LXIM_ADMINMENU_STD_HEIGHT];
 _ctrlHint ctrlCommit 0;
 _ctrlHint ctrlSetText "After locating the destination area, press the Enable Teleport button and then click the desired location on the map.";
 
 private _ctrlButton = _display ctrlCreate [QGVAR(RscButtonMenu), -1];
 GVAR(utilityTabControls) pushBack _ctrlButton;
-_ctrlButton ctrlSetPosition [_ctrlGrpX + 0.8 * _ctrlGrpWidth, _ctrlGrpY + _ctrlGrpHeight - LXIR_ADMINMENU_STD_HEIGHT, 0.2 * _ctrlGrpWidth, LXIR_ADMINMENU_STD_HEIGHT];
+_ctrlButton ctrlSetPosition [_ctrlGrpX + 0.8 * _ctrlGrpWidth, _ctrlGrpY + _ctrlGrpHeight - LXIM_ADMINMENU_STD_HEIGHT, 0.2 * _ctrlGrpWidth, LXIM_ADMINMENU_STD_HEIGHT];
 _ctrlButton ctrlCommit 0;
 _ctrlButton ctrlSetText "Enable Teleport";
 _ctrlButton ctrlAddEventHandler ["buttonClick", {

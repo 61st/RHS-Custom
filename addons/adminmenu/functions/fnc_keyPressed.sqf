@@ -1,4 +1,4 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 params ["", "_keyPressed"];
 private _modifiersPressed = _this select [2, 3];

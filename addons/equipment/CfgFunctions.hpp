@@ -1,9 +1,9 @@
-class LXIR_Equipment {
+class LXIM_Equipment {
 
-    tag = "LXIR";
+    tag = "LXIM";
     class Equipment {
 
-        file = "z\lxir\addons\equipment\Functions";
+        file = "z\lxim\addons\equipment\Functions";
         class arsenal {preInit = 1;};
     };
 };

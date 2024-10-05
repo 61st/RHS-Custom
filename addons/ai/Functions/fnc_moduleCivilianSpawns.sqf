@@ -1,4 +1,4 @@
-#include "\z\lxir\addons\ai\script_component.hpp"
+#include "\z\lxim\addons\ai\script_component.hpp"
 // not documented: module called
 if !(isserver) exitwith {};
 
@@ -41,4 +41,4 @@ switch (_Side) do {
     [_civPedPatrolsMin, _civPedPatrolsMax],
     [_civVehPatrolsMin, _civVehPatrolsMax],
     [_civVehParkedMin, _civVehParkedMax]
-] call lxir_ai_fnc_SpawnCivilians;
+] call lxim_ai_fnc_SpawnCivilians;

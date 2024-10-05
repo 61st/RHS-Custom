@@ -10,7 +10,7 @@
  * Can spectate <BOOL>
  *
  * Example:
- * [player] call lxir_spectator_fnc_canSpectate
+ * [player] call lxim_spectator_fnc_canSpectate
  *
  * Public: No
  */

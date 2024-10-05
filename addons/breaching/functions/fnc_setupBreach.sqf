@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [_charge] call lxir_breaching_fnc_setupBreach
+ * [_charge] call lxim_breaching_fnc_setupBreach
  *
  * Public: No
  */

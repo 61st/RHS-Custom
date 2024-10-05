@@ -3,7 +3,7 @@ class CfgWeapons {
     class CBA_MiscItem_ItemInfo;
     class ACE_fieldDressing : ACE_ItemCore {
         scope=2;
-        picture="\z\lxir\addons\media\images\icon\IB.paa";
+        picture="\z\lxim\addons\media\images\icon\IB.paa";
         // displayName="Israeli Bandage";
         // descriptionShort="Quickly stanches haemorrhaging from injuries";
         // descriptionUse="Quickly stanches haemorrhaging from injuries";
@@ -11,7 +11,7 @@ class CfgWeapons {
     class ACE_quikclot : ACE_ItemCore {
         scope=2;
         displayName="Quikclot Combat Gauze";
-        picture="\z\lxir\addons\media\images\icon\Quikclot.paa";
+        picture="\z\lxim\addons\media\images\icon\Quikclot.paa";
     };
     class ACE_morphine : ACE_ItemCore {
         scope=2;
@@ -32,7 +32,7 @@ class CfgWeapons {
         };
     };
     class ACE_atropine;
-    class lxir_naloxone: ACE_atropine {
+    class lxim_naloxone: ACE_atropine {
         scope = 2;
         author = "Alablm";
         displayName = "Naloxone Autoinjector";

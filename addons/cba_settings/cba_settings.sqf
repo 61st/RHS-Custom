@@ -1,123 +1,98 @@
 // 61st - ai_disembark
-force force lxir_ai_disembark_enabled = true;
-force force lxir_ai_disembark_stayInImmobileChance = 0.35;
+force force lxim_ai_disembark_enabled = true;
+force force lxim_ai_disembark_stayInImmobileChance = 0.35;
 
 // 61st - back_to_game
-force force lxir_back_to_game_enableAddon = true;
-force force lxir_back_to_game_removeBody = false;
-force force lxir_back_to_game_teleportToLeader = true;
-force force lxir_back_to_game_teleportToVehicle = true;
+force force lxim_back_to_game_enableAddon = true;
+force force lxim_back_to_game_removeBody = false;
+force force lxim_back_to_game_teleportToLeader = true;
+force force lxim_back_to_game_teleportToVehicle = true;
 
-// // 61st - Bluforce force Tracker
-// force force lxir_bft_groupIconsInteraction = "hover";
-// force force lxir_bft_medicalSystem = "ACE";
-// force force lxir_bft_requireItemGPS = true;
-// force force lxir_bft_showAIGroups = true;
-// force force lxir_bft_showAINames = true;
-// force force lxir_bft_showCivilians = false;
-// force force lxir_bft_showGroupIcons = true;
-// force force lxir_bft_showGroupText = true;
-// force force lxir_bft_showLifeState = true;
-// force force lxir_bft_showOwnGroup = true;
-// force force lxir_bft_showOwnGroupUnits = true;
-// force force lxir_bft_showPlayerNames = true;
-// force force lxir_bft_showUnitNames = true;
-// force force lxir_bft_teamColors = "ACE";
-// force force lxir_bft_bftEnabled = true;
-
-// 61st BFT - bft
-force force lxirtca_bft_groupMarkers_colorsBlacklist = "Default, ColorWEST, ColorEAST, ColorGUER, ColorCIV, Color1_FD_F, Color2_FD_F, Color3_FD_F, Color4_FD_F, Color5_FD_F, Color6_FD_F";
-force force lxirtca_bft_groupMarkers_defaultSetting = 2;
-force force lxirtca_bft_groupMarkers_enabled = true;
-force force lxirtca_bft_groupMarkers_fuzzOtherFactions = true;
-force force lxirtca_bft_groupMarkers_iconsBlacklist = "unknown, uav";
-force force lxirtca_bft_groupMarkers_mapSettings_enabled = true;
-force force lxirtca_bft_groupMarkers_markerShape = "a";
-force force lxirtca_bft_groupMarkers_nameOptions = "Zulu,Lima,Uniform,Echo,Whiskey,Tango,Bob";
-force force lxirtca_bft_groupMarkers_preferredColors = "ColorYellow, ColorRed, ColorBlue, ColorBlack, ColorGreen, ColorWhite, ColorOrange";
-force force lxirtca_bft_groupMarkers_preferredIcons = "inf, motor_inf, mech_inf, air, armor, recon";
-force force lxirtca_bft_groupMarkers_trackingMode = "weightedAverage";
-force force lxirtca_bft_groupMarkers_trailingCount = 5;
-force force lxirtca_bft_groupMarkers_trailingMode = "weightedAverage";
-force force lxirtca_bft_groupMarkers_trailingWeight = 0.75;
-force force lxirtca_bft_groupMarkers_updateDelay = 1;
-
-// 61st BFT - main
-force force lxirtca_main_ClearBuildingMarkers_Channel = 0;
-force force lxirtca_main_ClearBuildingMarkers_Enabled = false;
-force force lxirtca_main_LoadoutDiaryRecord_Enabled = false;
-
-// 61st BFT - unitmarkers
-force force lxirtca_unitmarkers_unitMarkers_enabled = true;
-force force lxirtca_unitmarkers_unitMarkers_markAI = true;
-force force lxirtca_unitmarkers_unitMarkers_otherGroups = true;
-force force lxirtca_unitmarkers_unitMarkers_showToggle = true;
-
-// 61st BFT - vehicles
-force force lxirtca_vehicles_showSpeedLimiterOptions = true;
-force force lxirtca_vehicles_showSpeedLimiterWaitTime = 10;
+// 61ST - BFT
+force force lxim_bft_bftEnabled = true;
+force force lxim_bft_friendlySides_CIVILIAN = [0,2];
+force force lxim_bft_friendlySides_EAST = [3];
+force force lxim_bft_friendlySides_RESISTANCE = [1,3];
+force force lxim_bft_friendlySides_WEST = [2];
+force force lxim_bft_friendlySidesDynamic = true;
+force force lxim_bft_groupIconsInteraction = "hover";
+force force lxim_bft_medicalSystem = "ACE";
+force force lxim_bft_requireItemGPS = true;
+force force lxim_bft_showAIGroups = true;
+force force lxim_bft_showAINames = true;
+force force lxim_bft_showCivilians = false;
+force force lxim_bft_showGroupIcons = true;
+force force lxim_bft_showGroupText = true;
+force force lxim_bft_showLifeState = true;
+force force lxim_bft_showOwnFactionOnly = false;
+force force lxim_bft_showOwnGroup = true;
+force force lxim_bft_showOwnGroupUnits = true;
+force force lxim_bft_showPlayerNames = true;
+force force lxim_bft_showUnitNames = true;
+force force lxim_bft_teamColors = "ACE";
+force force lxim_bft_updateInterval = 1.5;
 
 // 61st - Civilians
-force force LXIR_Civilians_enableFollowGestures = true;
-force force LXIR_Civilians_enableGestures = true;
-force force LXIR_Civilians_enableGetDownGestures = true;
-force force LXIR_Civilians_enableGoAwayGestures = true;
-force force LXIR_Civilians_enableGreetingGestures = true;
-force force LXIR_Civilians_enableStopGestures = true;
-force force LXIR_Civilians_successChance_armed = 0.7;
-force force LXIR_Civilians_successChance_unarmed = 0.5;
+force force LXIM_Civilians_enableFollowGestures = true;
+force force LXIM_Civilians_enableGestures = true;
+force force LXIM_Civilians_enableGetDownGestures = true;
+force force LXIM_Civilians_enableGoAwayGestures = true;
+force force LXIM_Civilians_enableGreetingGestures = true;
+force force LXIM_Civilians_enableStopGestures = true;
+force force LXIM_Civilians_successChance_armed = 0.7;
+force force LXIM_Civilians_successChance_unarmed = 0.5;
 
 // 61st - fatigue
-force force lxir_fatigue_highJogCoef = 0.8;
-force force lxir_fatigue_highJogCoefEnabled = true;
+force force lxim_fatigue_highJogCoef = 0.8;
+force force lxim_fatigue_highJogCoefEnabled = true;
 
 // 61st - friendly_fire
-force force lxir_friendly_fire_loggingEnabled = true;
+force force lxim_friendly_fire_loggingEnabled = true;
 
 // 61st - grass
-force force lxir_grass_enabled = true;
+force force lxim_grass_enabled = true;
 
 // 61st - insurgents
-force force lxir_insurgents_enabled_CUP = true;
-force force lxir_insurgents_enabled_Vanilla = true;
+force force lxim_insurgents_enabled_CUP = true;
+force force lxim_insurgents_enabled_Vanilla = true;
 
 // 61st - medical_treatment
-force force lxir_medical_treatment_fatalInjuriesCardiacArrestTimeCoefficient = 0.2;
+force force lxim_medical_treatment_fatalInjuriesCardiacArrestTimeCoefficient = 0.2;
 
 // 61st - nvg
-force force lxir_nvg_Blacklist = "";
+force force lxim_nvg_Blacklist = "";
 
 // 61st - respawn
-force force lxir_respawn_enabled = true;
-force force lxir_respawn_time = 6;
+force force lxim_respawn_enabled = true;
+force force lxim_respawn_time = 6;
 
 // 61st - safestart
-force force lxir_safestart_startLocked = true;
+force force lxim_safestart_startLocked = true;
 
 // 61st - spectator
-force force lxir_spectator_allowAI = false;
-force force lxir_spectator_allowAIUnconscious = false;
-force force lxir_spectator_allowUnconscious = true;
-force force lxir_spectator_civilianSide = false;
-force force lxir_spectator_civilianSideUnconscious = false;
-force force lxir_spectator_freeCamera = false;
-force force lxir_spectator_freeCameraUnconscious = true;
-force force lxir_spectator_sides = 0;
-force force lxir_spectator_sidesUnconscious = 0;
-force force lxir_spectator_TPPCamera = false;
-force force lxir_spectator_TPPCameraUnconscious = false;
-force force lxir_spectator_unconsciousDelay = 30;
+force force lxim_spectator_allowAI = false;
+force force lxim_spectator_allowAIUnconscious = false;
+force force lxim_spectator_allowUnconscious = true;
+force force lxim_spectator_civilianSide = false;
+force force lxim_spectator_civilianSideUnconscious = false;
+force force lxim_spectator_freeCamera = false;
+force force lxim_spectator_freeCameraUnconscious = true;
+force force lxim_spectator_sides = 0;
+force force lxim_spectator_sidesUnconscious = 0;
+force force lxim_spectator_TPPCamera = false;
+force force lxim_spectator_TPPCameraUnconscious = false;
+force force lxim_spectator_unconsciousDelay = 30;
 
 // 61st - Suppress
-force force lxir_suppress_checkLOS = true;
-force force lxir_suppress_overlayFadeoutTime = 10;
-force force lxir_suppress_overlayOpacity = 0.96;
-force force lxir_suppress_overlayTexture = 0;
-force force lxir_suppress_projectileMaxDistance = 9;
-force force lxir_suppress_shooterMinDistance = 0;
+force force lxim_suppress_checkLOS = true;
+force force lxim_suppress_overlayFadeoutTime = 10;
+force force lxim_suppress_overlayOpacity = 0.96;
+force force lxim_suppress_overlayTexture = 0;
+force force lxim_suppress_projectileMaxDistance = 9;
+force force lxim_suppress_shooterMinDistance = 0;
 
 // 61st - tagging
-force force lxir_tagging_enabled = true;
+force force lxim_tagging_enabled = true;
 
 // ACE Advanced Ballistics
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
@@ -241,7 +216,7 @@ force force ace_frag_reflectionsEnabled = true;
 force force ace_frag_spallEnabled = true;
 
 // ACE G-force forces
-force force ace_gforce forces_coef = 1;
+force force ace_gforce forces_coef = .8;
 force force ace_gforce forces_enabledFor = 1;
 
 // ACE Goggles
@@ -662,30 +637,6 @@ force force cfp_autoEquipNVG = true;
 force force bocr_main_disabled = false;
 force force bocr_main_walk = true;
 
-// Better CAS Environment
-force force BCE_Access_list = 1;
-force force BCE_Alpha_sdr = 1;
-force force BCE_CamNoise_sdr = 0.5;
-force force BCE_FriendlyTrack_fn = false;
-force force BCE_HUD_fn = true;
-force force BCE_HUD_RK_fn = 0;
-force force BCE_inf_IR_fn = true;
-force force BCE_inf_IR_Lig_fn = true;
-force force BCE_Landmarks_fn = true;
-force force BCE_Mapicon_fn = true;
-force force BCE_touchMark_fn = true;
-force force BCE_Tracker_Render_sdr = 10000;
-force force BCE_UnitTrack_fn = false;
-force force BCE_veh_IR_fn = true;
-
-// Better CAS Environment (Server)
-force force BCE_AI_CAS_Support_fn = true;
-force force BCE_AIAir_IR_fn = true;
-force force BCE_inf_IR_Lig_S_fn = true;
-force force BCE_LandVeh_Laser_fn = false;
-force force BCE_LandVeh_Light_fn = false;
-force force BCE_veh_IR_S_fn = true;
-
 // BettIR
 force force BettIR_ViewDistance = 300;
 
@@ -702,16 +653,6 @@ force force CUP_Vehicles_PreventBarrelClip = true;
 // CUP Static Weapons
 CUP_staticWeapons_allowMovement = false;
 CUP_staticWeapons_allowRotation = false;
-
-// cTab
-force force ctab_compass_enable = true;
-force force ctab_core_bft_mode = 0;
-force force ctab_core_gridPrecision = 2;
-force force ctab_core_helmetcam_mode = 1;
-force force ctab_core_sync_time = 30;
-force force ctab_core_uav_mode = 1;
-force force ctab_core_useAceMicroDagr = true;
-force force ctab_core_useArmaMarker = true;
 
 // DUI - Squad Radar - Indicators
 force force diwako_dui_indicators_crew_range_enabled = false;

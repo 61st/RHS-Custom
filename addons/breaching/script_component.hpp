@@ -1,6 +1,6 @@
 #define COMPONENT breaching
 #define COMPONENT_BEAUTIFIED Breaching
-#include "\z\lxir\addons\main\script_mod.hpp"
+#include "\z\lxim\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -14,7 +14,7 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_BREACHING
 #endif
 
-#include "\z\lxir\addons\main\script_macros.hpp"
+#include "\z\lxim\addons\main\script_macros.hpp"
 
 
 #define WIRE_CLASS "Land_MetalWire_F"

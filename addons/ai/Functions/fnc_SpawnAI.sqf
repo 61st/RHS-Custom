@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
-Function: LXIR_ai_fnc_SpawnAI
+Function: LXIM_ai_fnc_SpawnAI
 
 Description:
     Used to populate an area with a predefined enemy faction. This function has a large list of parameters
@@ -35,7 +35,7 @@ Example:
             "Sahrani Liberation Army",
             [5, 100, 200],
             [3, 5]
-            ] call lxir_ai_fnc_SpawnAI;
+            ] call lxim_ai_fnc_SpawnAI;
             Example 2:
             ["Kavala",
             [2955.43,6010.11,0],
@@ -51,7 +51,7 @@ Example:
             [2, 3],
             [5, 6],
             "RANDOM"
-        ] call lxir_ai_fnc_SpawnAI;
+        ] call lxim_ai_fnc_SpawnAI;
     (end)
 
 Author:
@@ -100,16 +100,16 @@ call {
 
 _center set [2, 0];
 
-_garrisons params ["_GarrisonedGroupsMin", ["_GarrisonedGroupsMax", 0], ["_infSkill", "LXIR Default"]];
-_inf params ["_infMin", ["_infMax", 0], ["_infSkill", "LXIR Default"]];
-_infaa params ["_infaaMin", ["_infaaMax",0], ["_infaaSkill", "LXIR Default"]];
-_infat params ["_infatMin", ["_infatMax",0], ["_infatSkill", "LXIR Default"]];
-_sniper params ["_sniperMin", ["_sniperMax",0], ["_sniperSkill", "LXIR Default"]];
-_vehaa params ["_vehaaMin", ["_vehaaMax",0], ["_vehaaSkill", "LXIR Default"]];
-_vehmrap params ["_vehmrapMin", ["_vehmrapMax",0], ["_vehmrapSkill", "LXIR Default"]];
-_vehlight params ["_vehlightMin", ["_vehlightMax",0], ["_vehlightSkill", "LXIR Default"]];
-_vehheavy params ["_vehheavyMin", ["_vehheavyMax",0], ["_vehheavySkill", "LXIR Default"]];
-_vehrand params ["_vehrandMin", ["_vehrandMax",0], ["_vehrandSkill", "LXIR Default"]];
+_garrisons params ["_GarrisonedGroupsMin", ["_GarrisonedGroupsMax", 0], ["_infSkill", "LXIM Default"]];
+_inf params ["_infMin", ["_infMax", 0], ["_infSkill", "LXIM Default"]];
+_infaa params ["_infaaMin", ["_infaaMax",0], ["_infaaSkill", "LXIM Default"]];
+_infat params ["_infatMin", ["_infatMax",0], ["_infatSkill", "LXIM Default"]];
+_sniper params ["_sniperMin", ["_sniperMax",0], ["_sniperSkill", "LXIM Default"]];
+_vehaa params ["_vehaaMin", ["_vehaaMax",0], ["_vehaaSkill", "LXIM Default"]];
+_vehmrap params ["_vehmrapMin", ["_vehmrapMax",0], ["_vehmrapSkill", "LXIM Default"]];
+_vehlight params ["_vehlightMin", ["_vehlightMax",0], ["_vehlightSkill", "LXIM Default"]];
+_vehheavy params ["_vehheavyMin", ["_vehheavyMax",0], ["_vehheavySkill", "LXIM Default"]];
+_vehrand params ["_vehrandMin", ["_vehrandMax",0], ["_vehrandSkill", "LXIM Default"]];
 
 _patrolMethod = toUpper _patrolMethod;
 
@@ -117,9 +117,9 @@ private ["_fnc_patrol_EI", "_fnc_patrol_EI_spec", "_fnc_patrol_veh", "_fnc_pos_E
 
 switch (_patrolMethod) do {
     case "ROAD": {
-        _fnc_patrol_EI = compile "[(_this select 0), (_this select 3)] call lxir_ai_fnc_RoadPatrol;";
-        _fnc_patrol_EI_spec = compile "[(_this select 0), (_this select 3)] call lxir_ai_fnc_RoadPatrol;";
-        _fnc_patrol_veh = compile "[(_this select 0), (_this select 3)] call lxir_ai_fnc_RoadPatrol;";
+        _fnc_patrol_EI = compile "[(_this select 0), (_this select 3)] call lxim_ai_fnc_RoadPatrol;";
+        _fnc_patrol_EI_spec = compile "[(_this select 0), (_this select 3)] call lxim_ai_fnc_RoadPatrol;";
+        _fnc_patrol_veh = compile "[(_this select 0), (_this select 3)] call lxim_ai_fnc_RoadPatrol;";
         _fnc_pos_EI = compile "selectRandom (_this select 2)";
         _fnc_pos_veh = compile "selectRandom (_this select 2)";
     };
@@ -127,15 +127,15 @@ switch (_patrolMethod) do {
         _fnc_patrol_EI = compile "[(_this select 0), (_this select 1), (_this select 2)/1.5, 3 + round (random 2), [""SAD"", ""MOVE""] select (random 1 > 0.33), [""AWARE"", ""SAFE""] select (random 1 > 0.5), [""red"", ""white""] select (random 1 > 0.2), [""limited"", ""normal""] select (random 1 > 0.5)] call CBA_fnc_taskPatrol;";
         _fnc_patrol_EI_spec = compile "[(_this select 0), (_this select 1), (_this select 2)/1.5, 3 + round (random 2), ""SAD"", [""AWARE"", ""SAFE""] select (random 1 > 0.5), [""red"", ""white""] select (random 1 > 0.2), [""limited"", ""normal""] select (random 1 > 0.5)] call CBA_fnc_taskPatrol;";
         _fnc_patrol_veh = compile "[(_this select 0), (_this select 1), (_this select 2) / 2, 3 + round (random 2), ""MOVE"", [""AWARE"", ""SAFE""] select (random 1 > 0.5), [""red"", ""white""] select (random 1 > 0.2), [""limited"", ""normal""] select (random 1 > 0.5)] call CBA_fnc_taskPatrol;";
-        _fnc_pos_EI = compile "[[[(_this select 0), (_this select 1)],[]],[""water""]] call lxir_common_fnc_SafePos;";
-        _fnc_pos_veh = compile "[[[(_this select 0), (_this select 1)], []], [""water""], { !(_this isFlatEmpty [2,-1,0.5,1,0,false,objNull] isEqualTo []) }] call lxir_common_fnc_SafePos;";
+        _fnc_pos_EI = compile "[[[(_this select 0), (_this select 1)],[]],[""water""]] call lxim_common_fnc_SafePos;";
+        _fnc_pos_veh = compile "[[[(_this select 0), (_this select 1)], []], [""water""], { !(_this isFlatEmpty [2,-1,0.5,1,0,false,objNull] isEqualTo []) }] call lxim_common_fnc_SafePos;";
     };
     default {
-        _fnc_patrol_EI = compile "systemChat ""Error: Unknown patrol method supplied to LXIR_ai_fnc_SpawnAI!"";";
-        _fnc_patrol_EI_spec = compile "systemChat ""Error: Unknown patrol method supplied to LXIR_ai_fnc_SpawnAI!"";";
-        _fnc_patrol_veh = compile "systemChat ""Error: Unknown patrol method supplied to LXIR_ai_fnc_SpawnAI!"";";
-        _fnc_pos_EI = compile "systemChat ""Error: Unknown patrol method supplied to LXIR_ai_fnc_SpawnAI!"";";
-        _fnc_pos_veh = compile "systemChat ""Error: Unknown patrol method supplied to LXIR_ai_fnc_SpawnAI!"";";
+        _fnc_patrol_EI = compile "systemChat ""Error: Unknown patrol method supplied to LXIM_ai_fnc_SpawnAI!"";";
+        _fnc_patrol_EI_spec = compile "systemChat ""Error: Unknown patrol method supplied to LXIM_ai_fnc_SpawnAI!"";";
+        _fnc_patrol_veh = compile "systemChat ""Error: Unknown patrol method supplied to LXIM_ai_fnc_SpawnAI!"";";
+        _fnc_pos_EI = compile "systemChat ""Error: Unknown patrol method supplied to LXIM_ai_fnc_SpawnAI!"";";
+        _fnc_pos_veh = compile "systemChat ""Error: Unknown patrol method supplied to LXIM_ai_fnc_SpawnAI!"";";
     };
 };
 
@@ -153,7 +153,7 @@ private _FactionSide = "East";
 private _InfantryType = "Infantry";
 private _InfantryGroup = "OIA_InfTeam";
 private _vehRandList = [];
-private _AIReporting = LXIR_AI_Reporting;
+private _AIReporting = LXIM_AI_Reporting;
 
 // Check for Side from _faction
 private _SideNumber = getnumber (configfile >> "CfgFactionClasses" >> _faction >> "side");
@@ -174,7 +174,7 @@ call {
 };
 if (isnil "_Faction") exitwith {systemchat format ["Faction missing from %1 at %2",_grpPrefix, _center]};
 
-_GetFactionArrays = compileFinal format ["call lxir_ai_fnc_%1", _faction];
+_GetFactionArrays = compileFinal format ["call lxim_ai_fnc_%1", _faction];
 _FactionArrays = call _GetFactionArrays;
 _FactionArrays params ["_InfantryType", "_infaaList", "_infatList", "_sniperList", "_vehAAList", "_vehMrapList", "_vehLightList", "_vehHeavyList"];
 
@@ -207,7 +207,7 @@ if (_patrolMethod isEqualTo "ROAD") then {
     // If we still don't have enough positions, fill the remaining spots up with random positions
     if (count _roadList < _minPositions) then {
         while {count _roadList < _minPositions} do {
-            _rpos = [[[_center, _radius],[]],["water"]] call lxir_common_fnc_SafePos;
+            _rpos = [[[_center, _radius],[]],["water"]] call lxim_common_fnc_SafePos;
             _roadList append [_rpos];
         };
     };
@@ -247,7 +247,7 @@ if !(_infList isEqualTo []) then {
                 _infList, _GarrisonedGroupsExact,
                 nil, 2,
                 4, []
-            ] call lxir_ai_fnc_infantryGarrison
+            ] call lxim_ai_fnc_infantryGarrison
         );
         _units append _garrisonedUnits;
 

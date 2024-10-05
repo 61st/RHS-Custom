@@ -1,11 +1,11 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_utilityFunction", "_utilityName", ["_requireAlive", false]];
 
 GVAR(utilityData) = [];
 if (!isNil QGVAR(selectedTab)) then {
-    if (GVAR(selectedTab) isEqualTo IDC_LXIR_ADMINMENU_G_PMAN && !isNil QGVAR(playerManagement_selected)) then {
+    if (GVAR(selectedTab) isEqualTo IDC_LXIM_ADMINMENU_G_PMAN && !isNil QGVAR(playerManagement_selected)) then {
         GVAR(utilityData) = GVAR(playerManagement_selected) apply {_x call BIS_fnc_objectFromNetId};
 
         if ((count GVAR(utilityData)) isEqualTo 0) exitWith {

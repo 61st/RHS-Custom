@@ -1,4 +1,4 @@
-//lxir_adminMenu_fnc_sendMessageToAdmin
+//lxim_adminMenu_fnc_sendMessageToAdmin
 
 #include "script_component.hpp"
 TRACE_1("params",_this);
@@ -14,4 +14,4 @@ if (_text == "") exitWith {systemChat "Input your msg";};
 
 systemChat "Message Sent";
 
-["lxir_adminMsg", [_text, profileName]] call CBA_fnc_globalEvent;
+["lxim_adminMsg", [_text, profileName]] call CBA_fnc_globalEvent;

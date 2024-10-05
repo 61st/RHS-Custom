@@ -1,6 +1,6 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 /* ----------------------------------------------------------------------------
-Function: LXIR_adminmenu_fnc_resyncLog
+Function: LXIM_adminmenu_fnc_resyncLog
 
 Description:
     Resynchronizes the server log from the server to a client
@@ -13,7 +13,7 @@ Returns:
 
 Examples:
     (begin example)
-        [clientOwner] call LXIR_adminmenu_fnc_resyncLog;
+        [clientOwner] call LXIM_adminmenu_fnc_resyncLog;
     (end)
 
 Author:

@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [["text", "STR_text"], 2.5] call lxir_shootingrange_fnc_notifyVicinity;
+ * [["text", "STR_text"], 2.5] call lxim_shootingrange_fnc_notifyVicinity;
  *
  * Public: No
  */

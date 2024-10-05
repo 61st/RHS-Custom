@@ -7,8 +7,8 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxir_main",
-            "lxir_debug_console"
+            "lxim_main",
+            "lxim_debug_console"
         };
         author = QAUTHOR;
         VERSION_CONFIG;

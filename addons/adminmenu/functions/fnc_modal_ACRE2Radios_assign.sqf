@@ -1,10 +1,10 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 // Thanks to Snippers
 
 params [["_radios", []], ["_network", -1]];
 
-private _presetName = format ["lxir_preset%1", _network];
+private _presetName = format ["lxim_preset%1", _network];
 private _oldPresetName = ["ACRE_PRC148"] call acre_api_fnc_getPreset;
 
 if (_network > -1 && !(_presetName isEqualTo _oldPresetName)) then {

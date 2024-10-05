@@ -24,8 +24,8 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
-            "z\lxir\addons\Equipment\data\ammobox_signs_caA.paa",
-            "z\lxir\addons\Equipment\data\ammo_lxir_co.paa"
+            "z\lxim\addons\Equipment\data\ammobox_signs_caA.paa",
+            "z\lxim\addons\Equipment\data\ammo_lxim_co.paa"
         };
         class TransportMagazines {
         };
@@ -58,8 +58,8 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
-            "z\lxir\addons\Equipment\data\ammobox_signs_caA.paa",
-            "z\lxir\addons\Equipment\data\ammo_lxir_W_co.paa"
+            "z\lxim\addons\Equipment\data\ammobox_signs_caA.paa",
+            "z\lxim\addons\Equipment\data\ammo_lxim_W_co.paa"
         };
         class TransportMagazines {
         };
@@ -92,8 +92,8 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
-            "z\lxir\addons\Equipment\data\ammobox_signs_caA.paa",
-            "z\lxir\addons\Equipment\data\ammolxir_D_co.paa"
+            "z\lxim\addons\Equipment\data\ammobox_signs_caA.paa",
+            "z\lxim\addons\Equipment\data\ammolxim_D_co.paa"
         };
         class TransportMagazines {
         };
@@ -126,8 +126,8 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
-            "z\lxir\addons\Equipment\data\ammobox_signs_caA.paa",
-            "z\lxir\addons\Equipment\data\ammolxir_T_co.paa"
+            "z\lxim\addons\Equipment\data\ammobox_signs_caA.paa",
+            "z\lxim\addons\Equipment\data\ammolxim_T_co.paa"
         };
         class TransportMagazines {
         };
@@ -160,8 +160,8 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
-            "z\lxir\addons\Equipment\data\ammobox_signs_caA.paa",
-            "z\lxir\addons\Equipment\data\ammolxir_co_c_.paa"
+            "z\lxim\addons\Equipment\data\ammobox_signs_caA.paa",
+            "z\lxim\addons\Equipment\data\ammolxim_co_c_.paa"
         };
         class TransportMagazines {
         };
@@ -192,8 +192,8 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
-            "z\lxir\addons\Equipment\data\ammobox_signs_caA.paa",
-            "z\lxir\addons\Equipment\data\resupplylxir.paa"
+            "z\lxim\addons\Equipment\data\ammobox_signs_caA.paa",
+            "z\lxim\addons\Equipment\data\resupplylxim.paa"
         };
         class TransportMagazines {
         };

@@ -1,9 +1,9 @@
-class LXIR_ModuleCivilianSpawns: Module_F {
+class LXIM_ModuleCivilianSpawns: Module_F {
     scope = 2;
     displayName = "AI Spawn - Civilian";
-    icon = "\z\lxir\addons\media\images\Icons\ai_CIV.paa";
+    icon = "\z\lxim\addons\media\images\Icons\ai_CIV.paa";
     category = QPREFIX;
-    function = "LXIR_ai_fnc_moduleCivilianSpawns";
+    function = "LXIM_ai_fnc_moduleCivilianSpawns";
     functionPriority = 2;
     isGlobal = 0;
     isTriggerActivated = 0;
@@ -11,13 +11,13 @@ class LXIR_ModuleCivilianSpawns: Module_F {
     is3DEN = 0;
     class Attributes: AttributesBase {
         class ObjName: Edit {
-                property = "LXIR_AI_ObjName";
+                property = "LXIM_AI_ObjName";
                 displayName = "Objective Name";
                 tooltip = "Name of Objective/Spawn Position.";
                 defaultValue = """Objective 1""";
             };
         class Type: Combo {
-                property = "LXIR_AI_Type";
+                property = "LXIM_AI_Type";
                 displayName = "Civilian Faction";
                 tooltip = "Civilian Faction Type for this Module.";
                 defaultValue = """CIV_F""";
@@ -36,7 +36,7 @@ class LXIR_ModuleCivilianSpawns: Module_F {
                 };
             };
         class Side: Combo {
-                property = "LXIR_AI_Side";
+                property = "LXIM_AI_Side";
                 displayName = "Civilian Side";
                 tooltip = "Side to spawn the Civilians on.";
                 defaultValue = """CIVILIAN""";
@@ -49,7 +49,7 @@ class LXIR_ModuleCivilianSpawns: Module_F {
             };
 
         class GarrRadius: Edit {
-                property = "LXIR_AI_GarRadius";
+                property = "LXIM_AI_GarRadius";
                 displayName = "Garrison Radius";
                 tooltip = "AI Garrison radius from this module.";
                 typeName = "NUMBER";
@@ -58,7 +58,7 @@ class LXIR_ModuleCivilianSpawns: Module_F {
 
         class GarrisonedUnitsMin: Edit
         {
-            property = "LXIR_AI_GarrisonedUnitsMin";
+            property = "LXIM_AI_GarrisonedUnitsMin";
             displayName = "Min Garrisoned Units";
             description = "Minimum Number of Garrisoned Civilians to Spawn";
             typeName = "Number";
@@ -66,7 +66,7 @@ class LXIR_ModuleCivilianSpawns: Module_F {
         };
         class GarrisonedUnitsMax: Edit
         {
-            property = "LXIR_AI_GarrisonedUnitsMax";
+            property = "LXIM_AI_GarrisonedUnitsMax";
             displayName = "Max Garrisoned Units";
             description = "Maximum Number of Garrisoned Civilians to Spawn";
             typeName = "Number";
@@ -74,7 +74,7 @@ class LXIR_ModuleCivilianSpawns: Module_F {
         };
 
         class Radius: Edit {
-                property = "LXIR_AI_Radius";
+                property = "LXIM_AI_Radius";
                 displayName = "Patrol Radius";
                 tooltip = "Civilian Spawn radius from this module.";
                 typeName = "NUMBER";
@@ -83,7 +83,7 @@ class LXIR_ModuleCivilianSpawns: Module_F {
 
         class CivPedPatrolsMin: Edit
         {
-            property = "LXIR_AI_CivPedPatrolsMin";
+            property = "LXIM_AI_CivPedPatrolsMin";
             displayName = "Min Pedestrian Patrols";
             description = "Minimum Number of Pedestrians to Spawn";
             typeName = "Number";
@@ -91,7 +91,7 @@ class LXIR_ModuleCivilianSpawns: Module_F {
         };
         class CivPedPatrolsMax: Edit
         {
-            property = "LXIR_AI_CivPedPatrolsMax";
+            property = "LXIM_AI_CivPedPatrolsMax";
             displayName = "Max Pedestrian Patrols";
             description = "Maximum Number of Pedestrians to Spawn";
             typeName = "Number";
@@ -99,7 +99,7 @@ class LXIR_ModuleCivilianSpawns: Module_F {
         };
         class CivVehPatrolsMin: Edit
         {
-            property = "LXIR_AI_CivVehPatrolsMin";
+            property = "LXIM_AI_CivVehPatrolsMin";
             displayName = "Min Vehicle Patrols";
             description = "Minimum Number of Vehicle Patrols to Spawn";
             typeName = "Number";
@@ -107,7 +107,7 @@ class LXIR_ModuleCivilianSpawns: Module_F {
         };
         class CivVehPatrolsMax: Edit
         {
-            property = "LXIR_AI_CivVehPatrolsMax";
+            property = "LXIM_AI_CivVehPatrolsMax";
             displayName = "Max Vehicle Patrols";
             description = "Maximum Number of Vehicle Patrols to Spawn";
             typeName = "Number";
@@ -115,7 +115,7 @@ class LXIR_ModuleCivilianSpawns: Module_F {
         };
         class CivVehParkedMin: Edit
         {
-            property = "LXIR_AI_CivVehParkedMin";
+            property = "LXIM_AI_CivVehParkedMin";
             displayName = "Min Parked Vehicles";
             description = "Minimum Number of Parked Vehicles to Spawn";
             typeName = "Number";
@@ -123,7 +123,7 @@ class LXIR_ModuleCivilianSpawns: Module_F {
         };
         class CivVehParkedMax: Edit
         {
-            property = "LXIR_AI_CivVehPaarkedMax";
+            property = "LXIM_AI_CivVehPaarkedMax";
             displayName = "Max Parked Vehicle";
             description = "Maximum Number of Parked Vehicles to Spawn";
             typeName = "Number";

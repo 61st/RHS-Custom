@@ -1,4 +1,4 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_ctrlGroup"];
@@ -7,13 +7,13 @@ params ["_ctrlGroup"];
 
 private _display = uiNamespace getVariable [QGVAR(modalDisplay), displayNull];
 private _ctrlEdit = _display ctrlCreate ["RscEditMulti", -1, _ctrlGroup];
-private _ctrlEditPos = [0.1 * LXIR_ADMINMENU_STD_WIDTH, 0.1 * LXIR_ADMINMENU_STD_HEIGHT, _ctrlGrpWidth - (0.2 * LXIR_ADMINMENU_STD_WIDTH), _ctrlGrpHeight - (1.3 * LXIR_ADMINMENU_STD_HEIGHT)];
+private _ctrlEditPos = [0.1 * LXIM_ADMINMENU_STD_WIDTH, 0.1 * LXIM_ADMINMENU_STD_HEIGHT, _ctrlGrpWidth - (0.2 * LXIM_ADMINMENU_STD_WIDTH), _ctrlGrpHeight - (1.3 * LXIM_ADMINMENU_STD_HEIGHT)];
 _ctrlEdit ctrlSetPosition _ctrlEditPos;
 _ctrlEdit ctrlCommit 0;
 _ctrlEdit ctrlSetText (missionNamespace getVariable [QGVAR(utility_message_last), ""]);
 
 private _ctrlCombo = _display ctrlCreate [QGVAR(RscCombo), -1, _ctrlGroup];
-_ctrlCombo ctrlSetPosition [0.1 * LXIR_ADMINMENU_STD_WIDTH, _ctrlGrpHeight - LXIR_ADMINMENU_STD_HEIGHT, _ctrlGrpWidth * 0.3, LXIR_ADMINMENU_STD_HEIGHT];
+_ctrlCombo ctrlSetPosition [0.1 * LXIM_ADMINMENU_STD_WIDTH, _ctrlGrpHeight - LXIM_ADMINMENU_STD_HEIGHT, _ctrlGrpWidth * 0.3, LXIM_ADMINMENU_STD_HEIGHT];
 _ctrlCombo ctrlCommit 0;
 _ctrlCombo lbAdd "Show in Chat";
 _ctrlCombo lbAdd "Show in Hint";
@@ -21,7 +21,7 @@ _ctrlCombo lbAdd "Show in Subtitle from 'PAPA BEAR'";
 _ctrlCombo lbSetCurSel 0;
 
 private _ctrlButtonPreview = _display ctrlCreate [QGVAR(RscButtonMenu), -1, _ctrlGroup];
-_ctrlButtonPreview ctrlSetPosition [(_ctrlGrpWidth * 0.7) - (0.2 * LXIR_ADMINMENU_STD_WIDTH), _ctrlGrpHeight - LXIR_ADMINMENU_STD_HEIGHT, (_ctrlGrpWidth * 0.15), LXIR_ADMINMENU_STD_HEIGHT];
+_ctrlButtonPreview ctrlSetPosition [(_ctrlGrpWidth * 0.7) - (0.2 * LXIM_ADMINMENU_STD_WIDTH), _ctrlGrpHeight - LXIM_ADMINMENU_STD_HEIGHT, (_ctrlGrpWidth * 0.15), LXIM_ADMINMENU_STD_HEIGHT];
 _ctrlButtonPreview ctrlCommit 0;
 _ctrlButtonPreview ctrlSetText "Preview";
 _ctrlButtonPreview setVariable [QGVAR(association), [_ctrlEdit, _ctrlCombo]];
@@ -52,7 +52,7 @@ _ctrlButtonPreview ctrlAddEventHandler ["buttonClick", {
 }];
 
 private _ctrlButtonCommit = _display ctrlCreate [QGVAR(RscButtonMenu), -1, _ctrlGroup];
-_ctrlButtonCommit ctrlSetPosition [(_ctrlGrpWidth * 0.85), _ctrlGrpHeight - LXIR_ADMINMENU_STD_HEIGHT, (_ctrlGrpWidth * 0.15) - (0.1 * LXIR_ADMINMENU_STD_WIDTH), LXIR_ADMINMENU_STD_HEIGHT];
+_ctrlButtonCommit ctrlSetPosition [(_ctrlGrpWidth * 0.85), _ctrlGrpHeight - LXIM_ADMINMENU_STD_HEIGHT, (_ctrlGrpWidth * 0.15) - (0.1 * LXIM_ADMINMENU_STD_WIDTH), LXIM_ADMINMENU_STD_HEIGHT];
 _ctrlButtonCommit ctrlCommit 0;
 _ctrlButtonCommit ctrlSetText "Send Message";
 _ctrlButtonCommit setVariable [QGVAR(association), [_ctrlEdit, _ctrlCombo]];

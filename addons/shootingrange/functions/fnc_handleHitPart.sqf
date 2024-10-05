@@ -21,7 +21,7 @@
  * None
  *
  * Example:
- * [target, shooter, nil, [0, 0, 0], nil, ["target"], nil, nil, nil, nil, true] call lxir_shootingrange_fnc_handleHitPart;
+ * [target, shooter, nil, [0, 0, 0], nil, ["target"], nil, nil, nil, nil, true] call lxim_shootingrange_fnc_handleHitPart;
  *
  * Public: No
  */

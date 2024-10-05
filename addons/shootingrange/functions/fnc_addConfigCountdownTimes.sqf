@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * ["range", controller, [controller1, controller2], [6, 9], [target1, target2]] call lxir_shootingrange_fnc_addConfigCountdownTimes;
+ * ["range", controller, [controller1, controller2], [6, 9], [target1, target2]] call lxim_shootingrange_fnc_addConfigCountdownTimes;
  *
  * Public: No
  */

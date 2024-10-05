@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
-Function: LXIR_ai_fnc_infantryGarrison
+Function: LXIM_ai_fnc_infantryGarrison
 
 Description:
     Garrison buildings in given radius around given position, using
@@ -43,7 +43,7 @@ params [
     ["_infList", ["OIA_GuardSquad"]],
     ["_groupCount", 1],
     ["_AIOB_Positioning", 2],
-    ["_skill", "LXIR Default"],
+    ["_skill", "LXIM Default"],
     ["_maxFill", 4],
     ["_excludes", []],
     ["_units", []]

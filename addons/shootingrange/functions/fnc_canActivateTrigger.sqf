@@ -11,7 +11,7 @@
  * Can Stop Range <BOOL>
  *
  * Example:
- * [controller, target] call lxir_shootingrange_fnc_canActivateTrigger;
+ * [controller, target] call lxim_shootingrange_fnc_canActivateTrigger;
  *
  * Public: No
  */

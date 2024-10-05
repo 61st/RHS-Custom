@@ -1,4 +1,4 @@
-#include "\z\lxir\addons\adminmenu\script_component.hpp"
+#include "\z\lxim\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_ctrlBackground"];
@@ -11,7 +11,7 @@ private _display = ctrlParent _ctrlBackground;
 private _dialogPosition = ctrlPosition _ctrlBackground;
 
 private _ctrlList = _display ctrlCreate [QGVAR(RscListBox), -1];
-_ctrlList ctrlSetPosition [(_dialogPosition # 0) + 0.1 * LXIR_ADMINMENU_STD_WIDTH, (_dialogPosition # 1) + 0.1 * LXIR_ADMINMENU_STD_HEIGHT, (_dialogPosition # 2) - (0.2 * LXIR_ADMINMENU_STD_WIDTH), (_dialogPosition # 3) - (0.2 * LXIR_ADMINMENU_STD_HEIGHT)];
+_ctrlList ctrlSetPosition [(_dialogPosition # 0) + 0.1 * LXIM_ADMINMENU_STD_WIDTH, (_dialogPosition # 1) + 0.1 * LXIM_ADMINMENU_STD_HEIGHT, (_dialogPosition # 2) - (0.2 * LXIM_ADMINMENU_STD_WIDTH), (_dialogPosition # 3) - (0.2 * LXIM_ADMINMENU_STD_HEIGHT)];
 _ctrlList ctrlCommit 0;
 {
     private _name = _x # 1;
@@ -29,7 +29,7 @@ _ctrlList lbSetCurSel 0;
 
 private _ctrlOK = _display ctrlCreate [QGVAR(RscButtonMenu), -1];
 _ctrlOK ctrlSetText "Control";
-_ctrlOK ctrlSetPosition [(_dialogPosition # 0) + 0.67 * (_dialogPosition # 2), (_dialogPosition # 1) + (_dialogPosition # 3) + 0.1 * LXIR_ADMINMENU_STD_HEIGHT, 0.33 * (_dialogPosition # 2), LXIR_ADMINMENU_STD_HEIGHT];
+_ctrlOK ctrlSetPosition [(_dialogPosition # 0) + 0.67 * (_dialogPosition # 2), (_dialogPosition # 1) + (_dialogPosition # 3) + 0.1 * LXIM_ADMINMENU_STD_HEIGHT, 0.33 * (_dialogPosition # 2), LXIM_ADMINMENU_STD_HEIGHT];
 _ctrlOK ctrlCommit 0;
 _ctrlOK setVariable [QGVAR(association), _ctrlList];
 _ctrlOK ctrlAddEventHandler ["buttonClick", {

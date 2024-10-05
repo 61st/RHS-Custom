@@ -1,5 +1,5 @@
 /*
-Function: LXIR_fnc___findInArrayMap
+Function: LXIM_fnc___findInArrayMap
 
 Description:
     Find a certain element in a map by ID (the first element of the map entry).

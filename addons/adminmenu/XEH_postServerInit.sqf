@@ -2,7 +2,7 @@
 
 #include "initKeybinds.inc.sqf"
 
-if (isLXIR) then {
+if (isLXIM) then {
     GVAR(disconnectEH) = addMissionEventHandler ["HandleDisconnect",{
         params ["_unit", "_id", "_uid", "_name"];
         if !(typeOf _unit isEqualTo QEGVAR(spectator,unit)) then {

@@ -1,5 +1,5 @@
 /*
- * Name: lxir_common_fnc_isAdmin
+ * Name: lxim_common_fnc_isAdmin
  * Author: Snippers
  *
  * Arguments:
