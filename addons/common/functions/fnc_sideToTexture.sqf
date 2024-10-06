@@ -1,5 +1,5 @@
 /*
- * Name: lxim_common_fnc_sideToTexture
+ * Name: lxir_common_fnc_sideToTexture
  * Author: Snippers
  *
  * Arguments:

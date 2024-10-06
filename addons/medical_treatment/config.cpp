@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ace_medical_treatment",
-            "lxim_main"
+            "lxir_main"
         };
         author = "ArmaForces";
         VERSION_CONFIG;
@@ -19,5 +19,5 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
-#include "ACE_Medical_Treatment_Actions.hpp"
-#include "ACE_Medical_Treatment.hpp"
+// #include "ACE_Medical_Treatment_Actions.hpp"
+// #include "ACE_Medical_Treatment.hpp"

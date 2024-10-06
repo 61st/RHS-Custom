@@ -1,6 +1,6 @@
 #define COMPONENT ballistics
 #define COMPONENT_BEAUTIFIED Ballistics
-#include "\z\lxim\addons\main\script_mod.hpp"
+#include "\z\lxir\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -15,4 +15,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_BALLISTICS
 #endif
 
-#include "\z\lxim\addons\main\script_macros.hpp"
+#include "\z\lxir\addons\main\script_macros.hpp"

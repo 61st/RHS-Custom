@@ -13,19 +13,19 @@ if (!isserver) exitwith {};
                 _x;
             };
 
-            [_Group, "LXIM Default"] remoteExec ["LXIM_ai_fnc_SetUnitSkill",2];
+            [_Group, "lxir Default"] remoteExec ["lxir_ai_fnc_SetUnitSkill",2];
 
-            if (LXIM_AI_DynSim) then {
+            if (lxir_AI_DynSim) then {
                 [_Group, true] remoteExec ["enableDynamicSimulation",2];
             };
         };
 
         if (_class isKindOf "AllVehicles") exitWith {
             {
-                [_x, "LXIM Default"] remoteExec ["LXIM_ai_fnc_SetUnitSkill",2];
+                [_x, "lxir Default"] remoteExec ["lxir_ai_fnc_SetUnitSkill",2];
             } forEach crew _x;
 
-            if (LXIM_AI_DynSim) then {
+            if (lxir_AI_DynSim) then {
                 [group _x , true] remoteExec ["enableDynamicSimulation",2];
             };
         };

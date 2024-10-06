@@ -4,10 +4,10 @@ class EMM_mainMenu_CfgMenus {
         class menus {
             class MainMenu;
             class MultiplayerVN: MainMenu {
-                items[] = {"lxim", "ServerBrowser", "SOGPrairieFire", "MikeForce", "Exit"};
+                items[] = {"lxir", "ServerBrowser", "SOGPrairieFire", "MikeForce", "Exit"};
 
                 class ServerBrowser;
-                class lxim: ServerBrowser {
+                class lxir: ServerBrowser {
                     action = QUOTE(_this call (uiNamespace getVariable QQFUNC(join)));
                     text = CSTRING(SpotlightHeader);
                 };

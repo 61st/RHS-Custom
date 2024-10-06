@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"lxim_main", "ace_explosives"};
+        requiredAddons[] = {"lxir_main", "ace_explosives"};
         author = QAUTHOR;
         authors[] = {"Ampersand", "Mike", "Jonpas"};
         VERSION_CONFIG;

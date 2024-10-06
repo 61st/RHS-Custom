@@ -1,6 +1,6 @@
-#include "\z\lxim\addons\civilians\script_component.hpp"
+#include "\z\lxir\addons\civilians\script_component.hpp"
 /*
-Function: LXIM_fnc_initCivilianGestures
+Function: lxir_fnc_initCivilianGestures
 
 Description:
     Initializes the Civilian Interactions through Gestures System (CIGS).
@@ -14,7 +14,7 @@ Return Value:
 
 Example:
     (begin example)
-        call LXIM_fnc_initCivilianGestures;
+        call lxir_fnc_initCivilianGestures;
     (end)
 
 Author:
@@ -22,11 +22,11 @@ Author:
 */
 
 // do not re-add the EH if the system was disabled temporarily
-if !(isNil "LXIM_Civilians_CIGSInitialized") exitWith {};
+if !(isNil "lxir_Civilians_CIGSInitialized") exitWith {};
 
-LXIM_Civilians_CIGSInitialized = true;
+lxir_Civilians_CIGSInitialized = true;
 
-//["LXIM_Civilians_"] call CBA_settings_fnc_get;
+//["lxir_Civilians_"] call CBA_settings_fnc_get;
 
 // adapted from https://github.com/2bnb/2bnb-essentials/blob/master/addons/core/XEH_postInit.sqf
 
@@ -61,10 +61,10 @@ LXIM_Civilians_CIGSInitialized = true;
     if !(isPlayer _player) exitWith {};
 
     // If the system's been disabled in the mean-time, ignore
-    if !(LXIM_Civilians_enableGestures) exitWith {};
+    if !(lxir_Civilians_enableGestures) exitWith {};
 
     // The percentage chance a civilian will listen
-    private _chance = [LXIM_Civilians_successChance_armed, LXIM_Civilians_successChance_unarmed] select (count weapons _player > 0);
+    private _chance = [lxir_Civilians_successChance_armed, lxir_Civilians_successChance_unarmed] select (count weapons _player > 0);
     private _acceptedGestures = [];
 
 // Commands affecting units within angle sector
@@ -78,14 +78,14 @@ LXIM_Civilians_CIGSInitialized = true;
         "ace_gestures_FreezeStandLowered"
     ];
 
-    if ((LXIM_Civilians_enableStopGestures) && ({_x == _gesture} count _acceptedGestures > 0)) then {
+    if ((lxir_Civilians_enableStopGestures) && ({_x == _gesture} count _acceptedGestures > 0)) then {
         {
             if !(_x isEqualTo _player) then {
                 if (count weapons _x == 0 && {random 1 < _chance}) then {
                     if ([position _player, getDir _player, 30, position _x] call BIS_fnc_inAngleSector) then {
                         if (vehicle _x == _x) then {
                             // In case unit is following someone
-                            _x setVariable ["lxim_is_following", nil, true];
+                            _x setVariable ["lxir_is_following", nil, true];
 
                             [format["%1 told %2 to stop with a %3 gesture", _player, _x, _gesture]] call EFUNC(common,log);
                             doStop _x;
@@ -94,7 +94,7 @@ LXIM_Civilians_CIGSInitialized = true;
                             [format["%1 detected %2 in a vehicle for stop gesture", _player, _x, _gesture]] call EFUNC(common,log);
                             if (effectiveCommander (vehicle _x) isEqualTo _x) then {
                                 // In case unit is following someone
-                                _x setVariable ["lxim_is_following", nil, true];
+                                _x setVariable ["lxir_is_following", nil, true];
 
                                 [format["%1 told %2 to stop with a %3 gesture", _player, _x, _gesture]] call EFUNC(common,log);
                                 doStop _x;
@@ -117,7 +117,7 @@ LXIM_Civilians_CIGSInitialized = true;
         "ace_gestures_EngageStandLowered"
     ];
 
-    if ((LXIM_Civilians_enableGoAwayGestures) && ({_x == _gesture} count _acceptedGestures > 0)) then {
+    if ((lxir_Civilians_enableGoAwayGestures) && ({_x == _gesture} count _acceptedGestures > 0)) then {
         // Source: https://github.com/acemod/ACE3/blob/master/addons/interaction/functions/fnc_sendAway.sqf
         // Extracted from source to avoid an infinite loop caused by line 23 in source
         {
@@ -125,7 +125,7 @@ LXIM_Civilians_CIGSInitialized = true;
                 if ([position _player, getDir _player, 40, position _x] call BIS_fnc_inAngleSector) then {
                     [format["%1 told %2 to go away with a %3 gesture", _player, _x, _gesture]] call EFUNC(common,log);
                     // In case unit is following someone
-                    _x setVariable ["lxim_is_following", nil, true];
+                    _x setVariable ["lxir_is_following", nil, true];
 
                     private _position = getPosASL _player vectorAdd (eyeDirection _player vectorMultiply 50);
                     _position set [2, 0];
@@ -143,7 +143,7 @@ LXIM_Civilians_CIGSInitialized = true;
         "ace_gestures_CoverStandLowered"
     ];
 
-    if ((LXIM_Civilians_enableGetDownGestures) && ({_x == _gesture} count _acceptedGestures > 0)) then {
+    if ((lxir_Civilians_enableGetDownGestures) && ({_x == _gesture} count _acceptedGestures > 0)) then {
         // Source: https://github.com/acemod/ACE3/blob/master/addons/interaction/functions/fnc_sendAway.sqf
         // Extracted from source to avoid an infinite loop caused by line 23 in source
         {
@@ -151,7 +151,7 @@ LXIM_Civilians_CIGSInitialized = true;
                 if ([position _player, getDir _player, 40, position _x] call BIS_fnc_inAngleSector) then {
                     [format["%1 told %2 to get down with a %3 gesture", _player, _x, _gesture]] call EFUNC(common,log);
                     // In case unit is following someone
-                    _x setVariable ["lxim_is_following", nil, true];
+                    _x setVariable ["lxir_is_following", nil, true];
 
                     ["ace_interaction_getDown", [_x], [_x]] call CBA_fnc_targetEvent;
                 };
@@ -167,22 +167,22 @@ LXIM_Civilians_CIGSInitialized = true;
     // Follow!
     _acceptedGestures = ["gestureFollow"];
 
-    if ((LXIM_Civilians_enableFollowGestures) && ({_x == _gesture} count _acceptedGestures > 0) && (_player distance _target < 10)) then {
+    if ((lxir_Civilians_enableFollowGestures) && ({_x == _gesture} count _acceptedGestures > 0) && (_player distance _target < 10)) then {
 
         if (count weapons _target == 0 && {random 1 < _chance}) then {
         [format["%1 told %2 to follow using a %3 gesture", _player, _target, _gesture]] call EFUNC(common,log);
 
             private _following = [_target, _player] spawn {
                 params ["_target", "_player"];
-                _target setVariable ["lxim_is_following", _player, true];
+                _target setVariable ["lxir_is_following", _player, true];
 
-                [format["%1 about to move to %2 (%3)", _target, _player, _target getVariable ["lxim_is_following", "nothing"]]] call EFUNC(common,log);
+                [format["%1 about to move to %2 (%3)", _target, _player, _target getVariable ["lxir_is_following", "nothing"]]] call EFUNC(common,log);
                 private _playerPosition = [];
                 private _index = 0;
 
-                while {(_target getVariable ["lxim_is_following", false]) isEqualTo _player} do {
+                while {(_target getVariable ["lxir_is_following", false]) isEqualTo _player} do {
                     if (_index > 30) exitWith {
-                        _target setVariable ["lxim_is_following", nil, true];
+                        _target setVariable ["lxir_is_following", nil, true];
                     };
 
                     if !(_playerPosition isEqualTo (getPosASL _player)) then {
@@ -205,7 +205,7 @@ LXIM_Civilians_CIGSInitialized = true;
         "ace_gestures_WarningStandLowered"
     ];
 
-    if ((LXIM_Civilians_enableGreetingGestures) && ({_x == _gesture} count _acceptedGestures > 0)) then {
+    if ((lxir_Civilians_enableGreetingGestures) && ({_x == _gesture} count _acceptedGestures > 0)) then {
         if (
             [position _target, getDir _target, 120, position _player] call BIS_fnc_inAngleSector
             && ((side group _target) getFriend (side group _player)) > 0.6 // Is friendly-ish?

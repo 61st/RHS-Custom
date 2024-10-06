@@ -13,7 +13,7 @@
  *  2: Destination <POSITION>
  *
  * Example:
- * [getPlayerUID player] call lxim_back_to_game_fnc_getPlayerData
+ * [getPlayerUID player] call lxir_back_to_game_fnc_getPlayerData
  *
  * Public: No
  */

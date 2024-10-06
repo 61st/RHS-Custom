@@ -1,6 +1,6 @@
-#include "\z\lxim\addons\ai\script_component.hpp"
+#include "\z\lxir\addons\ai\script_component.hpp"
 /*
-Function: LXIM_ai_fnc_CivilianGarrison
+Function: lxir_ai_fnc_CivilianGarrison
 
 Description:
     Garrison buildings in given radius around given position, using

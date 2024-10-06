@@ -22,7 +22,7 @@ Author:
 params ["_player"];
 
 if !(local _player) exitWith {
-    systemChat "lxim_medical_treatment_fnc_FacilityHeal: player unit needs to be local";
+    systemChat "lxir_medical_treatment_fnc_FacilityHeal: player unit needs to be local";
 };
 
 if (_player getVariable ["ACE_isUnconscious", false]) then {

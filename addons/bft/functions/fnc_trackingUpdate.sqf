@@ -10,12 +10,12 @@
  * None
  *
  * Example:
- * call lxim_bft_fnc_trackingUpdate
+ * call lxir_bft_fnc_trackingUpdate
  *
  * Public: No
  */
 
-if ((isNil "lxim_unit") && (!alive lxim_unit)) exitWith {};
+if ((isNil "lxir_unit") && (!alive lxir_unit)) exitWith {};
 
 private ["_groupsToDrawMarkers", "_playerSide", "_friendlySides"];
 
@@ -25,7 +25,7 @@ private ["_groupsToDrawMarkers", "_playerSide", "_friendlySides"];
 
 GVAR(bftMarkers) = [];
 
-if (GVAR(requireItemGPS) && !([lxim_unit] call FUNC(hasGPSDevice))) exitWith {};
+if (GVAR(requireItemGPS) && !([lxir_unit] call FUNC(hasGPSDevice))) exitWith {};
 
 _groupsToDrawMarkers = [];
 _playerSide = playerSide;
@@ -50,7 +50,7 @@ _groupsToDrawMarkers = _groupsToDrawMarkers select {!(_x getVariable [QGVAR(hide
 if !(GVAR(showOwnGroup)) then {
     _groupsToDrawMarkers = _groupsToDrawMarkers select {
         {
-            !(_x in (units (side lxim_unit)));
+            !(_x in (units (side lxir_unit)));
         } count units _x > 0;
     };
 };

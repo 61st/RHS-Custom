@@ -11,18 +11,18 @@
  *	<ARRAY> - [<NUMBER>] Color correction array
  *
  * example:
- * call PLXIM_EnhancedNVG_fnc_getNvgEffect;
+ * call Plxir_EnhancedNVG_fnc_getNvgEffect;
  */
 
-private _effectSelection = lxim_nvg_Effect;
-private _nvgBlacklist    = lxim_nvg_Blacklist; // nvg blacklist
+private _effectSelection = lxir_nvg_Effect;
+private _nvgBlacklist    = lxir_nvg_Blacklist; // nvg blacklist
 private _effect = [];
 
 if !((hmd player) in _nvgBlacklist) then {
     if !(_effectSelection isEqualTo "") then {
         _effect = (
         configFile >> "CfgEffects" >> format [
-            "%1%2", _effectSelection, ["", "Ace"] select lxim_nvg_ACE
+            "%1%2", _effectSelection, ["", "Ace"] select lxir_nvg_ACE
         ]
         ) call BIS_fnc_returnConfigEntry;    // selected effect
     };

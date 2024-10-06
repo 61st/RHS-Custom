@@ -2,7 +2,7 @@
 // AISpawns Modules
 
 [
-    "LXIM_Civilians_enableGestures",
+    "lxir_Civilians_enableGestures",
     "CHECKBOX",
     ["Enable Gestures", "Enable Civilian interactions using gestures. If this is disabled, all other settings below have no effect."],
     COMPONENT_NAME,
@@ -12,12 +12,12 @@
         params ["_value"];
         if (!_value) exitWith {};
 
-        call LXIM_fnc_initCivilianGestures;
+        call lxir_fnc_initCivilianGestures;
     }
 ] call CBA_Settings_fnc_init;
 
 [
-    "LXIM_Civilians_enableStopGestures",
+    "lxir_Civilians_enableStopGestures",
     "CHECKBOX",
     ["Enable Stop Gestures", "Enables stopping civilians using the appropriate gestures."],
     COMPONENT_NAME,
@@ -27,7 +27,7 @@
 ] call CBA_Settings_fnc_init;
 
 [
-    "LXIM_Civilians_enableGoAwayGestures",
+    "lxir_Civilians_enableGoAwayGestures",
     "CHECKBOX",
     ["Enable Go Away Gestures", "Enables ordering civilians to Go Away using the appropriate gestures."],
     COMPONENT_NAME,
@@ -37,7 +37,7 @@
 ] call CBA_Settings_fnc_init;
 
 [
-    "LXIM_Civilians_enableGetDownGestures",
+    "lxir_Civilians_enableGetDownGestures",
     "CHECKBOX",
     ["Enable Get Down Gestures", "Enables ordering civilians to Get Down using the appropriate gestures."],
     COMPONENT_NAME,
@@ -47,7 +47,7 @@
 ] call CBA_Settings_fnc_init;
 
 [
-    "LXIM_Civilians_enableFollowGestures",
+    "lxir_Civilians_enableFollowGestures",
     "CHECKBOX",
     ["Enable Follow Gestures", "Enables ordering civilians to follow using the appropriate gestures."],
     COMPONENT_NAME,
@@ -57,7 +57,7 @@
 ] call CBA_Settings_fnc_init;
 
 [
-    "LXIM_Civilians_enableGreetingGestures",
+    "lxir_Civilians_enableGreetingGestures",
     "CHECKBOX",
     ["Enable Greeting Gestures", "Enables greeting civilians using the appropriate gestures."],
     COMPONENT_NAME,
@@ -67,7 +67,7 @@
 ] call CBA_Settings_fnc_init;
 
 [
-    "LXIM_Civilians_successChance_unarmed",
+    "lxir_Civilians_successChance_unarmed",
     "SLIDER",
     ["Success Chance (Unarmed)", "Chance of success if the player gesturing is currently unarmed."],
     COMPONENT_NAME,
@@ -77,7 +77,7 @@
 ] call CBA_Settings_fnc_init;
 
 [
-    "LXIM_Civilians_successChance_armed",
+    "lxir_Civilians_successChance_armed",
     "SLIDER",
     ["Success Chance (Armed)", "Chance of success if the player gesturing is currently armed."],
     COMPONENT_NAME,

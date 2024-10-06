@@ -1,5 +1,5 @@
 /*
- * Name: lxim_common_fnc_numToColor
+ * Name: lxir_common_fnc_numToColor
  * Author: Snippers
  *
  * Arguments:

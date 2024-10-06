@@ -10,7 +10,7 @@
  * 0: New curator module <OBJECT>
  *
  * Example:
- * call lxim_curator_fnc_createCuratorModule
+ * call lxir_curator_fnc_createCuratorModule
  *
  * Public: No
  */

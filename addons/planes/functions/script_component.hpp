@@ -1,1 +1,1 @@
-#include "\z\lxim\addons\planes\script_component.hpp"
+#include "\z\lxir\addons\planes\script_component.hpp"

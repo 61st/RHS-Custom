@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [_function, _args] call lxim_common_fnc_runAfterSettingsInit
+ * [_function, _args] call lxir_common_fnc_runAfterSettingsInit
  *
  * Public: No
  */

@@ -7,7 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxim_main",
+            "lxir_main",
             "cba_main",
             "cba_xeh"
         };

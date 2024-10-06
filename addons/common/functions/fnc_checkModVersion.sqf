@@ -1,6 +1,6 @@
-#include "\z\lxim\addons\common\script_component.hpp"
+#include "\z\lxir\addons\common\script_component.hpp"
 /*
- * Name: lxim_common_fnc_checkModVersion
+ * Name: lxir_common_fnc_checkModVersion
  * Author: Snippers
  *
  * Arguments:
@@ -10,14 +10,14 @@
  * Boolean
  *
  * Description:
- * Checks if lxim Mission version is larger than the input version;
+ * Checks if lxir Mission version is larger than the input version;
  */
 
 params [
     ["_input",[0,0,0]]
 ];
 
-private _lximersion = getMissionConfigValue ["lxim_version",[0,0,0]];
+private _lxirersion = getMissionConfigValue ["lxir_version",[0,0,0]];
 
-([_lximersion,_input] call EFUNC(common,checkVersionArray));
+([_lxirersion,_input] call EFUNC(common,checkVersionArray));
 

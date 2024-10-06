@@ -1,1 +1,1 @@
-#include "\z\lxim\addons\weapons\script_component.hpp"
+#include "\z\lxir\addons\weapons\script_component.hpp"

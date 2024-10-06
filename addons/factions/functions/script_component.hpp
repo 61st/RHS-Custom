@@ -1,1 +1,1 @@
-#include "\z\lxim\addons\factions\script_component.hpp"
+#include "\z\lxir\addons\factions\script_component.hpp"

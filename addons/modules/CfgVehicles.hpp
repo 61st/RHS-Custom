@@ -5,7 +5,7 @@ class CfgVehicles {
         class ModuleDescription;
     };
 
-    class lxim_moduleAiSpawner: Module_F {
+    class lxir_moduleAiSpawner: Module_F {
         scope = 2;
         displayName = "AI Spawner";
         author = "Brecon";
@@ -81,7 +81,7 @@ class CfgVehicles {
                 displayName = "Hunt Trigger";
                 description = "Hunt Trigger";
                 typeName = "STRING";
-                defaultValue = "lxim_huntTrigger";
+                defaultValue = "lxir_huntTrigger";
             };
             class sadTrigger {
                 displayName = "SAD Trigger";
@@ -104,7 +104,7 @@ class CfgVehicles {
         };
     };
 
-    class lxim_moduleAiHunter: Module_F {
+    class lxir_moduleAiHunter: Module_F {
         scope = 2;
         displayName = "AI Hunter";
         author = "Brecon";
@@ -161,7 +161,7 @@ class CfgVehicles {
                 displayName = "Hunt Trigger";
                 description = "Hunt Trigger";
                 typeName = "STRING";
-                defaultValue = "lxim_huntTrigger";
+                defaultValue = "lxir_huntTrigger";
             };
         };
 
@@ -178,7 +178,7 @@ class CfgVehicles {
         };
     };
 
-    class lxim_moduleSafeStart: Module_F {
+    class lxir_moduleSafeStart: Module_F {
         scope = 2;
         displayName = "Safe Start Disabler";
         author = "Brecon";
@@ -230,14 +230,14 @@ class CfgVehicles {
     };
 
 
-    class lxim_moduleHealArea: Module_F {
+    class lxir_moduleHealArea: Module_F {
         scope = 2;
         displayName = "Heal Area";
         author = "Brecon";
         vehicleClass = "Modules";
         category = QPREFIX;
         function =  QUOTE(DFUNC(moduleHealArea));
-        icon = "\z\lxim\addons\media\images\icons\MedicalArea.paa";
+        icon = "\z\lxir\addons\media\images\icons\MedicalArea.paa";
         functionPriority = 1;
         isGlobal = 0;
         isTriggerActivated = 0;

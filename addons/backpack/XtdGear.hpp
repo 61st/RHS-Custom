@@ -101,7 +101,7 @@ class XtdGearmodels {
                 };
             };
         };
-        class lximAssaultPack {
+        class lxirAssaultPack {
             options[] = { "camo" };
             label = "Assult Pack";
             class camo {
@@ -471,47 +471,47 @@ class XtdGearinfos {
             camo = "BLK";
         };
         class GVAR(AssaultPack_Multicam) {
-            model = "lximAssaultPack";
+            model = "lxirAssaultPack";
             camo = "Multicam";
         };
         class GVAR(AssaultPack_Multicam_Snow) {
-            model = "lximAssaultPack";
+            model = "lxirAssaultPack";
             camo = "Multicam_Snow";
         };
         class GVAR(AssaultPack_Multicam_Woodland) {
-            model = "lximAssaultPack";
+            model = "lxirAssaultPack";
             camo = "Multicam_Woodland";
         };
         class GVAR(AssaultPack_Solid_Black) {
-            model = "lximAssaultPack";
+            model = "lxirAssaultPack";
             camo = "Solid_Black";
         };
         class GVAR(AssaultPack_Solid_CoyoteBrown) {
-            model = "lximAssaultPack";
+            model = "lxirAssaultPack";
             camo = "Solid_CoyoteBrown";
         };
         class GVAR(AssaultPack_Solid_Olive) {
-            model = "lximAssaultPack";
+            model = "lxirAssaultPack";
             camo = "Solid_Olive";
         };
         class GVAR(AssaultPack_Solid_Ranger_Green) {
-            model = "lximAssaultPack";
+            model = "lxirAssaultPack";
             camo = "Solid_Ranger_Green";
         };
         class GVAR(AssaultPack_Solid_White) {
-            model = "lximAssaultPack";
+            model = "lxirAssaultPack";
             camo = "Solid_White";
         };
         class GVAR(AssaultPack_US_DCU) {
-            model = "lximAssaultPack";
+            model = "lxirAssaultPack";
             camo = "US_DCU";
         };
         class GVAR(AssaultPack_US_M81) {
-            model = "lximAssaultPack";
+            model = "lxirAssaultPack";
             camo = "US_M81";
         };
         class GVAR(AssaultPack_US_Tigerstripe) {
-            model = "lximAssaultPack";
+            model = "lxirAssaultPack";
             camo = "US_Tigerstripe";
         };
 

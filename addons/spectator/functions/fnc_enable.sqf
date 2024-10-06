@@ -10,7 +10,7 @@
  * 0: New spectator state <BOOL>
  *
  * Example:
- * [1] call lxim_spectator_fnc_enable
+ * [1] call lxir_spectator_fnc_enable
  *
  * Public: No
  */

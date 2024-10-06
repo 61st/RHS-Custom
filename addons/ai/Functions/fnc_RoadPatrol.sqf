@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
-Function: LXIM_ai_fnc_RoadPatrol
+Function: lxir_ai_fnc_RoadPatrol
 
 Description:
     Sets up a patrol plotted along roads, rather than random positions dotted around the AO.

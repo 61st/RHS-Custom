@@ -1,1 +1,1 @@
-#include "\z\lxim\addons\vehicles\script_component.hpp"
+#include "\z\lxir\addons\vehicles\script_component.hpp"

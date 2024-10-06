@@ -1,4 +1,4 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 
 if (!isNil "ace_medical_treatment_fnc_fullHeal") then {
     {

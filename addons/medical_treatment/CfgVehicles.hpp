@@ -16,15 +16,4 @@ class CfgVehicles {
         };
     };
     #include "MedicalModule.hpp"
-    class Item_Base_F;
-    class lxim_naloxoneItem: Item_Base_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Naloxone Autoinjector";
-        author = "Alablm";
-        vehicleClass = "Items";
-        class TransportItems {
-            MACRO_ADDITEM(lxim_naloxone,1);
-        };
-    };
 };

@@ -11,7 +11,7 @@
  *	<BOOL> - true if player is using NVGs; false if not
  *
  * example:
- * call PLXIM_EnhancedNVG_fnc_getVisionMode;
+ * call Plxir_EnhancedNVG_fnc_getVisionMode;
  */
 
 // the player's vision mode it's always 0 in Zeus

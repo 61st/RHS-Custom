@@ -1,4 +1,4 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 uiNamespace setVariable [QGVAR(modalDisplay), nil];

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [[bob, ted], false] call lxim_main_fnc_example
+ * [[bob, ted], false] call lxir_main_fnc_example
  *
  * Public: No
  */

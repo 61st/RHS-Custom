@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
-Function: LXIM_ai_fnc_SetUnitSkill
+Function: lxir_ai_fnc_SetUnitSkill
 
 Description:
     Set the given unit's skill level to the desired one.
@@ -46,17 +46,17 @@ private _skillv = [
     (0.20 + random 0.40)
 ];
 
-if !(isNil "LXIM_AI_AimingAccuracy") then {
+if !(isNil "lxir_AI_AimingAccuracy") then {
     _skillv = [
-        (LXIM_AI_AimingAccuracy - 0.05 + random 0.1),
-        (LXIM_AI_AimingShake - 0.05 + random 0.1),
-        (LXIM_AI_AimingSpeed - 0.05 + random 0.1),
-        (LXIM_AI_Commanding),
-        (LXIM_AI_Courage), 1,
-        (LXIM_AI_General),
-        (LXIM_AI_ReloadSpeed - 0.1 + random 0.30),
-        (LXIM_AI_SpotDistance - 0.1 + random 0.15),
-        (LXIM_AI_SpotTime - 0.1 + random 0.15)
+        (lxir_AI_AimingAccuracy - 0.05 + random 0.1),
+        (lxir_AI_AimingShake - 0.05 + random 0.1),
+        (lxir_AI_AimingSpeed - 0.05 + random 0.1),
+        (lxir_AI_Commanding),
+        (lxir_AI_Courage), 1,
+        (lxir_AI_General),
+        (lxir_AI_ReloadSpeed - 0.1 + random 0.30),
+        (lxir_AI_SpotDistance - 0.1 + random 0.15),
+        (lxir_AI_SpotTime - 0.1 + random 0.15)
     ];
 };
 
@@ -79,9 +79,9 @@ private _units = call {
 } forEach _skillt;
 
 if (side _target == civilian) then {
-    {_x setSkill ["courage", LXIM_AI_CivCourage]; true } count _units;
+    {_x setSkill ["courage", lxir_AI_CivCourage]; true } count _units;
 
-    if (LXIM_AI_CivFleeing) then {
+    if (lxir_AI_CivFleeing) then {
         {
             [_x, 0] remoteExec ["allowFleeing", _x]; true
         } count _units;

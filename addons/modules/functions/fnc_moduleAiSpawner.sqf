@@ -17,7 +17,7 @@ if (_activated) then {
     private _moveMarker2 = _logic getVariable ["moveMarker2", ""];
     private _waves = _logic getVariable ["waves", -1];
     private _huntCondition =_logic getVariable ["huntCondition", false];
-    private _huntTrigger = _logic getVariable ["huntTrigger", "lxim_huntTrigger"];
+    private _huntTrigger = _logic getVariable ["huntTrigger", "lxir_huntTrigger"];
     private _sadTrigger = _logic getVariable ["sadTrigger", ""];
 
     /* format ["%1\n%2\n%3\n%4\n%5\n%6\n%7\n%8\n%9\n%10", _logic,_units,_activated,_groupSide,_groupConfig,_moveMarker1,_moveMarker2,_waves,_huntCondition,_huntTrigger, _sadTrigger] remoteExec ["hint", 0]; */

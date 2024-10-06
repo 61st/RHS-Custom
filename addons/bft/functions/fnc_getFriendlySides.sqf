@@ -10,7 +10,7 @@
  * friendly sides <ARRAY>
  *
  * Example:
- * [side] call lxim_bft_fnc_getFriendlySides
+ * [side] call lxir_bft_fnc_getFriendlySides
  *
  * Public: No
  */

@@ -10,7 +10,7 @@
  * 0: Is unconscious <BOOL>
  *
  * Example:
- * [player] call lxim_common_fnc_isUnconscious
+ * [player] call lxir_common_fnc_isUnconscious
  *
  * Public: No
  */

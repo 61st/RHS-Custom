@@ -3,10 +3,10 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {"lxim_testModule"};
+        units[] = {"lxir_testModule"};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"lxim_main"};
+        requiredAddons[] = {"lxir_main"};
         author = "";
         authors[] = {""};
         VERSION_CONFIG;

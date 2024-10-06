@@ -1,6 +1,6 @@
-#include "\z\lxim\addons\ai\script_component.hpp"
+#include "\z\lxir\addons\ai\script_component.hpp"
 /*
-Function: LXIM_ai_fnc_CivBreakPatrol
+Function: lxir_ai_fnc_CivBreakPatrol
 
 Description:
     Helper function to handle civilians breaking away from their patrol if under fire.

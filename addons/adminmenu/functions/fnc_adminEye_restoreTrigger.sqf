@@ -1,10 +1,10 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 
 params ["_trigger"];
 
-private _data = _trigger getVariable ["lxim_trigger_serialised",[]];
+private _data = _trigger getVariable ["lxir_trigger_serialised",[]];
 
 if (count _data == 0) exitWith {};
 

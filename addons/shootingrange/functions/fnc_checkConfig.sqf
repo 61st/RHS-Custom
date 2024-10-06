@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [controller, "range", [target1, target2]] call lxim_shootingrange_fnc_checkConfig;
+ * [controller, "range", [target1, target2]] call lxir_shootingrange_fnc_checkConfig;
  *
  * Public: No
  */

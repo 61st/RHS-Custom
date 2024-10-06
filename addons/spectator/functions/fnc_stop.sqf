@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call lxim_spectator_fnc_stop
+ * [player] call lxir_spectator_fnc_stop
  *
  * Public: No
  */

@@ -11,10 +11,10 @@
  * return the specified default value or 0 if it isn't <NUMBER>
  *
  * Examples:
- * [configFile >> "thisIsANumber"] call lxim_common_fnc_getNumber; // returns value in path
- * [configFile >> "thisIsNotANumber"] call lxim_common_fnc_getNumber; // returns 0
- * [configFile >> "thisIsANumber", 6969] call lxim_common_fnc_getNumber; // returns value in path
- * [configFile >> "thisIsNotANumber", 6969] call lxim_common_fnc_getNumber; // returns 6969
+ * [configFile >> "thisIsANumber"] call lxir_common_fnc_getNumber; // returns value in path
+ * [configFile >> "thisIsNotANumber"] call lxir_common_fnc_getNumber; // returns 0
+ * [configFile >> "thisIsANumber", 6969] call lxir_common_fnc_getNumber; // returns value in path
+ * [configFile >> "thisIsNotANumber", 6969] call lxir_common_fnc_getNumber; // returns 6969
  *
  * Public: Yes
  */

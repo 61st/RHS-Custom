@@ -7,9 +7,9 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxim_main"
+            "lxir_main"
         };
-        authorUrl = "https://github.com/task-force-war-wolf/lxim/";
+        authorUrl = "https://github.com/task-force-war-wolf/lxir/";
         author = QAUTHOR;
         authors[] = {""};
         VERSION_CONFIG;

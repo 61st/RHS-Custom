@@ -11,10 +11,10 @@
  * return the specified default value or [] if it isn't <ARRAY>
  *
  * Examples:
- * [configFile >> "thisIsAnArray"] call lxim_common_fnc_getArray; // returns value in path
- * [configFile >> "thisIsNotAnArray"] call lxim_common_fnc_getArray; // returns []
- * [configFile >> "thisIsAnArray", ['default']] call lxim_common_fnc_getArray; // returns value in path
- * [configFile >> "thisIsNotAnArray", ['default']] call lxim_common_fnc_getArray; // returns ['default']
+ * [configFile >> "thisIsAnArray"] call lxir_common_fnc_getArray; // returns value in path
+ * [configFile >> "thisIsNotAnArray"] call lxir_common_fnc_getArray; // returns []
+ * [configFile >> "thisIsAnArray", ['default']] call lxir_common_fnc_getArray; // returns value in path
+ * [configFile >> "thisIsNotAnArray", ['default']] call lxir_common_fnc_getArray; // returns ['default']
  *
  * Public: Yes
  */

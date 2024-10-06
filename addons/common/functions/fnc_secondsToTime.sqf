@@ -1,5 +1,5 @@
 /*
- * Name: lxim_common_fnc_secondsToTime
+ * Name: lxir_common_fnc_secondsToTime
  * Author: Head
  *
  * Arguments:

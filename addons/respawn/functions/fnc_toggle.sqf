@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [true] call lxim_respawn_fnc_toggle
+ * [true] call lxir_respawn_fnc_toggle
  *
  * Public: No
  */

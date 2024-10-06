@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [true] call lxim_grass_fnc_toggle
+ * [true] call lxir_grass_fnc_toggle
  *
  * Public: No
  */

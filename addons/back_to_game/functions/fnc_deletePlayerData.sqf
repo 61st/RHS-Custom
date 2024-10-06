@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [getPlayerUID player] call lxim_back_to_game_fnc_deletePlayerData
+ * [getPlayerUID player] call lxir_back_to_game_fnc_deletePlayerData
  *
  * Public: No
  */

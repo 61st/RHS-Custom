@@ -1,6 +1,6 @@
 /*
 
- * \lxim_common\functions\common\fn_addItem.sqf
+ * \lxir_common\functions\common\fn_addItem.sqf
  * by YonV
  *
  * add item to unit/vehicle

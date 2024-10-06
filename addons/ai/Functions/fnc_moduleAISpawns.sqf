@@ -50,4 +50,4 @@ _SpawnLocation = (getPos _logic);
     [_VehMRAPMin, _VehMRAPMax],
     [_VehHeavyMin, _VehHeavyMax],
     [_VehRandomMin, _VehRandomMax]
-] call lxim_ai_fnc_SpawnAI;
+] call lxir_ai_fnc_SpawnAI;

@@ -1,21 +1,21 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_display"];
 
-private _ctrlSpectatorListBox = (_display displayCtrl IDC_LXIM_ADMINMENU_RESP_SPECTATORLIST);
+private _ctrlSpectatorListBox = (_display displayCtrl IDC_lxir_ADMINMENU_RESP_SPECTATORLIST);
 
 private _selection = _ctrlSpectatorListBox lbText (lbCurSel _ctrlSpectatorListBox);
 private _obj = objNull;
 {
-    private _name = _x getVariable ["lxim_spectator_name",name _x];
+    private _name = _x getVariable ["lxir_spectator_name",name _x];
     if (_selection == _name) exitWith {
         _obj = _x;
     };
 } forEach GVAR(spectatorList);
 
 if (!(isNull _obj)) then {
-    private _role = lbCurSel (_display displayCtrl IDC_LXIM_ADMINMENU_RESP_ROLECOMBO); // Role
+    private _role = lbCurSel (_display displayCtrl IDC_lxir_ADMINMENU_RESP_ROLECOMBO); // Role
     private _rank = GVAR(respawn_rank); // Rank
     
     GVAR(selectedRespawnGroup) pushBack [_rank,_obj,_role];

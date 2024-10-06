@@ -8,8 +8,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ace_common",
-            "lxim_main",
-            "lxim_common"
+            "lxir_main",
+            "lxir_common"
         };
         author = QAUTHOR;
         authors[] = {"PiZZADOX"};

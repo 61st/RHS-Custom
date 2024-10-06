@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * ["0:1"] call lxim_bft_fnc_showGroupDetails
+ * ["0:1"] call lxir_bft_fnc_showGroupDetails
  *
  * Public: No
  */

@@ -28,4 +28,4 @@ private _msgUser = (GVAR(logs) select _index) select 2;
 
 TRACE_1("user",_msgUser);
 
-["lxim_adminMsg", [_text, profileName, _msgUser]] call CBA_fnc_globalEvent;
+["lxir_adminMsg", [_text, profileName, _msgUser]] call CBA_fnc_globalEvent;

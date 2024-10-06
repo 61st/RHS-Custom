@@ -94,9 +94,6 @@ force force lxir_grass_enabled = true;
 force force lxir_insurgents_enabled_CUP = true;
 force force lxir_insurgents_enabled_Vanilla = true;
 
-// 61st - medical_treatment
-force lxir_medical_treatment_fatalInjuriesCardiacArrestTimeCoefficient = 0.2;
-
 // 61st - nvg
 force force lxir_nvg_Blacklist = "";
 

@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call lxim_back_to_game_fnc_dialogConfirm
+ * call lxir_back_to_game_fnc_dialogConfirm
  *
  * Public: No
  */

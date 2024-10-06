@@ -1,10 +1,10 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_display"];
 
 
-private _ctrlGroupListBox = (_display displayCtrl IDC_LXIM_ADMINMENU_RESP_GROUPLIST);
+private _ctrlGroupListBox = (_display displayCtrl IDC_lxir_ADMINMENU_RESP_GROUPLIST);
         
 GVAR(selectedRespawnGroup) deleteAt (lbCurSel _ctrlGroupListBox);
 

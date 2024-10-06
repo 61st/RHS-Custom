@@ -9,8 +9,8 @@
  * A number into a 24 hour HH:MM:SS formatted string <STRING>
  *
  * Examples:
- * [5] call lxim_common_fnc_getTimeText; // returns "00:00:05"
- * [61] call lxim_common_fnc_getTimeText; // return "00:01:01"
+ * [5] call lxir_common_fnc_getTimeText; // returns "00:00:05"
+ * [61] call lxir_common_fnc_getTimeText; // return "00:01:01"
  *
  * Public: Yes
  */

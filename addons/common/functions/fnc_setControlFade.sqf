@@ -11,8 +11,8 @@
  * None
  *
  * Examples:
- * [true, [_ctrlText]] call lxim_common_fnc_setControlFade; // fade control in
- * [false, [_ctrlText, _ctrlSet]] call lxim_common_fnc_setControlFade; // fade control out
+ * [true, [_ctrlText]] call lxir_common_fnc_setControlFade; // fade control in
+ * [false, [_ctrlText, _ctrlSet]] call lxir_common_fnc_setControlFade; // fade control out
  *
  * Public: Yes
  */

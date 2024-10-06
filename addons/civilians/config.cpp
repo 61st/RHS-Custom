@@ -2,7 +2,7 @@
 
 class CfgPatches
 {
-    class LXIM_Civilians
+    class lxir_Civilians
     {
         name = COMPONENT_NAME;
         units[] = {};

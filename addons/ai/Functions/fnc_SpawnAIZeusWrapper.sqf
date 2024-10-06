@@ -1,9 +1,9 @@
 #include "script_component.hpp"
 /*
-Function: LXIM_ai_fnc_SpawnAIZeusWrapper
+Function: lxir_ai_fnc_SpawnAIZeusWrapper
 
 Description:
-    Wraps calls to LXIM_ai_fnc_SpawnAI for use with the Zeus Modules.
+    Wraps calls to lxir_ai_fnc_SpawnAI for use with the Zeus Modules.
 
 Arguments:
     _side - The side of the AI to spawn <STRING>
@@ -137,7 +137,7 @@ private _dialogResult = [
             [_vehmrapMin, _vehmrapMax],
             [_vehheavyMin, _vehheavyMax],
             [_vehrandMin, _vehrandMax]
-        ] remoteExec ["LXIM_ai_fnc_SpawnAI", 2];
+        ] remoteExec ["lxir_ai_fnc_SpawnAI", 2];
     },
     {},
     [_pos]

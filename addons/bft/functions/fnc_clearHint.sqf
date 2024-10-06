@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call lxim_bft_fnc_clearHints
+ * call lxir_bft_fnc_clearHints
  *
  * Public: No
  */

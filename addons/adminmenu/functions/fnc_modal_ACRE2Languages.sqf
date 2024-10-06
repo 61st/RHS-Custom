@@ -1,4 +1,4 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_ctrlGroup"];
@@ -7,19 +7,19 @@ params ["_ctrlGroup"];
 
 private _ctrlLabelLangs = _display ctrlCreate [QGVAR(RscTextLarge), -1, _ctrlGroup];
 GVAR(utilityTabControls) pushBack _ctrlLabelLangs;
-_ctrlLabelLangs ctrlSetPosition [0, 0, (0.5 * _ctrlGrpWidth), LXIM_ADMINMENU_STD_HEIGHT];
+_ctrlLabelLangs ctrlSetPosition [0, 0, (0.5 * _ctrlGrpWidth), lxir_ADMINMENU_STD_HEIGHT];
 _ctrlLabelLangs ctrlCommit 0;
 _ctrlLabelLangs ctrlSetText "Assign players' ACRE2 Babel languages";
 
 if (count acre_sys_core_languages == 0) exitWith {
     _ctrlLabelLangs = _display ctrlCreate [QGVAR(RscText), -1, _ctrlGroup];
     GVAR(utilityTabControls) pushBack _ctrlLabelLangs;
-    _ctrlLabelLangs ctrlSetPosition [0, 2.1 * LXIM_ADMINMENU_STD_HEIGHT, (0.25 * _ctrlGrpWidth), LXIM_ADMINMENU_STD_HEIGHT];
+    _ctrlLabelLangs ctrlSetPosition [0, 2.1 * lxir_ADMINMENU_STD_HEIGHT, (0.25 * _ctrlGrpWidth), lxir_ADMINMENU_STD_HEIGHT];
     _ctrlLabelLangs ctrlCommit 0;
     _ctrlLabelLangs ctrlSetText "No languages configured for mission!";
 };
 
-private _langY = 2.1 * LXIM_ADMINMENU_STD_HEIGHT;
+private _langY = 2.1 * lxir_ADMINMENU_STD_HEIGHT;
 private _langComboCtrls = [];
 
 {
@@ -27,14 +27,14 @@ private _langComboCtrls = [];
 
     private _ctrlLabelName = _display ctrlCreate [QGVAR(RscText), -1, _ctrlGroup];
     GVAR(utilityTabControls) pushBack _ctrlLabelName;
-    _ctrlLabelName ctrlSetPosition [0, _langY + (_forEachIndex * (1.1 * LXIM_ADMINMENU_STD_HEIGHT)), (0.25 * _ctrlGrpWidth), LXIM_ADMINMENU_STD_HEIGHT];
+    _ctrlLabelName ctrlSetPosition [0, _langY + (_forEachIndex * (1.1 * lxir_ADMINMENU_STD_HEIGHT)), (0.25 * _ctrlGrpWidth), lxir_ADMINMENU_STD_HEIGHT];
     _ctrlLabelName ctrlCommit 0;
     _ctrlLabelName ctrlSetText _name;
 
     private _ctrlComboAction = _display ctrlCreate [QGVAR(RscCombo), -1, _ctrlGroup];
     GVAR(utilityTabControls) pushBack _ctrlComboAction;
     _langComboCtrls pushBack _ctrlComboAction;
-    _ctrlComboAction ctrlSetPosition [0.5 * _ctrlGrpWidth, _langY + (_forEachIndex * (1.1 * LXIM_ADMINMENU_STD_HEIGHT)), 0.5 * _ctrlGrpWidth, LXIM_ADMINMENU_STD_HEIGHT];
+    _ctrlComboAction ctrlSetPosition [0.5 * _ctrlGrpWidth, _langY + (_forEachIndex * (1.1 * lxir_ADMINMENU_STD_HEIGHT)), 0.5 * _ctrlGrpWidth, lxir_ADMINMENU_STD_HEIGHT];
     _ctrlComboAction ctrlCommit 0;
 
     _ctrlComboAction lbSetValue [(_ctrlComboAction lbAdd "Don't Change"), -1];
@@ -46,7 +46,7 @@ private _langComboCtrls = [];
 
 private _ctrlButton = _display ctrlCreate [QGVAR(RscButtonMenu), -1, _ctrlGroup];
 GVAR(utilityTabControls) pushBack _ctrlButton;
-_ctrlButton ctrlSetPosition [_ctrlGrpWidth * 0.8, _ctrlGrpHeight - LXIM_ADMINMENU_STD_HEIGHT, _ctrlGrpWidth * 0.2, LXIM_ADMINMENU_STD_HEIGHT];
+_ctrlButton ctrlSetPosition [_ctrlGrpWidth * 0.8, _ctrlGrpHeight - lxir_ADMINMENU_STD_HEIGHT, _ctrlGrpWidth * 0.2, lxir_ADMINMENU_STD_HEIGHT];
 _ctrlButton ctrlCommit 0;
 _ctrlButton ctrlSetText "Assign Languages";
 _ctrlButton setVariable [QGVAR(association), _langComboCtrls];

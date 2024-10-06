@@ -1,8 +1,8 @@
 #include "script_component.hpp"
 ADDON = false;
 
-lxim_unit = objNull;
-uiNamespace setVariable ["lxim_unit", objNull];
+lxir_unit = objNull;
+uiNamespace setVariable ["lxir_unit", objNull];
 
 PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"

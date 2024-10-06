@@ -1,9 +1,9 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_display"];
 
-private _ctrlSpectatorListBox = (_display displayCtrl IDC_LXIM_ADMINMENU_RESP_SPECTATORLIST);
+private _ctrlSpectatorListBox = (_display displayCtrl IDC_lxir_ADMINMENU_RESP_SPECTATORLIST);
 
 
 
@@ -21,7 +21,7 @@ lbClear _ctrlSpectatorListBox;
     } forEach GVAR(selectedRespawnGroup);
     
     if (!_found) then {
-        private _name = _deadPlayer getVariable ["lxim_spectator_name",name _deadPlayer];
+        private _name = _deadPlayer getVariable ["lxir_spectator_name",name _deadPlayer];
         private _idx = _ctrlSpectatorListBox lbAdd _name;
         _ctrlSpectatorListBox lbSetData[_idx,_name];
     };

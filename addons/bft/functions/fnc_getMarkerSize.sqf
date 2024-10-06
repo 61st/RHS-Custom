@@ -10,7 +10,7 @@
  * Marker Size <ARRAY>
  *
  * Example:
- * ["UNIT"] call lxim_bft_fnc_getMarkerSize
+ * ["UNIT"] call lxir_bft_fnc_getMarkerSize
  *
  * Public: No
  */

@@ -1,1 +1,1 @@
-#include "\z\lxim\addons\tfar\script_component.hpp"
+#include "\z\lxir\addons\tfar\script_component.hpp"

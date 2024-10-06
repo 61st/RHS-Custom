@@ -10,9 +10,9 @@
  * The matched side, or sideUnknown if a match wasn't found: <SIDE>
  *
  * Examples:
- * [1] call lxim_common_fnc_toSide; // returns west
- * [99] call lxim_common_fnc_toSide; // returns sideUnknown
- * ["east"] call lxim_common_fnc_toSide; // returns east
+ * [1] call lxir_common_fnc_toSide; // returns west
+ * [99] call lxir_common_fnc_toSide; // returns sideUnknown
+ * ["east"] call lxir_common_fnc_toSide; // returns east
  *
  * Public: Yes
  */

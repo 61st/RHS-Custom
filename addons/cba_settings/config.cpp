@@ -7,7 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_settings"};
-        author = "lxim";
+        author = "lxir";
         authors[] = {"commy2"};
         authorUrl = URL;
         VERSION_CONFIG;

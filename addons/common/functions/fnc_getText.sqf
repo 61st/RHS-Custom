@@ -11,10 +11,10 @@
  * return the specified default value or "" if it isn't <STRING>
  *
  * Examples:
- * [configFile >> "thisIsAString"] call lxim_common_fnc_getText; // returns value in path
- * [configFile >> "thisIsNotAString"] call lxim_common_fnc_getText; // returns ""
- * [configFile >> "thisIsAString", "sixtyninesixtynine"] call lxim_common_fnc_getText; // returns value in path
- * [configFile >> "thisIsNotAString", "sixtyninesixtynine"] call lxim_common_fnc_getText; // returns "sixtyninesixtynine"
+ * [configFile >> "thisIsAString"] call lxir_common_fnc_getText; // returns value in path
+ * [configFile >> "thisIsNotAString"] call lxir_common_fnc_getText; // returns ""
+ * [configFile >> "thisIsAString", "sixtyninesixtynine"] call lxir_common_fnc_getText; // returns value in path
+ * [configFile >> "thisIsNotAString", "sixtyninesixtynine"] call lxir_common_fnc_getText; // returns "sixtyninesixtynine"
  *
  * Public: Yes
  */

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [target, 0] call lxim_shootingrange_fnc_animateTarget;
+ * [target, 0] call lxir_shootingrange_fnc_animateTarget;
  *
  * Public: No
  */

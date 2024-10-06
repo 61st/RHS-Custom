@@ -5,10 +5,10 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"lxim_common"};
-        author = "lxim";
+        requiredAddons[] = {"lxir_common"};
+        author = "lxir";
         authors[] = {"PabstMirror"};
-        authorUrl = "https://github.com/BourbonWarfare/lxim";
+        authorUrl = "https://github.com/BourbonWarfare/lxir";
         VERSION_CONFIG;
     };
 };

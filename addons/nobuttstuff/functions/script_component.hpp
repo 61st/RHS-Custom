@@ -1,1 +1,1 @@
-#include "\z\lxim\addons\nobuttstuff\script_component.hpp"
+#include "\z\lxir\addons\nobuttstuff\script_component.hpp"

@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * ["STR_USRACT_THROW"] call lxim_safestart_fnc_openKeybinding
+ * ["STR_USRACT_THROW"] call lxir_safestart_fnc_openKeybinding
  *
  * Public: No
  */

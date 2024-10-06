@@ -1,4 +1,4 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params["_fullmapWindow"];
@@ -58,7 +58,7 @@ params["_fullmapWindow"];
         _color = [1,0,0,0.75];
     };
     _fullmapWindow drawIcon ["\a3\3den\data\cfg3den\logic\texturebackgroundmodule_ca.paa",_color,_pos,26,26,0];
-    _fullmapWindow drawIcon ["\z\lxim\addons\media\images\logo_256.paa",[0,0,0,0.5],_pos,20,20,0];
+    _fullmapWindow drawIcon ["\z\lxir\addons\media\images\logo_256.paa",[0,0,0,0.5],_pos,20,20,0];
 
     private _text = "";
     private _wavesRemaining = _x getVariable ["Waves",1];
@@ -122,7 +122,7 @@ params["_fullmapWindow"];
 
     //background
     _fullmapWindow drawIcon ["\a3\3den\data\cfg3den\logic\texturebackgroundmodule_ca.paa",[1,1,1,0.5],_pos,26,26,0];
-    _fullmapWindow drawIcon ["\z\lxim\addons\media\images\logo_256.paa",[0,0,0,0.5],_pos,20,20,0];
+    _fullmapWindow drawIcon ["\z\lxir\addons\media\images\logo_256.paa",[0,0,0,0.5],_pos,20,20,0];
 
     private _text = format["Garrison (Quantity: %1)",_x getVariable ["aiNumberToSpawn", 0]];
 
@@ -151,7 +151,7 @@ params["_fullmapWindow"];
                 (vehicle _x) setVariable ["f_cam_icon",_icon];
             };
 
-            private _color = (side _x) call lxim_common_fnc_sideToColor;
+            private _color = (side _x) call lxir_common_fnc_sideToColor;
 
             private _pos = getPos _x;
             private _sizeX = 20;
@@ -218,7 +218,7 @@ params["_fullmapWindow"];
 private _mousePos = GVAR(respawnMousePos);
 private _i = 1;
 while {true} do {
-    private _var = missionNamespace getVariable[format["lxim_respawnPoint%1",_i],objNull];
+    private _var = missionNamespace getVariable[format["lxir_respawnPoint%1",_i],objNull];
     if (isNull _var) exitWith {};
     private _pos = (position _var);
     

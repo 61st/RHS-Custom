@@ -1,6 +1,6 @@
 class CfgDifficultyPresets {
     class Custom;
-    class Difficulty_LXIM: Custom {
+    class Difficulty_lxir: Custom {
         displayName = "61st";
         description = "Custom difficulty for 61st gameplay.";
         optionDescription = "Custom difficulty for 61st gameplay.";

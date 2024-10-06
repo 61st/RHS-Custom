@@ -1,6 +1,6 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 /* ----------------------------------------------------------------------------
-Internal Function: LXIM_adminmenu_fnc_messageLog_print
+Internal Function: lxir_adminmenu_fnc_messageLog_print
 
 Description:
     Prints current selected log entry to RPT
@@ -10,7 +10,7 @@ Parameters:
 
 Examples:
     (begin example)
-        [_ctrl] call LXIM_adminmenu_fnc_messageLog_print;
+        [_ctrl] call lxir_adminmenu_fnc_messageLog_print;
     (end)
 
 Author:
@@ -20,7 +20,7 @@ disableSerialization;
 params ["_ctrl"];
 
 private _display = ctrlParent _ctrl;
-private _lbCtrl = _display displayCtrl IDC_LXIM_ADMINMENU_MSGS_LIST;
+private _lbCtrl = _display displayCtrl IDC_lxir_ADMINMENU_MSGS_LIST;
 private _curSel = lbCurSel _lbCtrl;
 TRACE_3("messageLog print",_display,_lbCtrl,_curSel);
 

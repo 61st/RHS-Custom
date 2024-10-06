@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * _isDown = target call lxim_shootingrange_fnc_isTargetDown;
+ * _isDown = target call lxir_shootingrange_fnc_isTargetDown;
  *
  * Public: No
  */

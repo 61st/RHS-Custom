@@ -1,4 +1,4 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 
 private _oldUnit = player;
 private _oldUnitdata = _oldUnit getVariable [QEGVAR(spectator,unitData), false];
@@ -48,7 +48,7 @@ if (_oldUnitdata isEqualType []) then {
     //     [false] call acre_api_fnc_setSpectator;
     //     [{
     //         if (isNull player) exitWith {};
-    //         if (isNil "lxim_acre2_networksCreated") exitWith {}; //Ensure presets are created
+    //         if (isNil "lxir_acre2_networksCreated") exitWith {}; //Ensure presets are created
 
     //         [] call EFUNC(acre2,clientInit);
     //         [_this select 1] call CBA_fnc_removePerFrameHandler;

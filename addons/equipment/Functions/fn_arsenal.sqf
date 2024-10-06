@@ -1,4 +1,4 @@
-#include "\z\lxim\addons\equipment\script_component.hpp"
+#include "\z\lxir\addons\equipment\script_component.hpp"
 /*
 Arguments:
 0: items only misc items <ARRAY of STRING>
@@ -11,7 +11,7 @@ successful: number of the slot; error: -1 <NUMBER>
 
 Example:
 
-call LXIM_fnc_arsenal;
+call lxir_fnc_arsenal;
 Public: Yes
 
 [
@@ -29,13 +29,13 @@ Public: Yes
 // ] call ACEFUNC(arsenal,addRightPanelButton);
 
 // [
-//     ["LXIM_VPN","lxim_defib_AED","LXIM_fentanyl","LXIM_epinephrine","LXIM_ketamine","LXIM_morphine","LXIM_naloxone","ACE_painkillers","LXIM_tetra","ACE_adenosine","ACE_bloodIV_250","ACE_bloodIV_500","ACE_bloodIV","ACE_bodyBag","ACE_elasticBandage","ACE_epinephrine","ACE_fieldDressing","ACE_morphine","ACE_packingBandage","ACE_personalAidKit","ACE_plasmaIV_250","ACE_plasmaIV_500","ACE_plasmaIV","ACE_quikclot","ACE_salineIV_250","ACE_salineIV_500","ACE_salineIV","ACE_splint","ACE_surgicalKit","ACE_tourniquet","FirstAidKit","ACE_painkillers","lxim_defib_AED","LXIM_epinephrine","LXIM_fentanyl","LXIM_ketamine","lxim_medbags_DrugKit","lxim_medbags_FirstAid","lxim_medbags_MedicKit","lxim_medbags_Trauma","lxim_medbags_Fluid"],
-//     "LXIM Medical",
+//     ["lxir_VPN","lxir_defib_AED","lxir_fentanyl","lxir_epinephrine","lxir_ketamine","lxir_morphine","lxir_naloxone","ACE_painkillers","lxir_tetra","ACE_adenosine","ACE_bloodIV_250","ACE_bloodIV_500","ACE_bloodIV","ACE_bodyBag","ACE_elasticBandage","ACE_epinephrine","ACE_fieldDressing","ACE_morphine","ACE_packingBandage","ACE_personalAidKit","ACE_plasmaIV_250","ACE_plasmaIV_500","ACE_plasmaIV","ACE_quikclot","ACE_salineIV_250","ACE_salineIV_500","ACE_salineIV","ACE_splint","ACE_surgicalKit","ACE_tourniquet","FirstAidKit","ACE_painkillers","lxir_defib_AED","lxir_epinephrine","lxir_fentanyl","lxir_ketamine","lxir_medbags_DrugKit","lxir_medbags_FirstAid","lxir_medbags_MedicKit","lxir_medbags_Trauma","lxir_medbags_Fluid"],
+//     "lxir Medical",
 //     "\z\ace\addons\medical_gui\data\categories\medication.paa"
 // ] call ACEFUNC(arsenal,addRightPanelButton);
 
 [
-    ["ACE_SpraypaintYellow","ACE_SpraypaintWhite","lxim_vs17_vs17","ace_marker_flags_black","ace_marker_flags_blue","ace_marker_flags_green","ace_marker_flags_orange","ace_marker_flags_purple","ace_marker_flags_red","ace_marker_flags_white","ace_marker_flags_yellow","ACE_IR_Strobe_Item","ACE_Chemlight_Shield","KNB_PanelGreen","KNB_PanelRed","KNB_PanelYellow","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","taro_vs17_panel"],
+    ["ACE_SpraypaintYellow","ACE_SpraypaintWhite","lxir_vs17_vs17","ace_marker_flags_black","ace_marker_flags_blue","ace_marker_flags_green","ace_marker_flags_orange","ace_marker_flags_purple","ace_marker_flags_red","ace_marker_flags_white","ace_marker_flags_yellow","ACE_IR_Strobe_Item","ACE_Chemlight_Shield","KNB_PanelGreen","KNB_PanelRed","KNB_PanelYellow","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","taro_vs17_panel"],
     "Marking",
     "\z\ace\addons\arsenal\data\iconCustom.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);

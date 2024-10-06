@@ -1,5 +1,5 @@
 /*
-Function: lxim_fnc_Patches
+Function: lxir_fnc_Patches
 
 Description:
  Apply Section Patches to Players/Vehicles
@@ -10,7 +10,7 @@ Arguments:
 
 Examples:
  (begin example)
-  [this, "1Section"] call lxim_fnc_Patches;
+  [this, "1Section"] call lxir_fnc_Patches;
  (end)
 
 Author:

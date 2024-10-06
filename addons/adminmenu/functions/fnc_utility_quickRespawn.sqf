@@ -1,4 +1,4 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 
 systemChat "[61st Mechanized Infantry Battalion Admin Menu] Quick Respawn:";
 private _str = "";

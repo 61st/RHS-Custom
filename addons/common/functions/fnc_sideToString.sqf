@@ -1,5 +1,5 @@
 /*
- * Name: lxim_common_fnc_sideToString
+ * Name: lxir_common_fnc_sideToString
  * Author: Snippers
  *
  * Arguments:

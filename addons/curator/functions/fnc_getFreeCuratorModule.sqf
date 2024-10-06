@@ -10,7 +10,7 @@
  * 0: Free curator module <OBJECT>
  *
  * Example:
- * call lxim_curator_fnc_getFreeCuratorModule
+ * call lxir_curator_fnc_getFreeCuratorModule
  *
  * Public: No
  */

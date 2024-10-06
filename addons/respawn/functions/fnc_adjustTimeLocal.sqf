@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [30] call lxim_respawn_fnc_adjustTimeLocal
+ * [30] call lxir_respawn_fnc_adjustTimeLocal
  *
  * Public: No
  */

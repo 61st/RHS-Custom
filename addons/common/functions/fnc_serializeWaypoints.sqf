@@ -1,5 +1,5 @@
 /*
- * Name: lxim_common_fnc_serializeWaypoints
+ * Name: lxir_common_fnc_serializeWaypoints
  * Author: Head
  *
  * Arguments:
@@ -10,6 +10,6 @@
  *
  */
 params ["_group"];
-#include "\z\lxim\addons\common\script_component.hpp"
+#include "\z\lxir\addons\common\script_component.hpp"
 private _waypoints = (waypoints _group) apply { _x call FUNC(serializeWaypoint)};
 _waypoints

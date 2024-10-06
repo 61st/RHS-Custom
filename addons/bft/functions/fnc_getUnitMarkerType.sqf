@@ -10,7 +10,7 @@
  * Marker Type <STRING>
  *
  * Example:
- * ["UNIT"] call lxim_bft_fnc_getUnitMarkerType
+ * ["UNIT"] call lxir_bft_fnc_getUnitMarkerType
  *
  * Public: No
  */

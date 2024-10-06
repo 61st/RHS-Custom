@@ -1,5 +1,5 @@
 /*
- * Name: lxim_common_fnc_serializeWaypoint
+ * Name: lxir_common_fnc_serializeWaypoint
  * Author: Head
  *
  * Arguments:

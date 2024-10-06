@@ -8,7 +8,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"lxim_common", "A3_UI_F", "cba_diagnostic"};
+        requiredAddons[] = {"lxir_common", "A3_UI_F", "cba_diagnostic"};
         VERSION_CONFIG;
     };
 };

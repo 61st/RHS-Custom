@@ -1,5 +1,5 @@
 /*
- * Name: lxim_common_fnc_sideToNum
+ * Name: lxir_common_fnc_sideToNum
  * Author: Snippers
  *
  * Arguments:

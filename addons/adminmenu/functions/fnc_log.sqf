@@ -1,6 +1,6 @@
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 /* ----------------------------------------------------------------------------
-Function: LXIM_adminmenu_fnc_log
+Function: lxir_adminmenu_fnc_log
 
 Description:
     Logs a message to registered admins, visible in the admin menu.
@@ -15,10 +15,10 @@ Returns:
 
 Examples:
     (begin example)
-        ["Everything is on fire!",true,"[61st Mechanized Infantry Battalion Fire alarm]"] call LXIM_adminmenu_fnc_log;
+        ["Everything is on fire!",true,"[61st Mechanized Infantry Battalion Fire alarm]"] call lxir_adminmenu_fnc_log;
     (end)
     (begin example)
-        [format ["%1 did something",profileName]] call LXIM_adminmenu_fnc_log;
+        [format ["%1 did something",profileName]] call lxir_adminmenu_fnc_log;
     (end)
 
 Author:

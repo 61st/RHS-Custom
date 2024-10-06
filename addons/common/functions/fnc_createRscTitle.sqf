@@ -12,8 +12,8 @@
  * 1: Display the title over the map? <BOOL>
  *
  * Examples:
- * ["someRSCTitleClass", true] call lxim_common_fnc_createRscTitle;
- * ["someOtherRSCTitleClass", false] call lxim_common_fnc_createRscTitle;
+ * ["someRSCTitleClass", true] call lxir_common_fnc_createRscTitle;
+ * ["someOtherRSCTitleClass", false] call lxir_common_fnc_createRscTitle;
  *
  * Public: Yes
  */

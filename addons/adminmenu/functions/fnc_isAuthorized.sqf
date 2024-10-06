@@ -1,5 +1,5 @@
 /*
- * Name = LXIM_adminmenu_fnc_isAuthorized
+ * Name = lxir_adminmenu_fnc_isAuthorized
  * Author = Freddo
  *
  * Parameters:
@@ -7,7 +7,7 @@
  *
  * Description:
  * Checks if player is defined as an admin in
- * class LXIM_adminMenu_authorized_players
+ * class lxir_adminMenu_authorized_players
  *
  * If executed on server then will check if the remote object is a logged in admin.
  * If executed on a object local to the client, then it will check if the client is
@@ -17,7 +17,7 @@
  * Boolean. - Whether player is an authorized admin
  */
 
-#include "\z\lxim\addons\adminmenu\script_component.hpp"
+#include "\z\lxir\addons\adminmenu\script_component.hpp"
 
 params [["_unit", player,[objNull]]];
 

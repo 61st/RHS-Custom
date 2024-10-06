@@ -12,7 +12,7 @@
  * Marker ID, empty string if could not create <STRING>
  *
  * Example:
- * [player ,"global"] call lxim_common_fnc_createPlayerMarker
+ * [player ,"global"] call lxir_common_fnc_createPlayerMarker
  *
  * Public: No
  */

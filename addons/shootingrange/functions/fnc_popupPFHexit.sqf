@@ -21,7 +21,7 @@
  * None
  *
  * Example:
- * [idPFH, controller, [controller1, controller2], "range", [target1, target2], [invalidTarget1, invalidTarget2], 1, true] call lxim_shootingrange_fnc_popupPFHexit;
+ * [idPFH, controller, [controller1, controller2], "range", [target1, target2], [invalidTarget1, invalidTarget2], 1, true] call lxir_shootingrange_fnc_popupPFHexit;
  *
  * Public: No
  */

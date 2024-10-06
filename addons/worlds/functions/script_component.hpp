@@ -1,1 +1,1 @@
-#include "\z\lxim\addons\worlds\script_component.hpp"
+#include "\z\lxir\addons\worlds\script_component.hpp"

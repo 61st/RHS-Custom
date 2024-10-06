@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [bob, ted] call lxim_respawn_fnc_onPlayerRespawn
+ * [bob, ted] call lxir_respawn_fnc_onPlayerRespawn
  *
  * Public: No
  */

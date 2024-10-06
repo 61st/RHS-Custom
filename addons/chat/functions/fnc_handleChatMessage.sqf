@@ -14,7 +14,7 @@
  * Should message be blocked <BOOL>
  *
  * Example:
- * call lxim_chat_fnc_handleChatMessage
+ * call lxir_chat_fnc_handleChatMessage
  *
  * Public: No
  */

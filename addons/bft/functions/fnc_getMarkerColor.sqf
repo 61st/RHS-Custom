@@ -10,7 +10,7 @@
  * Marker Color <STRING>
  *
  * Example:
- * ["UNIT"] call lxim_bft_fnc_getMarkerColor
+ * ["UNIT"] call lxir_bft_fnc_getMarkerColor
  *
  * Public: No
  */

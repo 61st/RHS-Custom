@@ -7,7 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxim_main",
+            "lxir_main",
             "tweed_uaf_21_cfg",
             "tweed_uaf_21_cfg"
         };
