@@ -47,10 +47,10 @@ jobs:
   #     - name: Run HEMTT Build
   #       run: hemtt build
   #     - name: Rename build folder
-  #       run: mv .hemttout/build .hemttout/@lxir
+  #       run: mv .hemttout/build .hemttout/@lxim
   #     - name: Upload Artifact
   #       uses: actions/upload-artifact@v4
   #       with:
-  #         name: lxir-${{ github.sha }}-nobin
+  #         name: lxim-${{ github.sha }}-nobin
   #         path: .hemttout/@*
 

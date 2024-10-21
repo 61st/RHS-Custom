@@ -1,6 +1,6 @@
-#include "\z\lxir\addons\ai\script_component.hpp"
+#include "\z\lxim\addons\ai\script_component.hpp"
 /*
-Function: lxir_ai_fnc_SpawnCivilians
+Function: lxim_ai_fnc_SpawnCivilians
 
 Description:
     Used to populate an area with a certain type of civilians. Spawns pedestrian
@@ -29,7 +29,7 @@ Example:
             [13, 25],
             [2, 4],
             [1, 3]
-        ] call lxir_ai_fnc_SpawnCivilians;
+        ] call lxim_ai_fnc_SpawnCivilians;
     (end)
 
 Author:
@@ -61,7 +61,7 @@ params [
     ["_vehparked", [0, 0]]
 ];
 
-private _AIReporting = lxir_AI_Reporting;
+private _AIReporting = lxim_AI_Reporting;
 
 _typeNameCenter = typeName _center;
 
@@ -79,7 +79,7 @@ _ped params ["_pedMin", "_pedMax"];
 _vehpatrol params ["_vehpatrolMin", "_vehpatrolMax"];
 _vehparked params ["_vehparkedMin", "_vehparkedMax"];
 
-_GetFactionArrays = compileFinal format ["call lxir_ai_fnc_%1", _faction];
+_GetFactionArrays = compileFinal format ["call lxim_ai_fnc_%1", _faction];
 _FactionArrays = call _GetFactionArrays;
 _FactionArrays params ["_pedPool", "_motPool"];
 
@@ -106,7 +106,7 @@ if (count _roadList < _minPositions) then {
 // If we still don't have enough positions, fill the remaining spots up with random positions
 if (count _roadList < _minPositions) then {
     while {count _roadList < _minPositions} do {
-        _rpos = [[[_center, _radius],[]],["water"]] call lxir_common_fnc_SafePos;
+        _rpos = [[[_center, _radius],[]],["water"]] call lxim_common_fnc_SafePos;
         _roadList append [_rpos];
     };
 };
@@ -132,7 +132,7 @@ if !(_pedPool isEqualTo []) then {
             [0, _GarrRadius],
             _faction, _side,
             _pedPool, _garrisonsExact
-        ] call lxir_ai_fnc_CivilianGarrison;
+        ] call lxim_ai_fnc_CivilianGarrison;
 
         _units append _garrisonedUnits;
 
@@ -161,7 +161,7 @@ if !(_pedPool isEqualTo []) then {
         _g setGroupIdGlobal [format["%1_inf%2", _grpPrefix, _x]];
 
         // Setup patrol task
-        [_g, _roadList] call lxir_ai_fnc_CivilianPatrol;
+        [_g, _roadList] call lxim_ai_fnc_CivilianPatrol;
         _units append (units _g);
     };
 } else {
@@ -202,7 +202,7 @@ if !((_motPool isEqualTo []) || (_pedPool isEqualTo [])) then {
         _u moveInDriver _v;
 
         // Setup patrol task
-        [_g, _roadList] call lxir_ai_fnc_CivilianPatrol;
+        [_g, _roadList] call lxim_ai_fnc_CivilianPatrol;
         _units append (units _g);
         _vehicles append [_v];
     };

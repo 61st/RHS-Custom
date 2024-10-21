@@ -7,10 +7,10 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxir_common",
+            "lxim_common",
             "A3_Functions_F_Exp_A"
         };
-        author = "ArmaForces";
+        author = QAUTHOR;
         VERSION_CONFIG;
     };
 };

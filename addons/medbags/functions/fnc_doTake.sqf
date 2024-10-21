@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
 
- * \lxir_medical\supplies\functions\fn_doUnpackFirstAid.sqf
+ * \lxim_medical\supplies\functions\fn_doUnpackFirstAid.sqf
  * by YonV
  *
  * unpack medical supplies
@@ -13,7 +13,7 @@
  * nothing
  *
  * Example:
- * [player] call lxir_medical_supplies_fnc_doUnpackFirstAid;
+ * [player] call lxim_medical_supplies_fnc_doUnpackFirstAid;
  *
  */
 
@@ -21,6 +21,6 @@
 
 params ["_unit", "_target"];
 
-_target removeItem "lxir_medbags_FirstAid";
+_target removeItem "lxim_medbags_FirstAid";
 
-[_unit, "lxir_medbags_FirstAid", 1, _order, _overflow] call EFUNC(common,addItem);
+[_unit, "lxim_medbags_FirstAid", 1, _order, _overflow] call EFUNC(common,addItem);

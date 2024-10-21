@@ -7,12 +7,12 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxir_common",
+            "lxim_common",
             "cba_main",
             "ace_nightvision",
             "tweed_uaf_21_cfg"
         };
-        author = "lxir";
+        author = "lxim";
         authors[] = {"YONV"};
         VERSION_CONFIG;
     };

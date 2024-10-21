@@ -1,1 +1,0 @@
-#include "\z\lxir\addons\tasks\script_component.hpp"

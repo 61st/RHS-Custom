@@ -45,8 +45,7 @@ class CfgPatches {
             "ace_vector",
             "A3_Weapons_F",
             "cba_jr",
-            "ace_xm157"/* ,
-            "tfar_handhelds" */
+            "ace_xm157"
         };
         VERSION_CONFIG;
         authors[] = {"YonV"};
@@ -63,6 +62,5 @@ class CfgFunctions {
 #include "jr_classes.hpp"
 #include "RscInGameUI.hpp"
 #include "CfgMagazines.hpp"
-// #include "tfar.hpp"
 #include "rhsCFGWeapons.hpp"
 #include "XtdRHS.hpp"

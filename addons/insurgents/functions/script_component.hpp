@@ -1,1 +1,1 @@
-#include "\z\lxir\addons\insurgents\script_component.hpp"
+#include "\z\lxim\addons\insurgents\script_component.hpp"

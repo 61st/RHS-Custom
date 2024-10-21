@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [[bob, ted], false] call lxir_main_fnc_example
+ * [[bob, ted], false] call lxim_main_fnc_example
  *
  * Public: No
  */
@@ -49,6 +49,7 @@ class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
 class SensorTemplateDataLink;
+class AnimationSources;
 
 
 class CfgVehicles {
@@ -61,20 +62,16 @@ class CfgVehicles {
             class Turrets;
         };
     };
-
     class Land: AllVehicles {};
-
     class LandVehicle: Land {
         class CommanderOptics;
     };
-
     class Car: LandVehicle {};
     class Car_F: Car {
         class Turrets {
             class MainTurret: NewTurret {};
         };
     };
-
     class Wheeled_APC_F: Car_F {
         class ViewPilot;
         class ViewOptics;
@@ -88,15 +85,12 @@ class CfgVehicles {
         };
         class EventHandlers;
     };
-
     class APC_Wheeled_03_base_F: Wheeled_APC_F {
         class Turrets: Turrets {
             class MainTurret: MainTurret {};
         };
     };
-
     class I_APC_Wheeled_03_base_F: APC_Wheeled_03_base_F {};
-
     class I_APC_Wheeled_03_cannon_F: I_APC_Wheeled_03_base_F {
         class MFD {
             class MFD_Driver_Heading {
@@ -968,13 +962,13 @@ class CfgVehicles {
                 };
             };
         };
+        class AnimationSources: AnimationSources {};
         class Components;
     };
 
-    class lxir_outlaw_base_F: I_APC_Wheeled_03_cannon_F {
+    /* BASE ------------------------------------------------------------------------------------------------------------- */
+    class lxim_outlaw_base_F: I_APC_Wheeled_03_cannon_F {
         scope = 1;
-        magazines[]  = {"rhsusf_mag_duke"};
-        weapons[] = {"TruckHorn","rhsusf_weap_duke"};
         scopeCurator = 1;
         displayName = "M20";
         author = QAUTHOR;
@@ -1014,52 +1008,52 @@ class CfgVehicles {
                 textures[] = {QPATHTOF(data\outlaw_01_ext_d.paa),QPATHTOF(data\outlaw_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
                 factions[] = {QUOTE(PREFIX)};
             };
-            class Blu_green_v11a {
+            class Blu_green_V21a {
                 displayName = "M20 1/1/A";
                 author = QAUTHOR;
                 textures[] = {QPATHTOF(data\outlaw_1_1_a_01_ext_g.paa),QPATHTOF(data\outlaw_1_1_a_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
                 factions[] = {QUOTE(PREFIX)};
             };
-            class Blu_green_v11b {
+            class Blu_green_V21b {
                 displayName = "M20 1/1/A";
                 author = QAUTHOR;
                 textures[] = {QPATHTOF(data\outlaw_1_1_b_01_ext_g.paa),QPATHTOF(data\outlaw_1_1_b_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
                 factions[] = {QUOTE(PREFIX)};
             };
 
-            class Blu_green_v12a {
+            class Blu_green_V22a {
                 displayName = "M20 1/2/A";
                 author = QAUTHOR;
                 textures[] = {QPATHTOF(data\outlaw_1_2_a_01_ext_g.paa),QPATHTOF(data\outlaw_1_2_a_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
                 factions[] = {QUOTE(PREFIX)};
             };
-            class Blu_green_v12b {
+            class Blu_green_V22b {
                 displayName = "M20 1/2/B";
                 author = QAUTHOR;
                 textures[] = {QPATHTOF(data\outlaw_1_2_b_01_ext_g.paa),QPATHTOF(data\outlaw_1_2_b_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
                 factions[] = {QUOTE(PREFIX)};
             };
 
-            class Blu_Desert_v11a {
+            class Blu_Desert_V21a {
                 displayName = "M20 Desert 1/1/A";
                 author = QAUTHOR;
                 textures[] = {QPATHTOF(data\outlaw_1_1_a_01_ext_d.paa),QPATHTOF(data\outlaw_1_1_a_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
                 factions[] = {QUOTE(PREFIX)};
             };
-            class Blu_Desert_v11b {
+            class Blu_Desert_V21b {
                 displayName = "M20 Desert 1/1/B";
                 author = QAUTHOR;
                 textures[] = {QPATHTOF(data\outlaw_1_1_b_01_ext_d.paa),QPATHTOF(data\outlaw_1_1_b_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
                 factions[] = {QUOTE(PREFIX)};
             };
 
-            class Blu_Desert_v12a {
+            class Blu_Desert_V22a {
                 displayName = "M20 Desert 1/2/A";
                 author = QAUTHOR;
                 textures[] = {QPATHTOF(data\outlaw_1_2_a_01_ext_d.paa),QPATHTOF(data\outlaw_1_2_a_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
                 factions[] = {QUOTE(PREFIX)};
             };
-            class Blu_Desert_v12b {
+            class Blu_Desert_V22b {
                 displayName = "M20 Desert 1/2/B";
                 author = QAUTHOR;
                 textures[] = {QPATHTOF(data\outlaw_1_2_b_01_ext_d.paa),QPATHTOF(data\outlaw_1_2_b_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
@@ -1080,158 +1074,32 @@ class CfgVehicles {
             factions[] = {QUOTE(PREFIX)};
             };
         };
-        class AnimationSources {
-            class BreakWater {
-                source = "user";
-                initPhase = 0;
-                animPeriod = 2;
-            };
-            class Missiles_revolving {
-                source = "revolving";
-                weapon = "missiles_titan";
-            };
-            class Missiles_reloadMagazine: Missiles_revolving {
-                source = "reloadMagazine";
-            };
-            class muzzle_rot {
-                source = "ammorandom";
-                weapon = "autocannon_30mm_CTWS";
-            };
-            class muzzle_hide {
-                source = "reload";
-                weapon = "autocannon_30mm_CTWS";
-            };
-            class HitEngine_src {
-                source = "Hit";
-                hitpoint = "HitEngine";
-                raw = 1;
-            };
-            class HitFuel_src {
-                source = "Hit";
-                hitpoint = "HitFuel";
-                raw = 1;
-            };
-            class HitHull_src {
-                source = "Hit";
-                hitpoint = "HitHull";
-                raw = 1;
-            };
-            class HitMainGun_src {
-                source = "Hit";
-                hitpoint = "HitGun";
-                raw = 1;
-            };
-            class HitTurret_src {
-                source = "Hit";
-                hitpoint = "HitTurret";
-                raw = 1;
-            };
-            class HitComTurret_src {
-                source = "Hit";
-                hitpoint = "HitComTurret";
-                raw = 1;
-            };
-            class HitSLAT_Left_1_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Left_1";
-                raw = 1;
-            };
-            class HitSLAT_Left_2_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Left_2";
-                raw = 1;
-            };
-            class HitSLAT_Left_3_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Left_3";
-                raw = 1;
-            };
-            class HitSLAT_Right_1_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Right_1";
-                raw = 1;
-            };
-            class HitSLAT_Right_2_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Right_2";
-                raw = 1;
-            };
-            class HitSLAT_Right_3_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Right_3";
-                raw = 1;
-            };
-            class HitSLAT_back_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_back";
-                raw = 1;
-            };
-            class HitSLAT_front_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_front";
-                raw = 1;
-            };
-            class showCamonetHull {
-                displayName = "$STR_A3_animationsources_showcamonethull0";
-                author = QAUTHOR;
-                source = "user";
-                animPeriod = 0.001;
-                initPhase = 0;
-                mass = -50;
-            };
-            class showBags {
-                displayName = "$STR_A3_animationsources_showbagshull0";
-                author = QAUTHOR;
-                source = "user";
-                animPeriod = 0.001;
-                initPhase = 0;
-                mass = -50;
-            };
-            class showBags2 {
-                displayName = "$STR_A3_animationsources_showbagsturret0";
-                author = QAUTHOR;
-                source = "user";
-                animPeriod = 0.001;
-                initPhase = 1;
-                mass = -50;
-            };
-            class showTools {
-                displayName = "$STR_A3_animationsources_showtoolshull0";
-                author = QAUTHOR;
-                source = "user";
-                animPeriod = 0.001;
-                initPhase = 1;
-                mass = -50;
-            };
-            class showSLATHull {
-                displayName = "$STR_A3_animationsources_showslathull0";
-                author = QAUTHOR;
-                source = "user";
-                animPeriod = 0.001;
-                initPhase = 0;
-                mass = -50;
-            };
-        };
         class Turrets: Turrets {
             class MainTurret: MainTurret {
-                weapons[] = {"RHS_weap_M242BC","rhs_weap_m240_bradley_coax","Rhs_weap_TOW_Launcher","rhs_weap_fcs_ammo"};
+                weapons[] = {
+                    QGVAR(autocannon_35mm_CTWS),
+                    QUOTE(rhs_weap_m240_bradley_coax),
+                    QGVAR(missiles_titan)
+                    };
                 magazines[] = {
                     "rhs_mag_1100Rnd_762x51_M240",
                     "rhs_mag_1100Rnd_762x51_M240",
 
-                    "rhs_mag_230Rnd_25mm_M242_HEI",
-                    "rhs_mag_230Rnd_25mm_M242_HEI",
-                    "rhs_mag_230Rnd_25mm_M242_HEI",
+                    QGVAR(100Rnd_35mm_MP_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_MP_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_MP_shells_Tracer_Red),
 
-                    "rhs_mag_70Rnd_25mm_M242_APFSDS",
-                    "rhs_mag_70Rnd_25mm_M242_APFSDS",
-                    "rhs_mag_70Rnd_25mm_M242_APFSDS",
+                    QGVAR(100Rnd_35mm_APFSDS_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_APFSDS_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_APFSDS_shells_Tracer_Red),
 
-                    "rhs_mag_2Rnd_TOW2A",
-                    "rhs_mag_2Rnd_TOW2A",
-                    "rhs_mag_2Rnd_TOW2A",
-                    "rhs_mag_2Rnd_TOW2BB",
-                    "rhs_laserfcsmag"
+                    QGVAR(100Rnd_35mm_ABM_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_ABM_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_ABM_shells_Tracer_Red),
+
+                    QGVAR(2Rnd_AA_missiles),
+                    QGVAR(2Rnd_AT_missiles),
+                    QGVAR(2Rnd_AT_missiles)
                 };  
                 class Turrets: Turrets {
                     class CommanderOptics: CommanderOptics {
@@ -1241,293 +1109,171 @@ class CfgVehicles {
                 };
             };
         };
-    };
+        class AcreIntercoms {
+            class Intercom_1 {
+                displayName = "Crew intercom";
+                shortName = "Crew";
+                allowedPositions[] = {"crew"};
+                disabledPositions[] = {};
+                masterPositions[] = {"commander"};
+                limitedPositions[] = {};
+                numLimitedPositions = 0;
+                connectedByDefault = 1;
+            };
+            class Intercom_2: Intercom_1 {
+                displayName = "Passenger intercom";
+                shortName = "Pax";
+                allowedPositions[] = {"crew", {"cargo", "all"}};
+                disabledPositions[] = {};
+                limitedPositions[] = {};
+                numLimitedPositions = 0;
+                connectedByDefault = 0;
+            };
+        };
 
-    class lxir_outlaw_AA_base_F: I_APC_Wheeled_03_cannon_F {
-        scope = 1;
-        scopeCurator = 1;
-        magazines[]  = {"rhsusf_mag_duke"};
-        weapons[] = {"TruckHorn","rhsusf_weap_duke"};
+        // Infantry Phone
+        acre_hasInfantryPhone = 1;
+        acre_infantryPhoneIntercom[] = {"all"};
+        acre_infantryPhoneControlActions[] = {"intercom_1"};
+        acre_infantryPhoneDisableRinging = 0; // If set to 1, the ringing funtionality will not be available
+        acre_infantryPhoneCustomRinging[] = {"A3\Sounds_F\sfx\alarm_independent.wss", 5.0, 1.0, 1.0, 50}; // The alarm sound will be played every 5 seconds and will be audible until 50m. Volume and sound pitch are both set to 1
+
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Radio";             // Name displayed in the interaction menu
+                shortName = "Crew";
+                componentName = "ACRE_VRC110";        // Able to mount a PRC152
+                allowedPositions[] = {"driver", "commander", "gunner"}; // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+                disabledPositions[] = {};
+                defaultComponents[] = {};             // Use this to attach simple components like Antennas. Not yet fully implemented
+                mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+                isRadioRemovable = 1;                 // Radio can be removed
+                intercom[] = {"intercom_1"};                      // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+            };
+            class Rack_2 {
+                displayName = "Squad Radio";             // Name displayed in the interaction menu
+                shortName = "Squad";
+                componentName = "ACRE_VRC110";        // Able to mount a PRC152
+                allowedPositions[] = {{"cargo", "all"}};       // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+                disabledPositions[] = {};
+                defaultComponents[] = {};             // Use this to attach simple components like Antennas. Not yet fully implemented
+                mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+                isRadioRemovable = 1;                 // Radio can be removed
+                intercom[] = {"Intercom_2"};                      // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+            };
+        };
+    };
+    /* BASE ------------------------------------------------------------------------------------------------------------- */
+
+    /* G ---------------------------------------------------------------------------------------------------------------- */
+    class lxim_outlaw_g: lxim_outlaw_base_F {
         displayName = "M20";
+        scope = 2;
+        scopeCurator = 2;
+        faction = QUOTE(PREFIX);
+        forceInGarage = 0;
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_soldier_F"};
+        editorSubcategory = "lxim_EdSubcat_vehicles_green";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_g.paa),QPATHTOF(data\outlaw_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
+    };
+    class lxim_outlaw_g_V26: lxim_outlaw_g {
+        displayName = "M20 Thunder 2/6";
         author = QAUTHOR;
-        picture = "\A3\armor_f_gamma\APC_Wheeled_03\Data\UI\APC_Wheeled_03_CA.paa";
-        side = 1;
-        ace_vehicle_damage_hullFireProb = 0.5;
-        ace_hunterkiller = 1;
-        radarType = 2;
-        reportRemoteTargets = 1;
-        reportOwnPosition = 1;
-        receiveRemoteTargets = 1;
-        maxSpeed = 125;
-        maximumLoad = 6000;
-        enginePower = 447;
-        terrainCoef = 1;
-        vehicleClass = "APCs""";
-        textureList[] = {"Blu",1};
-        class Components: Components {
-            class SensorsManagerComponent {
-                class Components {
-                    class ActiveRadarSensorComponent: SensorTemplateActiveRadar {
-                        class AirTarget {
-                            minRange = 9000;
-                            maxRange = 9000;
-                            objectDistanceLimitCoef = -1;
-                            viewDistanceLimitCoef = -1;
-                        };
-                        class GroundTarget {
-                            minRange = 6000;
-                            maxRange = 6000;
-                            objectDistanceLimitCoef = -1;
-                            viewDistanceLimitCoef = -1;
-                        };
-                        typeRecognitionDistance = 6000;
-                        angleRangeHorizontal = 360;
-                        angleRangeVertical = 100;
-                        aimDown = -45;
-                        maxTrackableSpeed = 694.444;
-                    };
-                    class DataLinkSensorComponent: SensorTemplateDataLink{};
-                };
-            };
-        };
-        hiddenSelections[] = {"camo1","camo2","camo3","camo4","CamoNet","CamoSlat"};
-        class EventHandlers;
-        class TextureSources {
-            class Blu_green {
-                displayName = "M20";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\outlaw_01_ext_g.paa),QPATHTOF(data\outlaw_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-            class Blu_Desert {
-                displayName = "M20 Desert";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\outlaw_01_ext_d.paa),QPATHTOF(data\outlaw_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-            class Blu_green_v11a {
-                displayName = "M20 1/1/A";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\outlaw_1_1_a_01_ext_g.paa),QPATHTOF(data\outlaw_1_1_a_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-            class Blu_green_v11b {
-                displayName = "M20 1/1/A";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\outlaw_1_1_b_01_ext_g.paa),QPATHTOF(data\outlaw_1_1_b_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-
-            class Blu_green_v12a {
-                displayName = "M20 1/2/A";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\outlaw_1_2_a_01_ext_g.paa),QPATHTOF(data\outlaw_1_2_a_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-            class Blu_green_v12b {
-                displayName = "M20 1/2/B";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\outlaw_1_2_b_01_ext_g.paa),QPATHTOF(data\outlaw_1_2_b_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-
-            class Blu_Desert_v11a {
-                displayName = "M20 Desert 1/1/A";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\outlaw_1_1_a_01_ext_d.paa),QPATHTOF(data\outlaw_1_1_a_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-            class Blu_Desert_v11b {
-                displayName = "M20 Desert 1/1/B";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\outlaw_1_1_b_01_ext_d.paa),QPATHTOF(data\outlaw_1_1_b_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-
-            class Blu_Desert_v12a {
-                displayName = "M20 Desert 1/2/A";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\outlaw_1_2_a_01_ext_d.paa),QPATHTOF(data\outlaw_1_2_a_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-            class Blu_Desert_v12b {
-                displayName = "M20 Desert 1/2/B";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\outlaw_1_2_b_01_ext_d.paa),QPATHTOF(data\outlaw_1_2_b_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-
-            class Blu_green_rino {
-                displayName = "M20 1/2/B";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\rino_ext_g.paa),QPATHTOF(data\rino_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-
-            class Blu_Desert_rino {
-                displayName = "M20 Desert 1/1/A";
-                author = QAUTHOR;
-                textures[] = {QPATHTOF(data\rino_01_ext_d.paa),QPATHTOF(data\rino_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-                factions[] = {QUOTE(PREFIX)};
-            };
-        };
-        class AnimationSources {
-            class BreakWater {
-                source = "user";
-                initPhase = 0;
-                animPeriod = 2;
-            };
-            class Missiles_revolving {
-                source = "revolving";
-                weapon = "missiles_titan";
-            };
-            class Missiles_reloadMagazine: Missiles_revolving {
-                source = "reloadMagazine";
-            };
-            class muzzle_rot {
-                source = "ammorandom";
-                weapon = "autocannon_30mm_CTWS";
-            };
-            class muzzle_hide {
-                source = "reload";
-                weapon = "autocannon_30mm_CTWS";
-            };
-            class HitEngine_src {
-                source = "Hit";
-                hitpoint = "HitEngine";
-                raw = 1;
-            };
-            class HitFuel_src {
-                source = "Hit";
-                hitpoint = "HitFuel";
-                raw = 1;
-            };
-            class HitHull_src {
-                source = "Hit";
-                hitpoint = "HitHull";
-                raw = 1;
-            };
-            class HitMainGun_src {
-                source = "Hit";
-                hitpoint = "HitGun";
-                raw = 1;
-            };
-            class HitTurret_src {
-                source = "Hit";
-                hitpoint = "HitTurret";
-                raw = 1;
-            };
-            class HitComTurret_src {
-                source = "Hit";
-                hitpoint = "HitComTurret";
-                raw = 1;
-            };
-            class HitSLAT_Left_1_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Left_1";
-                raw = 1;
-            };
-            class HitSLAT_Left_2_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Left_2";
-                raw = 1;
-            };
-            class HitSLAT_Left_3_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Left_3";
-                raw = 1;
-            };
-            class HitSLAT_Right_1_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Right_1";
-                raw = 1;
-            };
-            class HitSLAT_Right_2_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Right_2";
-                raw = 1;
-            };
-            class HitSLAT_Right_3_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_Right_3";
-                raw = 1;
-            };
-            class HitSLAT_back_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_back";
-                raw = 1;
-            };
-            class HitSLAT_front_src {
-                source = "Hit";
-                hitpoint = "HitSLAT_front";
-                raw = 1;
-            };
-            class showCamonetHull {
-                displayName = "$STR_A3_animationsources_showcamonethull0";
-                author = QAUTHOR;
-                source = "user";
-                animPeriod = 0.001;
-                initPhase = 0;
-                mass = -50;
-            };
-            class showBags {
-                displayName = "$STR_A3_animationsources_showbagshull0";
-                author = QAUTHOR;
-                source = "user";
-                animPeriod = 0.001;
-                initPhase = 0;
-                mass = -50;
-            };
-            class showBags2 {
-                displayName = "$STR_A3_animationsources_showbagsturret0";
-                author = QAUTHOR;
-                source = "user";
-                animPeriod = 0.001;
-                initPhase = 1;
-                mass = -50;
-            };
-            class showTools {
-                displayName = "$STR_A3_animationsources_showtoolshull0";
-                author = QAUTHOR;
-                source = "user";
-                animPeriod = 0.001;
-                initPhase = 1;
-                mass = -50;
-            };
-            class showSLATHull {
-                displayName = "$STR_A3_animationsources_showslathull0";
-                author = QAUTHOR;
-                source = "user";
-                animPeriod = 0.001;
-                initPhase = 0;
-                mass = -50;
-            };
-        };
-        class Turrets: Turrets {
-            class MainTurret: MainTurret {
-                weapons[] = {"autocannon_35mm ","rhs_weap_m240_bradley_coax","missiles_titan","rhs_weap_fcs_ammo"};
-                magazines[] = {
-                    "rhs_mag_1100Rnd_762x51_M240",
-                    "rhs_mag_1100Rnd_762x51_M240",
-
-                    "680Rnd_35mm_AA_shells_Tracer_Red",
-                    "680Rnd_35mm_AA_shells_Tracer_Red",
-
-                    "2Rnd_GAT_missiles",
-                    "2Rnd_GAT_missiles",
-                    "rhs_laserfcsmag"
-                };
-                class Turrets: Turrets {
-                    class CommanderOptics: CommanderOptics {
-                        weapons[] = {"SmokeLauncher"};
-                        magazines[] = {"SmokeLauncherMag","SmokeLauncherMag"};
-                    };
-                };
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_wardaddy_g.paa),QPATHTOF(data\outlaw_02_ext_wardaddy_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
+        forceInGarage = 0;
+        class AcreRacks {
+            class Rack_3: Rack_2 {
+                displayName = "Company Radio";             // Name displayed in the interaction menu
+                shortName = "COY";                  // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
             };
         };
     };
+    class lxim_outlaw_g_V21: lxim_outlaw_g {
+        displayName = "M20 Thunder 2/1";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_1_hull_g.paa),QPATHTOF(data\thunder_2_1_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
+        forceInGarage = 0;
+    };
+    class lxim_outlaw_g_V22: lxim_outlaw_g {
+        displayName = "M20 Thunder 2/2";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_2_hull_g.paa),QPATHTOF(data\thunder_2_2_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
+        forceInGarage = 0;
+    };
+    class lxim_outlaw_g_Vhq: lxim_outlaw_g {
+        displayName = "M20 HQ";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_hq_01_ext_g.paa),QPATHTOF(data\outlaw_hq_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
+        forceInGarage = 0;
+        class Rack_3: Rack_2 {
+            displayName = "Company Radio";             // Name displayed in the interaction menu
+            shortName = "COY";
+        };
+        class Rack_4: Rack_2 {
+            displayName = "Battalion Radio";             // Name displayed in the interaction menu
+            shortName = "BAT";
+            componentName = "ACRE_VRC110";        // Able to mount a PRC152
+            allowedPositions[] = {{"cargo", "all"}};       // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+            disabledPositions[] = {{"ffv", "all"}};
+            defaultComponents[] = {};             // Use this to attach simple components like Antennas. Not yet fully implemented
+            mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+            isRadioRemovable = 1;                 // Radio can be removed
+            intercom[] = {};                      // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+        };
+    };
+    /* D ---------------------------------------------------------------------------------------------------------------- */
+    class lxim_outlaw_d: lxim_outlaw_base_F {
+        scope = 2;
+        scopeCurator = 2;
+        faction = QUOTE(PREFIX);
+        forceInGarage = 0;
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_soldier_F"};
+        editorSubcategory = "lxim_EdSubcat_vehicles_desert";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_d.paa),QPATHTOF(data\outlaw_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
+    };
+    class lxim_outlaw_d_V26: lxim_outlaw_d {
+        displayName = "M20 Desert Thuinder 2/6";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_wardaddy_d.paa),QPATHTOF(data\outlaw_02_ext_wardaddy_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
+        forceInGarage = 0;
+        class AcreRacks {
+            class Rack_3: Rack_2  {
+                displayName = "Company Radio";             // Name displayed in the interaction menu
+                shortName = "COY";
+            };
+        };
+    };
+    class lxim_outlaw_d_V21: lxim_outlaw_d {
+        displayName = "M20 Desert Thuinder 2/1";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_1_hull_d.paa),QPATHTOF(data\thunder_2_1_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
+        forceInGarage = 0;
+    };
+    class lxim_outlaw_d_V22: lxim_outlaw_d {
+        displayName = "M20 Desert Thunder 2/2";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_2_hull_d.paa),QPATHTOF(data\thunder_2_2_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
+        forceInGarage = 0;
+    };
+    class lxim_outlaw_d_Vhq: lxim_outlaw_d {
+        displayName = "M20 Desert HQ";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_hq_01_ext_d.paa),QPATHTOF(data\outlaw_hq_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
+        forceInGarage = 0;
+        class Rack_3: Rack_2  {
+            displayName = "Company Radio";             // Name displayed in the interaction menu
+            shortName = "COY";
+        };
+        class Rack_4: Rack_2  {
+            displayName = "Battalion Radio";             // Name displayed in the interaction menu
+            shortName = "BAT";
+        };
+    };
 
-    class lxir_outlaw_unarmed_base_F: lxir_outlaw_base_F {
+    /* UNARMED ---------------------------------------------------------------------------------------------------------- */
+    class lxim_outlaw_unarmed_base_F: lxim_outlaw_base_F {
         supplyRadius = 10;
         attendant = 1;
         forceInGarage = 1;
@@ -1691,7 +1437,7 @@ class CfgVehicles {
         threat[] = {0,0,0};
     };
 
-    class lxir_outlaw_Unarmed_g: lxir_outlaw_unarmed_base_F {
+    class lxim_outlaw_Unarmed_g: lxim_outlaw_unarmed_base_F {
         displayName = "M20-MEV Green";
         author = QAUTHOR;
         scope = 2;
@@ -1703,10 +1449,10 @@ class CfgVehicles {
             attendant = 1;
         };
         typicalCargo[] = {"B_soldier_F"};
-        editorSubcategory = "lxir_EdSubcat_vehicles_green";
+        editorSubcategory = "lxim_EdSubcat_vehicles_green";
         hiddenSelectionsTextures[] = {QPATHTOF(data\med_01_ext_g.paa),QPATHTOF(data\med_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
     };
-    class lxir_outlaw_Unarmed_d: lxir_outlaw_unarmed_base_F {
+    class lxim_outlaw_Unarmed_d: lxim_outlaw_unarmed_base_F {
         displayName = "M20-MEV Desert";
         author = QAUTHOR;
         scope = 2;
@@ -1718,11 +1464,10 @@ class CfgVehicles {
             attendant = 1;
         };
         typicalCargo[] = {"B_soldier_F"};
-        editorSubcategory = "lxir_EdSubcat_vehicles_desert";
+        editorSubcategory = "lxim_EdSubcat_vehicles_desert";
         hiddenSelectionsTextures[] = {QPATHTOF(data\med_01_ext_d.paa),QPATHTOF(data\med_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
     };
-
-    class lxir_outlaw_repair_g: lxir_outlaw_unarmed_base_F {
+    class lxim_outlaw_repair_g: lxim_outlaw_unarmed_base_F {
         displayName = "M20-SUP Green";
         author = QAUTHOR;
         scope = 2;
@@ -1736,10 +1481,10 @@ class CfgVehicles {
         transportSoldier = 4;
         crew = "B_crew_F";
         typicalCargo[] = {"B_soldier_F"};
-        editorSubcategory = "lxir_EdSubcat_vehicles_green";
+        editorSubcategory = "lxim_EdSubcat_vehicles_green";
         hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_g.paa),QPATHTOF(data\outlaw_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
     };
-    class lxir_outlaw_repair_d: lxir_outlaw_unarmed_base_F {
+    class lxim_outlaw_repair_d: lxim_outlaw_unarmed_base_F {
         displayName = "M20-SUP Desert";
         author = QAUTHOR;
         scope = 2;
@@ -1753,168 +1498,15 @@ class CfgVehicles {
         transportSoldier = 4;
         crew = "B_crew_F";
         typicalCargo[] = {"B_soldier_F"};
-        editorSubcategory = "lxir_EdSubcat_vehicles_desert";
+        editorSubcategory = "lxim_EdSubcat_vehicles_desert";
         hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_d.paa),QPATHTOF(data\outlaw_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
     };
 
-    class lxir_outlaw_g: lxir_outlaw_base_F {
-        displayName = "M20";
-        scope = 2;
-        scopeCurator = 2;
-        faction = QUOTE(PREFIX);
-        forceInGarage = 0;
-        crew = "B_crew_F";
-        typicalCargo[] = {"B_soldier_F"};
-        editorSubcategory = "lxir_EdSubcat_vehicles_green";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_g.paa),QPATHTOF(data\outlaw_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-    };
-    class lxir_outlaw_d: lxir_outlaw_base_F {
-        scope = 2;
-        scopeCurator = 2;
-        faction = QUOTE(PREFIX);
-        forceInGarage = 0;
-        crew = "B_crew_F";
-        typicalCargo[] = {"B_soldier_F"};
-        editorSubcategory = "lxir_EdSubcat_vehicles_desert";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_d.paa),QPATHTOF(data\outlaw_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-    };
-
-    class lxir_outlaw_AA_g: lxir_outlaw_AA_base_F {
-        displayName = "M20-AA";
-        scope = 2;
-        scopeCurator = 2;
-        faction = QUOTE(PREFIX);
-        forceInGarage = 0;
-        crew = "B_crew_F";
-        typicalCargo[] = {"B_soldier_F"};
-        editorSubcategory = "lxir_EdSubcat_vehicles_green";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_g.paa),QPATHTOF(data\outlaw_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g_aa.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-    };
-    class lxir_outlaw_AA_d: lxir_outlaw_AA_base_F {
-        scope = 2;
-        scopeCurator = 2;
-        faction = QUOTE(PREFIX);
-        forceInGarage = 0;
-        crew = "B_crew_F";
-        typicalCargo[] = {"B_soldier_F"};
-        editorSubcategory = "lxir_EdSubcat_vehicles_desert";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_d.paa),QPATHTOF(data\outlaw_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d_aa.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-    };
-
-    class lxir_outlaw_g_V26: lxir_outlaw_g {
-        displayName = "M20 Thunder 2/6";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_wardaddy_g.paa),QPATHTOF(data\outlaw_02_ext_wardaddy_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_g_V11: lxir_outlaw_g {
-        displayName = "M20 Thunder 2/1";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_1_hull_g.paa),QPATHTOF(data\thunder_2_1_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_g_V12: lxir_outlaw_g {
-        displayName = "M20 Thunder 2/2";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_2_hull_g.paa),QPATHTOF(data\thunder_2_2_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_g_Vhq: lxir_outlaw_g {
-        displayName = "M20 HQ";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_hq_01_ext_g.paa),QPATHTOF(data\outlaw_hq_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_AA_g_V26: lxir_outlaw_AA_g {
-        displayName = "M20-AA Thunder 2/6";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_wardaddy_g.paa),QPATHTOF(data\outlaw_02_ext_wardaddy_g.paa),QPATHTOF(data\outlaw_turret_g_aa.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_AA_g_V11: lxir_outlaw_AA_g {
-        displayName = "M20-AA Thunder 2/1";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_1_hull_g.paa),QPATHTOF(data\thunder_2_1_ext_g.paa),QPATHTOF(data\outlaw_turret_g_aa.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_AA_g_V12: lxir_outlaw_AA_g {
-        displayName = "M20-AA thunder 2/2";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_2_hull_g.paa),QPATHTOF(data\thunder_2_2_ext_g.paa),QPATHTOF(data\outlaw_turret_g_aa.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-    };
-    class lxir_outlaw_AA_g_Vhq: lxir_outlaw_AA_g {
-        displayName = "M20-AA HQ";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_hq_01_ext_g.paa),QPATHTOF(data\outlaw_hq_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g_aa.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_d_V26: lxir_outlaw_d {
-        displayName = "M20 Desert Thuinder 2/6";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_wardaddy_d.paa),QPATHTOF(data\outlaw_02_ext_wardaddy_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_d_V11: lxir_outlaw_d {
-        displayName = "M20 Desert Thuinder 2/1";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_1_hull_d.paa),QPATHTOF(data\thunder_2_1_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_d_V12: lxir_outlaw_d {
-        displayName = "M20 Desert Thunder 2/2";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_2_hull_d.paa),QPATHTOF(data\thunder_2_2_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-    };
-    class lxir_outlaw_d_Vhq: lxir_outlaw_d {
-        displayName = "M20 Desert HQ";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_hq_01_ext_d.paa),QPATHTOF(data\outlaw_hq_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_AA_d_V26: lxir_outlaw_AA_d {
-        displayName = "M20-AA Desert Thunder 2/6";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_wardaddy_d.paa),QPATHTOF(data\outlaw_02_ext_wardaddy_d.paa),QPATHTOF(data\outlaw_turret_d_aa.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_AA_d_V11: lxir_outlaw_AA_d {
-        displayName = "M20-AA Desert Thunder 2/1";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_1_hull_d.paa),QPATHTOF(data\thunder_2_1_ext_d.paa),QPATHTOF(data\outlaw_turret_d_aa.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-    };
-
-    class lxir_outlaw_AA_d_V12: lxir_outlaw_AA_d {
-        displayName = "M20-AA Desert Thunder 2/2";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_2_hull_d.paa),QPATHTOF(data\thunder_2_2_ext_d.paa),QPATHTOF(data\outlaw_turret_d_aa.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-    };
-    class lxir_outlaw_AA_d_Vhq: lxir_outlaw_AA_d {
-        displayName = "M20-AA Desert HQ";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_hq_01_ext_d.paa),QPATHTOF(data\outlaw_hq_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d_aa.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-    };
-
-    
+    /* mgs ------------------------------------------------------------------------------------------------------------- */
     class B_AFV_Wheeled_01_up_cannon_F;
     class B_AFV_Wheeled_01_cannon_F;
 
-    class lxir_B_RHINO_UP_base : B_AFV_Wheeled_01_up_cannon_F {
+    class lxim_B_RHINO_UP_base : B_AFV_Wheeled_01_up_cannon_F {
         displayName="MGS";
         author = QAUTHOR;
         faction=QUOTE(PREFIX);
@@ -1922,7 +1514,7 @@ class CfgVehicles {
         scope= 1;
         scopeCurator=2;
         class TextureSources {
-            class lxir_GREEN {
+            class lxim_GREEN {
                 textures[]={
                     QPATHTOF(data\afv_wheeled_01_ext1_wardaddy_g_co.paa),
                     QPATHTOF(data\afv_wheeled_01_ext2_wardaddy_g_co.paa),
@@ -1934,7 +1526,7 @@ class CfgVehicles {
                 };
                 factions[]={"BLU_F"};
             };
-            class lxir_SAND {
+            class lxim_SAND {
                 textures[]={
                     QPATHTOF(data\afv_wheeled_01_ext1_wardaddy_d_co.paa),
                     QPATHTOF(data\afv_wheeled_01_ext2_wardaddy_d_co.paa),
@@ -1961,16 +1553,49 @@ class CfgVehicles {
                 };
             };
         };
+        class AcreIntercoms {
+            class Intercom_1 {
+                displayName = "Crew intercom";
+                shortName = "Crew";
+                allowedPositions[] = {"crew"};
+                disabledPositions[] = {"driver", {"turnedout", "all"}};
+                masterPositions[] = {"commander"};
+                limitedPositions[] = {{"cargo", "all"}};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+
+        // Infantry Phone
+        acre_hasInfantryPhone = 1;
+        acre_infantryPhoneIntercom[] = {"all"};
+        acre_infantryPhoneControlActions[] = {"intercom_1"};
+        acre_infantryPhoneDisableRinging = 0; // If set to 1, the ringing funtionality will not be available
+        acre_infantryPhoneCustomRinging[] = {"A3\Sounds_F\sfx\alarm_independent.wss", 5.0, 1.0, 1.0, 50}; // The alarm sound will be played every 5 seconds and will be audible until 50m. Volume and sound pitch are both set to 1
+
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Radio";             // Name displayed in the interaction menu
+                shortName = "Crew";
+                componentName = "ACRE_VRC110";        // Able to mount a PRC152
+                allowedPositions[] = {"driver", "commander", "gunner"}; // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+                disabledPositions[] = {};
+                defaultComponents[] = {};             // Use this to attach simple components like Antennas. Not yet fully implemented
+                mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+                isRadioRemovable = 1;                 // Radio can be removed
+                intercom[] = {};                      // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+            };
+        };
     };
 
-    class lxir_B_RHINO_UP_26_G : lxir_B_RHINO_UP_base {
+    class lxim_B_RHINO_UP_26_G : lxim_B_RHINO_UP_base {
         displayName="MGS UP 2/6";
         author = QAUTHOR;
         faction=QUOTE(PREFIX);
         side = 1;
         scope= 2;
         scopeCurator=2;
-        editorSubcategory = "lxir_EdSubcat_mgs_green";
+        editorSubcategory = "lxim_EdSubcat_mgs_green";
         hiddenSelectionsTextures[]={
             QPATHTOF(data\afv_wheeled_01_ext1_wardaddy_g_co.paa),
             QPATHTOF(data\afv_wheeled_01_ext2_wardaddy_g_co.paa),
@@ -1979,16 +1604,22 @@ class CfgVehicles {
             "a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_commander_tow_CO.paa",
             "a3\Armor_F\Data\camonet_NATO_Green_CO.paa",
             "A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_CO.paa"
+        };
+        class AcreRacks {
+            class Rack_2: Rack_1  {
+                displayName = "Company Radio";             // Name displayed in the interaction menu
+                shortName = "COY";
             };
+        };
     };
-    class lxir_B_RHINO_UP_26_D : lxir_B_RHINO_UP_base {
+    class lxim_B_RHINO_UP_26_D : lxim_B_RHINO_UP_base {
         displayName="MGS UP 2/6 Sand";
         author = QAUTHOR;
         faction=QUOTE(PREFIX);
         side = 1;
         scope= 2;
         scopeCurator=2;
-        editorSubcategory = "lxir_EdSubcat_mgs_desert";
+        editorSubcategory = "lxim_EdSubcat_mgs_desert";
         hiddenSelectionsTextures[]={
             QPATHTOF(data\afv_wheeled_01_ext1_wardaddy_d_co.paa),
             QPATHTOF(data\afv_wheeled_01_ext2_wardaddy_d_co.paa),
@@ -1997,6 +1628,12 @@ class CfgVehicles {
             "a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_commander_tow_sand_CO.paa",
             "a3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
             "A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_sand_CO.paa"
+        };
+        class AcreRacks {
+            class Rack_2: Rack_1  {
+                displayName = "Company Radio";             // Name displayed in the interaction menu
+                shortName = "COY";
             };
+        };
     };
 };

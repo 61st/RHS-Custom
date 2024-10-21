@@ -7,7 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxir_main",
+            "lxim_main",
             "ace_interact_menu",
             "ace_interaction"
         };

@@ -77,7 +77,7 @@ class CfgWeapons {
                 };
             };
             inertia = 0.1;
-            displayName = "lxir Enhanced Flashlight";
+            displayName = "lxim Enhanced Flashlight";
         };
 };
 
@@ -104,6 +104,6 @@ class CfgVehicles {
             };
         };
 
-        displayName = "lxir Enhanced Flashlight";
+        displayName = "lxim Enhanced Flashlight";
     };
 };

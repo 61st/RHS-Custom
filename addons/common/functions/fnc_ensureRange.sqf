@@ -11,9 +11,9 @@
  * The input value if it's between the bounds, upper bound if above, lower bound if below <NUMBER>
  *
  * Examples:
- * [1, 0, 2] call lxir_common_fnc_ensureRange; // returns 1
- * [2, 0, 1] call lxir_common_fnc_ensureRange; // returns 1
- * [0, 1, 2] call lxir_common_fnc_ensureRange; // returns 1
+ * [1, 0, 2] call lxim_common_fnc_ensureRange; // returns 1
+ * [2, 0, 1] call lxim_common_fnc_ensureRange; // returns 1
+ * [0, 1, 2] call lxim_common_fnc_ensureRange; // returns 1
  *
  * Public: Yes
  */

@@ -11,15 +11,15 @@
  * return the specified default value or false if it isn't <BOOL>
  *
  * Examples:
- * [configFile >> "thisIsANumber1"] call lxir_common_fnc_getBool; // returns true
- * [configFile >> "thisIsANumber0"] call lxir_common_fnc_getBool; // returns false
- * [configFile >> "thisIsAString1"] call lxir_common_fnc_getBool; // returns true
- * [configFile >> "thisIsAString0"] call lxir_common_fnc_getBool; // returns false
- * [configFile >> "thisIsAStringTrue"] call lxir_common_fnc_getBool; // returns true
- * [configFile >> "thisIsAStringFalse"] call lxir_common_fnc_getBool; // returns false
- * [configFile >> "thisIsAStringGibberish"] call lxir_common_fnc_getBool; // returns false
- * [configFile >> "thisIsNotANumberOrString"] call lxir_common_fnc_getBool; // returns false
- * [configFile >> "thisIsNotANumberOrString", true] call lxir_common_fnc_getBool; // returns true
+ * [configFile >> "thisIsANumber1"] call lxim_common_fnc_getBool; // returns true
+ * [configFile >> "thisIsANumber0"] call lxim_common_fnc_getBool; // returns false
+ * [configFile >> "thisIsAString1"] call lxim_common_fnc_getBool; // returns true
+ * [configFile >> "thisIsAString0"] call lxim_common_fnc_getBool; // returns false
+ * [configFile >> "thisIsAStringTrue"] call lxim_common_fnc_getBool; // returns true
+ * [configFile >> "thisIsAStringFalse"] call lxim_common_fnc_getBool; // returns false
+ * [configFile >> "thisIsAStringGibberish"] call lxim_common_fnc_getBool; // returns false
+ * [configFile >> "thisIsNotANumberOrString"] call lxim_common_fnc_getBool; // returns false
+ * [configFile >> "thisIsNotANumberOrString", true] call lxim_common_fnc_getBool; // returns true
  *
  * Public: Yes
  */

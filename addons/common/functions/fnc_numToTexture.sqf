@@ -1,5 +1,5 @@
 /*
- * Name: lxir_common_fnc_numToTexture
+ * Name: lxim_common_fnc_numToTexture
  * Author: Snippers
  *
  * Arguments:
@@ -14,13 +14,13 @@
 
 private _num = _this;
 
-if (_num == 1) exitWith {"z\lxir\addons\common\UI\numbers\1.paa"};
-if (_num == 2) exitWith {"z\lxir\addons\common\UI\numbers\2.paa"};
-if (_num == 3) exitWith {"z\lxir\addons\common\UI\numbers\3.paa"};
-if (_num == 4) exitWith {"z\lxir\addons\common\UI\numbers\4.paa"};
-if (_num == 5) exitWith {"z\lxir\addons\common\UI\numbers\5.paa"};
-if (_num == 6) exitWith {"z\lxir\addons\common\UI\numbers\6.paa"};
-if (_num == 7) exitWith {"z\lxir\addons\common\UI\numbers\7.paa"};
-if (_num == 8) exitWith {"z\lxir\addons\common\UI\numbers\8.paa"};
-if (_num == 9) exitWith {"z\lxir\addons\common\UI\numbers\9.paa"};
-"z\lxir\addons\common\UI\numbers\0.paa"
+if (_num == 1) exitWith {"z\lxim\addons\common\UI\numbers\1.paa"};
+if (_num == 2) exitWith {"z\lxim\addons\common\UI\numbers\2.paa"};
+if (_num == 3) exitWith {"z\lxim\addons\common\UI\numbers\3.paa"};
+if (_num == 4) exitWith {"z\lxim\addons\common\UI\numbers\4.paa"};
+if (_num == 5) exitWith {"z\lxim\addons\common\UI\numbers\5.paa"};
+if (_num == 6) exitWith {"z\lxim\addons\common\UI\numbers\6.paa"};
+if (_num == 7) exitWith {"z\lxim\addons\common\UI\numbers\7.paa"};
+if (_num == 8) exitWith {"z\lxim\addons\common\UI\numbers\8.paa"};
+if (_num == 9) exitWith {"z\lxim\addons\common\UI\numbers\9.paa"};
+"z\lxim\addons\common\UI\numbers\0.paa"

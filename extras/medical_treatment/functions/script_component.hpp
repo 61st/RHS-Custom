@@ -1,1 +1,0 @@
-#include "\z\lxir\addons\medical_treatment\script_component.hpp"

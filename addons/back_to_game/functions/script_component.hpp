@@ -1,1 +1,1 @@
-#include "\z\lxir\addons\back_to_game\script_component.hpp"
+#include "\z\lxim\addons\back_to_game\script_component.hpp"

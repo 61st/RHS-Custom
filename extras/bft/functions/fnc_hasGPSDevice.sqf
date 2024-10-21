@@ -10,12 +10,12 @@
  * has any sort of GPS device <BOOL>
  *
  * Example:
- * ["UNIT"] call lxir_bft_fnc_getMarkerSize
+ * ["UNIT"] call lxim_bft_fnc_getMarkerSize
  *
  * Public: No
  */
 
-params [["_unit", lxir_unit]];
+params [["_unit", lxim_unit]];
 
 private _return = FALSE;
 

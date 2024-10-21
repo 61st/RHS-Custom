@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [_wire, _obstacle] call lxir_breaching_fnc_breach
+ * [_wire, _obstacle] call lxim_breaching_fnc_breach
  *
  * Public: No
  */

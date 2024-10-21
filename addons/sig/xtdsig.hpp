@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [[bob, ted], false] call lxir_main_fnc_example
+ * [[bob, ted], false] call lxim_main_fnc_example
  *
  * Public: No
  */
@@ -61,31 +61,31 @@ class XtdGearModels {
 
 class XtdGearInfos {
     class CfgWeapons {
-        class lxir_sig_XM7 {
+        class lxim_sig_XM7 {
             model = "sigm7";
             grip = "none";
             color = "Solid_Tan";
         };
-        class lxir_sig_XM7_BLK {
+        class lxim_sig_XM7_BLK {
             model = "sigm7";
             grip = "none";
             color = "Solid_Black";
         };
-        class lxir_sig_XM7_G {
+        class lxim_sig_XM7_G {
             model = "sigm7";
             grip = "YES";
             color = "Solid_Tan";
         };
-        class lxir_sig_XM7_BLK_G {
+        class lxim_sig_XM7_BLK_G {
             model = "sigm7";
             grip = "YES";
             color = "Solid_Black";
         };
-        class lxir_sig_M250 {
+        class lxim_sig_M250 {
             model = "sigm250";
             color = "Solid_Tan";
         };
-        class lxir_sig_M250_BLK {
+        class lxim_sig_M250_BLK {
             model = "sigm250";
             color = "Solid_Black";
         };

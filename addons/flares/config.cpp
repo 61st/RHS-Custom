@@ -1,13 +1,13 @@
 #include "script_component.hpp"
 
-#ifndef lxir_LEAN_RHS_CUP_HLC
+#ifndef lxim_LEAN_RHS_CUP_HLC
 
 class CfgPatches {
     class ADDON {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"lxir_common"};
+        requiredAddons[] = {"lxim_common"};
         author = QAUTHOR;
         authors[] = {"PabstMirror"};
         authorUrl = URL;

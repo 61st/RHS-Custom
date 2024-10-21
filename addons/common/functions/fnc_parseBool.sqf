@@ -9,12 +9,12 @@
  * True if the input is "true", "1" or, 1 (case insensitive) <BOOL>
  *
  * Examples:
- * ["tRuE"] call lxir_common_fnc_parseBool; // returns true
- * [false] call lxir_common_fnc_parseBool; // returns false
- * ["1"] call lxir_common_fnc_parseBool; // returns true
- * [1] call lxir_common_fnc_parseBool; // returns true
- * [nil] call lxir_common_fnc_parseBool; // returns false
- * ["lxir (literally anything except 'true', '1' or, 1)"] call lxir_common_fnc_parseBool; // returns false
+ * ["tRuE"] call lxim_common_fnc_parseBool; // returns true
+ * [false] call lxim_common_fnc_parseBool; // returns false
+ * ["1"] call lxim_common_fnc_parseBool; // returns true
+ * [1] call lxim_common_fnc_parseBool; // returns true
+ * [nil] call lxim_common_fnc_parseBool; // returns false
+ * ["lxim (literally anything except 'true', '1' or, 1)"] call lxim_common_fnc_parseBool; // returns false
  *
  * Public: Yes
  */

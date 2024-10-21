@@ -1,5 +1,5 @@
 /*
- * Name: lxir_common_fnc_sideToColor
+ * Name: lxim_common_fnc_sideToColor
  * Author: Snippers
  *
  * Arguments:
@@ -13,18 +13,18 @@
  */
 
 //Cache vars for speed
-if (isNil "lxir_common_blufor_color") then {
-    lxir_common_blufor_color = [blufor] call bis_fnc_sideColor;
-    lxir_common_opfor_color = [opfor] call bis_fnc_sideColor;
-    lxir_common_indep_color = [independent] call bis_fnc_sideColor;
-    lxir_common_civ_color = [civilian] call bis_fnc_sideColor;
-    lxir_common_empty_color = [sideUnknown] call bis_fnc_sideColor;
+if (isNil "lxim_common_blufor_color") then {
+    lxim_common_blufor_color = [blufor] call bis_fnc_sideColor;
+    lxim_common_opfor_color = [opfor] call bis_fnc_sideColor;
+    lxim_common_indep_color = [independent] call bis_fnc_sideColor;
+    lxim_common_civ_color = [civilian] call bis_fnc_sideColor;
+    lxim_common_empty_color = [sideUnknown] call bis_fnc_sideColor;
 };
 
 switch _this do {
-    case blufor: {lxir_common_blufor_color};
-    case opfor: {lxir_common_opfor_color};
-    case independent: {lxir_common_indep_color};
-    case civilian: {lxir_common_civ_color};
-    default {lxir_common_empty_color};
+    case blufor: {lxim_common_blufor_color};
+    case opfor: {lxim_common_opfor_color};
+    case independent: {lxim_common_indep_color};
+    case civilian: {lxim_common_civ_color};
+    default {lxim_common_empty_color};
 };

@@ -6,7 +6,7 @@ class CfgVehicles {
     class Land_HelipadCircle_F;
     class GVAR(vs17_base): Helipad_base_F {
         scope = 0;
-        vehicleclass = "lxir";
+        vehicleclass = "lxim";
         mapsize = 1.5;
         class TransportWeapons{};
         class TransportItems{};

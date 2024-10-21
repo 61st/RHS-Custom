@@ -1,9 +1,9 @@
-#include "\z\lxir\addons\ai\script_component.hpp"
+#include "\z\lxim\addons\ai\script_component.hpp"
 /*
-Function: lxir_ai_fnc_SpawnCivZeusWrapper
+Function: lxim_ai_fnc_SpawnCivZeusWrapper
 
 Description:
-    Wraps calls to lxir_ai_fnc_SpawnCivilians for use with the Zeus Modules.
+    Wraps calls to lxim_ai_fnc_SpawnCivilians for use with the Zeus Modules.
 
 Arguments:
     _pos - Position of the module <ARRAY/POS3D>
@@ -92,7 +92,7 @@ private _dialogResult = [
             [_pedMin, _pedMax],
             [_vehPatrolsMin, _vehPatrolsMax],
             [_vehParkedMin, _vehParkedMax]
-        ] remoteExec ["lxir_ai_fnc_SpawnCivilians", 2];
+        ] remoteExec ["lxim_ai_fnc_SpawnCivilians", 2];
     },
     {},
     [_pos]

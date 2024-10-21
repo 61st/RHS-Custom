@@ -1,6 +1,6 @@
 #define COMPONENT xm157
 #define COMPONENT_BEAUTIFIED Xm157
-#include "\z\lxir\addons\main\script_mod.hpp"
+#include "\z\lxim\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -12,4 +12,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_XM157
 #endif
 
-#include "\z\lxir\addons\main\script_macros.hpp"
+#include "\z\lxim\addons\main\script_macros.hpp"

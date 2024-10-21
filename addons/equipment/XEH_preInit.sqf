@@ -2,7 +2,7 @@
 
 ADDON = false;
 
-if (isNil QEGVAR(main,lxir_enabled) || !(EGVAR(main,lxir_enabled))) exitWith {};
+if (isNil QEGVAR(main,lxim_enabled) || !(EGVAR(main,lxim_enabled))) exitWith {};
 
 
 ADDON = true;

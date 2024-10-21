@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"lxir_main"};
+        requiredAddons[] = {"lxim_main"};
         author = "";
         authors[] = {""};
         VERSION_CONFIG;

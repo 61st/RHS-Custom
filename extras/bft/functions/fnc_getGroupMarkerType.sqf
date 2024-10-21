@@ -10,7 +10,7 @@
  * Marker Type <STRING>
  *
  * Example:
- * ["GROUP"] call lxir_bft_fnc_getGroupMarkerType
+ * ["GROUP"] call lxim_bft_fnc_getGroupMarkerType
  *
  * Public: No
  */

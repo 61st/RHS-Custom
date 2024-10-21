@@ -18,7 +18,7 @@ class CfgWeapons {
         ace_overheating_slowdownFactor = 1;
         displayName="[61st] Sig MCX Spear";
         hiddenSelections[]={"Camo2", "Camo3", "Camo4", "Camo5", "Camo6", "Camo7", "Camo8"};
-        hiddenSelectionsTextures[]={QPATHTOF(data\UpperReceiver_co.paa), "\KAR_XM7\data\tex\stock_co.paa", "\KAR_XM7\data\tex\magazine_co.paa", QPATHTOF(data\LowerReceiver_co.paa), "\KAR_XM7\data\tex\ironsight_co.paa", "\KAR_XM7\data\tex\handguard_co.paa", "\KAR_XM7\data\tex\details_co.paa"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\UpperReceiver61_co.paa), "\KAR_XM7\data\tex\stock_co.paa", "\KAR_XM7\data\tex\magazine_co.paa", QPATHTOF(data\LowerReceiver61_co.paa), "\KAR_XM7\data\tex\ironsight_co.paa", "\KAR_XM7\data\tex\handguard_co.paa", "\KAR_XM7\data\tex\details_co.paa"};
         baseWeapon = QGVAR(XM7);
         magazines[]={QGVAR(25Rnd_Fury),QGVAR(25Rnd_Fury_blk),QGVAR(25Rnd_Fury_RT),QGVAR(25Rnd_Fury_RT_blk)};
     };
@@ -34,7 +34,7 @@ class CfgWeapons {
         ace_overheating_slowdownFactor = 1;
         displayName="[61st] Sig MCX Spear (Grip)";
         hiddenSelections[]={"Camo2", "Camo3", "Camo4", "Camo5", "Camo6", "Camo7", "Camo8"};
-        hiddenSelectionsTextures[]={QPATHTOF(data\UpperReceiver_co.paa), "\KAR_XM7\data\tex\stock_co.paa", "\KAR_XM7\data\tex\magazine_co.paa", QPATHTOF(data\LowerReceiver_co.paa), "\KAR_XM7\data\tex\ironsight_co.paa", "\KAR_XM7\data\tex\handguard_co.paa", "\KAR_XM7\data\tex\details_co.paa"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\UpperReceiver61_co.paa), "\KAR_XM7\data\tex\stock_co.paa", "\KAR_XM7\data\tex\magazine_co.paa", QPATHTOF(data\LowerReceiver61_co.paa), "\KAR_XM7\data\tex\ironsight_co.paa", "\KAR_XM7\data\tex\handguard_co.paa", "\KAR_XM7\data\tex\details_co.paa"};
         baseWeapon = QGVAR(XM7_G);
         magazines[]={QGVAR(25Rnd_Fury),QGVAR(25Rnd_Fury_blk),QGVAR(25Rnd_Fury_RT),QGVAR(25Rnd_Fury_RT_blk)};
     };

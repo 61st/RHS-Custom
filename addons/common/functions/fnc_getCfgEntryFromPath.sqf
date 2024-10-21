@@ -1,6 +1,6 @@
-#include "\z\lxir\addons\common\script_component.hpp"
+#include "\z\lxim\addons\common\script_component.hpp"
 /*
- * Name: lxir_common_fnc_getCfgEntryFromPath
+ * Name: lxim_common_fnc_getCfgEntryFromPath
  * Author: Snippers
  *
  * Arguments:

@@ -1,103 +1,140 @@
 class CfgMagazines {
-    class 60Rnd_40mm_GPR_shells;
-    class 60Rnd_40mm_GPR_Tracer_Red_shells;
-    class 40Rnd_40mm_APFSDS_shells;
-    class 40Rnd_40mm_APFSDS_Tracer_Red_shells;
-    class lxir_60Rnd_40mm_MP_shells_Tracer_Red: 60Rnd_40mm_GPR_Tracer_Red_shells  {
-        displayName = "60Rnd MP Tracer (Red)";
-        displayNameShort = "MP-T";
-        displayNameMFDFormat = "MP-T";
-        count=60;
-    };
-    class lxir_40Rnd_40mm_APFSDS_shells_Tracer_Red: 40Rnd_40mm_APFSDS_Tracer_Red_shells {
-        ammo = "lxir_B_40mm_APFSDS_Tracer_Red";
-        displayName = "40Rnd APFSDS Tracer (Red)";
-        displayNameShort = "APFSDS-T";
-        displayNameMFDFormat = "APFSDS-T";
-        count=40;
-    };
-    class lxir_60Rnd_40mm_MP_shells: 60Rnd_40mm_GPR_shells  {
-        displayName = "60Rnd MP)";
-        displayNameShort = "MP-T";
-        displayNameMFDFormat = "MP-T";
-        count=60;
-    };
-    class lxir_40Rnd_40mm_APFSDS_shells: 40Rnd_40mm_APFSDS_shells  {
-        ammo = "lxir_B_40mm_APFSDS";
-        displayName = "40Rnd APFSDS";
-        displayNameShort = "APFSDS-T";
-        displayNameMFDFormat = "APFSDS-T";
-        count=40;
-    };
-    class lxir_40Rnd_40mm_HEI_shells_Tracer_Red: lxir_60Rnd_40mm_MP_shells_Tracer_Red {
-        ammo = "lxir_B_40mm_HEI_Tracer_Red";
-        displayNameMFDFormat = "HEI-T";
-        displayName = "40Rnd HEI Tracer (Red)";
-        displayNameShort = "HEI-T";
-        count=40;
-        initSpeed=1100;
-    };
-    class lxir_40Rnd_40mm_HEI_shells: lxir_60Rnd_40mm_MP_shells {
-        ammo = "lxir_B_40mm_HEI";
-        displayNameMFDFormat = "HEI-T";
-        displayName = "40Rnd HEI Tracer (Red)";
-        displayNameShort = "HEI-T";
-        count=40;
-        initSpeed=1100;
-    };
+    class 140Rnd_30mm_MP_shells;
+    class 140Rnd_30mm_MP_shells_Tracer_Red;
+    class 60Rnd_30mm_APFSDS_shells;
+    class 60Rnd_30mm_APFSDS_shells_Tracer_Red;
+    class 250Rnd_30mm_HE_shells;
+    class 250Rnd_30mm_HE_shells_Tracer_Red;
     
-    class 4Rnd_Titan_long_missiles;
-    class 2Rnd_Titan_long_missiles_AA: 4Rnd_Titan_long_missiles {
-        author="$STR_A3_Bohemia_Interactive";
-        count=2;
+
+
+    class GVAR(100Rnd_35mm_MP_shells):140Rnd_30mm_MP_shells {
+        ammo = QGVAR(35mm_MP);
+        displayName = "100Rnd MP";
+        displayNameShort = "MP";
+        displayNameMFDFormat = "MP";
+        count=100;
+        mass = 8;
     };
+    class GVAR(100Rnd_35mm_MP_shells_Tracer_Red):140Rnd_30mm_MP_shells_Tracer_Red {
+        ammo = QGVAR(35mm_MP_Tracer_Red);
+        displayName = "100Rnd MP Tracer (Red)";
+        displayNameShort = "MP-T";
+        displayNameMFDFormat = "MP-T";
+        count=100;
+        mass = 8;        
+    };
+    class GVAR(100Rnd_35mm_APFSDS_shells):60Rnd_30mm_APFSDS_shells {
+        ammo = QGVAR(35mm_APFSDS);
+        displayName = "100Rnd APFSDS";
+        displayNameShort = "APFSDS";
+        displayNameMFDFormat = "APFSDS";
+        count=100;
+        mass = 8;
+    };
+    class GVAR(100Rnd_35mm_APFSDS_shells_Tracer_Red):60Rnd_30mm_APFSDS_shells_Tracer_Red {
+        ammo = QGVAR(35mm_APFSDS_Tracer_Red);
+        displayName = "100Rnd APFSDS Tracer (Red)";
+        displayNameShort = "APFSDS-T";
+        displayNameMFDFormat = "APFSDS-T";
+        count=100;
+        mass = 8;  
+    };
+    class GVAR(100Rnd_35mm_HE_shells):250Rnd_30mm_HE_shells {
+        ammo = QGVAR(35mm_HE);
+        displayName = "100Rnd HE";
+        displayNameShort = "HE";
+        displayNameMFDFormat = "HE";
+        count=100;
+        mass = 8;
+    };
+    class GVAR(100Rnd_35mm_HE_shells_Tracer_Red):250Rnd_30mm_HE_shells_Tracer_Red {
+        ammo = QGVAR(35mm_HE_Tracer_Red);
+        displayName = "100Rnd HE Tracer (Red)";
+        displayNameShort = "HE-T";
+        displayNameMFDFormat = "HE-T";
+        count=100;
+        mass = 8;        
+    };
+    class GVAR(100Rnd_35mm_AP_shells):60Rnd_30mm_APFSDS_shells {
+        ammo = QGVAR(35mm_AP);
+        displayName = "100Rnd AP";
+        displayNameShort = "AP";
+        displayNameMFDFormat = "AP";
+        count=100;
+        mass = 8;
+    };
+    class GVAR(100Rnd_35mm_AP_shells_Tracer_Red):60Rnd_30mm_APFSDS_shells_Tracer_Red {
+        ammo = QGVAR(35mm_AP_Tracer_Red);
+        displayName = "100Rnd AP Tracer (Red)";
+        displayNameShort = "AP-T";
+        displayNameMFDFormat = "AP-T";
+        count=100;
+        mass = 8;
+    };
+    /* AA --------------------------------------------------------------------------------------------------------------- */
+    class 6100Rnd_35mm_AA_shells;
+    class 6100Rnd_35mm_AA_shells_Tracer_Red;
+    class ACE_120Rnd_35mm_ABM_shells;
+    class ACE_120Rnd_35mm_ABM_shells_Tracer_Red;
+
+    class GVAR(100Rnd_35mm_AA_shells): 6100Rnd_35mm_AA_shells {
+        displayName = "100Rnd 35mm AA Shells";
+        displayNameShort = "AA";
+        displayNameMFDFormat = "AA";
+        ammo = QGVAR(35mm_AA);
+        count=100;
+        mass = 8;
+    };
+    class GVAR(100Rnd_35mm_AA_shells_Tracer_Red): 6100Rnd_35mm_AA_shells_Tracer_Red {
+        displayName = "100Rnd 35mm AA Shells Tracer";
+        displayNameShort = "AA-T";
+        displayNameMFDFormat = "AA-T";
+        ammo = QGVAR(35mm_AA_Tracer_Red);
+        count=100;
+        mass = 8;
+    };
+    class GVAR(100Rnd_35mm_ABM_shells): ACE_120Rnd_35mm_ABM_shells {
+        displayName = "100Rnd 35mm ABM Shells";
+        displayNameShort = "ABM";
+        displayNameMFDFormat = "ABM";
+        ammo = QGVAR(35mm_ABM);
+        count=100;
+        mass = 8;
+    };
+    class GVAR(100Rnd_35mm_ABM_shells_Tracer_Red): ACE_120Rnd_35mm_ABM_shells_Tracer_Red {
+        displayName = "100Rnd 35mm ABM Shells Tracer";
+        displayNameShort = "ABM-T";
+        displayNameMFDFormat = "ABM-T";
+        ammo = QGVAR(35mm_ABM_Tracer_Red);
+        count=100;
+        mass = 8;
+    };
+
+
+    /* TITANS ----------------------------------------------------------------------------------------------------------- */
     class 2Rnd_GAT_missiles;
-    class 2Rnd_Javelin_missiles: 2Rnd_GAT_missiles {
-        ammo = "rhs_ammo_M_fgm148_AT";
+    class GVAR(2Rnd_AT_missiles): 2Rnd_GAT_missiles {
+        displayName = "AT Missile";
+        displayNameShort="AT";
         count=2;
     };
-
-    class 2Rnd_Titan_long_missiles_ENG: 4Rnd_Titan_long_missiles {
-        ammo = "lxir_eng_round";
-        author="$STR_A3_Bohemia_Interactive";
-        displayNameShort="AS";
+    class GVAR(2Rnd_AA_missiles): 2Rnd_GAT_missiles {
+        ammo = "M_Titan_AA";
+        displayName = "AA Missile";
+        displayNameShort="AA";
         count=2;
     };
-    // TODO: ACE FCS Air Burst Mags
-    class lxir_40Rnd_40mm_HEABT_shells_Tracer_Red: lxir_60Rnd_40mm_MP_shells_Tracer_Red {
-        ammo="lxir_B_40mm_HEAB_Tracer_Red";
-        displayNameMFDFormat="HEAB-T";
-        displayName="40Rnd HEAB Tracer (Red)";
-        displayNameShort="HEAB-T";
-        count=40;
+    class GVAR(2Rnd_AP_missiles): 2Rnd_GAT_missiles {
+        ammo = "M_Titan_AP";
+        displayName = "AP Missile";
+        displayNameShort="AP";
+        count=2;
     };
-
-    class 680Rnd_35mm_AA_shells;
-    class lxir_280Rnd_40mm_AA_shells: 680Rnd_35mm_AA_shells {
-        ammo="lxir_40mm_AA_shells";
-        displayNameMFDFormat="40mmFlak";
-        displayName="280Rnd 40mm Flak";
-        displayNameShort="40mm Flak";
-        count=280;
-        initSpeed=1600;
-    };
-
-    class 680Rnd_35mm_AA_shells_Tracer_Red;
-    class lxir_280Rnd_40mm_AA_shells_Tracer_Red: 680Rnd_35mm_AA_shells_Tracer_Red {
-        ammo="lxir_40mm_AA_shells_Tracer_Red";
-        displayNameMFDFormat="40mmFlakT";
-        displayName="280Rnd 40mm Flak Tracer (Red)";
-        displayNameShort="40mm Flak";
-        count=280;
-        initSpeed=1600;
-    };
-
-    class 200Rnd_40mm_G_belt;
-    class lxir_120Rnd_40mm_G_belt: 200Rnd_40mm_G_belt {
-        ammo="lxir_40mm_G_belt";
-        displayNameMFDFormat="40mm HE";
-        displayName="120Rnd 40mm HE Tracer (Red)";
-        displayNameShort="40mm HE";
-        count=120;
+    class GVAR(2Rnd_BB_missiles): 2Rnd_GAT_missiles {
+        ammo = QGVAR(Titan_BB_round);
+        displayName = "BB Missile";
+        displayNameShort="BB";
+        count=2;
     };
 };

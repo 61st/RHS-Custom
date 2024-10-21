@@ -1,1 +1,0 @@
-PREP(initdiary);

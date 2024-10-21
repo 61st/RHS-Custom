@@ -1,1 +1,1 @@
-#include "\z\lxir\addons\bft\script_component.hpp"
+#include "\z\lxim\addons\bft\script_component.hpp"

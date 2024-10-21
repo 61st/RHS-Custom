@@ -1,6 +1,6 @@
-name = "lxir"
+name = "lxim"
 mainprefix = "z"
-prefix = "lxir"
+prefix = "lxim"
 author = "YonV"
 
 [files]

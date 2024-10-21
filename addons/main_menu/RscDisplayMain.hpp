@@ -3,7 +3,7 @@ class RscDisplayMain: RscStandardDisplay {
     // delete all Spotlights added directly to the display. (only saw it in WS CDLC so far)
     delete Spotlight;
     class Controls {
-        class lxirJoin : RscButton {
+        class lximJoin : RscButton {
             idc = -1;
             text = QPATHTOF(data\menulogo.paa);
             colorBackground[] = {0,0,0,0};
@@ -16,8 +16,8 @@ class RscDisplayMain: RscStandardDisplay {
             w = "4 *     (pixelW * pixelGrid * 2)";
             y = "safezoneY + 2 * 	(pixelH * pixelGrid * 2)";
 
-            tooltip = CSTRING(lxirJoin_tooltip);
-            url = CSTRING(lxirJoin_url);
+            tooltip = CSTRING(lximJoin_tooltip);
+            url = CSTRING(lximJoin_url);
             onMouseEnter = "";
             onSetFocus = "";
             onMouseExit = "";

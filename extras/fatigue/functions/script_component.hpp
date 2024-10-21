@@ -1,1 +1,0 @@
-#include "\z\lxir\addons\fatigue\script_component.hpp"

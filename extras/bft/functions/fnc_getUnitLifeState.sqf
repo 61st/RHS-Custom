@@ -10,7 +10,7 @@
  * Lifestate <STRING>
  *
  * Example:
- * ["UNIT"] call lxir_bft_fnc_getUnitLifeState
+ * ["UNIT"] call lxim_bft_fnc_getUnitLifeState
  *
  * Public: No
  */

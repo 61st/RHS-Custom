@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * ["range", [controller1, controller2], 5, [target1, target2]] call lxir_shootingrange_fnc_setConfigDuration;
+ * ["range", [controller1, controller2], 5, [target1, target2]] call lxim_shootingrange_fnc_setConfigDuration;
  *
  * Public: No
  */

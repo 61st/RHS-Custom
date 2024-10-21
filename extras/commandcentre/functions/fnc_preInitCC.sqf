@@ -1,1 +1,0 @@
-LXIR_CC_vehicleCamList = [];

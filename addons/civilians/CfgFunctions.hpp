@@ -1,9 +1,9 @@
-class lxir_Civilians {
+class lxim_Civilians {
 
-    tag = "lxir";
+    tag = "lxim";
     class Civilians {
 
-        file = "z\lxir\addons\civilians\Functions";
+        file = "z\lxim\addons\civilians\Functions";
         class initCivilianGestures {};
     };
 };

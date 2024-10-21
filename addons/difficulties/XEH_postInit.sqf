@@ -4,27 +4,27 @@
     params ["_unit"];
     private _vehicle = vehicle _unit;
     if (_vehicle != _unit && {gunner _vehicle == _unit || commander _vehicle == _unit}) then {
-        [_unit] call FUNC(setUnilxircuracy);
+        [_unit] call FUNC(setUnilximcuracy);
     };
 }, true, [], true] call CBA_fnc_addClassEventHandler;
 
 private _getInHandler = {
     params ["", "_role", "_unit"];
     if (_role in ["gunner", "commander"]) then {
-        [_unit] call FUNC(setUnilxircuracy);
+        [_unit] call FUNC(setUnilximcuracy);
     };
 };
 private _getOutHandler = {
     params ["", "_role", "_unit"];
     if (_role in ["gunner", "commander"]) then {
-        [_unit, true] call FUNC(setUnilxircuracy);
+        [_unit, true] call FUNC(setUnilximcuracy);
     };
 };
 private _seatSwitchedHandler = {
     params ["_vehicle", "_unit1", "_unit2"];
     {
         private _reset = gunner _vehicle != _x && commander _vehicle != _x;
-        [_x, _reset] call FUNC(setUnilxircuracy);
+        [_x, _reset] call FUNC(setUnilximcuracy);
     } forEach [_unit1, _unit2];
 };
 

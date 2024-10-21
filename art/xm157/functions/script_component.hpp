@@ -1,1 +1,1 @@
-#include "\z\lxir\addons\xm157\script_component.hpp"
+#include "\z\lxim\addons\xm157\script_component.hpp"

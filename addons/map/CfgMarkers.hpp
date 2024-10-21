@@ -1,7 +1,7 @@
 class CfgMarkers {
     class iconcasap {
         name = "CAS Action Point";
-        icon = "z\lxir\addons\map\data\aap.paa";
+        icon = "z\lxim\addons\map\data\aap.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -11,7 +11,7 @@ class CfgMarkers {
     };
     class iconcasbp {
         name = "CAS Battle Point";
-        icon = "z\lxir\addons\map\data\abp.paa";
+        icon = "z\lxim\addons\map\data\abp.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -21,7 +21,7 @@ class CfgMarkers {
     };
     class iconcascp {
         name = "CAS Control Point";
-        icon = "z\lxir\addons\map\data\acp.paa";
+        icon = "z\lxim\addons\map\data\acp.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -31,7 +31,7 @@ class CfgMarkers {
     };
     class iconcasop {
         name = "CAS Orbit Point";
-        icon = "z\lxir\addons\map\data\orbit.paa";
+        icon = "z\lxim\addons\map\data\orbit.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -41,7 +41,7 @@ class CfgMarkers {
     };
     class iconcasip {
         name = "CAS Initiation Point";
-        icon = "z\lxir\addons\map\data\aip.paa";
+        icon = "z\lxim\addons\map\data\aip.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -51,7 +51,7 @@ class CfgMarkers {
     };
     class iconcascck {
         name = "CAS Communications Point";
-        icon = "z\lxir\addons\map\data\ackp.paa";
+        icon = "z\lxim\addons\map\data\ackp.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -61,7 +61,7 @@ class CfgMarkers {
     };
     class iconcasep {
         name = "CAS Egress Point";
-        icon = "z\lxir\addons\map\data\aep.paa";
+        icon = "z\lxim\addons\map\data\aep.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -71,7 +71,7 @@ class CfgMarkers {
     };
     class iconcasdz {
         name = "Drop Zone";
-        icon = "z\lxir\addons\map\data\DZ.paa";
+        icon = "z\lxim\addons\map\data\DZ.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -81,7 +81,7 @@ class CfgMarkers {
     };
     class iconcasilz {
         name = "Landing Zone (LZ)";
-        icon = "z\lxir\addons\map\data\ILZ.paa";
+        icon = "z\lxim\addons\map\data\ILZ.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -91,7 +91,7 @@ class CfgMarkers {
     };
     class iconcaselz {
         name = "Pickup Zone (PZ)";
-        icon = "z\lxir\addons\map\data\ELZ.paa";
+        icon = "z\lxim\addons\map\data\ELZ.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -101,7 +101,7 @@ class CfgMarkers {
     };
     class iconcasflz {
         name =  "Landing Zone False\Fake";
-        icon = "z\lxir\addons\map\data\FLZ.paa";
+        icon = "z\lxim\addons\map\data\FLZ.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -111,7 +111,7 @@ class CfgMarkers {
     };
     class iconassultd {
         name = "Assult";
-        icon = "z\lxir\addons\map\data\assult.paa";
+        icon = "z\lxim\addons\map\data\assult.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -121,7 +121,7 @@ class CfgMarkers {
     };
     class iconsupportd {
         name = "Support";
-        icon = "z\lxir\addons\map\data\support.paa";
+        icon = "z\lxim\addons\map\data\support.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -131,7 +131,7 @@ class CfgMarkers {
     };
     class iconXMARKx {
         name = "X";
-        icon = "z\lxir\addons\map\data\x.paa";
+        icon = "z\lxim\addons\map\data\x.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -141,7 +141,7 @@ class CfgMarkers {
     };
     class iconXMARKnrp {
         name = "Dive Referance Point";
-        icon = "z\lxir\addons\map\data\nrp.paa";
+        icon = "z\lxim\addons\map\data\nrp.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -151,7 +151,7 @@ class CfgMarkers {
     };
     class iconXMARKnsp {
         name = "Dive Special Referance Point";
-        icon = "z\lxir\addons\map\data\nsp.paa";
+        icon = "z\lxim\addons\map\data\nsp.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -161,7 +161,7 @@ class CfgMarkers {
     };
     class iconXMARKnnp {
         name = "Dive Navigation Point";
-        icon = "z\lxir\addons\map\data\nnp.paa";
+        icon = "z\lxim\addons\map\data\nnp.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -171,7 +171,7 @@ class CfgMarkers {
     };
     class iconXMARKdive {
         name = "Dive Point";
-        icon = "z\lxir\addons\map\data\dive.paa";
+        icon = "z\lxim\addons\map\data\dive.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -181,7 +181,7 @@ class CfgMarkers {
     };
     class iconXMARKsurface {
         name = "Dive Surface Point";
-        icon = "z\lxir\addons\map\data\surface.paa";
+        icon = "z\lxim\addons\map\data\surface.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -191,7 +191,7 @@ class CfgMarkers {
     };
     class iconXMARKland {
         name = "Dive\Amphibious Landing Point";
-        icon = "z\lxir\addons\map\data\land.paa";
+        icon = "z\lxim\addons\map\data\land.paa";
         size = 24;
         shadow = "false";
         scope=2;
@@ -201,7 +201,7 @@ class CfgMarkers {
     };   
     class iconXMARKacrew {
         name = "Downed Aircrew";
-        icon = "z\lxir\addons\map\data\down.paa";
+        icon = "z\lxim\addons\map\data\down.paa";
         size = 24;
         shadow = "false";
         scope=2;

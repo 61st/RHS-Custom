@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * ["range", controller, [controller1, controller2], 1, [target1, target2]] call lxir_shootingrange_fnc_setConfigMode;
+ * ["range", controller, [controller1, controller2], 1, [target1, target2]] call lxim_shootingrange_fnc_setConfigMode;
  *
  * Public: No
  */

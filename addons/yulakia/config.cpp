@@ -7,7 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxir_main",
+            "lxim_main",
             "yulakia"
         };
         authorUrl = URL;

@@ -1,5 +1,5 @@
 /*
- * Name: lxir_common_fnc_capitalize
+ * Name: lxim_common_fnc_capitalize
  * Author: Head
  *
  * Arguments:

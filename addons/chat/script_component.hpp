@@ -1,5 +1,5 @@
 #define COMPONENT chat
-#include "\z\lxir\addons\main\script_mod.hpp"
+#include "\z\lxim\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -11,7 +11,7 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_CHAT
 #endif
 
-#include "\z\lxir\addons\main\script_macros.hpp"
+#include "\z\lxim\addons\main\script_macros.hpp"
 
 #define CHAT_CHANNEL_GLOBAL 0
 #define CHAT_CHANNEL_SIDE 1

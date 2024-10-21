@@ -1,1 +1,1 @@
-#include "\z\lxir\addons\flags\script_component.hpp"
+#include "\z\lxim\addons\flags\script_component.hpp"

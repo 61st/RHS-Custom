@@ -7,8 +7,8 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxir_main",
-            "lxir_common"
+            "lxim_main",
+            "lxim_common"
         };
         author = "NemesisRE";
         authors[] = {"baermitumlaut", "commy2"};

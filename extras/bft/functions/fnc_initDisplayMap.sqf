@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [display] call lxir_bft_fnc_initDisplayMission
+ * [display] call lxim_bft_fnc_initDisplayMission
  *
  * Public: No
  */

@@ -9,7 +9,7 @@ class CfgMarkers {
         color[] = {1, 1, 1, 1};
     };
     class iconManMedic {
-        name = "Squad Medic";
+        name = "Unit Medic";
         icon = "\A3\ui_f\data\map\vehicleicons\iconManMedic_ca.paa";
         size = 24;
         shadow = "true";
@@ -41,7 +41,7 @@ class CfgMarkers {
         color[] = {1, 1, 1, 1};
     };
     class iconManExplosive {
-        name = "JTAC";
+        name = "Unit Explosive";
         icon = "\A3\ui_f\data\map\vehicleicons\iconManExplosive_ca.paa";
         size = 24;
         shadow = "true";
@@ -49,102 +49,13 @@ class CfgMarkers {
         color[] = {1, 1, 1, 1};
     };
     class iconMan {
-        name = "Dismount";
+        name = "Unit Man";
         icon = "\A3\ui_f\data\map\vehicleicons\iconMan_ca.paa";
         size = 24;
         shadow = "true";
         scope = 0;
         color[] = {1, 1, 1, 1};
     };
-    class iconmancommander {
-        name = "Platoon Leader";
-        icon = "\A3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa";
-        size = 24;
-        shadow = "true";
-        scope = 0;
-        color[] = {1, 1, 1, 1};
-    };
-    class iconmancommander2 {
-        name = "Platoon Sergent";
-        icon = "\A3\ui_f\data\map\vehicleicons\iconmancommander2_ca.paa";
-        size = 24;
-        shadow = "true";
-        scope = 0;
-        color[] = {1, 1, 1, 1};
-    };
-    class iconmanvirtual {
-        name = "Zeus";
-        icon = "\A3\ui_f\data\map\vehicleicons\iconmanvirtual_ca.paa";
-        size = 24;
-        shadow = "true";
-        scope = 0;
-        color[] = {1, 1, 1, 1};
-    };
-
-    class iconseng2 {
-        name = "Zeus";
-        icon = "z\lxir\addons\media\images\Icons\eng2.paa";
-        size = 24;
-        shadow = "true";
-        scope = 0;
-        color[] = {1, 1, 1, 1};
-    };
-    class iconsjtac {
-        name = "Zeus";
-        icon = "z\lxir\addons\media\images\Icons\jtac.paa";
-        size = 24;
-        shadow = "true";
-        scope = 0;
-        color[] = {1, 1, 1, 1};
-    };
-    class iconsmed2 {
-        name = "Zeus";
-        icon = "z\lxir\addons\media\images\Icons\med2.paa";
-        size = 24;
-        shadow = "true";
-        scope = 0;
-        color[] = {1, 1, 1, 1};
-    };
-    class iconmanofficer {
-        name = "Squad Leader";
-        icon = "\A3\ui_f\data\map\vehicleicons\iconmanofficer_ca.paa";
-        size = 24;
-        shadow = "true";
-        scope = 0;
-        color[] = {1, 1, 1, 1};
-    };
-    class iconsgunner {
-        name = "Vehicle Gunner";
-        icon = "z\lxir\addons\media\images\Icons\gunner.paa";
-        size = 24;
-        shadow = "true";
-        scope = 0;
-        color[] = {1, 1, 1, 1};
-    };
-    class iconsdriver {
-        name = "Vehicle Driver";
-        icon = "z\lxir\addons\media\images\Icons\driver.paa";
-        size = 24;
-        shadow = "true";
-        scope = 0;
-        color[] = {1, 1, 1, 1};
-    };
-    class iconscmd {
-        name = "Vehicle Commander";
-        icon = "z\lxir\addons\media\images\Icons\cmd.paa";
-        size = 24;
-        shadow = "true";
-        scope = 0;
-        color[] = {1, 1, 1, 1};
-    };
-
-
-
-
-
-
-
-
     // Vehicles
     class iconApc {
         name = "Vehicle APC";
@@ -259,5 +170,4 @@ class CfgMarkers {
         scope = 0;
         color[] = {1, 1, 1, 1};
     };
-    
 };

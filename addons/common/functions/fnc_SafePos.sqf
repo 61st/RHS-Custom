@@ -1,5 +1,5 @@
 /*
-Function: lxir_fncSafePos
+Function: lxim_fncSafePos
 
 Description:
     Finds a safe position based on the given parameters, using BIS_fnc_randomPos.

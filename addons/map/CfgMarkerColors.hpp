@@ -5,7 +5,7 @@ class CfgMarkerColors {
         scope = 2;
         color[] = {1, 0, 1, 1};
     };
-    class Colorlxir: Default {
+    class Colorlxim: Default {
         name = "61st";
         scope = 2;
         color[] = {0.886,0.616,0.133,1};

@@ -24,7 +24,7 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxir_main",
+            "lxim_main",
             "KAR_XM7",
             "KAR_XM250"
         };

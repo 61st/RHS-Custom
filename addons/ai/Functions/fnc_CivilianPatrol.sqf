@@ -1,6 +1,6 @@
-#include "\z\lxir\addons\ai\script_component.hpp"
+#include "\z\lxim\addons\ai\script_component.hpp"
 /*
-Function: lxir_ai_fnc_CivilianPatrol
+Function: lxim_ai_fnc_CivilianPatrol
 
 Description:
     Sets up a patrol for civilians with appropriate reactions to getting shot at.
@@ -33,7 +33,7 @@ _findWps = _patrolLengthMin + floor (random (_patrolLengthMax - _patrolLengthMin
 _group setBehaviour "SAFE";
 _group setSpeedMode "LIMITED";
 
-_EHfiredNear = (leader _group) addEventHandler ["FiredNear", {_this call lxir_ai_fnc_CivBreakPatrol;}];
+_EHfiredNear = (leader _group) addEventHandler ["FiredNear", {_this call lxim_ai_fnc_CivBreakPatrol;}];
 
 for "_i" from 0 to _findWps do {
     _wp = selectRandom _waypoints;

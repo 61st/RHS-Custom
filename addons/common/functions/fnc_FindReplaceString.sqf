@@ -1,5 +1,5 @@
 /*
-Function: lxir_fncFindReplaceString
+Function: lxim_fncFindReplaceString
 
 Description:
     Finds and replaces a certain substring in a given string with a different
@@ -19,7 +19,7 @@ Examples:
     (begin example)
         [
             "123456123", "123", "abc", 1, true
-        ] call lxir_fnc_FindReplaceString; // returns "abc456123"
+        ] call lxim_fnc_FindReplaceString; // returns "abc456123"
     (end)
 
 Author:

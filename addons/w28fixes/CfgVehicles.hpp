@@ -67,12 +67,6 @@ class CfgVehicles {
         displayName="[US] MOLLE Sturmgepak (Radio)";
         maximumLoad=300;
         mass=90;
-        tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-        tf_hasLRradio=1;
-        tf_encryptionCode="tf_west_radio_code";
-        tf_range=40000;
-        tf_dialog="rt1523g_radio_dialog";
-        tf_subtype="digital_lr";
     };
     class B_simc_US_Molle_sturm_OCP_RTO_wasser : B_simc_US_Molle_sturm_OCP_RTO {
         displayName="[US] MOLLE Sturmgepak (Radio)";
@@ -89,4 +83,3 @@ class CfgVehicles {
         displayName="Camelbak Thermobak 3L";
     };
 };
-

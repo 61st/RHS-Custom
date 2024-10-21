@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
 
- * \lxir_medical\supplies\functions\fn_canUnpackFirstAid.sqf
+ * \lxim_medical\supplies\functions\fn_canUnpackFirstAid.sqf
  * by YonV
  *
  * check if medical supplies can be unpacked
@@ -13,7 +13,7 @@
  * <BOOLEAN>
  *
  * Example:
- * [player] call lxir_medical_supplies_fnc_canUnpackFirstAid;
+ * [player] call lxim_medical_supplies_fnc_canUnpackFirstAid;
  *
  */
 
@@ -32,7 +32,7 @@ if (isNull _unit) exitWith {false};
 private _return = false;
 
 _return = (
-    ("lxir_medbags_FirstAid" in items _unit) &&
+    ("lxim_medbags_FirstAid" in items _unit) &&
     (alive _unit) &&
     !(_unit getVariable ["ace_captives_isSurrendering", false]) &&
     !(_unit getVariable ["ace_captives_isHandcuffed", false]) &&

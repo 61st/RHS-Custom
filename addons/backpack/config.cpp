@@ -13,10 +13,6 @@ class CfgPatches {
             QGVAR(RadioBag_01_TROPIC),
             QGVAR(RadioBag_01_OUCAMO),
             QGVAR(RadioBag_01_WDL),
-            QGVAR(talon_kitbag_coyote),
-            QGVAR(talon_kitbag_winter),
-            QGVAR(talon_kitbag_khaki),
-            QGVAR(TFAR_rt1523g_kitbag),
             QGVAR(kitbag_khaki_west),
             QGVAR(kitbag_coyote_west),
             QGVAR(kitbag_winter_west),
@@ -87,7 +83,7 @@ class CfgPatches {
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"lxir_main", "A3_Characters_F", "A3_Characters_F_Enoch","A3_Supplies_F_Enoch_Bags"};
+        requiredAddons[] = {"lxim_main", "A3_Characters_F", "A3_Characters_F_Enoch","A3_Supplies_F_Enoch_Bags"};
         author = "";
         authors[] = {""};
         VERSION_CONFIG;

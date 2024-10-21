@@ -8,9 +8,9 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ace_medical_treatment",
-            "lxir_main"
+            "lxim_main"
         };
-        author = "ArmaForces";
+        author = QAUTHOR;
         VERSION_CONFIG;
     };
 };

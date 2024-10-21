@@ -1,1 +1,1 @@
-#include "\z\lxir\addons\headgear\script_component.hpp"
+#include "\z\lxim\addons\headgear\script_component.hpp"

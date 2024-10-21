@@ -25,7 +25,7 @@
     <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a> and <a href="https://github.com/acemod/ACE3/releases">ACE3</a>.<br/></strong></sup>
 </p>
 
-# LXIR Custom Mod
+# LXIM Custom Mod
 
 This is the custom mod for 61st Mechanized Infantry Battalion
 Its based/inspired on/by the following projects;
@@ -34,7 +34,7 @@ Its based/inspired on/by the following projects;
 - https://github.com/61st Mechanized Infantry Battalion/Mods of 61st Mechanized Infantry Battalion/Mods  -  GNU GENERAL PUBLIC LICENSE
 - https://github.com/AXEmod/AXE - GNU General Public License (GPLv3)
 - https://github.com/Theseus-Aegis/Mods - GNU General Public License (GPLv2).
-- https://github.com/last-resort-gaming/lxir-Fundamentals - MIT License
+- https://github.com/last-resort-gaming/lxim-Fundamentals - MIT License
 - https://github.com/Theseus-Aegis/TheseusServices - Official license: Arma Public License Share-Alike (APL-SA)
 - https://github.com/quies-in-proelium/qipTPL - Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 - https://github.com/SzwedzikPL/SimpleSuppress/releases - MIT License

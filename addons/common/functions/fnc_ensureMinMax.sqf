@@ -12,9 +12,9 @@
  *     1: The ensured maximum number <NUMBER>
  *
  * Examples:
- * [1, 0] call lxir_common_fnc_ensureMinMax; // returns [0,1]
- * [2, 0] call lxir_common_fnc_ensureMinMax; // returns [0,2]
- * [0, 1] call lxir_common_fnc_ensureMinMax; // returns [0,1]
+ * [1, 0] call lxim_common_fnc_ensureMinMax; // returns [0,1]
+ * [2, 0] call lxim_common_fnc_ensureMinMax; // returns [0,2]
+ * [0, 1] call lxim_common_fnc_ensureMinMax; // returns [0,1]
  *
  * Public: Yes
  */

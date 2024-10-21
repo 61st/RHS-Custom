@@ -3,7 +3,7 @@ Function: LR_fnc_ConfigZeus
 
 Description:
     Used to configure a Zeus Module. Ensures that any AI placed down by that Zeus have Dynamic Sim
-    enabled and their difficulty settings configured to the lxir Default.
+    enabled and their difficulty settings configured to the lxim Default.
 
 Arguments:
     _object - Zeus Module to apply the function to. <OBJECT>
@@ -24,7 +24,7 @@ params [
 _object setVariable ["showNotification", false];
 _object setVariable ["birdType", "", true];
 
-if !(lxir_AI_InitialAI) exitWith {};
+if !(lxim_AI_InitialAI) exitWith {};
 
 _object addEventHandler [
     "CuratorObjectPlaced", {
@@ -40,18 +40,18 @@ _object addEventHandler [
                     _entity;
                 };
 
-                [_Group, "lxir Default"] remoteExec ["lxir_ai_fnc_SetUnitSkill",2];
-                if (lxir_AI_DynSim) then {
+                [_Group, "lxim Default"] remoteExec ["lxim_ai_fnc_SetUnitSkill",2];
+                if (lxim_AI_DynSim) then {
                     [_Group, true] remoteExec ["enableDynamicSimulation",2];
                 };
             };
 
             if (_class isKindOf "AllVehicles") exitWith {
                 {
-                    [_x, "lxir Default"] remoteExec ["lxir_ai_fnc_SetUnitSkill",2];
+                    [_x, "lxim Default"] remoteExec ["lxim_ai_fnc_SetUnitSkill",2];
                 } forEach crew _entity;
 
-                if (lxir_AI_DynSim) then {
+                if (lxim_AI_DynSim) then {
                     [group _entity , true] remoteExec ["enableDynamicSimulation",2];
                 };
             };
