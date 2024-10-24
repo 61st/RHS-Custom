@@ -11,5 +11,4 @@ class CfgEditorSubcategories {
     class lxim_EdSubcat_mgs_desert {
         displayname = "MGS (Desert)"; 
     };
-
 };

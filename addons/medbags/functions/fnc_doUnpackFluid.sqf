@@ -65,8 +65,6 @@ if (isNull _unit) exitWith {};
         [_unit, "ACE_salineIV", 24, _order, _overflow] call EFUNC(common,addItem);
         sleep 0.3;
         [_unit, "ACE_plasmaIV", 12, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_bloodIV", 8, _order, _overflow] call EFUNC(common,addItem);
     };
 
     if (lxim_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {

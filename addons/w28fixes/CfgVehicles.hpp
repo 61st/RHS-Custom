@@ -66,7 +66,7 @@ class CfgVehicles {
     class B_simc_US_Molle_sturm_OCP_RTO : B_simc_US_Molle_sturm_OCP {
         displayName="[US] MOLLE Sturmgepak (Radio)";
         maximumLoad=300;
-        mass=90;
+        mass=80;
     };
     class B_simc_US_Molle_sturm_OCP_RTO_wasser : B_simc_US_Molle_sturm_OCP_RTO {
         displayName="[US] MOLLE Sturmgepak (Radio)";

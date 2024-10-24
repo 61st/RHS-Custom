@@ -14,29 +14,29 @@ class CfgWeapons {
         class HE: HE {
             displayName = "Bushmaster III HE";
             magazines[] = {
-                QGVAR(80Rnd_35mm_HE_shells),
-                QGVAR(80Rnd_35mm_HE_shells_Tracer_Red),
-                QGVAR(80Rnd_35mm_MP_shells),
-                QGVAR(80Rnd_35mm_MP_shells_Tracer_Red)
+                QGVAR(100Rnd_35mm_HE_shells),
+                QGVAR(100Rnd_35mm_HE_shells_Tracer_Red),
+                QGVAR(100Rnd_35mm_MP_shells),
+                QGVAR(100Rnd_35mm_MP_shells_Tracer_Red)
             };
         };
         class AP: AP {
             displayName = "Bushmaster III AP";
             magazines[] = {
-                QGVAR(80Rnd_35mm_APFSDS_shells),
-                QGVAR(80Rnd_35mm_APFSDS_shells_Tracer_Red),
-                QGVAR(80Rnd_35mm_AP_shells),
-                QGVAR(80Rnd_35mm_AP_shells_Tracer_Red)
+                QGVAR(100Rnd_35mm_APFSDS_shells),
+                QGVAR(100Rnd_35mm_APFSDS_shells_Tracer_Red),
+                QGVAR(100Rnd_35mm_AP_shells),
+                QGVAR(100Rnd_35mm_AP_shells_Tracer_Red)
             };
         };
         class AA: HE {
             displayName = "Bushmaster III AA";
             burst = 6;
             magazines[] = {
-                QGVAR(120Rnd_35mm_AA_shells),
-                QGVAR(120Rnd_35mm_AA_shells_Tracer_Red),
-                QGVAR(120Rnd_35mm_ABM_shells),
-                QGVAR(120Rnd_35mm_ABM_shells_Tracer_Red)
+                QGVAR(100Rnd_35mm_AA_shells),
+                QGVAR(100Rnd_35mm_AA_shells_Tracer_Red),
+                QGVAR(100Rnd_35mm_ABM_shells),
+                QGVAR(100Rnd_35mm_ABM_shells_Tracer_Red)
             };
         };
     };

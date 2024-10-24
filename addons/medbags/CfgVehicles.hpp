@@ -50,14 +50,14 @@ class CfgVehicles {
                     icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
                     showDisabled = 0;
                 };
-                // class GVAR(Medical_Supplies_Action_mopp) {
-                //     displayName = "Unpack MOPP Bag";
-                //     condition = "[_player] call lxim_medbags_fnc_canUnpackmopp";
-                //     statement = "[_player] call lxim_medbags_fnc_doUnpackmopp";
-                //     exceptions[] = {"isNotInside", "isNotSitting"};
-                //     icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
-                //     showDisabled = 0;
-                // };
+                class GVAR(Medical_Supplies_Action_mopp) {
+                    displayName = "Unpack MOPP Bag";
+                    condition = "[_player] call lxim_medbags_fnc_canUnpackmopp";
+                    statement = "[_player] call lxim_medbags_fnc_doUnpackmopp";
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                    icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
+                    showDisabled = 0;
+                };
         };
         // class ACE_MainActions {
         //     class GVAR(Medical_Supplies_Action_Take) {
@@ -143,17 +143,17 @@ class CfgVehicles {
             count = 1;
         };
     };
-    // class GVAR(Item_mopp): Item_Base_F {
-    //     scope = 2;
-    //     scopeArsenal = 2;
-    //     scopeCurator = 2;
-    //     author = QAUTHOR;
-    //     displayName = "MOPP Bag";
-    //     editorPreview = QPATHTOF(data\previews\booboo_ca.paa);
-    //     vehicleClass = "Items";
-    //     class TransportItems {
-    //         name = QGVAR(mopp);
-    //         count = 1;
-    //     };
-    // };
+    class GVAR(Item_mopp): Item_Base_F {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "MOPP Bag";
+        editorPreview = QPATHTOF(data\previews\booboo_ca.paa);
+        vehicleClass = "Items";
+        class TransportItems {
+            name = QGVAR(mopp);
+            count = 1;
+        };
+    };
 };

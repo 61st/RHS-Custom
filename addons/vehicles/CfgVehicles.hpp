@@ -1140,10 +1140,10 @@ class CfgVehicles {
 
         class AcreRacks {
             class Rack_1 {
-                displayName = "Crew Radio";             // Name displayed in the interaction menu
-                shortName = "Crew";
+                displayName = "VEHICLE";             // Name displayed in the interaction menu
+                shortName = "VEH";
                 componentName = "ACRE_VRC110";        // Able to mount a PRC152
-                allowedPositions[] = {"driver", "commander", "gunner"}; // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+                allowedPositions[] = {"crew"}; // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
                 disabledPositions[] = {};
                 defaultComponents[] = {};             // Use this to attach simple components like Antennas. Not yet fully implemented
                 mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
@@ -1151,128 +1151,31 @@ class CfgVehicles {
                 intercom[] = {"intercom_1"};                      // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
             };
             class Rack_2 {
-                displayName = "Squad Radio";             // Name displayed in the interaction menu
-                shortName = "Squad";
+                displayName = "PASSENGER";             // Name displayed in the interaction menu
+                shortName = "PAX";
                 componentName = "ACRE_VRC110";        // Able to mount a PRC152
-                allowedPositions[] = {{"cargo", "all"}};       // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+                allowedPositions[] = {"cargo"}; // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
                 disabledPositions[] = {};
                 defaultComponents[] = {};             // Use this to attach simple components like Antennas. Not yet fully implemented
                 mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
                 isRadioRemovable = 1;                 // Radio can be removed
-                intercom[] = {"Intercom_2"};                      // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+                intercom[] = {"intercom_1"};                      // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+            };
+            class Rack_3 {
+                displayName = "SQUAD";             // Name displayed in the interaction menu
+                shortName = "SQD";
+                componentName = "ACRE_VRC110";        // Able to mount a PRC152
+                allowedPositions[] = {"crew"};       // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+                disabledPositions[] = {};
+                defaultComponents[] = {};             // Use this to attach simple components like Antennas. Not yet fully implemented
+                mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+                isRadioRemovable = 1;                 // Radio can be removed
+                intercom[] = {"Intercom_1"};                      // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
             };
         };
     };
     /* BASE ------------------------------------------------------------------------------------------------------------- */
 
-    /* G ---------------------------------------------------------------------------------------------------------------- */
-    class lxim_outlaw_g: lxim_outlaw_base_F {
-        displayName = "M20";
-        scope = 2;
-        scopeCurator = 2;
-        faction = QUOTE(PREFIX);
-        forceInGarage = 0;
-        crew = "B_crew_F";
-        typicalCargo[] = {"B_soldier_F"};
-        editorSubcategory = "lxim_EdSubcat_vehicles_green";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_g.paa),QPATHTOF(data\outlaw_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-    };
-    class lxim_outlaw_g_V26: lxim_outlaw_g {
-        displayName = "M20 Thunder 2/6";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_wardaddy_g.paa),QPATHTOF(data\outlaw_02_ext_wardaddy_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-        class AcreRacks {
-            class Rack_3: Rack_2 {
-                displayName = "Company Radio";             // Name displayed in the interaction menu
-                shortName = "COY";                  // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
-            };
-        };
-    };
-    class lxim_outlaw_g_V21: lxim_outlaw_g {
-        displayName = "M20 Thunder 2/1";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_1_hull_g.paa),QPATHTOF(data\thunder_2_1_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-    };
-    class lxim_outlaw_g_V22: lxim_outlaw_g {
-        displayName = "M20 Thunder 2/2";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_2_hull_g.paa),QPATHTOF(data\thunder_2_2_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-    };
-    class lxim_outlaw_g_Vhq: lxim_outlaw_g {
-        displayName = "M20 HQ";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_hq_01_ext_g.paa),QPATHTOF(data\outlaw_hq_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
-        forceInGarage = 0;
-        class Rack_3: Rack_2 {
-            displayName = "Company Radio";             // Name displayed in the interaction menu
-            shortName = "COY";
-        };
-        class Rack_4: Rack_2 {
-            displayName = "Battalion Radio";             // Name displayed in the interaction menu
-            shortName = "BAT";
-            componentName = "ACRE_VRC110";        // Able to mount a PRC152
-            allowedPositions[] = {{"cargo", "all"}};       // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
-            disabledPositions[] = {{"ffv", "all"}};
-            defaultComponents[] = {};             // Use this to attach simple components like Antennas. Not yet fully implemented
-            mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
-            isRadioRemovable = 1;                 // Radio can be removed
-            intercom[] = {};                      // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
-        };
-    };
-    /* D ---------------------------------------------------------------------------------------------------------------- */
-    class lxim_outlaw_d: lxim_outlaw_base_F {
-        scope = 2;
-        scopeCurator = 2;
-        faction = QUOTE(PREFIX);
-        forceInGarage = 0;
-        crew = "B_crew_F";
-        typicalCargo[] = {"B_soldier_F"};
-        editorSubcategory = "lxim_EdSubcat_vehicles_desert";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_d.paa),QPATHTOF(data\outlaw_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-    };
-    class lxim_outlaw_d_V26: lxim_outlaw_d {
-        displayName = "M20 Desert Thuinder 2/6";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_wardaddy_d.paa),QPATHTOF(data\outlaw_02_ext_wardaddy_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-        class AcreRacks {
-            class Rack_3: Rack_2  {
-                displayName = "Company Radio";             // Name displayed in the interaction menu
-                shortName = "COY";
-            };
-        };
-    };
-    class lxim_outlaw_d_V21: lxim_outlaw_d {
-        displayName = "M20 Desert Thuinder 2/1";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_1_hull_d.paa),QPATHTOF(data\thunder_2_1_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-    };
-    class lxim_outlaw_d_V22: lxim_outlaw_d {
-        displayName = "M20 Desert Thunder 2/2";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_2_hull_d.paa),QPATHTOF(data\thunder_2_2_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-    };
-    class lxim_outlaw_d_Vhq: lxim_outlaw_d {
-        displayName = "M20 Desert HQ";
-        author = QAUTHOR;
-        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_hq_01_ext_d.paa),QPATHTOF(data\outlaw_hq_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
-        forceInGarage = 0;
-        class Rack_3: Rack_2  {
-            displayName = "Company Radio";             // Name displayed in the interaction menu
-            shortName = "COY";
-        };
-        class Rack_4: Rack_2  {
-            displayName = "Battalion Radio";             // Name displayed in the interaction menu
-            shortName = "BAT";
-        };
-    };
-
-    /* UNARMED ---------------------------------------------------------------------------------------------------------- */
     class lxim_outlaw_unarmed_base_F: lxim_outlaw_base_F {
         supplyRadius = 10;
         attendant = 1;
@@ -1436,6 +1339,144 @@ class CfgVehicles {
         class Turrets {};
         threat[] = {0,0,0};
     };
+
+
+    /* G ---------------------------------------------------------------------------------------------------------------- */
+    class lxim_outlaw_g: lxim_outlaw_base_F {
+        displayName = "M20";
+        scope = 2;
+        scopeCurator = 2;
+        faction = QUOTE(PREFIX);
+        forceInGarage = 0;
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_soldier_F"};
+        editorSubcategory = "lxim_EdSubcat_vehicles_green";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_g.paa),QPATHTOF(data\outlaw_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
+    };
+    class lxim_outlaw_g_V26: lxim_outlaw_base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M20 Thunder 2/6";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_wardaddy_g.paa),QPATHTOF(data\outlaw_02_ext_wardaddy_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
+        forceInGarage = 0;
+    };
+    class lxim_outlaw_g_V21: lxim_outlaw_base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M20 Thunder 2/1";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_1_hull_g.paa),QPATHTOF(data\thunder_2_1_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
+        forceInGarage = 0;
+        class AcreRacks {
+            class Rack_3 {
+                    mountedRadio = "ACRE_PRC148";                 // Predefined mounted radio
+            };
+        };
+    };
+    class lxim_outlaw_g_V22: lxim_outlaw_base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M20 Thunder 2/2";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_2_hull_g.paa),QPATHTOF(data\thunder_2_2_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
+        forceInGarage = 0;
+        class AcreRacks {
+            class Rack_3 {
+                    mountedRadio = "ACRE_PRC148";                 // Predefined mounted radio
+            };
+        };
+    };
+    class lxim_outlaw_g_Vhq: lxim_outlaw_base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M20 HQ";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_hq_01_ext_g.paa),QPATHTOF(data\outlaw_hq_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
+        forceInGarage = 0;
+        class AcreRacks {
+            class Rack_4 {
+                displayName = "PLATOON";             // Name displayed in the interaction menu
+                shortName = "PLT";
+                componentName = "ACRE_VRC110";        // Able to mount a PRC152
+                allowedPositions[] = {"crew"};       // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+                disabledPositions[] = {};
+                defaultComponents[] = {};             // Use this to attach simple components like Antennas. Not yet fully implemented
+                mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+                isRadioRemovable = 1;                 // Radio can be removed
+                intercom[] = {"Intercom_1"};                      // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+            };
+        };
+    };
+    /* D ---------------------------------------------------------------------------------------------------------------- */
+    class lxim_outlaw_d: lxim_outlaw_base_F {
+        scope = 2;
+        scopeCurator = 2;
+        faction = QUOTE(PREFIX);
+        forceInGarage = 0;
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_soldier_F"};
+        editorSubcategory = "lxim_EdSubcat_vehicles_desert";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_d.paa),QPATHTOF(data\outlaw_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
+    };
+    class lxim_outlaw_d_V26: lxim_outlaw_base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M20 Desert Thuinder 2/6";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_wardaddy_d.paa),QPATHTOF(data\outlaw_02_ext_wardaddy_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
+        forceInGarage = 0;
+    };
+    class lxim_outlaw_d_V21: lxim_outlaw_base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M20 Desert Thuinder 2/1";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_1_hull_d.paa),QPATHTOF(data\thunder_2_1_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
+        forceInGarage = 0;
+        class AcreRacks {
+            class Rack_3 {
+                    mountedRadio = "ACRE_PRC148";                 // Predefined mounted radio
+            };
+        };
+    };
+    class lxim_outlaw_d_V22: lxim_outlaw_base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M20 Desert Thunder 2/2";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\thunder_2_2_hull_d.paa),QPATHTOF(data\thunder_2_2_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
+        forceInGarage = 0;
+        class AcreRacks {
+            class Rack_3 {
+                    mountedRadio = "ACRE_PRC148";                 // Predefined mounted radio
+            };
+        };
+    };
+    class lxim_outlaw_d_Vhq: lxim_outlaw_base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M20 Desert HQ";
+        author = QAUTHOR;
+        hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_hq_01_ext_d.paa),QPATHTOF(data\outlaw_hq_02_ext_d.paa),QPATHTOF(data\outlaw_turret_d.paa),QPATHTOF(data\outlaw_03_ext_d.paa),QPATHTOF(data\camonet_desert_co.paa),QPATHTOF(data\cage_desert_co.paa)};
+        forceInGarage = 0;
+        class AcreRacks {
+            class Rack_4 {
+                displayName = "PLATOON";             // Name displayed in the interaction menu
+                shortName = "PLT";
+                componentName = "ACRE_VRC110";        // Able to mount a PRC152
+                allowedPositions[] = {"crew"};       // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+                disabledPositions[] = {};
+                defaultComponents[] = {};             // Use this to attach simple components like Antennas. Not yet fully implemented
+                mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+                isRadioRemovable = 1;                 // Radio can be removed
+                intercom[] = {"Intercom_1"};                      // No access to intercoms. All units in intercom will be able to hear/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+            };
+        };
+    };
+
+    /* UNARMED ---------------------------------------------------------------------------------------------------------- */
+
 
     class lxim_outlaw_Unarmed_g: lxim_outlaw_unarmed_base_F {
         displayName = "M20-MEV Green";

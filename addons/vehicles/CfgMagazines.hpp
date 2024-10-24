@@ -73,12 +73,12 @@ class CfgMagazines {
         mass = 8;
     };
     /* AA --------------------------------------------------------------------------------------------------------------- */
-    class 6100Rnd_35mm_AA_shells;
-    class 6100Rnd_35mm_AA_shells_Tracer_Red;
+    class 680Rnd_35mm_AA_shells;
+    class 680Rnd_35mm_AA_shells_Tracer_Red;
     class ACE_120Rnd_35mm_ABM_shells;
     class ACE_120Rnd_35mm_ABM_shells_Tracer_Red;
 
-    class GVAR(100Rnd_35mm_AA_shells): 6100Rnd_35mm_AA_shells {
+    class GVAR(100Rnd_35mm_AA_shells): 680Rnd_35mm_AA_shells {
         displayName = "100Rnd 35mm AA Shells";
         displayNameShort = "AA";
         displayNameMFDFormat = "AA";
@@ -86,7 +86,7 @@ class CfgMagazines {
         count=100;
         mass = 8;
     };
-    class GVAR(100Rnd_35mm_AA_shells_Tracer_Red): 6100Rnd_35mm_AA_shells_Tracer_Red {
+    class GVAR(100Rnd_35mm_AA_shells_Tracer_Red): 680Rnd_35mm_AA_shells_Tracer_Red {
         displayName = "100Rnd 35mm AA Shells Tracer";
         displayNameShort = "AA-T";
         displayNameMFDFormat = "AA-T";

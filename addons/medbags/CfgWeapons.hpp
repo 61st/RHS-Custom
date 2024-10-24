@@ -85,19 +85,19 @@ class CfgWeapons {
             mass = 12;
         };
     };
-    // class GVAR(mopp): ACE_ItemCore {
-    //     scope = 2;
-    //     author = QAUTHOR;
-    //     displayName = "MOPP Bag";
-    //     ACE_isMedicalItem = 1;
-    //     descriptionShort = "MOPP !!!!!!";
-    //     editorPreview = QPATHTOF(data\previews\booboo_ca.paa);
-    //     picture = QPATHTOF(data\previews\booboo_ca.paa);
-    //     model = "\a3\props_f_orange\humanitarian\camps\firstaidkit_01_closed_f.p3d";
-    //     icon = "iconObject_1x1";
-    //     mapSize = 0.015;
-    //     class ItemInfo: CBA_MiscItem_ItemInfo {
-    //         mass = 18;
-    //     };
-    // };
+    class GVAR(mopp): ACE_ItemCore {
+        scope = 2;
+        author = QAUTHOR;
+        displayName = "MOPP Bag";
+        ACE_isMedicalItem = 1;
+        descriptionShort = "MOPP !!!!!!";
+        editorPreview = QPATHTOF(data\previews\booboo_ca.paa);
+        picture = QPATHTOF(data\previews\booboo_ca.paa);
+        model = "\a3\props_f_orange\humanitarian\camps\firstaidkit_01_closed_f.p3d";
+        icon = "iconObject_1x1";
+        mapSize = 0.015;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 18;
+        };
+    };
 };

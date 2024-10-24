@@ -37,8 +37,9 @@ Its based/inspired on/by the following projects;
 - https://github.com/last-resort-gaming/lxim-Fundamentals - MIT License
 - https://github.com/Theseus-Aegis/TheseusServices - Official license: Arma Public License Share-Alike (APL-SA)
 - https://github.com/quies-in-proelium/qipTPL - Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-- https://github.com/SzwedzikPL/SimpleSuppress/releases - MIT License
+- Simple Suppress https://github.com/SzwedzikPL/SimpleSuppress/releases - MIT License
 - Ample Camo Pack Lite https://steamcommunity.com/sharedfiles/filedetails/?id=2869453820  - Arma Public License Share-Alike (APL-SA)
+- ACRE-Persistence  https://github.com/16AA-Milsim/ACRE-Persistence - GPLv3 license
 
 
 All the code in this mod is available in the Github
@@ -48,11 +49,6 @@ you can find the 61st Mechanized Infantry Battalion Version at https://github.co
 # This mod includes :
 - Drongo's 
     - Drongos Active Protection System https://steamcommunity.com/workshop/filedetails/?id=1447351824
-
-- ASmallDinosaur's 
-    - Speshal Core https://steamcommunity.com/sharedfiles/filedetails/?id=3283642267
-    - Melee - Rewritehttps://steamcommunity.com/sharedfiles/filedetails/?id=3283652320
-    - Breach - Rewrite https://steamcommunity.com/sharedfiles/filedetails/?id=3283645995
 
 
 ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057

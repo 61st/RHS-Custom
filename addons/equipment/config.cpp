@@ -62,5 +62,5 @@ class CfgFunctions {
 #include "jr_classes.hpp"
 #include "RscInGameUI.hpp"
 #include "CfgMagazines.hpp"
-#include "rhsCFGWeapons.hpp"
-#include "XtdRHS.hpp"
+
+

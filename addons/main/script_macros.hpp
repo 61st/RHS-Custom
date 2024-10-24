@@ -141,14 +141,6 @@
 #define TYPE_UNIFORM 801
 #define TYPE_BACKPACK 901
 
-#ifdef DISABLE_COMPILE_CACHE
-    #undef PREP
-    #define PREP(fncName) DFUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
-#else
-    #undef PREP
-    #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
-#endif
-
 #define PREP_MODULE(folder) [] call compile preprocessFileLineNumbers QPATHTOF(folder\__PREP__.sqf)
 
 #define SOCOMD_DEFIB_isHC (!hasInterface && !isDedicated)
