@@ -1,6 +1,6 @@
 // Updates the group names on the slotting/lobby screen.
 
-#include "\z\lxim\addons\common\script_component.hpp"
+#include "script_component.hpp"
 
 params ["_display"];
 

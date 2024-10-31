@@ -83,7 +83,7 @@ params["_fullmapWindow"];
         
         {
             _x params ["_type","_vehPos","_vehDir"];
-            private _icon = getText (configfile >> "CfgVehicles" >> _type >> "icon");
+            private _icon = getText (configFile >> "CfgVehicles" >> _type >> "icon");
 
             _fullmapWindow drawLine [_pos, _vehPos, [1,1,0,0.4]];
             _fullmapWindow drawIcon [_icon,[1,1,0,0.3],_vehPos,19,19,_vehDir,"",0];
@@ -147,7 +147,7 @@ params["_fullmapWindow"];
         {
             private _icon = (vehicle _x getVariable ["f_cam_icon",""]);
             if(_icon == "") then {
-                _icon = getText (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "icon");
+                _icon = getText (configFile >> "CfgVehicles" >> typeOf (vehicle _x) >> "icon");
                 (vehicle _x) setVariable ["f_cam_icon",_icon];
             };
 
@@ -190,23 +190,23 @@ params["_fullmapWindow"];
     private _markerShape = markerShape _x;
     private _markerPos = getMarkerPos _x;
     private _markerSize = getMarkerSize _x;
-    private _markerColor = (configfile >> "CfgMarkerColors" >> getMarkerColor _x >> "color") call BIS_fnc_colorConfigToRGBA;
+    private _markerColor = (configFile >> "CfgMarkerColors" >> getMarkerColor _x >> "color") call BIS_fnc_colorConfigToRGBA;
     private _markerDir = markerDir _x;
     
     switch (_markerShape) do {
         case "RECTANGLE": {
-            private _markerBrush = getText (configfile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture"); 
+            private _markerBrush = getText (configFile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture"); 
             _fullmapWindow drawRectangle [_markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerBrush]
         };
         case "ELLIPSE": {
-            private _markerBrush = getText (configfile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture"); 
+            private _markerBrush = getText (configFile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture"); 
             _fullmapWindow drawEllipse  [_markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerBrush]
         };
         case "ICON": {
             private _markerType = getMarkerType _x;
             if (_markerType != "Empty") then {
                 _multiplier = 20;
-                _markerIcon = getText (configfile >> "CfgMarkers" >> _markerType >> "icon");
+                _markerIcon = getText (configFile >> "CfgMarkers" >> _markerType >> "icon");
                 _markerText = markerText _x;
                 _fullmapWindow drawIcon [_markerIcon, _markerColor, _markerPos, (_markerSize select 0) * _multiplier, (_markerSize select 1) * _multiplier, _markerDir, _markerText, 1];
             };

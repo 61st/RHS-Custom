@@ -1,4 +1,4 @@
- if (!hasinterface) exitwith {};
+ if (!hasInterface) exitWith {};
  
  [
   player,

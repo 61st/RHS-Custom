@@ -23,10 +23,10 @@ params [
 ];
 private ["_PatchClass"];
 call {
-    if (_Section == "HQ") exitwith {_PatchClass = "HQ";};
-    if (_Section == "USASOC") exitwith {_PatchClass = "USASOC";};
-    if (_Section == "CANSOFCOM") exitwith {_PatchClass = "CANSOFCOM";};
-    if (_Section == "JSOW") exitwith {_PatchClass = "JSOW";};
+    if (_Section == "HQ") exitWith {_PatchClass = "HQ";};
+    if (_Section == "USASOC") exitWith {_PatchClass = "USASOC";};
+    if (_Section == "CANSOFCOM") exitWith {_PatchClass = "CANSOFCOM";};
+    if (_Section == "JSOW") exitWith {_PatchClass = "JSOW";};
     _PatchClass = "HQ";
 };
 

@@ -35,7 +35,7 @@ if (isNull _unit) exitWith {};
 
     _unit playAction "Gear";
 
-    if (vehicle _unit != _unit) then {
+    if (!isNull objectParent _unit) then {
         playSound QGVAR(Medical_MedicKit_Open_1);
     } else {
         private _pitch = random [0.6, 1, 1.4];
@@ -50,7 +50,7 @@ if (isNull _unit) exitWith {};
         [], 
         { lxim_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; }, 
         { lxim_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
-        Hint "Unpack Drug Kit....",
+        hint "Unpack Drug Kit....",
         {true},
         ["isNotInside", "isNotSitting", "isNotSwimming"]
     ] call ACE_common_fnc_progressBar;
@@ -65,22 +65,13 @@ if (isNull _unit) exitWith {};
         private _overflow = true;
 
         [_unit, "ACM_Vial_Epinephrine", 2, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
         [_unit, "ACM_Vial_Adenosine", 2, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
         [_unit, "ACM_Vial_TXA", 2, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
         [_unit, "ACM_Vial_Amiodarone", 2, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
         [_unit, "ACM_Vial_Morphine", 2, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
         [_unit, "ACM_Vial_Ketamine", 2, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
         [_unit, "ACM_Vial_Fentanyl", 2, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
         [_unit, "ACM_Vial_Lidocaine", 2, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
         [_unit, "ACM_Vial_Ondansetron", 2, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
     };
 };

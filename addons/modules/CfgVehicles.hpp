@@ -48,7 +48,7 @@ class CfgVehicles {
                 displayName = "Group Config";
                 description = "Group Config";
                 typeName = "CONFIG";
-                defaultValue = "configfile >> 'CfgGroups' >> 'West' >> 'BLU_F' >> 'Infantry' >> 'BUS_InfSquad'";
+                defaultValue = "configFile >> 'CfgGroups' >> 'West' >> 'BLU_F' >> 'Infantry' >> 'BUS_InfSquad'";
             };
 
             class moveMarker1 {
@@ -147,7 +147,7 @@ class CfgVehicles {
                 displayName = "Group Config";
                 description = "Group Config";
                 typeName = "CONFIG";
-                defaultValue = "configfile >> 'CfgGroups' >> 'West' >> 'BLU_F' >> 'Infantry' >> 'BUS_InfSquad'";
+                defaultValue = "configFile >> 'CfgGroups' >> 'West' >> 'BLU_F' >> 'Infantry' >> 'BUS_InfSquad'";
             };
 
             class waves {

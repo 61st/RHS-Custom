@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 // not documented: module called
-if !(isserver) exitwith {};
+if !(isServer) exitWith {};
 
 _logic = param [0,objNull,[objNull]];
 

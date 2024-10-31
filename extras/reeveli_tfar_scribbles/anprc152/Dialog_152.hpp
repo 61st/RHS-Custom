@@ -8,10 +8,10 @@
 */
 
 
-#define TFAR_152_X 0.0138687 * safezoneW + safezoneX
-#define TFAR_152_Y -1.28145 * safezoneH + safezoneY
-#define TFAR_152_W 0.335981 * safezoneW
-#define TFAR_152_H 2.2902 * safezoneH
+#define TFAR_152_X 0.0138687 * safeZoneW + safeZoneX
+#define TFAR_152_Y -1.28145 * safeZoneH + safeZoneY
+#define TFAR_152_W 0.335981 * safeZoneW
+#define TFAR_152_H 2.2902 * safeZoneH
 
 class anprc152_radio_dialog
 {
@@ -26,10 +26,10 @@ class anprc152_radio_dialog
     {
         idc=67676;
         text = "\z\tfar\addons\handhelds\anprc152\ui\152.paa";
-        x="0.0138687 * safezoneW + safezoneX";
-        y="-1.28145 * safezoneH + safezoneY";
-        w="0.335981 * safezoneW";
-        h="2.2902 * safezoneH";
+        x="0.0138687 * safeZoneW + safeZoneX";
+        y="-1.28145 * safeZoneH + safeZoneY";
+        w="0.335981 * safeZoneW";
+        h="2.2902 * safeZoneH";
         moving=1;
     };
     class Rev_list: background
@@ -155,10 +155,10 @@ class anprc152_radio_dialog
     {
         moving=1;
         idc=1400;
-        x="0.168556 * safezoneW + safezoneX";
-        y="0.4824 * safezoneH + safezoneY";
-        w="0.0599875 * safezoneW";
-        h="0.043175 * safezoneH";
+        x="0.168556 * safeZoneW + safeZoneX";
+        y="0.4824 * safeZoneH + safeZoneY";
+        w="0.0599875 * safeZoneW";
+        h="0.043175 * safeZoneH";
         font="TFAR_font_dots";
         shadow=2;
         tooltip="$STR_tfar_core_current_freq";
@@ -170,10 +170,10 @@ class anprc152_radio_dialog
     {
         moving=1;
         idc=1604;
-        x="0.134731 * safezoneW + safezoneX";
-        y="0.482125 * safezoneH + safezoneY";
-        w="0.033825 * safezoneW";
-        h="0.044275 * safezoneH";
+        x="0.134731 * safeZoneW + safeZoneX";
+        y="0.482125 * safeZoneH + safeZoneY";
+        w="0.033825 * safeZoneW";
+        h="0.044275 * safeZoneH";
         font="TFAR_font_dots";
         shadow=2;
         tooltip="$STR_tfar_core_current_channel";
@@ -182,10 +182,10 @@ class anprc152_radio_dialog
     class enter: HiddenButton
     {
         idc=1600;
-        x="0.205269 * safezoneW + safezoneX";
-        y="0.60285 * safezoneH + safezoneY";
-        w="0.0144375 * safezoneW";
-        h="0.017875 * safezoneH";
+        x="0.205269 * safeZoneW + safeZoneX";
+        y="0.60285 * safeZoneH + safeZoneY";
+        w="0.0144375 * safeZoneW";
+        h="0.017875 * safeZoneH";
         tooltip="$STR_tfar_core_set_frequency";
         onButtonClick="[((ctrlParent (_this select 0))) displayCtrl 1400] call TFAR_handhelds_fnc_onButtonClick_Enter; private _channel = ((TF_sw_dialog_radio) call TFAR_fnc_getSwSettings) select 0;[_channel + 1, displayCtrl (8000 + _channel + 1)] call Rev_TFAR_fnc_getSwFrq;";
         action="";
@@ -193,70 +193,70 @@ class anprc152_radio_dialog
     class clear: HiddenButton
     {
         idc=1601;
-        x="0.205887 * safezoneW + safezoneX";
-        y="0.56985 * safezoneH + safezoneY";
-        w="0.0146438 * safezoneW";
-        h="0.0198 * safezoneH";
+        x="0.205887 * safeZoneW + safeZoneX";
+        y="0.56985 * safeZoneH + safeZoneY";
+        w="0.0146438 * safeZoneW";
+        h="0.0198 * safeZoneH";
         tooltip="$STR_tfar_core_clear_frequency";
         action="ctrlSetText [1400,'']; ctrlSetFocus ((findDisplay 1333) displayCtrl 1400);";
     };
     class additional: HiddenButton
     {
         idc=12345;
-        x="0.161956 * safezoneW + safezoneX";
-        y="0.658675 * safezoneH + safezoneY";
-        w="0.0169125 * safezoneW";
-        h="0.023925 * safezoneH";
+        x="0.161956 * safeZoneW + safeZoneX";
+        y="0.658675 * safeZoneH + safeZoneY";
+        w="0.0169125 * safeZoneW";
+        h="0.023925 * safeZoneH";
         tooltip="$STR_tfar_core_set_additional";
         action="[TF_sw_dialog_radio, TF_sw_dialog_radio call TFAR_fnc_getSwChannel] call TFAR_fnc_setAdditionalSwChannel; call TFAR_fnc_updateSWDialogToChannel; [TF_sw_dialog_radio, false] call TFAR_fnc_showRadioInfo;";
     };
     class speakers: HiddenButton
     {
         idc=123456;
-        x="0.181756 * safezoneW + safezoneX";
-        y="0.659225 * safezoneH + safezoneY";
-        w="0.0179438 * safezoneW";
-        h="0.0231 * safezoneH";
+        x="0.181756 * safeZoneW + safeZoneX";
+        y="0.659225 * safeZoneH + safeZoneY";
+        w="0.0179438 * safeZoneW";
+        h="0.0231 * safeZoneH";
         tooltip="$STR_tfar_core_speakers_settings_true";
         action="[TF_sw_dialog_radio] call TFAR_fnc_setSwSpeakers;[TF_sw_dialog_radio] call TFAR_fnc_showRadioSpeakers;";
     };
     class next_channel: HiddenButton
     {
         idc=1602;
-        x="0.205062 * safezoneW + safezoneX";
-        y="0.63035 * safezoneH + safezoneY";
-        w="0.0154688 * safezoneW";
-        h="0.020075 * safezoneH";
+        x="0.205062 * safeZoneW + safeZoneX";
+        y="0.63035 * safeZoneH + safeZoneY";
+        w="0.0154688 * safeZoneW";
+        h="0.020075 * safeZoneH";
         tooltip="$STR_tfar_core_next_channel";
         action="[1, false] call TFAR_fnc_setChannelViaDialog;";
     };
     class prev_channel: HiddenButton
     {
         idc=1603;
-        x="0.204237 * safezoneW + safezoneX";
-        y="0.6584 * safezoneH + safezoneY";
-        w="0.0154688 * safezoneW";
-        h="0.023375 * safezoneH";
+        x="0.204237 * safeZoneW + safeZoneX";
+        y="0.6584 * safeZoneH + safeZoneY";
+        w="0.0154688 * safeZoneW";
+        h="0.023375 * safeZoneH";
         tooltip="$STR_tfar_core_previous_channel";
         action="[0, false] call TFAR_fnc_setChannelViaDialog;";
     };
     class stereo: HiddenButton
     {
         idc=1607;
-        x="0.139475 * safezoneW + safezoneX";
-        y="0.65895 * safezoneH + safezoneY";
-        w="0.0198 * safezoneW";
-        h="0.024475 * safezoneH";
+        x="0.139475 * safeZoneW + safeZoneX";
+        y="0.65895 * safeZoneH + safeZoneY";
+        w="0.0198 * safeZoneW";
+        h="0.024475 * safeZoneH";
         action="[TF_sw_dialog_radio,((TF_sw_dialog_radio call TFAR_fnc_getCurrentSwStereo) + 1) mod 3] call TFAR_fnc_setSwStereo; [TF_sw_dialog_radio] call TFAR_fnc_showRadioVolume;";
         tooltip="$STR_tfar_core_stereo_settings";
     };
     class volume_Switch: HiddenRotator
     {
         idc=-1;
-        x="0.167319 * safezoneW + safezoneX";
-        y="0.0762632 * safezoneH + safezoneY";
-        w="0.0400125 * safezoneW";
-        h="0.201575 * safezoneH";
+        x="0.167319 * safeZoneW + safeZoneX";
+        y="0.0762632 * safeZoneH + safeZoneY";
+        w="0.0400125 * safeZoneW";
+        h="0.201575 * safeZoneH";
         tooltip="$STR_tfar_core_rotator_volume";
         onMouseButtonDown="[_this select 1, false] call TFAR_fnc_setVolumeViaDialog;";
     };

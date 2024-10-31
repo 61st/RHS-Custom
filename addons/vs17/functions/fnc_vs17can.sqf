@@ -18,7 +18,7 @@ _return = (
     !(_unit getVariable ["ace_captives_isSurrendering", false]) &&
     !(_unit getVariable ["ace_captives_isHandcuffed", false]) &&
     !(_unit getVariable ["ace_isUnconscious", false]) &&
-    (Not visibleMap)
+    (not visibleMap)
 );
 
 _return;

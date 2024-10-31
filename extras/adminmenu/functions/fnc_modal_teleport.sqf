@@ -153,11 +153,11 @@ _ctrlLabelParadropInfantry ctrlSetPosition [_ctrlGrpX + (0.2 * _ctrlGrpWidth) + 
 _ctrlLabelParadropInfantry ctrlCommit 0;
 _ctrlLabelParadropInfantry ctrlSetText "Drop infantry in parachute";
 
-private _ctrlHint = _display ctrlCreate [QGVAR(RscText), -1];
-GVAR(utilityTabControls) pushBack _ctrlHint;
-_ctrlHint ctrlSetPosition [_ctrlGrpX, _ctrlGrpY + _ctrlGrpHeight - lxim_ADMINMENU_STD_HEIGHT, 0.8 * _ctrlGrpWidth, lxim_ADMINMENU_STD_HEIGHT];
-_ctrlHint ctrlCommit 0;
-_ctrlHint ctrlSetText "After locating the destination area, press the Enable Teleport button and then click the desired location on the map.";
+private _ctrlhint = _display ctrlCreate [QGVAR(RscText), -1];
+GVAR(utilityTabControls) pushBack _ctrlhint;
+_ctrlhint ctrlSetPosition [_ctrlGrpX, _ctrlGrpY + _ctrlGrpHeight - lxim_ADMINMENU_STD_HEIGHT, 0.8 * _ctrlGrpWidth, lxim_ADMINMENU_STD_HEIGHT];
+_ctrlhint ctrlCommit 0;
+_ctrlhint ctrlSetText "After locating the destination area, press the Enable Teleport button and then click the desired location on the map.";
 
 private _ctrlButton = _display ctrlCreate [QGVAR(RscButtonMenu), -1];
 GVAR(utilityTabControls) pushBack _ctrlButton;

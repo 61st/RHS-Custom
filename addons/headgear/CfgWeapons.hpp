@@ -1,6 +1,6 @@
 class CfgWeapons {
     class H_HelmetCrew_B;
-    class H_HelmetCrew_I: H_HelmetCrew_B;
+    class H_HelmetCrew_I: H_HelmetCrew_B {};
 
     class HelmetBase;
     class H_Cap_headphones: HelmetBase {

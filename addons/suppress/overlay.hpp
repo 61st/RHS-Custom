@@ -10,10 +10,10 @@ class RscTitles {
         class controls {
             class RscOverlay: RscPicture {
                 idc = IDC_OVERLAY;
-                x = "safezoneXAbs";
-                y = "safezoneY";
-                w = "safezoneWAbs";
-                h = "safezoneH";
+                x = "safeZoneXAbs";
+                y = "safeZoneY";
+                w = "safeZoneWAbs";
+                h = "safeZoneH";
                 text = QPATHTOF(data\overlay_medium.paa);
                 colortext[] = {0, 0, 0, 1};
             };

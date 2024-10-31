@@ -12,9 +12,9 @@ class RscDisplayMain: RscStandardDisplay {
             colorText[] = {1,1,1,0.5};
 
             h = "2 * 	(pixelH * pixelGrid * 2)";
-            x = "safezoneX + safezoneW - 4 *         2 *     (pixelW * pixelGrid * 2)";
+            x = "safeZoneX + safeZoneW - 4 *         2 *     (pixelW * pixelGrid * 2)";
             w = "4 *     (pixelW * pixelGrid * 2)";
-            y = "safezoneY + 2 * 	(pixelH * pixelGrid * 2)";
+            y = "safeZoneY + 2 * 	(pixelH * pixelGrid * 2)";
 
             tooltip = CSTRING(lximJoin_tooltip);
             url = CSTRING(lximJoin_url);

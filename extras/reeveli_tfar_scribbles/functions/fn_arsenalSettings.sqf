@@ -46,7 +46,7 @@ if (!Rev_TFAR_radioSettings) exitWith {false};
     };
 
     //SW, exit if unique or no radio in inventory
-    private _condition = {getNumber (configfile >> "CfgWeapons" >> _x >> "tf_prototype") isEqualTo 1};
+    private _condition = {getNumber (configFile >> "CfgWeapons" >> _x >> "tf_prototype") isEqualTo 1};
     if (!("ItemRadio" in assignedItems player) AND (_condition count assignedItems player < 1)) exitWith {
         diag_log "Rev_TFAR_fnc_arsenalSettings: Either no radio or unique radio in inventory when exiting arsenal, EH ID18";
     };
@@ -105,7 +105,7 @@ if (!isClass (configFile >> "CfgPatches" >> "ace_arsenal")) exitWith {};
 
 
     //SW, exit if unique or no radio in inventory
-    private _condition = {getNumber (configfile >> "CfgWeapons" >> _x >> "tf_prototype") isEqualTo 1};
+    private _condition = {getNumber (configFile >> "CfgWeapons" >> _x >> "tf_prototype") isEqualTo 1};
     if (!("ItemRadio" in assignedItems player) AND (_condition count assignedItems player < 1)) exitWith {
         diag_log "Rev_TFAR_fnc_arsenalSettings: Either no radio or unique radio in inventory when exiting arsenal, EH ID23";
     };

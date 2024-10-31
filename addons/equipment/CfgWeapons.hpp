@@ -44,7 +44,7 @@ class CfgWeapons {
             reticleTextureSize = 1.026;
             bodyTexture = "";
             bodyTextureSize = 1.25;
-            reticleSafezoneSize = 1;
+            reticlesafeZoneSize = 1;
             hidePeripheralVision = 1;
             opticsPPEffects[] = {"QACEGVAR(vector,OpticsRadBlur1)"};
             disableTilt = 1;

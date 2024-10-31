@@ -88,7 +88,7 @@ for "_i" from 1 to _amount do {
     // IF CONTAINER IS FULL
     if ( (!_added) && (_overflow) ) then {
 
-        if (vehicle _unit != _unit) exitWith {
+        if (!isNull objectParent _unit) exitWith {
             [_addToUnit, _addToGround]
         };
         if (
@@ -109,7 +109,7 @@ for "_i" from 1 to _amount do {
             if (_pos isEqualTo []) then {
                 _pos = (getPosASL _unit);
             } else {
-                _pos = (ATLtoASL _pos);
+                _pos = (ATLToASL _pos);
             };
 
             _gwh setPosASL _pos;

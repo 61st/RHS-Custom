@@ -31,10 +31,10 @@ class mr3000_radio_dialog
     {
         idc = 67676;
         text = "\z\tfar\addons\backpacks\mr3000\ui\mr3000.paa";
-        x = "0.0993594 * safezoneW + safezoneX";
-        y = "0.1722 * safezoneH + safezoneY";
-        w = "0.66825 * safezoneW";
-        h = "0.5962 * safezoneH";
+        x = "0.0993594 * safeZoneW + safeZoneX";
+        y = "0.1722 * safeZoneH + safeZoneY";
+        w = "0.66825 * safeZoneW";
+        h = "0.5962 * safeZoneH";
         moving = 1;
     };
     class Rev_list: background
@@ -212,10 +212,10 @@ class mr3000_radio_dialog
     class enter: HiddenButton
     {
         idc = 2392;
-        x = "0.562391 * safezoneW + safezoneX";
-        y = "0.4208 * safezoneH + safezoneY";
-        w = "0.0223125 * safezoneW";
-        h = "0.0308069 * safezoneH";
+        x = "0.562391 * safeZoneW + safeZoneX";
+        y = "0.4208 * safeZoneH + safeZoneY";
+        w = "0.0223125 * safeZoneW";
+        h = "0.0308069 * safeZoneH";
         tooltip = "Set frequency";
         onButtonClick = "[((ctrlParent (_this select 0))) displayCtrl 1410] call TFAR_backpacks_fnc_onButtonClick_Enter;private _channel = ((TF_lr_dialog_radio) call TFAR_fnc_getLrSettings) # 0; [_channel + 1, displayCtrl (8000 + _channel + 1)] call Rev_TFAR_fnc_getLwFrq;";
         action = "";
@@ -223,153 +223,153 @@ class mr3000_radio_dialog
     class clear: HiddenButton
     {
         idc = 2393;
-        x = "0.562391 * safezoneW + safezoneX";
-        y = "0.3548 * safezoneH + safezoneY";
-        w = "0.0223125 * safezoneW";
-        h = "0.0308069 * safezoneH";
+        x = "0.562391 * safeZoneW + safeZoneX";
+        y = "0.3548 * safeZoneH + safeZoneY";
+        w = "0.0223125 * safeZoneW";
+        h = "0.0308069 * safeZoneH";
         tooltip = "Clear frequency";
         action = "ctrlSetText [1410,'']; ctrlSetFocus ((findDisplay 1998) displayCtrl 1410);";
     };
     class next_channel: HiddenButton
     {
         idc = 2394;
-        x = "0.568062 * safezoneW + safezoneX";
-        y = "0.5396 * safezoneH + safezoneY";
-        w = "0.0190313 * safezoneW";
-        h = "0.0280062 * safezoneH";
+        x = "0.568062 * safeZoneW + safeZoneX";
+        y = "0.5396 * safeZoneH + safeZoneY";
+        w = "0.0190313 * safeZoneW";
+        h = "0.0280062 * safeZoneH";
         tooltip = "Next channel";
         action = "[1, true] call TFAR_fnc_setChannelViaDialog;";
     };
     class previous_channel: HiddenButton
     {
         idc = 2395;
-        x = "0.529391 * safezoneW + safezoneX";
-        y = "0.5374 * safezoneH + safezoneY";
-        w = "0.0203438 * safezoneW";
-        h = "0.0280062 * safezoneH";
+        x = "0.529391 * safeZoneW + safeZoneX";
+        y = "0.5374 * safeZoneH + safeZoneY";
+        w = "0.0203438 * safeZoneW";
+        h = "0.0280062 * safeZoneH";
         tooltip = "Previous channel";
         action = "[0, true] call TFAR_fnc_setChannelViaDialog;";
     };
     class increase_volume: HiddenButton
     {
         idc = 2396;
-        x = "0.550531 * safezoneW + safezoneX";
-        y = "0.4989 * safezoneH + safezoneY";
-        w = "0.0190313 * safezoneW";
-        h = "0.0294066 * safezoneH";
+        x = "0.550531 * safeZoneW + safeZoneX";
+        y = "0.4989 * safeZoneH + safeZoneY";
+        w = "0.0190313 * safeZoneW";
+        h = "0.0294066 * safeZoneH";
         tooltip = "Increase volume";
         action = "[1, true] call TFAR_fnc_setVolumeViaDialog;";
     };
     class decrease_volume: HiddenButton
     {
         idc = 2397;
-        x = "0.548469 * safezoneW + safezoneX";
-        y = "0.5726 * safezoneH + safezoneY";
-        w = "0.021 * safezoneW";
-        h = "0.0266059 * safezoneH";
+        x = "0.548469 * safeZoneW + safeZoneX";
+        y = "0.5726 * safeZoneH + safeZoneY";
+        w = "0.021 * safeZoneW";
+        h = "0.0266059 * safeZoneH";
         action = "[0, true] call TFAR_fnc_setVolumeViaDialog;";
         tooltip = "Decrease volume";
     };
     class channel_1: HiddenButton
     {
         idc = 2399;
-        x = "0.365422 * safezoneW + safezoneX";
-        y = "0.4989 * safezoneH + safezoneY";
-        w = "0.0190313 * safezoneW";
-        h = "0.0322072 * safezoneH";
+        x = "0.365422 * safeZoneW + safeZoneX";
+        y = "0.4989 * safeZoneH + safeZoneY";
+        w = "0.0190313 * safeZoneW";
+        h = "0.0322072 * safeZoneH";
         action = "[TF_lr_dialog_radio, 0] call TFAR_fnc_setLrChannel;call TFAR_fnc_updateLRDialogToChannel;[TF_lr_dialog_radio, true] call TFAR_fnc_showRadioInfo;";
         tooltip = "Channel 1";
     };
     class channel_2: HiddenButton
     {
         idc = 2400;
-        x = "0.397906 * safezoneW + safezoneX";
-        y = "0.5011 * safezoneH + safezoneY";
-        w = "0.0223125 * safezoneW";
-        h = "0.0294066 * safezoneH";
+        x = "0.397906 * safeZoneW + safeZoneX";
+        y = "0.5011 * safeZoneH + safeZoneY";
+        w = "0.0223125 * safeZoneW";
+        h = "0.0294066 * safeZoneH";
         action = "[TF_lr_dialog_radio, 1] call TFAR_fnc_setLrChannel; call TFAR_fnc_updateLRDialogToChannel;[TF_lr_dialog_radio, true] call TFAR_fnc_showRadioInfo;";
         tooltip = "Channel 2";
     };
     class channel_3: HiddenButton
     {
         idc = 2401;
-        x = "0.432453 * safezoneW + safezoneX";
-        y = "0.5 * safezoneH + safezoneY";
-        w = "0.0203438 * safezoneW";
-        h = "0.0322072 * safezoneH";
+        x = "0.432453 * safeZoneW + safeZoneX";
+        y = "0.5 * safeZoneH + safeZoneY";
+        w = "0.0203438 * safeZoneW";
+        h = "0.0322072 * safeZoneH";
         action = "[TF_lr_dialog_radio, 2] call TFAR_fnc_setLrChannel; call TFAR_fnc_updateLRDialogToChannel;[TF_lr_dialog_radio, true] call TFAR_fnc_showRadioInfo;";
         tooltip = "Channel 3";
     };
     class channel_4: HiddenButton
     {
         idc = 2402;
-        x = "0.465453 * safezoneW + safezoneX";
-        y = "0.4989 * safezoneH + safezoneY";
-        w = "0.021 * safezoneW";
-        h = "0.0308069 * safezoneH";
+        x = "0.465453 * safeZoneW + safeZoneX";
+        y = "0.4989 * safeZoneH + safeZoneY";
+        w = "0.021 * safeZoneW";
+        h = "0.0308069 * safeZoneH";
         action = "[TF_lr_dialog_radio, 3] call TFAR_fnc_setLrChannel; call TFAR_fnc_updateLRDialogToChannel;[TF_lr_dialog_radio, true] call TFAR_fnc_showRadioInfo;";
         tooltip = "Channel 4";
     };
     class channel_5: HiddenButton
     {
         idc = 2403;
-        x = "0.497937 * safezoneW + safezoneX";
-        y = "0.5011 * safezoneH + safezoneY";
-        w = "0.0223125 * safezoneW";
-        h = "0.0322072 * safezoneH";
+        x = "0.497937 * safeZoneW + safeZoneX";
+        y = "0.5011 * safeZoneH + safeZoneY";
+        w = "0.0223125 * safeZoneW";
+        h = "0.0322072 * safeZoneH";
         action = "[TF_lr_dialog_radio, 4] call TFAR_fnc_setLrChannel; call TFAR_fnc_updateLRDialogToChannel;[TF_lr_dialog_radio, true] call TFAR_fnc_showRadioInfo;";
         tooltip = "Channel 5";
     };
     class channel_6: HiddenButton
     {
         idc = 2404;
-        x = "0.365937 * safezoneW + safezoneX";
-        y = "0.5561 * safezoneH + safezoneY";
-        w = "0.021 * safezoneW";
-        h = "0.0294066 * safezoneH";
+        x = "0.365937 * safeZoneW + safeZoneX";
+        y = "0.5561 * safeZoneH + safeZoneY";
+        w = "0.021 * safeZoneW";
+        h = "0.0294066 * safeZoneH";
         action = "[TF_lr_dialog_radio, 5] call TFAR_fnc_setLrChannel; call TFAR_fnc_updateLRDialogToChannel;[TF_lr_dialog_radio, true] call TFAR_fnc_showRadioInfo;";
         tooltip = "Channel 6";
     };
     class channel_7: HiddenButton
     {
         idc = 2405;
-        x = "0.399969 * safezoneW + safezoneX";
-        y = "0.555 * safezoneH + safezoneY";
-        w = "0.021 * safezoneW";
-        h = "0.0294066 * safezoneH";
+        x = "0.399969 * safeZoneW + safeZoneX";
+        y = "0.555 * safeZoneH + safeZoneY";
+        w = "0.021 * safeZoneW";
+        h = "0.0294066 * safeZoneH";
         action = "[TF_lr_dialog_radio, 6] call TFAR_fnc_setLrChannel; call TFAR_fnc_updateLRDialogToChannel;[TF_lr_dialog_radio, true] call TFAR_fnc_showRadioInfo;";
         tooltip = "Channel 7";
     };
     class channel_8: HiddenButton
     {
         idc = 2406;
-        x = "0.431937 * safezoneW + safezoneX";
-        y = "0.5539 * safezoneH + safezoneY";
-        w = "0.021 * safezoneW";
-        h = "0.0294066 * safezoneH";
+        x = "0.431937 * safeZoneW + safeZoneX";
+        y = "0.5539 * safeZoneH + safeZoneY";
+        w = "0.021 * safeZoneW";
+        h = "0.0294066 * safeZoneH";
         action = "[TF_lr_dialog_radio, 7] call TFAR_fnc_setLrChannel; call TFAR_fnc_updateLRDialogToChannel;[TF_lr_dialog_radio, true] call TFAR_fnc_showRadioInfo;";
         tooltip = "Channel 8";
     };
     class channel_9: HiddenButton
     {
         idc = 2407;
-        x = "0.464937 * safezoneW + safezoneX";
-        y = "0.555 * safezoneH + safezoneY";
-        w = "0.021 * safezoneW";
-        h = "0.0294066 * safezoneH";
+        x = "0.464937 * safeZoneW + safeZoneX";
+        y = "0.555 * safeZoneH + safeZoneY";
+        w = "0.021 * safeZoneW";
+        h = "0.0294066 * safeZoneH";
         action = "[TF_lr_dialog_radio, 8] call TFAR_fnc_setLrChannel; call TFAR_fnc_updateLRDialogToChannel;[TF_lr_dialog_radio, true] call TFAR_fnc_showRadioInfo;";
         tooltip = "Channel 9";
     };
     class edit: RscEditLCD
     {
         idc = 1410;
-        x = "0.459266 * safezoneW + safezoneX";
-        y = "0.3768 * safezoneH + safezoneY";
-        w = "0.0531563 * safezoneW";
-        h = "0.03 * safezoneH";
+        x = "0.459266 * safeZoneW + safeZoneX";
+        y = "0.3768 * safeZoneH + safeZoneY";
+        w = "0.0531563 * safeZoneW";
+        h = "0.03 * safeZoneH";
         font = "TFAR_font_dots";
         shadow = 1;
-        sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 30) * 1.2)";
+        sizeEx = "(((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 30) * 1.2)";
         tooltip = "Current frequency";
         canModify = 1;
         onKeyUp = "if (_this select 1 in [28,156]) then { [((ctrlParent (_this select 0))) displayCtrl 1410] call TFAR_backpacks_fnc_onButtonClick_Enter;private _channel = ((TF_lr_dialog_radio) call TFAR_fnc_getLrSettings) # 0; [_channel + 1, displayCtrl (8000 + _channel + 1)] call Rev_TFAR_fnc_getLwFrq;};";
@@ -378,63 +378,63 @@ class mr3000_radio_dialog
     class channel_edit: RscEditLCD
     {
         idc = 1411;
-        x = "0.416469 * safezoneW + safezoneX";
-        y = "0.3768 * safezoneH + safezoneY";
-        w = "0.0427969 * safezoneW";
-        h = "0.0297 * safezoneH";
+        x = "0.416469 * safeZoneW + safeZoneX";
+        y = "0.3768 * safeZoneH + safeZoneY";
+        w = "0.0427969 * safeZoneW";
+        h = "0.0297 * safeZoneH";
         font = "TFAR_font_dots";
         shadow = 1;
-        sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 30) * 1.2)";
+        sizeEx = "(((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 30) * 1.2)";
         tooltip = "Current channel";
         canModify = 0;
     };
     class stereo: HiddenButton
     {
         idc = 2408;
-        x = "0.499484 * safezoneW + safezoneX";
-        y = "0.5572 * safezoneH + safezoneY";
-        w = "0.0216563 * safezoneW";
-        h = "0.0308069 * safezoneH";
+        x = "0.499484 * safeZoneW + safeZoneX";
+        y = "0.5572 * safeZoneH + safeZoneY";
+        w = "0.0216563 * safeZoneW";
+        h = "0.0308069 * safeZoneH";
         action = "[TF_lr_dialog_radio,((TF_lr_dialog_radio call TFAR_fnc_getCurrentLrStereo) + 1) mod 3] call TFAR_fnc_setLrStereo; [TF_lr_dialog_radio] call TFAR_fnc_showRadioVolume;";
         tooltip = "Stereo settings";
     };
     class additional: HiddenRotator
     {
         idc = 12345;
-        x = "0.295812 * safezoneW + safezoneX";
-        y = "0.4197 * safezoneH + safezoneY";
-        w = "0.0367463 * safezoneW";
-        h = "0.0812181 * safezoneH";
+        x = "0.295812 * safeZoneW + safeZoneX";
+        y = "0.4197 * safeZoneH + safeZoneY";
+        w = "0.0367463 * safeZoneW";
+        h = "0.0812181 * safeZoneH";
         tooltip = "Set additional channel";
         action = "playSound 'TFAR_rotatorPush'; [TF_lr_dialog_radio,TF_lr_dialog_radio call TFAR_fnc_getLrChannel] call TFAR_fnc_setAdditionalLrChannel; call TFAR_fnc_updateLRDialogToChannel; [TF_lr_dialog_radio,true] call TFAR_fnc_showRadioInfo; call Rev_TFAR_fnc_getLwAlt;";
     };
     class volume_switch: HiddenRotator
     {
         idc = 2398;
-        x = "0.300453 * safezoneW + safezoneX";
-        y = "0.3218 * safezoneH + safezoneY";
-        w = "0.0360938 * safezoneW";
-        h = "0.0728162 * safezoneH";
+        x = "0.300453 * safeZoneW + safeZoneX";
+        y = "0.3218 * safeZoneH + safeZoneY";
+        w = "0.0360938 * safeZoneW";
+        h = "0.0728162 * safeZoneH";
         tooltip = "Decrease volume | Increase volume";
         onMouseButtonDown = "[_this select 1, true] call TFAR_fnc_setVolumeViaDialog;";
     };
     class channel_switch: HiddenRotator
     {
         idc = 2399;
-        x = "0.292203 * safezoneW + safezoneX";
-        y = "0.5407 * safezoneH + safezoneY";
-        w = "0.033499 * safezoneW";
-        h = "0.0659931 * safezoneH";
+        x = "0.292203 * safeZoneW + safeZoneX";
+        y = "0.5407 * safeZoneH + safeZoneY";
+        w = "0.033499 * safeZoneW";
+        h = "0.0659931 * safeZoneH";
         tooltip = "Previous channel | Next channel";
         onMouseButtonDown = "[_this select 1, true] call TFAR_fnc_setChannelViaDialog;";
     };
     class speakers: HiddenButton
     {
         idc = 123456;
-        x = "0.603125 * safezoneW + safezoneX";
-        y = "0.5682 * safezoneH + safezoneY";
-        w = "0.0159844 * safezoneW";
-        h = "0.0715 * safezoneH";
+        x = "0.603125 * safeZoneW + safeZoneX";
+        y = "0.5682 * safeZoneH + safeZoneY";
+        w = "0.0159844 * safeZoneW";
+        h = "0.0715 * safeZoneH";
         tooltip = "Speakers";
         action = "TF_lr_dialog_radio call TFAR_fnc_setLrSpeakers;[TF_lr_dialog_radio] call TFAR_fnc_showRadioSpeakers;";
     };

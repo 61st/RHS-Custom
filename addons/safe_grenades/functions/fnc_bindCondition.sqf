@@ -12,6 +12,7 @@
  * Public: No
  */
 
+#undef DIK_G
 #define DIK_G 34
 
 DIK_G in actionKeys "Throw" && {!(profileNamespace getVariable [QGVAR(bindConfirmed), false])}

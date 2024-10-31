@@ -32,7 +32,7 @@ if (!isMultiplayer) exitWith {diag_log "Rev_TFAR_fnc_getDefaultScribbles: TFAR o
 //In-line functions to set scribbles for Sw radio (e.g. curator module gets assigned multiple at game start)
 fnc_sw_logic = {
     params ["_object"];
-    private _scribbles = switch (getText (configfile >> "CfgWeapons" >> _object >> "tf_encryptionCode")) do {
+    private _scribbles = switch (getText (configFile >> "CfgWeapons" >> _object >> "tf_encryptionCode")) do {
         case "tf_west_radio_code": {Rev_TFAR_settings_SR_B};
         case "tf_east_radio_code": {Rev_TFAR_settings_SR_O};
         case "tf_independent_radio_code": {Rev_TFAR_settings_SR_I};
@@ -74,7 +74,7 @@ fnc_lw = {
 };
 
 //TFAR or vanilla item
-private _condition2 = {isNumber (configfile >> "CfgWeapons" >> _x >> "tf_prototype")};
+private _condition2 = {isNumber (configFile >> "CfgWeapons" >> _x >> "tf_prototype")};
 if (("ItemRadio" in assignedItems player) OR (_condition2 count assignedItems player > 0)) then {
     [
         "Rev_TFAR_defaultScribblesEH",

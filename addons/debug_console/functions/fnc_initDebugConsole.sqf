@@ -26,7 +26,7 @@ private _basePositionRow2 = ctrlPosition (_display displayCtrl IDC_RSCDEBUGCONSO
 // Create buttons in bottom row
 {
     _x params ["_text", "_tooltip", "_code"];
-    TRACE_3("adding debug console button", _text, _tooltip, _code);
+    TRACE_3("adding debug console button",_text,_tooltip,_code);
 
 
     private _col = floor (_forEachIndex / ITEMS_PER_ROW);
@@ -34,14 +34,14 @@ private _basePositionRow2 = ctrlPosition (_display displayCtrl IDC_RSCDEBUGCONSO
     // adjust X
     _basePos set [0, (_basePos select 0) + (BUTTON_WIDTH * (1 + _col)) * GUI_GRID_W];
 
-    private _button = _display ctrlCreate ["RscButtonMenu", -1, _debugConsole];
+    private _button = _display ctrlCreate ["RscButtonMenu", -1,_debugConsole];
 
     _button ctrlSetPosition _basePos;
     _button ctrlCommit 0;
 
     _button ctrlSetText _text;
     _button ctrlSetTooltip _tooltip;
-    _button ctrlAddEventHandler ["ButtonClick", _code];
+    _button ctrlAddEventHandler ["ButtonClick",_code];
 
 } forEach GVAR(buttons);
 

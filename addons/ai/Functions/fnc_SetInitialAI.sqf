@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 // not documented: called by setting
 
-if (!isserver) exitwith {};
+if (!isServer) exitWith {};
 {
     _class = typeOf (_x);
 
@@ -30,4 +30,4 @@ if (!isserver) exitwith {};
             };
         };
     };
-} foreach Allunits;
+} forEach allUnits;

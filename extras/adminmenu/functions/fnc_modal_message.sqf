@@ -16,7 +16,7 @@ private _ctrlCombo = _display ctrlCreate [QGVAR(RscCombo), -1, _ctrlGroup];
 _ctrlCombo ctrlSetPosition [0.1 * lxim_ADMINMENU_STD_WIDTH, _ctrlGrpHeight - lxim_ADMINMENU_STD_HEIGHT, _ctrlGrpWidth * 0.3, lxim_ADMINMENU_STD_HEIGHT];
 _ctrlCombo ctrlCommit 0;
 _ctrlCombo lbAdd "Show in Chat";
-_ctrlCombo lbAdd "Show in Hint";
+_ctrlCombo lbAdd "Show in hint";
 _ctrlCombo lbAdd "Show in Subtitle from 'PAPA BEAR'";
 _ctrlCombo lbSetCurSel 0;
 

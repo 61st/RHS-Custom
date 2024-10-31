@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-_playerUID = getplayerUID player;
+_playerUID = getPlayerUID player;
 
 switch (_playerUID) do {
     case "76561198000002705": {[player,"us_yonv"] call simc_fnc_setUnitNom;}; 

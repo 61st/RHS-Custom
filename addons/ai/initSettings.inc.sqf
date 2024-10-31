@@ -1,10 +1,8 @@
-#include "script_component.hpp"
-
 // Reporting AI
 [
     "lxim_AI_Reporting",
     "CHECKBOX",
-    ["Spawn Reporting", "Receive a systemchat message for any groups or vehicles that fail to spawn."],
+    ["Spawn Reporting", "Receive a systemChat message for any groups or vehicles that fail to spawn."],
     COMPONENT_NAME,
     false,
     true,
@@ -33,7 +31,7 @@
     true,
     true,
     {
-        if (_this && { isserver }) then  { call lxim_ai_fnc_SetInitialAI};
+        if (_this && { isServer }) then  { call lxim_ai_fnc_SetInitialAI};
     }
 ] call CBA_Settings_fnc_init;
 

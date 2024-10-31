@@ -34,7 +34,7 @@ private _return = false;
 _return = (
     ("lxim_medbags_FirstAid" in items _unit) &&
     (_unit getVariable ["ace_isUnconscious", false]) &&
-    (Not visibleMap)
+    (not visibleMap)
 );
 
 _return;

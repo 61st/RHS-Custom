@@ -11,17 +11,17 @@ _ctrlEdit ctrlSetPosition [0.1 * lxim_ADMINMENU_STD_WIDTH, 1.1 * lxim_ADMINMENU_
 _ctrlEdit ctrlCommit 0;
 _ctrlEdit ctrlSetText (missionNamespace getVariable [QGVAR(utility_runcode_last), ""]);
 
-private _ctrlHintEdit = _display ctrlCreate [QGVAR(RscText), -1, _ctrlGroup];
-_ctrlHintEdit ctrlSetPosition [0, 0, _ctrlGrpWidth, lxim_ADMINMENU_STD_HEIGHT];
-_ctrlHintEdit ctrlCommit 0;
-_ctrlHintEdit ctrlSetText "'_this' is the targetted player object";
+private _ctrlhintEdit = _display ctrlCreate [QGVAR(RscText), -1, _ctrlGroup];
+_ctrlhintEdit ctrlSetPosition [0, 0, _ctrlGrpWidth, lxim_ADMINMENU_STD_HEIGHT];
+_ctrlhintEdit ctrlCommit 0;
+_ctrlhintEdit ctrlSetText "'_this' is the targetted player object";
 
 private _bottomY = _ctrlGrpHeight - lxim_ADMINMENU_STD_HEIGHT;
 
-private _ctrlHintCombo = _display ctrlCreate [QGVAR(RscText), -1, _ctrlGroup];
-_ctrlHintCombo ctrlSetPosition [0, _bottomY, 0.15 * _ctrlGrpWidth, lxim_ADMINMENU_STD_HEIGHT];
-_ctrlHintCombo ctrlCommit 0;
-_ctrlHintCombo ctrlSetText "Execute on:";
+private _ctrlhintCombo = _display ctrlCreate [QGVAR(RscText), -1, _ctrlGroup];
+_ctrlhintCombo ctrlSetPosition [0, _bottomY, 0.15 * _ctrlGrpWidth, lxim_ADMINMENU_STD_HEIGHT];
+_ctrlhintCombo ctrlCommit 0;
+_ctrlhintCombo ctrlSetText "Execute on:";
 
 private _ctrlCombo = _display ctrlCreate [QGVAR(RscCombo), -1, _ctrlGroup];
 _ctrlCombo ctrlSetPosition [0.15 * _ctrlGrpWidth, _bottomY, 0.25 * _ctrlGrpWidth, lxim_ADMINMENU_STD_HEIGHT];

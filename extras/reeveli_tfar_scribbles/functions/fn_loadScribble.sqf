@@ -42,7 +42,7 @@ if ((typeName _radio) isEqualTo "OBJECT") exitWith {
     
     //If no scribbles for this identifier we can exit
     private _scribbles = _radio getVariable ("Rev_" + _settings);
-    if (isnil "_scribbles") exitWith {""};
+    if (isNil "_scribbles") exitWith {""};
     
     //Safety check if array is smaller than called channel, not all radio dialogs have full 9 slots for scribbles
     if (count _scribbles < (_index - 1)) exitWith {""};

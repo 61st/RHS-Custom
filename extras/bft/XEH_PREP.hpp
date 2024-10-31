@@ -1,4 +1,4 @@
-PREP(clearHint);
+PREP(clearhint);
 PREP(createGroupMarkers);
 PREP(createUnitMarkers);
 PREP(getFriendlySides);

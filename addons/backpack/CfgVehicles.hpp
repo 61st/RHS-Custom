@@ -744,7 +744,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 350;
+        maximumLoad = 370;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[61st] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_White.paa);
@@ -758,7 +758,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 350;
+        maximumLoad = 370;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[61st] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_Black.paa);
@@ -772,7 +772,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 350;
+        maximumLoad = 370;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[61st] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_CoyoteBrown.paa);
@@ -786,7 +786,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 350;
+        maximumLoad = 370;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[61st] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Multicam.paa);
@@ -800,7 +800,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 350;
+        maximumLoad = 370;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[61st] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_Olive.paa);
@@ -814,7 +814,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 350;
+        maximumLoad = 370;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[61st] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_Olive.paa);
@@ -828,7 +828,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 350;
+        maximumLoad = 370;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[61st] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_Ranger_Green.paa);
@@ -842,7 +842,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 350;
+        maximumLoad = 370;
         author = "Bohemia Interactive, GilleeDoo, Tyrone";
         displayName="[61st] Kitbag Medic";
         picture = QPATHTOF(data\ui\backpack_kitbag_medic_rgr_ca.paa);
@@ -868,7 +868,6 @@ class CfgVehicles {
         transportMaxBackpacks = 1;
         transportMaxMagazines = 30;
         transportMaxWeapons = 1;
-        class TransportItems {};
         class TransportMagazines {};
         class TransportWeapons {};
         isBackpack = 1;

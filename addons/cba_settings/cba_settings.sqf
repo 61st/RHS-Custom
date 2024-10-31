@@ -42,10 +42,6 @@ force force lxim_Civilians_enableStopGestures = true;
 force force lxim_Civilians_successChance_armed = 0.7;
 force force lxim_Civilians_successChance_unarmed = 0.5;
 
-// 61st - fatigue
-force force lxim_fatigue_highJogCoef = 0.8;
-force force lxim_fatigue_highJogCoefEnabled = true;
-
 // 61st - friendly_fire
 force force lxim_friendly_fire_loggingEnabled = true;
 
@@ -62,9 +58,6 @@ force force lxim_nvg_Blacklist = "";
 // 61st - respawn
 force force lxim_respawn_enabled = true;
 force force lxim_respawn_time = 6;
-
-// 61st - safestart
-force force lxim_safestart_startLocked = true;
 
 // 61st - spectator
 force force lxim_spectator_allowAI = false;
@@ -226,7 +219,7 @@ force force ace_fire_enableScreams = true;
 force force ace_fortify_markObjectsOnMap = 1;
 force force ace_fortify_timeCostCoefficient = 1;
 force force ace_fortify_timeMin = 1.5;
-force force acex_fortify_settingHint = 1;
+force force acex_fortify_settinghint = 1;
 
 // ACE Fragmentation Simulation
 force force ace_frag_enabled = true;
@@ -257,7 +250,7 @@ force force acex_headless_transferLoadout = 1;
 force force ace_hearing_autoAddEarplugsToUnits = 1;
 force force ace_hearing_disableEarRinging = true;
 force ace_hearing_earplugsVolume = 0.5;
-force force ace_hearing_enableCombatDeafness = true;
+force force ace_hearing_enableCombatDeafness = false;
 force force ace_hearing_enabledForZeusUnits = true;
 force ace_hearing_unconsciousnessVolume = 0.4;
 
@@ -340,27 +333,27 @@ force force ace_maptools_plottingBoardAllowChannelDrawing = 1;
 // ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
-force force ace_medical_ai_enabledFor = 0;
+force force ace_medical_ai_enabledFor = 1;
 force force ace_medical_ai_requireItems = 0;
-force force ace_medical_AIDamageThreshold = 0.3;
+force force ace_medical_AIDamageThreshold = 0.7;
 force force ace_medical_bleedingCoefficient = 0.5;
 force force ace_medical_blood_bloodLifetime = 900;
 force force ace_medical_blood_enabledFor = 2;
 force force ace_medical_blood_maxBloodObjects = 50;
 force force ace_medical_deathChance = 0.2;
-force force ace_medical_dropWeaponUnconsciousChance = 0;
-force force ace_medical_enableVehicleCrashes = false;
+force force ace_medical_dropWeaponUnconsciousChance = 0.251182;
+force force ace_medical_enableVehicleCrashes = true;
 force force ace_medical_engine_damagePassThroughEffect = 1;
 force force ace_medical_fatalDamageSource = 1;
 force force ace_medical_fractureChance = 0.5;
 force force ace_medical_fractures = 1;
-force force ace_medical_ivFlowRate = 1.2;
+force force ace_medical_ivFlowRate = 1.5;
 force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 1;
 force force ace_medical_painUnconsciousChance = 0.15;
 force force ace_medical_painUnconsciousThreshold = 0.601182;
-force force ace_medical_playerDamageThreshold = 2;
-force force ace_medical_spontaneousWakeUpChance = 0.5;
+force force ace_medical_playerDamageThreshold = 2.25;
+force force ace_medical_spontaneousWakeUpChance = 0.801062;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 1.4;
 force force ace_medical_statemachine_AIUnconsciousness = true;
 force force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
@@ -375,15 +368,15 @@ force force ace_medical_treatment_allowGraveDigging = 0;
 force force ace_medical_treatment_allowLitterCreation = true;
 force force ace_medical_treatment_allowSelfIV = 1;
 force force ace_medical_treatment_allowSelfPAK = 1;
-force force ace_medical_treatment_allowSelfStitch = 1;
+force force ace_medical_treatment_allowSelfStitch = 0;
 force force ace_medical_treatment_allowSharedEquipment = 0;
 force force ace_medical_treatment_bandageEffectiveness = 1;
 force force ace_medical_treatment_bandageRollover = true;
 force force ace_medical_treatment_clearTrauma = 1;
 force force ace_medical_treatment_consumePAK = 1;
 force force ace_medical_treatment_consumeSurgicalKit = 0;
-force force ace_medical_treatment_convertItems = 2;
-force force ace_medical_treatment_cprSuccessChanceMax = 0.4;
+force force ace_medical_treatment_convertItems = 1;
+force force ace_medical_treatment_cprSuccessChanceMax = 0.55;
 force force ace_medical_treatment_cprSuccessChanceMin = 0.4;
 force force ace_medical_treatment_graveDiggingMarker = true;
 force force ace_medical_treatment_holsterRequired = 0;
@@ -397,7 +390,7 @@ force force ace_medical_treatment_maxLitterObjects = 50;
 force force ace_medical_treatment_medicEpinephrine = 0;
 force force ace_medical_treatment_medicIV = 1;
 force force ace_medical_treatment_medicPAK = 2;
-force force ace_medical_treatment_medicSurgicalKit = 1;
+force force ace_medical_treatment_medicSurgicalKit = 2;
 force force ace_medical_treatment_timeCoefficientPAK = 0.7;
 force force ace_medical_treatment_treatmentTimeAutoinjector = 5;
 force force ace_medical_treatment_treatmentTimeBodyBag = 10;
@@ -409,7 +402,8 @@ force force ace_medical_treatment_treatmentTimeSplint = 7;
 force force ace_medical_treatment_treatmentTimeTourniquet = 7;
 force force ace_medical_treatment_woundReopenChance = 0.495006;
 force force ace_medical_treatment_woundStitchTime = 5;
-force force ace_medical_vitals_simulateSpO2 = false;
+force force ace_medical_vitals_simulateSpO2 = true;
+
 
 // ACE Medical Interface
 ace_medical_feedback_bloodVolumeEffectType = 0;
@@ -570,7 +564,7 @@ force force ace_spectator_restrictModes = 0;
 force force ace_spectator_restrictVisions = 0;
 
 // ACE Switch Units
-force force ace_switchunits_enableSafeZone = true;
+force force ace_switchunits_enablesafeZone = true;
 force force ace_switchunits_enableSwitchUnits = false;
 force force ace_switchunits_safeZoneRadius = 100;
 force force ace_switchunits_switchToCivilian = false;
@@ -752,6 +746,107 @@ force force ace_zeus_remoteWind = false;
 force force ace_zeus_revealMines = 0;
 force force ace_zeus_zeusAscension = true;
 force force ace_zeus_zeusBird = false;
+
+/* ACM -------------------------------------------------------------------------------------------------------------- */
+// ACM: Airway
+force force ACM_airway_airwayAdjunctReusable = false;
+force force ACM_airway_airwayCollapseChance = 1;
+force force ACM_airway_airwayObstructionBloodChance = 1;
+force force ACM_airway_airwayObstructionVomitChance = 1;
+force force ACM_airway_allowACCUVAC = 2;
+force force ACM_airway_allowNPA = 2;
+force force ACM_airway_allowOPA = 2;
+force force ACM_airway_allowSGA = 2;
+force force ACM_airway_allowSuctionBag = 1;
+force force ACM_airway_enable = true;
+force force ACM_airway_treatmentTimeNPA = 5;
+force force ACM_airway_treatmentTimeOPA = 3;
+force force ACM_airway_treatmentTimeRecoveryPosition = 8;
+force force ACM_airway_treatmentTimeSGA = 7;
+
+// ACM: Breathing
+force force ACM_breathing_allowInspectChest = 0;
+force force ACM_breathing_allowNCD = 2;
+force force ACM_breathing_allowThoracostomy = 2;
+force force ACM_breathing_altitudeAffectOxygen = false;
+force force ACM_breathing_chestInjuryChance = 1;
+force force ACM_breathing_Hardcore_ChestInjury = false;
+force force ACM_breathing_Hardcore_HemothoraxBleeding = false;
+force force ACM_breathing_hemothoraxChance = 0.2;
+force force ACM_breathing_locationThoracostomy = 3;
+force force ACM_breathing_pneumothoraxDeteriorateChance = 1;
+force force ACM_breathing_pneumothoraxEnabled = true;
+force force ACM_breathing_treatmentTimeInspectChest = 6;
+
+// ACM: Circulation
+force ACM_circulation_AEDDistanceLimit = 5;
+force ACM_circulation_allowAED = 0;
+force force ACM_circulation_allowIO = 2;
+force force ACM_circulation_allowIV = 1;
+force ACM_circulation_BloodType_Ratio_A = 28;
+force ACM_circulation_BloodType_Ratio_AB = 4;
+force ACM_circulation_BloodType_Ratio_ABN = 1;
+force ACM_circulation_BloodType_Ratio_AN = 3;
+force ACM_circulation_BloodType_Ratio_B = 18;
+force ACM_circulation_BloodType_Ratio_BN = 2;
+force ACM_circulation_BloodType_Ratio_O = 39;
+force ACM_circulation_BloodType_Ratio_ON = 5;
+force ACM_circulation_cardiacArrestBleedRate = 0.03;
+force ACM_circulation_cardiacArrestChance = 0.1;
+force ACM_circulation_cardiacArrestDeteriorationRate = 1;
+force ACM_circulation_coagulationClotting = true;
+force ACM_circulation_coagulationClottingAffectAI = true;
+force ACM_circulation_CPREffectiveness = 1;
+force ACM_circulation_Hardcore_PostCardiacArrest = false;
+force ACM_circulation_IVComplications = false;
+force ACM_circulation_IVComplicationsDeteriorate = false;
+force force ACM_circulation_selfIO = 0;
+force force ACM_circulation_selfIV = 0;
+force force ACM_circulation_treatmentTimeIO_EZ = 4;
+force force ACM_circulation_treatmentTimeIO_FAST1 = 4;
+force force ACM_circulation_treatmentTimeIV_14 = 8;
+force force ACM_circulation_treatmentTimeIV_16 = 6;
+
+// ACM: Core
+force force ACM_core_allowWrap = 1;
+force force ACM_core_Dogtag_ShowWeight = true;
+force force ACM_core_ignoreIncompatibleAddonWarning = false;
+force force ACM_core_splintFallOffTime = 60;
+force force ACM_core_treatmentTimeSAMSplint = 3;
+force force ACM_core_treatmentTimeSutureStitch = 0.5;
+force force ACM_core_treatmentTimeTakeOffTourniquet = 4;
+force force ACM_core_treatmentTimeWrappedStitch = 2;
+force force ACM_core_treatmentTimeWrapSplint = 5;
+
+// ACM: Damage
+force force ACM_damage_AIStayDownChance = 0.503036;
+force force ACM_damage_bodyTraumaCardiacArrestThreshold = 12;
+force force ACM_damage_bodyTraumaCardiacArrestThresholdAI = 16;
+force force ACM_damage_bodyTraumaDeathThreshold = 0;
+force force ACM_damage_bodyTraumaDeathThresholdAI = 24;
+force force ACM_damage_enable = true;
+force force ACM_damage_headTraumaCardiacArrestThreshold = 10;
+force force ACM_damage_headTraumaCardiacArrestThresholdAI = 12;
+force force ACM_damage_headTraumaDeathThreshold = 0;
+force force ACM_damage_headTraumaDeathThresholdAI = 19;
+force force ACM_damage_internalBleedingChanceMultiplier = 1;
+
+// ACM: Disability
+force force ACM_disability_tourniquetImpactLimbs = true;
+
+// ACM: Evacuation
+force force ACM_evacuation_allowConvert = 2;
+force force ACM_evacuation_clearCasualtyLoadout = false;
+force force ACM_evacuation_enable = false;
+force force ACM_evacuation_locationConvert = 0;
+force force ACM_evacuation_playerFaction = WEST;
+force force ACM_evacuation_ticketCountCasualty = 20;
+force force ACM_evacuation_ticketCountRespawn = 1000;
+
+// ACM: GUI
+// ACM_gui_overlayBodyPart = tr;
+// force ACM_gui_showInactiveStatuses = false;
+// ACM_gui_showPatientSideLabels = false;
 
 // ACRE2
 force acre_sys_core_automaticAntennaDirection = true;
@@ -1031,275 +1126,6 @@ force force vxf_interaction_updateEvery = 5;
 //vxf_uh60_interaction_autoclose_actionmenu = false;
 //vxf_uh60_interaction_pointing = true;
 
-// KAT - ADV Medical: Airway
-force force kat_airway_Accuvac_time = 8;
-force force kat_airway_autoTriage = true;
-force force kat_airway_block_headTurning_ifAirwayItem = true;
-force force kat_airway_CancelRecoveryPosition_Time = 3;
-force force kat_airway_CheckAirway_time = 2;
-force force kat_airway_checkbox_puking_sound = true;
-force force kat_airway_enable = true;
-force force kat_airway_Guedeltubus_time = 6;
-force force kat_airway_HeadTurn_Interval = 3;
-force force kat_airway_Hyperextend_Time = 3;
-force force kat_airway_Larynxtubus_time = 3;
-force force kat_airway_medLvl_Accuvac = 1;
-force force kat_airway_medLvl_Guedeltubus = 0;
-force force kat_airway_medLvl_Larynxtubus = 1;
-force force kat_airway_medLvl_Suction = 0;
-force force kat_airway_occlusion_cooldownPeriod = 6;
-force force kat_airway_occlusion_repeatTimer = 60;
-force force kat_airway_probability_headturning = 31.3977;
-force force kat_airway_probability_obstruction = 15;
-force force kat_airway_probability_occluded = 10;
-force force kat_airway_RecoveryPosition_Time = 6;
-force force kat_airway_RecoveryPosition_TimeToDrain = 10;
-force force kat_airway_ReusableAirwayItems = false;
-force force kat_airway_string_exit = "";
-force force kat_airway_Suction_reuse = false;
-force force kat_airway_Suction_time = 12;
-
-// KAT - ADV Medical: Breathing
-force force kat_breathing_advPtxChance = 9.90013;
-force force kat_breathing_advPtxEnable = true;
-force force kat_breathing_BVMOxygen_Multiplier = 1.45;
-force force kat_breathing_clearChestSealAfterTreatment = true;
-force force kat_breathing_deepPenetratingInjuryChance = 30;
-force force kat_breathing_deterioratingPneumothorax_chance = 50;
-force force kat_breathing_deterioratingPneumothorax_interval = 45;
-force force kat_breathing_enable = true;
-force force kat_breathing_enable_selfChestseal = 1;
-force force kat_breathing_enableSPO2Flashing = true;
-force force kat_breathing_HPTXBleedAmount = 0.06;
-force force kat_breathing_hptxChance = 5;
-force force kat_breathing_inspectChest_enable = 1;
-force force kat_breathing_inspectChest_medLvl = 0;
-force force kat_breathing_inspectChest_time = 6;
-force force kat_breathing_locationProvideOxygen = 3;
-force force kat_breathing_lowSPO2Level = 90;
-force force kat_breathing_medLvl_BVM = 0;
-force force kat_breathing_medLvl_BVM_Oxygen = 0;
-force force kat_breathing_medLvl_Chestseal = 0;
-force force kat_breathing_medLvl_hemopneumothoraxTreatment = 1;
-force force kat_breathing_medLvl_PocketBVM = 0;
-force force kat_breathing_medLvl_Pulseoximeter = 0;
-force force kat_breathing_mildValue = 70;
-force force kat_breathing_PneumothoraxAlwaysVisible = true;
-force force kat_breathing_pneumothoraxChance = 29.9874;
-force force kat_breathing_pneumothoraxDamageThreshold = 0.199438;
-force force kat_breathing_pneumothoraxDamageThreshold_TakenDamage = true;
-force force kat_breathing_PortableOxygenTank_RefillTime = 5;
-force force kat_breathing_PulseOximeter_SpO2Warning = 85;
-force force kat_breathing_severeValue = 60;
-force force kat_breathing_showCyanosis = true;
-force force kat_breathing_showPneumothorax_dupe = false;
-force force kat_breathing_slightValue = 90;
-force force kat_breathing_SpO2_dieActive = true;
-force force kat_breathing_SpO2_dieValue = 50;
-force force kat_breathing_SpO2_MultiplyNegative = 0.774792;
-force force kat_breathing_SpO2_MultiplyPositive = 0.990013;
-force force kat_breathing_SpO2_perfusion = true;
-force force kat_breathing_SpO2_PerfusionMultiplier = 1;
-force force kat_breathing_SpO2_unconscious = 75;
-force force kat_breathing_Stable_spo2 = 85;
-force force kat_breathing_staminaLossAtLowSPO2 = true;
-force force kat_breathing_stethoscopeListeningTime = 15;
-force force kat_breathing_TensionHemothoraxAlwaysVisible = false;
-
-// KAT - ADV Medical: Chemical
-force force kat_chemical_affectAI = false;
-force force kat_chemical_availGasmask = """G_AirPurifyingRespirator_01_F""";
-force force kat_chemical_gasmask_durability = 900;
-force force kat_chemical_infectionTime = 60;
-
-// KAT - ADV Medical: Circulation
-force force kat_circulation_AdvRhythm = true;
-force force kat_circulation_AdvRhythm_AED_ROSC_Chance = 50;
-force force kat_circulation_AdvRhythm_asystoleBloodlossThreshold = 3.6;
-force force kat_circulation_AdvRhythm_canDeteriorate = true;
-force force kat_circulation_AdvRhythm_CPR_ROSC_Chance = 5;
-force force kat_circulation_AdvRhythm_deteriorateAfterTreatment = true;
-force force kat_circulation_AdvRhythm_deteriorateTimeMax = 900;
-force force kat_circulation_AdvRhythm_deteriorateTimeWeight = 180;
-force force kat_circulation_AdvRhythm_Hardcore_Enable = false;
-force force kat_circulation_AdvRhythm_hardcoreDeteriorationChance = 10;
-force force kat_circulation_AdvRhythm_PEAChance = 50;
-force force kat_circulation_AdvRhythm_VTChance = 50;
-force force kat_circulation_AED_duringCpr = true;
-force force kat_circulation_AED_MaxChance = 80;
-force force kat_circulation_AED_MinChance = 40;
-force force kat_circulation_AED_X_MaxChance = 90;
-force force kat_circulation_AED_X_MinChance = 45;
-force force kat_circulation_AED_X_Monitor_SpO2Warning = 85;
-force force kat_circulation_AED_X_VitalsMonitor_BloodPressureInterval = 0;
-force force kat_circulation_AED_X_VitalsMonitor_BloodPressureInterval_Time = 30;
-force force kat_circulation_AED_X_VitalsMonitor_SoundsSelect = 1;
-force force kat_circulation_AEDX_VitalsMonitor_AttachTime = 6;
-force force kat_circulation_AEDX_VitalsMonitor_DetachTime = 3;
-force force kat_circulation_blood_draw_limit = 3.6;
-force force kat_circulation_blood_drawTime_250ml = 25;
-force force kat_circulation_blood_drawTime_500ml = 50;
-force force kat_circulation_bloodGroups = true;
-force force kat_circulation_bloodTypeCustomList = "O,O,A,A,O_N,B,A_N,AB,B_N,AB_N";
-force force kat_circulation_bloodTypeRandomWeighted = true;
-force force kat_circulation_bloodTypeSetting = 4;
-kat_circulation_bloodTypeSettingPlayer = "O_N";
-force force kat_circulation_cardiacArrestBleedRate = 0.05;
-force force kat_circulation_CPR_ChanceInterval = 15;
-force force kat_circulation_CPR_MaxChance_Default = 20;
-force force kat_circulation_CPR_MaxChance_Doctor = 40;
-force force kat_circulation_CPR_MaxChance_RegularMedic = 30;
-force force kat_circulation_CPR_MinChance_Default = 10;
-force force kat_circulation_CPR_MinChance_Doctor = 20;
-force force kat_circulation_CPR_MinChance_RegularMedic = 15;
-force force kat_circulation_CPR_OxygenationPeriod = 15;
-force force kat_circulation_Defibrillator_DistanceLimit = 15;
-force force kat_circulation_DefibrillatorPads_AttachTime = 6;
-force force kat_circulation_DefibrillatorPads_DetachTime = 3;
-force force kat_circulation_enable = true;
-force force kat_circulation_enable_CPR_Chances = true;
-force force kat_circulation_enable_selfBloodDraw = 1;
-force force kat_circulation_medLvl_AED = 0;
-force force kat_circulation_medLvl_AED_Station_Interact = 0;
-force force kat_circulation_medLvl_AED_X = 0;
-force force kat_circulation_useLocation_AED = 0;
-
-// KAT - ADV Medical: GUI
-force force kat_gui_ColoredLogs = true;
-kat_gui_showPatientSideLabels = false;
-
-// KAT - ADV Medical: Misc
-kat_misc_AFAK_Container = 0;
-force force kat_misc_AFAK_RemoveWhenEmpty = true;
-force force kat_misc_AFAKFifthSlotItem = "[['kat_guedel', 4], ['kat_suction', 4]]";
-force force kat_misc_AFAKFirstSlotItem = "[['ACE_tourniquet', 8], ['ACE_splint', 4], ['kat_iv_16', 8]]";
-force force kat_misc_AFAKFourthSlotItem = "[['kat_chestSeal', 4]]";
-force force kat_misc_AFAKSecondSlotItem = "[['ACE_fieldDressing', 8],['ACE_packingBandage', 15], ['ACE_elasticBandage', 15]]";
-force force kat_misc_AFAKSixthSlotItem = "[['ACE_epinephrine', 4], ['ACE_adenosine', 2], ['ACE_salineIV', 4]]";
-force force kat_misc_AFAKThirdSlotItem = "[['kat_Painkiller', 1], ['kat_PenthroxItem', 4], ['kat_Carbonate', 1]]";
-force force kat_misc_allowSharedVehicleEquipment = 4;
-kat_misc_armbandSlingLeftArm = "[0.2, -0.39, -0.2]";
-kat_misc_armbandSlingLeftArmRotation = "[240, 33, 26]";
-kat_misc_armbandSlingLeftLeg = "[0.435, -0.075, -0.38]";
-kat_misc_armbandSlingLeftLegRotation = "[-160, -5, 45]";
-kat_misc_armbandSlingRightArm = "[-0.228, -0.1, -0.43]";
-kat_misc_armbandSlingRightArmRotation = "[5, -5, -5]";
-kat_misc_armbandSlingRightLeg = "[-0.32, -0.29, -0.42]";
-kat_misc_armbandSlingRightLegRotation = "[-30, -5, 38]";
-force force kat_misc_enable = true;
-force force kat_misc_enableStitchFullBody = false;
-kat_misc_IFAK_Container = 0;
-force force kat_misc_IFAK_RemoveWhenEmpty = true;
-force force kat_misc_IFAKFirstSlotItem = "[['ACE_tourniquet', 4], ['ACE_Splint', 2]]";
-force force kat_misc_IFAKFourthSlotItem = "[['kat_chestSeal', 1], ['kat_IV_16', 1], ['ACE_salineIV', 1], ['kat_guedel', 1]]";
-force force kat_misc_IFAKSecondSlotItem = "[['ACE_fieldDressing', 8],['ACE_packingBandage', 6], ['ACE_elasticBandage', 6]]";
-force force kat_misc_IFAKThirdSlotItem = "[['kat_Painkiller', 1], ['ACE_epinephrine', 1]]";
-force force kat_misc_incompatibilityWarning = true;
-kat_misc_MFAK_Container = 0;
-force force kat_misc_MFAK_RemoveWhenEmpty = true;
-force force kat_misc_MFAKEighthSlotItem = "[['kat_Pulseoximeter', 4],['ACE_suture', 12], ['ACE_surgicalKit', 1], ['kat_X_AED', 1]]";
-force force kat_misc_MFAKFifthSlotItem = "[['kat_larynx', 12], ['kat_accuvac', 1], ['kat_pocketBVM', 1]]";
-force force kat_misc_MFAKFirstSlotItem = "[['ACE_tourniquet', 8], ['ACE_splint', 6]]";
-force force kat_misc_MFAKFourthSlotItem = "[['kat_chestSeal', 6], ['kat_aatKit', 4], ['kat_ncdKit', 6], ['kat_stethoscope', 1]]";
-force force kat_misc_MFAKSecondSlotItem = "[['ACE_fieldDressing', 16],['ACE_packingBandage', 16], ['ACE_elasticBandage', 16]]";
-force force kat_misc_MFAKSeventhSlotItem = "[['kat_IV_16', 15], ['kat_IO_FAST', 6], ['ACE_salineIV_500', 16]]";
-force force kat_misc_MFAKSixthSlotItem = "[['kat_naloxone', 6], ['kat_atropine', 4], ['kat_lidocane', 6], ['kat_nitroglycerin', 4], ['kat_phenylephrine', 4], ['kat_CarbonateItem', 1], ['ACE_adenosine', 4]]";
-force force kat_misc_MFAKThirdSlotItem = "[['kat_PainkillerItem', 1], ['kat_nalbuphine', 6], ['kat_PenthroxItem', 3], ['naloxone', 4]]";
-force force kat_misc_neckTourniquet = false;
-force force kat_misc_tourniquetEffects_Enable = true;
-force force kat_misc_tourniquetEffects_NegativeMultiplier = 1;
-force force kat_misc_tourniquetEffects_PositiveMultiplier = 1;
-force force kat_misc_treatmentTimeDetachTourniquet = 7;
-
-// KAT - ADV Medical: Pharmacy
-force force kat_pharma_blockChance = 20;
-force force kat_pharma_carbonateChance = 100;
-force force kat_pharma_chromatic_aberration_checkbox_fentanyl = true;
-force force kat_pharma_chromatic_aberration_checkbox_ketamine = true;
-force force kat_pharma_chromatic_aberration_checkbox_pervitin = true;
-force force kat_pharma_chromatic_aberration_slider_fentanyl = 1;
-force force kat_pharma_chromatic_aberration_slider_ketamine = 0.8;
-force force kat_pharma_chromatic_aberration_slider_pervitin = 1;
-force force kat_pharma_coagulation = false;
-force force kat_pharma_ivCheckLimbDamage = false;
-force force kat_pharma_IVdrop = 600;
-force force kat_pharma_IVdropEnable = true;
-force force kat_pharma_IVreuse = false;
-force force kat_pharma_kidneyAction = false;
-force force kat_pharma_MedicationsRequireInsIV = true;
-force force kat_pharma_medLvl_Amiodarone = 0;
-force force kat_pharma_medLvl_ApplyIO = 1;
-force force kat_pharma_medLvl_ApplyIV = 0;
-force force kat_pharma_medLvl_Atropine = 0;
-force force kat_pharma_medLvl_Carbonate = 0;
-force force kat_pharma_medLvl_EACA = 0;
-force force kat_pharma_medLvl_Etomidate = 0;
-force force kat_pharma_medLvl_Fentanyl = 0;
-force force kat_pharma_medLvl_Flumezenil = 0;
-force force kat_pharma_medLvl_Ketamine = 0;
-force force kat_pharma_medLvl_Lidocaine = 0;
-force force kat_pharma_medLvl_Lorazepam = 0;
-force force kat_pharma_medLvl_Nalbuphine = 0;
-force force kat_pharma_medLvl_Naloxone = 0;
-force force kat_pharma_medLvl_Nitroglycerin = 0;
-force force kat_pharma_medLvl_Norepinephrine = 0;
-force force kat_pharma_medLvl_Penthrox = 0;
-force force kat_pharma_medLvl_Pervitin = 0;
-force force kat_pharma_medLvl_Phenylephrine = 0;
-force force kat_pharma_medLvl_Reorientation = 0;
-force force kat_pharma_medLvl_TXA = 0;
-force force kat_pharma_pervitinSpeed = 1.15;
-force force kat_pharma_Reorientation_Enable = true;
-force force kat_pharma_Reorientation_Slap = true;
-force force kat_pharma_reorientationChance = 100;
-force force kat_pharma_RequireInsIV = true;
-force force kat_pharma_RequireInsIVBloodDraw = false;
-force force kat_pharma_staminaMedication = false;
-force force kat_pharma_treatmentTime_Amiodarone = 7;
-force force kat_pharma_treatmentTime_ApplyIO = 7;
-force force kat_pharma_treatmentTime_ApplyIV = 7;
-force force kat_pharma_treatmentTime_Atropine = 7;
-force force kat_pharma_treatmentTime_Carbonate = 7;
-force force kat_pharma_treatmentTime_EACA = 7;
-force force kat_pharma_treatmentTime_Etomidate = 2;
-force force kat_pharma_treatmentTime_Fentanyl = 7;
-force force kat_pharma_treatmentTime_Flumazenil = 2;
-force force kat_pharma_treatmentTime_Ketamine = 7;
-force force kat_pharma_treatmentTime_Lidocaine = 7;
-force force kat_pharma_treatmentTime_Lorazepam = 2;
-force force kat_pharma_treatmentTime_Nalbuphine = 7;
-force force kat_pharma_treatmentTime_Naloxone = 7;
-force force kat_pharma_treatmentTime_Nitroglycerin = 7;
-force force kat_pharma_treatmentTime_Norepinephrine = 7;
-force force kat_pharma_treatmentTime_Penthrox = 8;
-force force kat_pharma_treatmentTime_Pervitin = 5;
-force force kat_pharma_treatmentTime_Phenylephrine = 7;
-force force kat_pharma_treatmentTime_Reorientation = 2;
-force force kat_pharma_treatmentTime_TXA = 7;
-force force kat_pharma_weapon_sway_pervitin = false;
-
-// KAT - ADV Medical: Surgery
-force force kat_surgery_closedLocation = 0;
-force force kat_surgery_closedReduction_MedLevel = 1;
-force force kat_surgery_closedReductionFailChance = 10;
-force force kat_surgery_closedTime = 10;
-force force kat_surgery_compoundChance = 30;
-force force kat_surgery_enable_fracture = true;
-force force kat_surgery_enable_selfCheckFracture = 1;
-force force kat_surgery_etomidateTime = 45;
-force force kat_surgery_fractureCheck_MedLevel = 0;
-force force kat_surgery_fractureCheck_Time = 10;
-force force kat_surgery_incisionTime = 10;
-force force kat_surgery_intermediateTime = 8;
-force force kat_surgery_npwtLocation = 3;
-force force kat_surgery_npwtMedLevel = 2;
-force force kat_surgery_npwtTime = 20;
-force force kat_surgery_openTime = 15;
-force force kat_surgery_simpleChance = 60;
-force force kat_surgery_Surgery_ConsciousnessRequirement = 2;
-force force kat_surgery_surgicalAction_MedLevel = 1;
-force force kat_surgery_surgicalLocation = 0;
-
 // Reeveli's teleportation system
 Rev_tp_action_radius = 8;
 force force Rev_tp_action_time = 1;
@@ -1512,7 +1338,7 @@ force force vtx_uh60_flir_setting_KeySlewSpeed = 1;
 force force vtx_uh60_flir_setting_KeyXFactor = 1;
 force force vtx_uh60_flir_setting_syncDelay = 0.015;
 force force vtx_uh60_hoist_setting_useAttachScript = false;
-force force vtx_uh60_sfmPlus_showDamageHints = true;
+force force vtx_uh60_sfmPlus_showDamagehints = true;
 force force vtx_uh60_sfmPlusStabilatorEnabled = 1;
 force force vtx_uh60_ui_showDebugMessages = false;
 force force vtx_uh60m_simpleCollective = false;

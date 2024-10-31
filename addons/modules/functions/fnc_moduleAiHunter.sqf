@@ -12,7 +12,7 @@ params [
 
 if (_activated) then {
     private _groupSide = _logic getVariable ["groupSide", "WEST"];
-    private _groupConfig = _logic getVariable ["groupConfig", 'configfile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad"'];
+    private _groupConfig = _logic getVariable ["groupConfig", 'configFile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad"'];
     private _waves = _logic getVariable ["waves", -1];
     private _huntTrigger = _logic getVariable ["huntTrigger", "lxim_huntTrigger"];
 

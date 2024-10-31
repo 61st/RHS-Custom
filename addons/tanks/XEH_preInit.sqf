@@ -18,8 +18,8 @@ if (isServer || !hasInterface) then {
 
 if (hasInterface) then {
     [QGVAR(heat), {
-        private _tiPars = getVehicleTiPars _this vectorAdd [0.2,0.2,0.2];
-        _this setVehicleTiPars _tiPars;
+        private _tiPars = getVehicleTIPars _this vectorAdd [0.2,0.2,0.2];
+        _this setVehicleTIPars _tiPars;
     }] call CBA_fnc_addEventHandler;
 };
 

@@ -1,4 +1,4 @@
-#include "\z\lxim\addons\common\script_component.hpp"
+#include "script_component.hpp"
 /*
  * Name: lxim_common_fnc_sideType
  * Author: Nick

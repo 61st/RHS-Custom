@@ -26,7 +26,7 @@ player addEventHandler ["Killed", {
     if (call TFAR_fnc_haveLRRadio) then
     {
         private _LRradio = (call TFAR_fnc_activeLrRadio) # 0;
-        if (isnil {_LRradio getVariable ["Rev_radio_settings",nil]}) exitwith {
+        if (isNil {_LRradio getVariable ["Rev_radio_settings",nil]}) exitWith {
             diag_log "Rev_TFAR_fnc_respawnScribbles: No Lw radio scribbles found on 'Killed', EH ID25";
         };
         private _scribbles = _LRradio getVariable ["Rev_radio_settings",nil];
@@ -38,7 +38,7 @@ player addEventHandler ["Killed", {
     if (call TFAR_fnc_haveSWRadio) then
     {
         private _radio = call TFAR_fnc_activeSwRadio;
-        if (isnil {Rev_TFAR_scribbleNamespace getVariable [_radio,nil]}) exitwith {
+        if (isNil {Rev_TFAR_scribbleNamespace getVariable [_radio,nil]}) exitWith {
             diag_log "Rev_TFAR_fnc_respawnScribbles: No Sw radio scribbles found on 'Killed', EH ID27"
         };
         private _scribbles = Rev_TFAR_scribbleNamespace getVariable [_radio,nil];

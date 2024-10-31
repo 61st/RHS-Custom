@@ -19,9 +19,14 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 
 
-#include "CfgFactionClasses.sqf"
-#include "rhs_msv.sqf"
-#include "rhs_rfgf.sqf"
-#include "rhs_vdv.sqf"
-#include "rhs_vmf.sqf"
-#include "rhs_tv.sqf"
+#include "CfgFactionClasses.hpp"
+
+class CfgGroups {
+    class EAST {
+        #include "rhs_msv.hpp"
+        #include "rhs_rfgf.hpp"
+        #include "rhs_vdv.hpp"
+        #include "rhs_vmf.hpp"
+        #include "rhs_tv.hpp"
+    };
+};

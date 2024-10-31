@@ -68,7 +68,7 @@ Author:
 // If we don't find enough road positions in the radius, extend radius step-wise by this amount
 #define EXT_RADIUS 100
 
-if (!isserver) exitwith {};
+if (!isServer) exitWith {};
 
 params [
     "_center",
@@ -93,9 +93,9 @@ params [
 _typeNameCenter = typeName _center;
 
 call {
-    if (_typeNameCenter isEqualTo "OBJECT") exitwith { _center = getPos _center;};
-    if (_typeNameCenter isEqualTo "STRING") exitwith { _center = getMarkerPos _center;};
-    if (_typeNameCenter isEqualTo [0, 0, 0]) exitwith {systemchat "AISpawns - Position is invalid";};
+    if (_typeNameCenter isEqualTo "OBJECT") exitWith { _center = getPos _center;};
+    if (_typeNameCenter isEqualTo "STRING") exitWith { _center = getMarkerPos _center;};
+    if (_typeNameCenter isEqualTo [0, 0, 0]) exitWith {systemChat "AISpawns - Position is invalid";};
 };
 
 _center set [2, 0];
@@ -148,31 +148,31 @@ private ["_infList", "_confBase", "_infaaList", "_infatList", "_sniperList", "_v
 // TODO: UAVs ?
 
 // Set the Default Faction if all else fails
-private _side = East;
-private _FactionSide = "East";
+private _side = east;
+private _FactionSide = "east";
 private _InfantryType = "Infantry";
 private _InfantryGroup = "OIA_InfTeam";
 private _vehRandList = [];
 private _AIReporting = lxim_AI_Reporting;
 
 // Check for Side from _faction
-private _SideNumber = getnumber (configfile >> "CfgFactionClasses" >> _faction >> "side");
+private _SideNumber = getNumber (configFile >> "CfgFactionClasses" >> _faction >> "side");
 
 call {
-     if (_sidenumber IsEqualTo 0) exitwith {
-         _side = East;
-         _FactionSide = "East";
+     if (_sidenumber isEqualTo 0) exitWith {
+         _side = east;
+         _FactionSide = "east";
     };
-     if (_sidenumber IsEqualTo 1) exitwith {
-         _side = West;
-         _FactionSide = "West";
+     if (_sidenumber isEqualTo 1) exitWith {
+         _side = west;
+         _FactionSide = "west";
     };
-     if (_sidenumber IsEqualTo 2) exitwith {
-         _side = Resistance;
+     if (_sidenumber isEqualTo 2) exitWith {
+         _side = resistance;
          _FactionSide = "Indep";
     };
 };
-if (isnil "_Faction") exitwith {systemchat format ["Faction missing from %1 at %2",_grpPrefix, _center]};
+if (isNil "_Faction") exitWith {systemChat format ["Faction missing from %1 at %2",_grpPrefix, _center]};
 
 _GetFactionArrays = compileFinal format ["call lxim_ai_fnc_%1", _faction];
 _FactionArrays = call _GetFactionArrays;
@@ -222,9 +222,9 @@ if (_patrolMethod isEqualTo "ROAD") then {
 // Simple protection for broken requests
 if (_center isEqualTo [0,0]) exitWith {};
 
-_confBase = configfile >> "CfgGroups" >> _FactionSide >> _faction >> _InfantryType;
-if (isnil "_infList") then {_infList = ("true" configClasses _confBase) apply { configName _x };};
-private _FactionName = gettext (configfile >> "CfgGroups" >> _FactionSide >> _Faction >> "name");
+_confBase = configFile >> "CfgGroups" >> _FactionSide >> _faction >> _InfantryType;
+if (isNil "_infList") then {_infList = ("true" configClasses _confBase) apply { configName _x };};
+private _FactionName = getText (configFile >> "CfgGroups" >> _FactionSide >> _Faction >> "name");
 // Prep return values
 private _units = [];
 private _vehicles = [];
@@ -258,7 +258,7 @@ if !(_infList isEqualTo []) then {
         { _x setGroupIdGlobal [format["%1_gar%2", _grpPrefix, _forEachIndex]]; } forEach _grps;
     };
 } else {
-    if (_AIReporting && { _GarrisonedGroupsMax >0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no Infantry Teams to select from. Step skipped.",_FactionName]};
+    if (_AIReporting && { _GarrisonedGroupsMax >0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no Infantry Teams to select from. Step skipped.",_FactionName]};
 };
 ///////////////////////////////////////////////////////////
 // STANDARD INFANTRY
@@ -276,7 +276,7 @@ if !(_infList isEqualTo []) then {
         _units append (units _g);
     };
 } else {
-    if (_AIReporting && { _infMax >0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no Infantry Teams to select from. Step skipped.",_FactionName]};
+    if (_AIReporting && { _infMax >0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no Infantry Teams to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -296,7 +296,7 @@ if !(_infaaList isEqualTo []) then {
         _units append (units _g);
     };
 } else {
-    if (_AIReporting && { _InfaaMax >0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no AA Teams to select from. Step skipped.",_FactionName]};
+    if (_AIReporting && { _InfaaMax >0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no AA Teams to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -316,7 +316,7 @@ if !(_infatList isEqualTo []) then {
         _units append (units _g);
     };
 } else {
-    if (_AIReporting && { _InfatMax >0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no AT Teams to select from. Step skipped.",_FactionName]};
+    if (_AIReporting && { _InfatMax >0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no AT Teams to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -336,7 +336,7 @@ if !(_sniperList isEqualTo []) then {
         _units append (units _g);
     };
 } else {
-    if (_AIReporting && { _SniperMax >0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no Sniper Teams to select from. Step skipped.",_FactionName]};
+    if (_AIReporting && { _SniperMax >0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no Sniper Teams to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -368,7 +368,7 @@ if !(_vehAAList isEqualTo []) then {
         };
     };
 } else {
-    if (_AIReporting && { _VehAAMax >0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no AA Vehicles to select from. Step skipped.",_FactionName]};
+    if (_AIReporting && { _VehAAMax >0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no AA Vehicles to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -400,7 +400,7 @@ if !(_vehmrapList isEqualTo []) then {
         };
     };
 } else {
-    if (_AIReporting && { _VehMRAPMax >0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no MRAPs to select from. Step skipped.",_FactionName]};
+    if (_AIReporting && { _VehMRAPMax >0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no MRAPs to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -433,7 +433,7 @@ if !(_vehLightList isEqualTo []) then {
         };
     };
 } else {
-    if (_AIReporting && { _VehLightMax >0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no Light Vehicles to select from. Step skipped.",_FactionName]};
+    if (_AIReporting && { _VehLightMax >0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no Light Vehicles to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -466,7 +466,7 @@ if !(_vehHeavyList isEqualTo []) then {
     };
 } else {
 
-    if (_AIReporting && { _VehHeavyMax >0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no Heavy Vehicles to select from. Step skipped.",_FactionName]};
+    if (_AIReporting && { _VehHeavyMax >0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no Heavy Vehicles to select from. Step skipped.",_FactionName]};
     };
 
 
@@ -475,7 +475,7 @@ if !(_vehHeavyList isEqualTo []) then {
 ///////////////////////////////////////////////////////////
 // RANDOM VEHS
 ///////////////////////////////////////////////////////////
-{_vehRandList append _x} foreach [_vehAAList, _vehMrapList, _vehLightList, _vehHeavyList];
+{_vehRandList append _x} forEach [_vehAAList, _vehMrapList, _vehLightList, _vehHeavyList];
 
 if !(_vehRandList isEqualTo []) then {
 

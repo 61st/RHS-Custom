@@ -28,7 +28,7 @@ switch (GVAR(groupIconsInteraction)) do {
             if (_type == "marker" && (!isNull (_marker call BIS_fnc_groupFromNetId) || !isNull (_marker call BIS_fnc_objectFromNetId))) then {
                 [_marker] call FUNC(showGroupDetails);
             } else {
-                call FUNC(clearHint);
+                call FUNC(clearhint);
             };
         }];
     };

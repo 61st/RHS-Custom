@@ -2,7 +2,7 @@
 private["_unit"];
 
 _unit = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
-_pos = getposASL _unit;
+_pos = getPosASL _unit;
 _dir = getDir _unit;
 
 

@@ -46,7 +46,7 @@ Author:
 // If we don't find enough road positions in the radius, extend radius step-wise by this amount
 #define EXT_RADIUS 100
 
-if (!isserver) exitwith {};
+if (!isServer) exitWith {};
 
 params [
     "_center",
@@ -66,9 +66,9 @@ private _AIReporting = lxim_AI_Reporting;
 _typeNameCenter = typeName _center;
 
 call {
-    if (_typeNameCenter isEqualTo "OBJECT") exitwith { _center = getPos _center;};
-    if (_typeNameCenter isEqualTo "STRING") exitwith { _center = getMarkerPos _center;};
-    if (_typeNameCenter isEqualTo [0, 0, 0]) exitwith {systemchat "CivSpawns - Position is invalid";};
+    if (_typeNameCenter isEqualTo "OBJECT") exitWith { _center = getPos _center;};
+    if (_typeNameCenter isEqualTo "STRING") exitWith { _center = getMarkerPos _center;};
+    if (_typeNameCenter isEqualTo [0, 0, 0]) exitWith {systemChat "CivSpawns - Position is invalid";};
 };
 
 _center set [2, 0];
@@ -143,7 +143,7 @@ if !(_pedPool isEqualTo []) then {
         { _x setGroupIdGlobal [format["%1_gar%2", _grpPrefix, _forEachIndex]]; } forEach _grps;
     };
 } else {
-    if (_AIReporting && { _garrisonsMax > 0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no Civilian peds to select from. Step skipped.",_faction]};
+    if (_AIReporting && { _garrisonsMax > 0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no Civilian peds to select from. Step skipped.",_faction]};
 };
 
 ///////////////////////////////////////////////////////////
@@ -165,7 +165,7 @@ if !(_pedPool isEqualTo []) then {
         _units append (units _g);
     };
 } else {
-    if (_AIReporting && { _pedMax > 0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no Civilian peds to select from. Step skipped.",_faction]};
+    if (_AIReporting && { _pedMax > 0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no Civilian peds to select from. Step skipped.",_faction]};
 };
 
 
@@ -207,7 +207,7 @@ if !((_motPool isEqualTo []) || (_pedPool isEqualTo [])) then {
         _vehicles append [_v];
     };
 } else {
-    if (_AIReporting && { _vehpatrolMax > 0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no Civilian peds or vehicles to select from. Step skipped.",_faction]};
+    if (_AIReporting && { _vehpatrolMax > 0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no Civilian peds or vehicles to select from. Step skipped.",_faction]};
 };
 
 ///////////////////////////////////////////////////////////
@@ -237,7 +237,7 @@ if !(_motPool isEqualTo []) then {
         _vehicles append [_v];
     };
 } else {
-    if (_AIReporting && { _vehparkedMax > 0 }) exitwith {systemchat format ["61st Mechanized Infantry Battalion: INFO: %1 no Civilian vehicles to select from. Step skipped.",_faction]};
+    if (_AIReporting && { _vehparkedMax > 0 }) exitWith {systemChat format ["61st Mechanized Infantry Battalion: INFO: %1 no Civilian vehicles to select from. Step skipped.",_faction]};
 };
 
 // Set up dynamic sim and curator stuff

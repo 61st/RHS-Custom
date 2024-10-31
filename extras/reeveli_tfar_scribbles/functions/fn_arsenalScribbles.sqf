@@ -26,7 +26,7 @@ if (!Rev_TFAR_saveScribbles) exitWith {false};
     if (call TFAR_fnc_haveLRRadio) then
     {
         private _LRradio = (call TFAR_fnc_activeLrRadio) # 0;
-        if (isnil {_LRradio getVariable ["Rev_radio_settings",nil]}) exitwith {
+        if (isNil {_LRradio getVariable ["Rev_radio_settings",nil]}) exitWith {
             diag_log "Rev_TFAR_fnc_arsenalScribbles: No Lw radio scribbles found on entering BI Arsenal, EH ID1"
         };
         private _scribbles = _LRradio getVariable ["Rev_radio_settings",nil];
@@ -38,7 +38,7 @@ if (!Rev_TFAR_saveScribbles) exitWith {false};
     if (call TFAR_fnc_haveSWRadio) then
     {
         private _radio = call TFAR_fnc_activeSwRadio;
-        if (isnil {Rev_TFAR_scribbleNamespace getVariable [_radio,nil]}) exitwith {
+        if (isNil {Rev_TFAR_scribbleNamespace getVariable [_radio,nil]}) exitWith {
             diag_log "Rev_TFAR_fnc_arsenalScribbles: No Sw radio scribbles found on entering BI Arsenal, EH ID3"
         };
         private _scribbles = Rev_TFAR_scribbleNamespace getVariable [_radio,nil];
@@ -63,7 +63,7 @@ if (!Rev_TFAR_saveScribbles) exitWith {false};
     };
 
     //SW, exit if unique or no radio in inventory
-    private _condition = {getNumber (configfile >> "CfgWeapons" >> _x >> "tf_prototype") isEqualTo 1};
+    private _condition = {getNumber (configFile >> "CfgWeapons" >> _x >> "tf_prototype") isEqualTo 1};
     if (!("ItemRadio" in assignedItems player) AND (_condition count assignedItems player < 1)) exitWith {
         diag_log "Rev_TFAR_fnc_arsenalScribbles: Either no radio or unique radio in inventory when exiting arsenal, EH ID6";
         Rev_TFAR_scribbleNamespace setVariable ["Rev_TFAR_localSwScribbles", nil];
@@ -99,7 +99,7 @@ if (!isClass (configFile >> "CfgPatches" >> "ace_arsenal")) exitWith {};
     if (call TFAR_fnc_haveLRRadio) then
     {
         private _LRradio = (call TFAR_fnc_activeLrRadio) # 0;
-        if (isnil {_LRradio getVariable ["Rev_radio_settings",nil]}) exitwith {
+        if (isNil {_LRradio getVariable ["Rev_radio_settings",nil]}) exitWith {
             diag_log "Rev_TFAR_fnc_arsenalScribbles: No Lw radio scribbles found on entering ACE Arsenal, EH ID8"
         };
         private _scribbles = _LRradio getVariable ["Rev_radio_settings",nil];
@@ -111,7 +111,7 @@ if (!isClass (configFile >> "CfgPatches" >> "ace_arsenal")) exitWith {};
     if (call TFAR_fnc_haveSWRadio) then
     {
         private _radio = call TFAR_fnc_activeSwRadio;
-        if (isnil {Rev_TFAR_scribbleNamespace getVariable [_radio,nil]}) exitwith {
+        if (isNil {Rev_TFAR_scribbleNamespace getVariable [_radio,nil]}) exitWith {
             diag_log "Rev_TFAR_fnc_arsenalScribbles: No Sw radio scribbles found on entering ACE Arsenal, EH ID10"
         };
         private _scribbles = Rev_TFAR_scribbleNamespace getVariable [_radio,nil];
@@ -137,7 +137,7 @@ if (!isClass (configFile >> "CfgPatches" >> "ace_arsenal")) exitWith {};
     };
 
     //SW, exit if unique or no radio in inventory
-    private _condition = {getNumber (configfile >> "CfgWeapons" >> _x >> "tf_prototype") isEqualTo 1};
+    private _condition = {getNumber (configFile >> "CfgWeapons" >> _x >> "tf_prototype") isEqualTo 1};
     if (!("ItemRadio" in assignedItems player) AND (_condition count assignedItems player < 1)) exitWith {
         diag_log "Rev_TFAR_fnc_arsenalScribbles: Either no radio or unique radio in inventory when exiting arsenal, EH ID13";
         Rev_TFAR_scribbleNamespace setVariable ["Rev_TFAR_localSwScribbles", nil];

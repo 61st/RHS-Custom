@@ -1,4 +1,3 @@
-#include "script_component.hpp"
 /*
  * Author: AUTHOR
  * Function description
@@ -19,7 +18,7 @@
 [
     QGVAR(showNotifcations),
     "CHECKBOX",
-    ["Show 61st system chat notifications", "False should disable most notifcations, can use to make clean recordings."],
+    ["Show 61st system chat notifications", "False should disable most notifications, can use to make clean recordings."],
     [COMPONENT_NAME, "Admin Chat"],
     true
 ] call cba_settings_fnc_init;

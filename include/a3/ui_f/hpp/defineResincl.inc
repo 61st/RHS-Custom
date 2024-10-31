@@ -554,7 +554,7 @@ enum
 #define IDD_INSERT_MARKER     54
 #define IDD_VOICE_CHAT        55
 #define IDD_DEBUG             56
-#define IDD_HINTC             57
+#define IDD_hintC             57
 #define IDD_MISSION_END       58
 #define IDD_SERVER_SIDE       59
 #define IDD_CLIENT_SIDE       60
@@ -567,7 +567,7 @@ enum
 #define IDD_PORT              69
 #define IDD_MP_SETUP          70
 #define IDD_FILTER            71
-#define IDD_HINTC_EX          72
+#define IDD_hintC_EX          72
 #define IDD_SELECT_PROFILE    73
 #define IDD_CAMPAIGN_SELECT   74
 #define IDD_PROFILE           75
@@ -805,8 +805,8 @@ enum
 
 // InGameUI
 #define IDD_UNITINFO              300
-#define IDD_HINT                  301
-#define IDD_TASKHINT              302
+#define IDD_hint                  301
+#define IDD_TASKhint              302
 #define IDD_STANCEINFO            303
 #define IDD_AVCAMERA              304
 #define IDD_STAMINA_BAR           305
@@ -1347,7 +1347,7 @@ enum
 #define IDC_OPTIONS_BLOOD_TEXT        122
 #define IDC_OPTIONS_TERRAIN           123
 #define IDC_OPTIONS_LIFESTATE         199
-#define IDC_OPTIONS_TUTORIAL_HINTS    140
+#define IDC_OPTIONS_TUTORIAL_hintS    140
 
 #define IDC_OBJECTS_DETAIL            124
 #define IDC_TEXTURE_DETAIL            125
@@ -2549,13 +2549,13 @@ enum
 #define IDC_DSI_PLAYERLIST            101
 #define IDC_DSI_MISSONLIST            102
 
-// HintC display
-#define IDC_HINTC_BG                  101
-#define IDC_HINTC_HINT                102
-#define IDC_HINTC_TITLE               103
-#define IDC_HINTC_CONTINUE            104
-#define IDC_HINTC_LINE1               105
-#define IDC_HINTC_LINE2               106
+// hintC display
+#define IDC_hintC_BG                  101
+#define IDC_hintC_hint                102
+#define IDC_hintC_TITLE               103
+#define IDC_hintC_CONTINUE            104
+#define IDC_hintC_LINE1               105
+#define IDC_hintC_LINE2               106
 
 // Insert marker display
 #define IDC_INSERT_MARKER             101
@@ -2904,12 +2904,12 @@ enum
 #define  IDC_IGUI_DAMAGE_GEAR                       676
 
 // - hint
-#define IDC_IGHINT_BG                 101
-#define IDC_IGHINT_HINT               102
+#define IDC_IGhint_BG                 101
+#define IDC_IGhint_hint               102
 
 // - task hint
-#define IDC_IGTASKHINT_BG             103
-#define IDC_IGTASKHINT_HINT           104
+#define IDC_IGTASKhint_BG             103
+#define IDC_IGTASKhint_hint           104
 
 // - load mission progress bar
 #define IDC_LOAD_MISSION_NAME         101

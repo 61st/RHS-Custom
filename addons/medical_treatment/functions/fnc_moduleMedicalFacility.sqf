@@ -11,4 +11,4 @@ params [
 private _objects = synchronizedObjects _logic;
 {
     [_x] call FUNC(setMedicalFacility);
-} foreach _objects;
+} forEach _objects;

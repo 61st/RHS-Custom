@@ -10,7 +10,7 @@ if !(_object isKindOf "EmptyDetector") then {
     private _Length = (_GetObjectSize select 1) select 1;
     private _Height = ((_GetObjectSize select 1) select 2) *2;
     _object = createTrigger ["EmptyDetector",_SpawnLocation];
-    _object setTriggerArea [_Width, _Length, getdir _object, false, _Height];
+    _object setTriggerArea [_Width, _Length, getDir _object, false, _Height];
 };
 
 _object setTriggerActivation ["ANYPLAYER", "PRESENT", true];

@@ -19,7 +19,7 @@ Author:
     Martin & MitchJC
 */
 
-if (!isserver) exitwith {};
+if (!isServer) exitWith {};
 
 params ["_target", ["_skillLevel", 2]];
 
@@ -46,7 +46,7 @@ private _skillv = [
     (0.20 + random 0.40)
 ];
 
-if !(isNil "lxim_AI_AimingAccuracy") then {
+if !(isNil "LXIM_AI_AimingAccuracy") then {
     _skillv = [
         (lxim_AI_AimingAccuracy - 0.05 + random 0.1),
         (lxim_AI_AimingShake - 0.05 + random 0.1),
@@ -64,7 +64,7 @@ if !(isNil "lxim_AI_AimingAccuracy") then {
 {
     if (_x < 0) then {_x = 0 };
     if (_x > 1) then {_x = 1 };
-} foreach _skillv;
+} forEach _skillv;
 
 private _units = call {
     if ((typeName _target) isEqualTo "GROUP") exitWith { units _target };
