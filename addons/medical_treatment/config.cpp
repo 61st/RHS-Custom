@@ -7,7 +7,10 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ace_medical_treatment",
+            "cba_main", 
+            "ace_main", 
+            "ace_medical_treatment", 
+            "ACM_core",
             "lxim_main"
         };
         author = QAUTHOR;

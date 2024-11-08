@@ -40,7 +40,7 @@ switch (_month) do {
         _picture ctrlSetText QUOTE(z\lxim\addons\media\images\logo_512_12.paa);
     };
     case _easterMonth: {
-        _picture ctrlSetText QUOTE(z\lxim\addons\media\images\logo_512.paa);
+        _picture ctrlSetText QUOTE(z\lxim\addons\media\images\logo_512_e.paa);
     };
     default {
         _picture ctrlSetText QUOTE(z\lxim\addons\media\images\logo_512.paa);

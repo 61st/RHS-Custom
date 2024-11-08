@@ -71,4 +71,27 @@ class CfgAmmo {
     class ammo_Penetrator_Titan_AT: ammo_Penetrator_base {
         warheadName = "TandemHEAT";
     };
+
+    // Flare Time2Life
+    #define CHANGETIMETOLIFE(NAME) class NAME; class TB_##NAME : NAME {timeToLive = 180;}
+    CHANGETIMETOLIFE(rhsusf_40mm_white);
+    CHANGETIMETOLIFE(rhsusf_40mm_green);
+    CHANGETIMETOLIFE(rhsusf_40mm_red);
+
+    #define ADD_PRECISE_SMOKE(TYPE) class TYPE; \
+    class TYPE##_precise : TYPE \
+    { \
+        simulation = "shotSmoke"; \
+        deflecting = 0; \
+        deflectionSlowDown = 0.1; \
+        deflectionDirDistribution = 0; \
+        timeToLive = 120; \
+    }
+    ADD_PRECISE_SMOKE(rhs_40mm_smoke_green);
+    ADD_PRECISE_SMOKE(rhs_40mm_smoke_red);
+    ADD_PRECISE_SMOKE(rhs_40mm_smoke_white);
+    ADD_PRECISE_SMOKE(rhs_40mm_smoke_yellow);
+
+
+
 };

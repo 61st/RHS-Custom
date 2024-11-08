@@ -43,4 +43,4 @@ GVAR(playerMarkerIdx) = GVAR(playerMarkerIdx) + 1;
 
 private _markerId = format ["_USER_DEFINED #%1/%2/%3", getPlayerID _player, _id, _channel];
 
-createMarker [_markerId, _position, _channel, _player] // return
+createMarkerLocal [_markerId, _position, _channel, _player] // return
