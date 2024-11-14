@@ -673,13 +673,6 @@ force acre_sys_zeus_zeusDefaultVoiceSource = false;
 force force bocr_main_disabled = false;
 force force bocr_main_walk = true;
 
-// Better CAS Environment
-force BCE_Access_list = 2;
-force BCE_CamNoise_sdr = 0.5;
-force force BCE_FriendlyTrack_fn = false;
-force BCE_Landmarks_fn = false;
-force force BCE_UnitTrack_fn = false;
-
 // Better CAS Environment (Server)
 force force BCE_AI_CAS_Support_fn = true;
 force force BCE_AIAir_IR_fn = true;
@@ -712,7 +705,7 @@ force force crowsEW_spectrum_tfarSideTrack = false;
 force force ctab_compass_enable = true;
 force force ctab_core_bft_mode = 2;
 force force ctab_core_helmetcam_mode = 1;
-force force ctab_core_sync_time = 15;
+force force ctab_core_sync_time = 4;
 force force ctab_core_uav_mode = 1;
 force force ctab_core_useAceMicroDagr = true;
 force force ctab_core_useArmaMarker = true;

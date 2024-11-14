@@ -39,6 +39,12 @@ if (_player getVariable ["ACE_isUnconscious", false]) then {
 
 [
     {
+        [player] call ACM_core_fnc_resetVariables;
+        [player] call ACM_airway_fnc_resetVariables;
+        [player] call ACM_breathing_fnc_resetVariables;
+        [player] call ACM_circulation_fnc_resetVariables;
+        [player] call ACM_damage_fnc_resetVariables;
+        [player] call ACM_disability_fnc_resetVariables;
         [player] call ACE_medical_treatment_fnc_fullHealLocal;
         [
             "Treatment Complete",
