@@ -28,6 +28,30 @@ force force lxim_back_to_game_removeBody = false;
 force force lxim_back_to_game_teleportToLeader = true;
 force force lxim_back_to_game_teleportToVehicle = true;
 
+// 61ST - BFT
+force force lxim_bft_bftEnabled = true;
+force force lxim_bft_friendlySides_civilian = [0,2];
+force force lxim_bft_friendlySides_east = [3];
+force force lxim_bft_friendlySides_resistance = [1,3];
+force force lxim_bft_friendlySides_west = [2];
+force force lxim_bft_friendlySidesDynamic = true;
+force force lxim_bft_groupIconsInteraction = "hover";
+force force lxim_bft_medicalSystem = "ACE";
+force force lxim_bft_requireItemGPS = true;
+force force lxim_bft_showAIGroups = true;
+force force lxim_bft_showAINames = true;
+force force lxim_bft_showCivilians = false;
+force force lxim_bft_showGroupIcons = true;
+force force lxim_bft_showGroupText = true;
+force force lxim_bft_showLifeState = true;
+force force lxim_bft_showOwnFactionOnly = false;
+force force lxim_bft_showOwnGroup = true;
+force force lxim_bft_showOwnGroupUnits = true;
+force force lxim_bft_showplayerNames = true;
+force force lxim_bft_showUnitNames = true;
+force force lxim_bft_teamColors = "ACE";
+force force lxim_bft_updateInterval = 1;
+
 // 61st - Difficulties
 force lxim_difficulties_armorAccuracyFactor = 0.5;
 
@@ -657,12 +681,11 @@ force acre_sys_core_ignoreAntennaDirection = true;
 force acre_sys_core_interference = false;
 force acre_sys_core_revealToAI = 1;
 force acre_sys_core_terrainLoss = 0;
-force acre_sys_core_ts3ChannelName = "";
+force acre_sys_core_ts3ChannelName = "TaskForceRadio";
 force acre_sys_core_ts3ChannelPassword = "";
 force acre_sys_core_ts3ChannelSwitch = true;
 force acre_sys_radio_defaultRadio = "ACRE_PRC148";
 force acre_sys_signal_signalModel = 1;
-
 
 // ACRE2 Zeus
 force acre_sys_zeus_zeusCanSpectate = true;
@@ -703,7 +726,7 @@ force force crowsEW_spectrum_tfarSideTrack = false;
 
 // cTab
 force force ctab_compass_enable = true;
-force force ctab_core_bft_mode = 2;
+force force ctab_core_bft_mode = 0;
 force force ctab_core_helmetcam_mode = 1;
 force force ctab_core_sync_time = 4;
 force force ctab_core_uav_mode = 1;

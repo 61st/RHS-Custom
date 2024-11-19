@@ -31,8 +31,7 @@ class CfgWeapons {
     class InventoryItem_Base_F;
     class InventoryFlashLightItem_Base_F;
 
-    class acc_flashlight
-        {
+    class acc_flashlight {
             author = "nomisum";
             _generalMacro = "acc_flashlight";
             scope = 2;
@@ -40,11 +39,9 @@ class CfgWeapons {
             picture = "\A3\weapons_F\Data\UI\gear_accv_flashlight_CA.paa";
             model = "\A3\weapons_f\acc\accv_Flashlight_F";
             descriptionShort = "Weapon mounted light.";
-            class ItemInfo: InventoryFlashLightItem_Base_F
-            {
+            class ItemInfo: InventoryFlashLightItem_Base_F {
                 mass = 4;
-                class FlashLight
-                {
+                class FlashLight {
                     color[] = {130, 160, 180};
                     ambient[] = {0.05, 0.1, 0.15};
                     intensity = 1350;
@@ -58,8 +55,7 @@ class CfgWeapons {
                     flareSize = 4;
                     flareMaxDistance = 200;
                     dayLight = 1;
-                    class Attenuation
-                    {
+                    class Attenuation {
                         start = 0;
                         constant = 0;
                         linear = 0;
@@ -77,7 +73,7 @@ class CfgWeapons {
                 };
             };
             inertia = 0.1;
-            displayName = "lxim Enhanced Flashlight";
+            displayName = "61st Enhanced Flashlight";
         };
 };
 
@@ -104,6 +100,6 @@ class CfgVehicles {
             };
         };
 
-        displayName = "lxim Enhanced Flashlight";
+        displayName = "61st Enhanced Flashlight";
     };
 };
