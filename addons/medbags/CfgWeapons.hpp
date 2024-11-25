@@ -30,7 +30,7 @@ class CfgWeapons {
         descriptionShort = "Contains materials to resupply medics";
         editorPreview = QPATHTOF(data\previews\medickit.jpg);
         picture = QPATHTOF(data\ui\medickit_ca.paa);
-        model = "\a3\props_f_orange\humanitarian\camps\firstaidkit_01_closed_f.p3d";
+        model="\A3\Weapons_F\Items\Medikit";
         icon = "iconObject_1x1";
         mapSize = 0.015;
         class ItemInfo: CBA_MiscItem_ItemInfo {
@@ -46,7 +46,7 @@ class CfgWeapons {
         descriptionShort = "Contains materials for medics";
         editorPreview = QPATHTOF(data\previews\medickit.jpg);
         picture = QPATHTOF(data\ui\medickit_ca.paa);
-        model = "\a3\props_f_orange\humanitarian\camps\firstaidkit_01_closed_f.p3d";
+        model="\A3\Weapons_F\Items\Medikit";
         icon = "iconObject_1x1";
         mapSize = 0.015;
         class ItemInfo: CBA_MiscItem_ItemInfo {
@@ -62,7 +62,7 @@ class CfgWeapons {
         descriptionShort = "Box of Water";
         editorPreview = QPATHTOF(data\previews\medickit.jpg);
         picture = QPATHTOF(data\ui\medickit_ca.paa);
-        model = "\a3\props_f_orange\humanitarian\camps\firstaidkit_01_closed_f.p3d";
+        model="\A3\Weapons_F\Items\Medikit";
         icon = "iconObject_1x1";
         mapSize = 0.015;
         class ItemInfo: CBA_MiscItem_ItemInfo {
@@ -78,7 +78,7 @@ class CfgWeapons {
         descriptionShort = "Contains DURGS!";
         editorPreview = QPATHTOF(data\previews\booboo_ca.paa);
         picture = QPATHTOF(data\previews\booboo_ca.paa);
-        model = "\a3\props_f_orange\humanitarian\camps\firstaidkit_01_closed_f.p3d";
+        model="\A3\Weapons_F\Items\Medikit";
         icon = "iconObject_1x1";
         mapSize = 0.015;
         class ItemInfo: CBA_MiscItem_ItemInfo {
@@ -93,7 +93,7 @@ class CfgWeapons {
         descriptionShort = "MOPP !!!!!!";
         editorPreview = QPATHTOF(data\previews\booboo_ca.paa);
         picture = QPATHTOF(data\previews\booboo_ca.paa);
-        model = "\a3\props_f_orange\humanitarian\camps\firstaidkit_01_closed_f.p3d";
+        model="\A3\Weapons_F\Items\Medikit";
         icon = "iconObject_1x1";
         mapSize = 0.015;
         class ItemInfo: CBA_MiscItem_ItemInfo {

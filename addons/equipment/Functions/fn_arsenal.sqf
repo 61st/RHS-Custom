@@ -4,14 +4,14 @@ Arguments:
 0: items only misc items <ARRAY of STRING>
 1: tooltip <STRING> (Optional)
 2: picture path <STRING> (Optional)
-3: override a spezific button (0-9) <NUMBER> (Optional)
+3: override a specific button (0-9) <NUMBER> (Optional)
 
 Return Value:
 successful: number of the slot; error: -1 <NUMBER>
 
 Example:
 
-call lxim_fnc_arsenal;
+call lxiv_fnc_arsenal;
 Public: Yes
 
 [

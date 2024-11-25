@@ -670,9 +670,6 @@ force force ACM_damage_internalBleedingChanceMultiplier = 1;
 // ACM: Disability
 force force ACM_disability_tourniquetImpactLimbs = true;
 
-// ACM: Evacuation
-force force ACM_evacuation_enable = false;
-
 // ACRE2
 force acre_sys_core_automaticAntennaDirection = true;
 force acre_sys_core_defaultRadioVolume = 0.8;
