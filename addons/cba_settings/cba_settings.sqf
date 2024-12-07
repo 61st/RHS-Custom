@@ -119,7 +119,6 @@ force force ace_arsenal_enableIdentityTabs = false;
 force force ace_arsenal_enableModIcons = true;
 force ace_arsenal_EnableRPTLog = false;
 
-
 // ACE Artillery
 force force ace_artillerytables_advancedCorrections = true;
 force force ace_artillerytables_disableArtilleryComputer = false;
@@ -673,7 +672,7 @@ force force ACM_disability_tourniquetImpactLimbs = true;
 // ACRE2
 force acre_sys_core_automaticAntennaDirection = true;
 force acre_sys_core_defaultRadioVolume = 0.8;
-force acre_sys_core_fullDuplex = false;
+force acre_sys_core_fullDuplex = true;
 force acre_sys_core_ignoreAntennaDirection = true;
 force acre_sys_core_interference = false;
 force acre_sys_core_revealToAI = 1;
@@ -812,18 +811,18 @@ force force grad_trenches_functions_vehicleTrenchBuildSpeed = 5;
 
 // Simplex Support Services
 force force sss_artillery_autoTerminals = true;
-force force sss_artillery_manualInput = false;
+force force sss_artillery_manualInput = true;
 force force sss_artillery_rangeIndicators = true;
 force force sss_artillery_relocateCooldown = true;
 force force sss_artillery_taskMarkers = true;
 force force sss_artillery_visualAids = true;
-force force sss_cas_manualInput = false;
+force force sss_cas_manualInput = true;
 force force sss_cas_taskMarkers = true;
 force force sss_cas_visualAids = true;
 force force sss_cas_visualAidsLive = true;
 force force sss_logistics_clearAreaRestriction = true;
 force force sss_logistics_cooldownTrigger = "END";
-force force sss_logistics_manualInput = false;
+force force sss_logistics_manualInput = true;
 force force sss_logistics_taskMarkers = true;
 force force sss_logistics_visualAids = true;
 force force sss_logistics_visualAidsLive = true;
@@ -843,7 +842,7 @@ force force sss_optionterminalRequireAuth = true;
 force force sss_optionterminalRequireItems = false;
 force force sss_transport_autoTerminals = true;
 force force sss_transport_holdTimeoutStr = "-1";
-force force sss_transport_manualInput = false;
+force force sss_transport_manualInput = true;
 force force sss_transport_maxSearchRadiusStr = "1000";
 force force sss_transport_RTBReset = true;
 force force sss_transport_RTBRestoreCrew = true;
@@ -865,9 +864,6 @@ force tsp_cba_breach_ammo = "[
 force tsp_cba_breach_ammo_multiplier = 1;
 force tsp_cba_breach_auto = 5;
 force tsp_cba_breach_break = true;
-force tsp_cba_breach_lock_blacklist = "[]";
-force tsp_cba_breach_lock_door = 0.75;
-force tsp_cba_breach_lock_house = 0.25;
 force tsp_cba_breach_lockpick = "[0, 0.75, 0.5, 0.05]";
 force tsp_cba_breach_military = "[
 	""Land_Budova4_in"",

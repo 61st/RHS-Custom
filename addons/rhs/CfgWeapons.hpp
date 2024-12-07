@@ -207,6 +207,38 @@ class CfgWeapons {
         ace_hearing_lowerVolume = 0.05;
     };
 
+    class rhsusf_ach_helmet_ocp;
+    class rhsusf_ach_helmet_ESS_ocp;
+    class rhsusf_ach_helmet_headset_ocp;
+    class rhsusf_ach_helmet_headset_ess_ocp;
+    class rhsusf_ach_helmet_ocp_norotos;
+
+    class bcb_ach_helmet_wht: rhsusf_ach_helmet_ocp {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class bcb_ach_helmet_ess_wht: rhsusf_ach_helmet_ESS_ocp {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class bcb_ach_helmet_headset_wht: rhsusf_ach_helmet_headset_ocp {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class bcb_ach_helmet_headset_ess_wht: rhsusf_ach_helmet_headset_ess_ocp {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class bcb_ach_helmet_wht_norotos: rhsusf_ach_helmet_ocp_norotos {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+
     //tier1
     /* 
     class Tier1_Razor_Gen2_16: optic_lrps {

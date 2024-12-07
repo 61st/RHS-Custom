@@ -1378,23 +1378,5 @@ class CfgVehicles {
         editorSubcategory = "lxim_EdSubcat_vehicles_green";
         hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_g.paa),QPATHTOF(data\outlaw_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
     };
-    /* mraps ------------------------------------------------------------------------------------------------------------ */
-    class MRAP_01_base_F: Car_F  {};
-    class rhsusf_M1239_base: MRAP_01_base_F  {};
-    class rhsusf_M1239_CROWS_base: rhsusf_M1239_base  {};
-    class rhsusf_M1239_Deploy_base: rhsusf_M1239_CROWS_base {
-        ace_refuel_fuelCargo = 1000;
-        ace_repair_canRepair = 1;
-        ace_rearm_defaultSupply = 1200;
-    };
-    class rhsusf_M1239_M2_socom_d: rhsusf_M1239_CROWS_base {
-        ace_refuel_fuelCargo = 1000;
-        ace_repair_canRepair = 1;
-        ace_rearm_defaultSupply = 1200;
-    };
-    class rhsusf_M1239_M2_Deploy_socom_d :rhsusf_M1239_Deploy_base {
-        ace_refuel_fuelCargo = 1000;
-        ace_repair_canRepair = 1;
-        ace_rearm_defaultSupply = 1200;
-    };
+    
 };

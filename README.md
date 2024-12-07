@@ -47,9 +47,6 @@ you can find the 61st Mechanized Infantry Battalion Version at https://github.co
 
 (I know I forgot a few, I will work on getting those mentions put in)
 # This mod includes :
-- Drongo's 
-    - Drongos Active Protection System https://steamcommunity.com/workshop/filedetails/?id=1447351824
-
 
 ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
   Compatibility and optional packages

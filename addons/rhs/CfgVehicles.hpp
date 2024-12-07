@@ -574,8 +574,6 @@ class CfgVehicles {
         audible = 17; // 18
     };
 
-
-
 	class RHS_C130J_Base;
     class RHS_C130J : RHS_C130J_Base {
         accuracy = 0.1; // 0.15
@@ -649,5 +647,24 @@ class CfgVehicles {
         LockDetectionSystem = "2 + 8 + 4"; // 0
         nvScanner = 1; // 0
         radarTargetSize = 0.65; // 0.8
+    };
+	/* mraps ------------------------------------------------------------------------------------------------------------ */
+
+    class rhsusf_M1239_base: MRAP_01_base_F {};
+    class rhsusf_M1239_CROWS_base: rhsusf_M1239_base {};
+    class rhsusf_M1239_Deploy_base: rhsusf_M1239_CROWS_base {
+        ace_refuel_fuelCargo = 1000;
+        ace_repair_canRepair = 1;
+        ace_rearm_defaultSupply = 1200;
+    };
+    class rhsusf_M1239_M2_socom_d: rhsusf_M1239_CROWS_base {
+        ace_refuel_fuelCargo = 1000;
+        ace_repair_canRepair = 1;
+        ace_rearm_defaultSupply = 1200;
+    };
+    class rhsusf_M1239_M2_Deploy_socom_d :rhsusf_M1239_Deploy_base {
+        ace_refuel_fuelCargo = 1000;
+        ace_repair_canRepair = 1;
+        ace_rearm_defaultSupply = 1200;
     };
 };

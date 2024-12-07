@@ -15,6 +15,9 @@ class CfgWeapons {
     class U_B_CTRG_Soldier_F: Uniform_Base {
         class ItemInfo;
     };
+    class bcb_smocks_y_mc_gloves_mc : Uniform_Base {
+        class ItemInfo;
+    };
     class U_B_Wetsuit;
     class optic_lrps;
     class Binocular;
@@ -42,7 +45,7 @@ class CfgWeapons {
         class CBA_ScriptedOptic {
             reticleTexture = "z\ace\addons\vector\data\reticles\ace_vector_reticle_ca.paa";
             reticleTextureSize = 1.026;
-            bodyTexture = "";
+            bodyTexture = "z\lxim\addons\equipment\data\ace_vector_body_co.paa";
             bodyTextureSize = 1.25;
             reticlesafeZoneSize = 1;
             hidePeripheralVision = 1;
@@ -116,6 +119,22 @@ class CfgWeapons {
             containerClass = "Supply80";
             uniformType = "Neopren";
             mass = 40;
+        };
+    };
+    class GVAR(moppsuit): Uniform_Base {
+        author = QAUTHOR;
+        scope=2;
+        scopeCurator=2;
+        scopeArsenal=2;
+        displayName = "[61ST] MOPP Suit";
+        picture = "\rhsafrf\addons\rhs_inventoryicons\data\uniform\rhs_uniform_gorka_r_g_ca.paa";
+        hiddenSelections[]={"camo1", "camo2"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\mopp_mc.paa), QPATHTOF(data\mopp_gloves.paa)};
+        class ItemInfo : UniformItem {
+            uniformModel="-";
+            uniformClass= QGVAR(moppsuit_item);
+            containerClass="Supply80";
+            mass=40;
         };
     };
     class GVAR(Vector_Designator_NVG): GVAR(Vector_Designator) {

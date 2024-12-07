@@ -16,6 +16,7 @@ class CfgPatches {
             QGVAR(Item_optic_AMSTI_snd),
             QGVAR(vest_rebreather),
             QGVAR(Item_Wetsuit),
+            QGVAR(moppsuit_item),
             QGVAR(diver_base_F),
             QGVAR(vs17_item)
         };
@@ -33,6 +34,7 @@ class CfgPatches {
             QGVAR(optic_AMSTI_khk),
             QGVAR(optic_AMSTI_snd),
             QGVAR(xm157_ace),
+            QGVAR(moppsuit),
             QGVAR(rebreather),
             QGVAR(Wetsuit),
             QGVAR(vs17)

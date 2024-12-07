@@ -6,6 +6,8 @@ class CfgVehicles {
     class CAManBase: Man {
         // exceptions[] = {"isNotDead", "isNotUnconscious", "isNotSurrendering", "isNotHandcuffed", "isNotCarrying", "isNotDragging", "isNotEscorting", "isNotSwimming", "isNotRefueling", "isNotOnLadder", "isNotSitting", "isNotInside", "isNotInZeus", "notOnMap"};
         class ACE_SelfActions {
+            class LXIM_bags {
+                displayName = "Bags";
                 class GVAR(Medical_Supplies_Action_FirstAid) {
                     displayName = "Unpack Boo Boo Bag";
                     condition = "[_player] call lxim_medbags_fnc_canUnpackFirstAid";
@@ -14,7 +16,6 @@ class CfgVehicles {
                     icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
                     showDisabled = 0;
                 };
-
                 class GVAR(Medical_Supplies_Action_MedicKit) {
                     displayName = "Unpack Medic Bag";
                     condition = "[_player] call lxim_medbags_fnc_canUnpackMedicKit";
@@ -23,7 +24,6 @@ class CfgVehicles {
                     icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
                     showDisabled = 0;
                 };
-
                 class GVAR(Medical_Supplies_Action_Trauma) {
                     displayName = "Unpack Trauma Kit";
                     condition = "[_player] call lxim_medbags_fnc_canUnpackTrauma";
@@ -32,7 +32,6 @@ class CfgVehicles {
                     icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
                     showDisabled = 0;
                 };
-
                 class GVAR(Medical_Supplies_Action_Fluid) {
                     displayName = "Unpack Fluid Kit";
                     condition = "[_player] call lxim_medbags_fnc_canUnpackFluid";
@@ -41,7 +40,6 @@ class CfgVehicles {
                     icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
                     showDisabled = 0;
                 };
-
                 class GVAR(Medical_Supplies_Action_DrugKit) {
                     displayName = "Unpack Drug Kit";
                     condition = "[_player] call lxim_medbags_fnc_canUnpackDrugKit";
@@ -58,22 +56,11 @@ class CfgVehicles {
                     icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
                     showDisabled = 0;
                 };
+            };
         };
-        // class ACE_MainActions {
-        //     class GVAR(Medical_Supplies_Action_Take) {
-        //         displayName = "Take Boo Boo Bag";
-        //         condition = "[_player] call lxim_medbags_fnc_canTake";
-        //         statement = "[(_player, _target)] call lxim_medbags_fnc_doTake";
-        //         exceptions[] = {"isNotInside", "isNotSitting"};
-        //         icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
-        //         showDisabled = 0;
-        //     };
-        // };
     };
-
     // MEDICAL SUPPLIES
     class Item_Base_F;
-
     class GVAR(Item_FirstAid): Item_Base_F {
         scope = 2;
         scopeArsenal = 2;
@@ -87,7 +74,6 @@ class CfgVehicles {
             count = 1;
         };
     };
-
     class GVAR(Item_MedicKit): Item_Base_F {
         scope = 2;
         scopeArsenal = 2;
@@ -101,7 +87,6 @@ class CfgVehicles {
             count = 1;
         };
     };
-
     class GVAR(Item_Trauma): Item_Base_F {
         scope = 2;
         scopeArsenal = 2;
@@ -115,7 +100,6 @@ class CfgVehicles {
             count = 1;
         };
     };
-
     class GVAR(Item_Fluid): Item_Base_F {
         scope = 2;
         scopeArsenal = 2;
@@ -129,7 +113,6 @@ class CfgVehicles {
             count = 1;
         };
     };
-
     class GVAR(Item_DrugKit): Item_Base_F {
         scope = 2;
         scopeArsenal = 2;

@@ -36,10 +36,10 @@ if (isNull _unit) exitWith {};
     _unit playAction "Gear";
 
     if (!isNull objectParent _unit) then {
-        playSound QGVAR(Medical_MedicKit_Open_1);
+        playSound QGVAR(Medical_FirstAid_Open_1);
     } else {
         private _pitch = random [0.6, 1, 1.4];
-        playSound3D ["z\lxim\addons\medbags\data\sounds\medickit_open_1.ogg", _unit]
+        playSound3D ["z\lxim\addons\medbags\data\sounds\FirstAid_Open_1.ogg", _unit]
     };
 
     lxim_MEDICAL_SUPPLIES_UNPACK_SUCCESS = false;
@@ -64,11 +64,11 @@ if (isNull _unit) exitWith {};
         private _order = [3,2,1];
         private _overflow = true;
 
-        [_unit, "U_O_R_Gorka_01_black_F", 1, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "lxim_equipment_moppsuit", 1, _order, _overflow] call EFUNC(common,addItem);
         sleep 0.3;
         [_unit, "JCA_G_AirPurifyingRespirator_03_black_clear_F", 1, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_adenosine", 4, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
+    };
+    if (lxim_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {
+        [_unit, QGVAR(Medical_FirstAid_Open_1)] call EFUNC(common,stop3dSound);
     };
 };
