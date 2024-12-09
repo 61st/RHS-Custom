@@ -518,10 +518,6 @@ force force ace_parachute_failureChance = 0.15;
 force force ace_parachute_hideAltimeter = true;
 force force ace_tagging_quickTag = 1;
 
-// ACE User Interface
-force force ace_ui_allowSelectiveUI = true;
-force force ace_ui_enableSpeedIndicator = true;
-
 // ACE Vehicle Lock
 force force ace_vehiclelock_defaultLockpickStrength = 20;
 force force ace_vehiclelock_lockVehicleInventory = true;
