@@ -15,6 +15,7 @@ class CfgPatches {
         author = QAUTHOR;
         authors[] = {""};
         VERSION_CONFIG;
+        skipWhenMissingDependencies = 1;
     };
 };
 

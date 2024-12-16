@@ -3,7 +3,16 @@ class CfgPatches {
     units[] = {};
     weapons[] = {};
     requiredVersion = "1.0";
-    requiredAddons[] = {"aceax_gearinfo"};
+    skipWhenMissingDependencies = 1;
+    requiredAddons[] = {
+      "lxim_main",
+      "cba_main",
+      "rhs_main_loadorder",
+      "rhsgref_main_loadorder",
+      "rhssaf_main_loadorder",
+      "rhsusf_main_loadorder",
+      "aceax_gearinfo"
+      };
     author = "Pet Mudstone";
   };
 };

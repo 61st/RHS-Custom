@@ -7,12 +7,19 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "lxim_main"
+            "lxim_main",
+            "cba_main",
+            "rhs_main_loadorder",
+            "rhsgref_main_loadorder",
+            "rhssaf_main_loadorder",
+            "rhsusf_main_loadorder",
+            "aceax_gearinfo"
         };
         authorUrl = "https://github.com/task-force-war-wolf/lxim/";
         author = QAUTHOR;
         authors[] = {""};
         VERSION_CONFIG;
+        skipWhenMissingDependencies = 1;
     };
 };
 

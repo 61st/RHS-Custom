@@ -6,6 +6,20 @@
 
 class CBA_Extended_EventHandlers;
 class CfgVehicles {
+	class rhs_vdv_gorka_r_g_gloves_rifleman;
+    class GVAR(moppsuit_item): rhs_vdv_gorka_r_g_gloves_rifleman {
+        author = QAUTHOR;
+        side = 1;
+        displayName = "[61ST] MOPP Suit";
+        hiddenSelections[]={"camo1", "camo2"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\mopp_mc.paa), QPATHTOF(data\mopp_gloves.paa)};
+        class TransportItems {
+            class GVAR(moppsuit) {
+                name = QGVAR(moppsuit);
+                count = 1;
+            };
+        };
+    };
 	class B_AssaultPack_Base;
     class rhs_sidor: B_AssaultPack_Base {
         maximumLoad = 160;

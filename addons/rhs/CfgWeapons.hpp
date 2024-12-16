@@ -5,7 +5,9 @@ class rhs_russian_ak_barrel_slot;
 class CfgWeapons {
     class H_HelmetB;
     class ItemCore;
+    class UniformItem;
     class Rifle;
+    class Uniform_Base;
     class Rifle_Base_F: Rifle {
         class WeaponSlotsInfo;
     };
@@ -15,7 +17,22 @@ class CfgWeapons {
     class InventoryOpticsItem_Base_F;
     class rhs_acc_scope_base;
     class asdg_OpticRail1913_long;
-    
+    class GVAR(moppsuit): Uniform_Base {
+        author = QAUTHOR;
+        scope=2;
+        scopeCurator=2;
+        scopeArsenal=2;
+        displayName = "[61ST] MOPP Suit";
+        picture = "\rhsafrf\addons\rhs_inventoryicons\data\uniform\rhs_uniform_gorka_r_g_ca.paa";
+        hiddenSelections[]={"camo1", "camo2"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\mopp_mc.paa), QPATHTOF(data\mopp_gloves.paa)};
+        class ItemInfo : UniformItem {
+            uniformModel="-";
+            uniformClass= QGVAR(moppsuit_item);
+            containerClass="Supply80";
+            mass=40;
+        };
+    };
 
     #include "weapons\CfgWeapAK.hpp"
     #include "weapons\CfgWeapAK556.hpp"

@@ -15,6 +15,7 @@ class CfgPatches {
         author = "lxim";
         authors[] = {"YONV"};
         VERSION_CONFIG;
+        skipWhenMissingDependencies = 1;
     };
 };
 
