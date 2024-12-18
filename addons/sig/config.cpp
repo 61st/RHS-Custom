@@ -30,6 +30,7 @@ class CfgPatches {
         };
         authorUrl = URL;
         author = QAUTHOR;
+        skipWhenMissingDependencies = 1;
         authors[] = {""};
         VERSION_CONFIG;
     };

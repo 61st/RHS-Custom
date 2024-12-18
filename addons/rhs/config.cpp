@@ -3,7 +3,9 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {};
+        units[] = {
+            QGVAR(moppsuit_item)
+            };
         weapons[] = {
             "rhs_weap_m16a3_carryhandle", "rhs_weap_m16a3_carryhandle_grip", "rhs_weap_m16a3_carryhandle_grip2", "rhs_weap_m16a3_carryhandle_grip3",
             "rhs_weap_m16a3_carryhandle_M203", "rhs_weap_m16a3_carryhandle_M203_grip",
@@ -14,12 +16,12 @@ class CfgPatches {
             "rhs_weap_ak102", "rhs_weap_ak102_folded", "rhs_weap_ak102_npz",
             "rhs_weap_ak102_zenitco01", "rhs_weap_ak102_zenitco01_b33", "rhs_weap_ak102_zenitco01_afg",
             "rhs_weap_ak102_zenitco01_grip1", "rhs_weap_ak102_zenitco01_b33_afg", "rhs_weap_ak102_zenitco01_b33_grip1",
-            "rhs_weap_ak102_zenitco01_npz", "rhs_weap_ak102_zenitco01_npz_afg", "rhs_weap_ak102_zenitco01_npz_grip1"
+            "rhs_weap_ak102_zenitco01_npz", "rhs_weap_ak102_zenitco01_npz_afg", "rhs_weap_ak102_zenitco01_npz_grip1",
+            QGVAR(moppsuit)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "lxim_main",
-            "wb_rhs_main_prep",
             "cba_main",
             "rhs_main_loadorder",
             "rhsgref_main_loadorder",

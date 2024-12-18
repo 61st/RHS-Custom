@@ -10,28 +10,28 @@ class rhs_m10
         class MDU10_SUM_2
         {
             label = "MDU-10 Sum. 2";
-		    description = "M-MDU-10 Summer With Tan Boots";
+            description = "M-MDU-10 Summer With Tan Boots";
             image = "z\aceax\compats\RHS\data\camo\mdu10_sum.paa";
         };
 
         class TTsKO_GUE_MTN
         {
             label = "TTsKO Mtn.";
-		    description = "TTsKO Mountain";
+            description = "TTsKO Mountain";
             image = "z\aceax\compats\RHS\data\camo\ttsko_gue_mtn.paa";
         };
 
         class TTsKO_GUE_OX
         {
             label = "TTsKO Ox.";
-		    description = "TTsKO Oxblood";
+            description = "TTsKO Oxblood";
             image = "z\aceax\compats\RHS\data\camo\ttsko_gue_ox.paa";
         };
 
         class TTsKO_GUE_URB
         {
             label = "TTsKO Urb.";
-		    description = "TTsKO Urban";
+            description = "TTsKO Urban";
             image = "z\aceax\compats\RHS\data\camo\ttsko_gue_urb.paa";
         };
     };

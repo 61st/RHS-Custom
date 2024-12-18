@@ -8,17 +8,17 @@ class rhs_ach
         alwaysSelectable=1;
 
         class DCP_ERL
-	    {
+        {
             label = "DCP (Early)";
             description = "Desert Camouflage Pattern; AKA 3-Color Desert or Coffee Stain Camouflage";
             image = "z\aceax\compats\RHS\data\camo\dcp_early.paa";
-	    };
+        };
         
         class Desert
-	    {
+        {
             label = "Desert";
             image = "z\aceax\compats\RHS\data\camo\des_ach.paa";
-	    };
+        };
 
         class SemiArid
         {
@@ -27,10 +27,10 @@ class rhs_ach
         };
 
         class Woodland
-	    {
+        {
             label = "Woodland";
             image = "z\aceax\compats\RHS\data\camo\wdl_ach.paa";
-	    };
+        };
     };
 
     class goggles

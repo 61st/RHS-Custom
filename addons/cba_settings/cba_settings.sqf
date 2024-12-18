@@ -29,7 +29,6 @@ force force lxim_back_to_game_teleportToLeader = true;
 force force lxim_back_to_game_teleportToVehicle = true;
 
 // 61ST - BFT
-force force lxim_bft_bftEnabled = true;
 force force lxim_bft_friendlySides_civilian = [0,2];
 force force lxim_bft_friendlySides_east = [3];
 force force lxim_bft_friendlySides_resistance = [1,3];
@@ -673,8 +672,6 @@ force acre_sys_core_ignoreAntennaDirection = true;
 force acre_sys_core_interference = false;
 force acre_sys_core_revealToAI = 1;
 force acre_sys_core_terrainLoss = 0;
-force acre_sys_core_ts3ChannelName = "TaskForceRadio";
-force acre_sys_core_ts3ChannelPassword = "";
 force acre_sys_core_ts3ChannelSwitch = true;
 force acre_sys_radio_defaultRadio = "ACRE_PRC148";
 force acre_sys_signal_signalModel = 1;

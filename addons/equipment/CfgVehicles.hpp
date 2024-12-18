@@ -27,20 +27,6 @@ class CfgVehicles {
             };
         };
     };
-    class rhs_vdv_gorka_r_g_gloves_rifleman;
-    class GVAR(moppsuit_item): rhs_vdv_gorka_r_g_gloves_rifleman {
-        author = QAUTHOR;
-        side = 1;
-        displayName = "[61ST] MOPP Suit";
-        hiddenSelections[]={"camo1", "camo2"};
-        hiddenSelectionsTextures[]={QPATHTOF(data\mopp_mc.paa), QPATHTOF(data\mopp_gloves.paa)};
-        class TransportItems {
-            class GVAR(moppsuit) {
-                name = QGVAR(moppsuit);
-                count = 1;
-            };
-        };
-    };
     class ACE_Item_Vector;
     class GVAR(Item_Vector_Designator): ACE_Item_Vector {
         author = "NemessisRE";

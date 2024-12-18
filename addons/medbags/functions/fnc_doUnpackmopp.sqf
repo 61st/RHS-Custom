@@ -64,7 +64,7 @@ if (isNull _unit) exitWith {};
         private _order = [3,2,1];
         private _overflow = true;
 
-        [_unit, "lxim_equipment_moppsuit", 1, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "lxim_rhs_moppsuit", 1, _order, _overflow] call EFUNC(common,addItem);
         sleep 0.3;
         [_unit, "JCA_G_AirPurifyingRespirator_03_black_clear_F", 1, _order, _overflow] call EFUNC(common,addItem);
     };

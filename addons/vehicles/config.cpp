@@ -22,12 +22,17 @@ class CfgPatches {
             "A3_Armor_F",
             "A3_Soft_F",
             "A3_Armor_F_APC_Wheeled_03",
-            "A3_Armor_F_Gamma"
+            "A3_Armor_F_Gamma",
+            "rhs_main_loadorder",
+            "rhsgref_main_loadorder",
+            "rhssaf_main_loadorder",
+            "rhsusf_main_loadorder"
         };
         authorUrl = URL;
         author = QAUTHOR;
         authors[] = {""};
         VERSION_CONFIG;
+        skipWhenMissingDependencies = 1;
     };
 };
 

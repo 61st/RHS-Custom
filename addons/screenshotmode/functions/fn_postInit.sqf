@@ -3,7 +3,7 @@
 GVAR(active) = false;
 
 [
-    'Gruppe Adler',
+    '61st ScreenShot',
     'GRAD_screenshotmode_toggle',
     'Toggle Screenshot Mode',
     {

@@ -6,7 +6,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "a3_props_f_orange"
+            "a3_props_f_orange",
+            "ACM_core"
         };
         units[] = {
             QGVAR(Item_FirstAid),
@@ -23,6 +24,7 @@ class CfgPatches {
             QGVAR(mopp)
         };
         VERSION_CONFIG;
+        skipWhenMissingDependencies = 1;
     };
 };
 

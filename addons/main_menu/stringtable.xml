@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="lxim">
+<Project name="LXIM">
     <Package name="Main_Menu">
         <Key ID="STR_LXIM_Main_Menu_AdminLogin">
             <English>Admin Login</English>
