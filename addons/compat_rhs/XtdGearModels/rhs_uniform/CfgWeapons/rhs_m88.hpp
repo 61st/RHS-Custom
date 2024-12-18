@@ -8,16 +8,16 @@ class rhs_m88
         alwaysSelectable=1;
 
         class VSR_2
-	    {
+        {
             label = "VSR 2";
             image = "z\aceax\compats\RHS\data\camo\vsr_m88_1.paa";
-	    };
+        };
 
         class VSR_3
-	    {
+        {
             label = "VSR 3";
             image = "z\aceax\compats\RHS\data\camo\vsr_m88_2.paa";
-	    };
+        };
     };
     class coat
     {

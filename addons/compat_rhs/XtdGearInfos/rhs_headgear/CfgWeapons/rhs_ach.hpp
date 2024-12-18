@@ -5,7 +5,7 @@ class rhsusf_ach_bare {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_ess {
@@ -14,7 +14,7 @@ class rhsusf_ach_bare_ess {
   goggles = "ESS";
   headset = "No";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_headset {
@@ -23,7 +23,7 @@ class rhsusf_ach_bare_headset {
   goggles = "None";
   headset = "Yes";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_headset_ess {
@@ -32,7 +32,7 @@ class rhsusf_ach_bare_headset_ess {
   goggles = "ESS";
   headset = "Yes";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 // Desert
@@ -42,7 +42,7 @@ class rhsusf_ach_bare_des {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_des_ess {
@@ -51,7 +51,7 @@ class rhsusf_ach_bare_des_ess {
   goggles = "ESS";
   headset = "No";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_des_headset {
@@ -60,7 +60,7 @@ class rhsusf_ach_bare_des_headset {
   goggles = "None";
   headset = "Yes";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_des_headset_ess {
@@ -69,7 +69,7 @@ class rhsusf_ach_bare_des_headset_ess {
   goggles = "ESS";
   headset = "Yes";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 // Semi-Arid
@@ -79,7 +79,7 @@ class rhsusf_ach_bare_semi {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_semi_ess {
@@ -88,7 +88,7 @@ class rhsusf_ach_bare_semi_ess {
   goggles = "ESS";
   headset = "No";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_semi_headset {
@@ -97,7 +97,7 @@ class rhsusf_ach_bare_semi_headset {
   goggles = "None";
   headset = "Yes";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_semi_headset_ess {
@@ -106,7 +106,7 @@ class rhsusf_ach_bare_semi_headset_ess {
   goggles = "ESS";
   headset = "Yes";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 // Tan
@@ -116,7 +116,7 @@ class rhsusf_ach_bare_tan {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_tan_ess {
@@ -125,7 +125,7 @@ class rhsusf_ach_bare_tan_ess {
   goggles = "ESS";
   headset = "No";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_tan_headset {
@@ -134,7 +134,7 @@ class rhsusf_ach_bare_tan_headset {
   goggles = "None";
   headset = "Yes";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_tan_headset_ess {
@@ -143,7 +143,7 @@ class rhsusf_ach_bare_tan_headset_ess {
   goggles = "ESS";
   headset = "Yes";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 // Woodland
@@ -153,7 +153,7 @@ class rhsusf_ach_bare_wood {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_wood_ess {
@@ -162,7 +162,7 @@ class rhsusf_ach_bare_wood_ess {
   goggles = "ESS";
   headset = "No";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_wood_headset {
@@ -171,7 +171,7 @@ class rhsusf_ach_bare_wood_headset {
   goggles = "None";
   headset = "Yes";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_bare_wood_headset_ess {
@@ -180,7 +180,7 @@ class rhsusf_ach_bare_wood_headset_ess {
   goggles = "ESS";
   headset = "Yes";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 // DCU
@@ -190,7 +190,7 @@ class rhsusf_ach_helmet_DCU {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_DCU_early {
@@ -199,7 +199,7 @@ class rhsusf_ach_helmet_DCU_early {
   goggles = "None";
   headset = "No";
   nvgmount = "None";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_DCU_early_rhino {
@@ -208,7 +208,7 @@ class rhsusf_ach_helmet_DCU_early_rhino {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 // M81
@@ -218,7 +218,7 @@ class rhsusf_ach_helmet_M81 {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 // OEF-CP
@@ -228,7 +228,7 @@ class rhsusf_ach_helmet_ocp {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_ocp_alt {
@@ -237,7 +237,7 @@ class rhsusf_ach_helmet_ocp_alt {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_ESS_ocp {
@@ -246,7 +246,7 @@ class rhsusf_ach_helmet_ESS_ocp {
   goggles = "ESS";
   headset = "No";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_ESS_ocp_alt {
@@ -255,7 +255,7 @@ class rhsusf_ach_helmet_ESS_ocp_alt {
   goggles = "ESS";
   headset = "No";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_headset_ocp {
@@ -264,7 +264,7 @@ class rhsusf_ach_helmet_headset_ocp {
   goggles = "None";
   headset = "Yes";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_headset_ocp_alt {
@@ -273,7 +273,7 @@ class rhsusf_ach_helmet_headset_ocp_alt {
   goggles = "None";
   headset = "Yes";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_headset_ess_ocp {
@@ -282,7 +282,7 @@ class rhsusf_ach_helmet_headset_ess_ocp {
   goggles = "ESS";
   headset = "Yes";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_headset_ess_ocp_alt {
@@ -291,7 +291,7 @@ class rhsusf_ach_helmet_headset_ess_ocp_alt {
   goggles = "ESS";
   headset = "Yes";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_camo_ocp {
@@ -319,7 +319,7 @@ class rhsusf_ach_helmet_ucp {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_ucp_alt {
@@ -328,7 +328,7 @@ class rhsusf_ach_helmet_ucp_alt {
   goggles = "None";
   headset = "No";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_ESS_ucp {
@@ -337,7 +337,7 @@ class rhsusf_ach_helmet_ESS_ucp {
   goggles = "ESS";
   headset = "No";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_ESS_ucp_alt {
@@ -346,7 +346,7 @@ class rhsusf_ach_helmet_ESS_ucp_alt {
   goggles = "ESS";
   headset = "No";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_headset_ucp {
@@ -355,7 +355,7 @@ class rhsusf_ach_helmet_headset_ucp {
   goggles = "None";
   headset = "Yes";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_headset_ucp_alt {
@@ -364,7 +364,7 @@ class rhsusf_ach_helmet_headset_ucp_alt {
   goggles = "None";
   headset = "Yes";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_headset_ess_ucp {
@@ -373,7 +373,7 @@ class rhsusf_ach_helmet_headset_ess_ucp {
   goggles = "ESS";
   headset = "Yes";
   nvgmount = "RhinoT";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_headset_ess_ucp_alt {
@@ -382,7 +382,7 @@ class rhsusf_ach_helmet_headset_ess_ucp_alt {
   goggles = "ESS";
   headset = "Yes";
   nvgmount = "RhinoB";
-	netting = "No";
+  netting = "No";
 };
 
 class rhsusf_ach_helmet_camo_ucp {

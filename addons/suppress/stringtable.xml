@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="lxim">
+<Project name="LXIM">
     <Package name="Suppress">
         <Key ID="STR_LXIM_Suppress_checkLOS_name">
             <English>Check line of sight</English>

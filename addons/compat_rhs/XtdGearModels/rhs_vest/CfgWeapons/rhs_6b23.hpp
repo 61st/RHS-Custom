@@ -8,11 +8,11 @@ class rhs_6b23
         alwaysSelectable=1;
 
         class FLRA_EMR
-	    {
+        {
             label = "Flora & EMR-S";
             description = "Flora and EMR-Summer";
             image = "z\aceax\compats\RHS\data\camo\flora_and_emr.paa";
-	    };
+        };
     };
     class loadout
     {

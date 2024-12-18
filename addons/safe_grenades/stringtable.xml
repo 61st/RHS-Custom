@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="lxim">
+<Project name="LXIM">
     <Package name="Safe_Grenades">
         <Key ID="STR_LXIM_Safe_Grenades_ThrowBind_Title">
             <English>Dangerous bind detected!</English>
