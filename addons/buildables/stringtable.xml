@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="AFMF">
+<Project name="LXIM">
     <Package name="Buildables">
         <Key ID="STR_LXIM_Buildables_3DEN_Duplicate_Layer">
             <English>Selected layer is already used in another module (%1).&lt;br/&gt;Every module must have unique layer assigned!</English>
