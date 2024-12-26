@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [[bob, ted], false] call lxim_main_fnc_example
+ * [[bob, ted], false] call GVAR(main_fnc_example
  *
  * Public: No
  */
@@ -83,6 +83,7 @@ class CfgVehicles {
         };
         class EventHandlers;
     };
+    
     class APC_Wheeled_03_base_F: Wheeled_APC_F {
         class Turrets: Turrets {
             class MainTurret: MainTurret {};
@@ -964,7 +965,7 @@ class CfgVehicles {
         class Components;
     };
     /* BASE ------------------------------------------------------------------------------------------------------------- */
-    class lxim_mk20_base_F: I_APC_Wheeled_03_cannon_F {
+    class GVAR(mk20_base_F): I_APC_Wheeled_03_cannon_F {
         scope = 1;
         scopeCurator = 1;
         displayName = "M20A2";
@@ -1074,28 +1075,30 @@ class CfgVehicles {
         class Turrets: Turrets {
             class MainTurret: MainTurret {
                 weapons[] = {
-                    "RHS_weap_M242BC",
-                    "rhs_weap_m240_bradley_coax",
+                    QGVAR(autocannon_35mm_CTWS),
+                    QUOTE(rhs_weap_m240_bradley_coax),
                     QGVAR(missiles_titan)
-                };
+                    };
                 magazines[] = {
                     "rhs_mag_1100Rnd_762x51_M240",
                     "rhs_mag_1100Rnd_762x51_M240",
 
-                    "rhs_mag_230Rnd_25mm_M242_HEI",
-                    "rhs_mag_230Rnd_25mm_M242_HEI",
-                    "rhs_mag_230Rnd_25mm_M242_HEI",
-                    "rhs_mag_230Rnd_25mm_M242_HEI",
+                    QGVAR(100Rnd_35mm_MP_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_MP_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_MP_shells_Tracer_Red),
 
-                    "rhs_mag_70Rnd_25mm_M242_APFSDS",
-                    "rhs_mag_70Rnd_25mm_M242_APFSDS",
-                    "rhs_mag_70Rnd_25mm_M242_APFSDS",
-                    "rhs_mag_70Rnd_25mm_M242_APFSDS",
+                    QGVAR(100Rnd_35mm_APFSDS_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_APFSDS_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_APFSDS_shells_Tracer_Red),
+
+                    QGVAR(100Rnd_35mm_ABM_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_ABM_shells_Tracer_Red),
+                    QGVAR(100Rnd_35mm_ABM_shells_Tracer_Red),
 
                     QGVAR(2Rnd_AA_missiles),
                     QGVAR(2Rnd_AT_missiles),
                     QGVAR(2Rnd_AT_missiles)
-                };  
+                }; 
                 class Turrets: Turrets {
                     class CommanderOptics: CommanderOptics {
                         weapons[] = {"SmokeLauncher"};
@@ -1169,7 +1172,7 @@ class CfgVehicles {
             };
         };
     };
-    class lxim_outlaw_unarmed_base_F: lxim_mk20_base_F {
+    class GVAR(outlaw_unarmed_base_F): GVAR(mk20_base_F) {
         supplyRadius = 10;
         attendant = 1;
         forceInGarage = 1;
@@ -1333,7 +1336,7 @@ class CfgVehicles {
         threat[] = {0,0,0};
     };
     /* G ---------------------------------------------------------------------------------------------------------------- */
-    class lxim_mk20: lxim_mk20_base_F {
+    class GVAR(mk20): GVAR(mk20_base_F) {
         displayName = "M20A2";
         scope = 2;
         scopeCurator = 2;
@@ -1345,7 +1348,7 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_g.paa),QPATHTOF(data\outlaw_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
     };
     /* UNARMED ---------------------------------------------------------------------------------------------------------- */
-    class lxim_mev_mk20: lxim_outlaw_unarmed_base_F {
+    class GVAR(mev_mk20): GVAR(outlaw_unarmed_base_F) {
         displayName = "M20-MEV Green";
         author = QAUTHOR;
         scope = 2;
@@ -1360,7 +1363,7 @@ class CfgVehicles {
         editorSubcategory = "lxim_EdSubcat_vehicles_green";
         hiddenSelectionsTextures[] = {QPATHTOF(data\med_01_ext_g.paa),QPATHTOF(data\med_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
     };
-    class lxim_repair_mk20: lxim_outlaw_unarmed_base_F {
+    class GVAR(repair_mk20): GVAR(outlaw_unarmed_base_F) {
         displayName = "M20A-SUP Green";
         ace_cargo_space = 12;
         author = QAUTHOR;

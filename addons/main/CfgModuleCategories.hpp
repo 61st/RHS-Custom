@@ -23,4 +23,7 @@ class CfgEditorSubcategories {
     class PREFIX  {
         displayName = CSTRING(Category);
     };
+    class lxim_EdSubcat_vehicles_green {
+        displayname = "AMPF"; 
+    };
 };

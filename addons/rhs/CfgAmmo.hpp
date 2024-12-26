@@ -93,7 +93,7 @@ class CfgAmmo {
         ACE_standardAtmosphere = "ICAO";
         ACE_velocityBoundaries[] = {};
     };
-
+     /* titans ----------------------------------------------------------------------------------------------------------- */
     class MissileBase;
     class M_Titan_AT: MissileBase {
         submunitionAmmo = "rhs_ammo_M_fgm148_AT_penetrator";
@@ -103,6 +103,12 @@ class CfgAmmo {
         submunitionParentSpeedCoef = 0;
         warheadName = "TandemHEAT";
     };
+    class M_Titan_AP;
+    class M_Titan_AA;
+    
+    class rhs_ammo_TOW2_BB_explosive;
+
+    class GVAR(Titan_BB_round): rhs_ammo_TOW2_BB_explosive {};
 
     class ammo_Penetrator_base;
     class ammo_Penetrator_Titan_AT: ammo_Penetrator_base {

@@ -45,6 +45,7 @@ class CfgPatches {
 #include "CfgAcc.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgAmmoBelts.hpp"
+#include "CfgMagazines.hpp"
 #include "CfgMagazineWells.hpp"
 
 class CfgFunctions {
@@ -79,23 +80,6 @@ class CfgFunctions {
             };
         };
     };
-};
-
-class CfgMagazines {
-    class CA_Magazine;
-    class 30Rnd_556x45_Stanag;
-    class rhs_mag_30Rnd_556x45_M855_Stanag;
-    class rhs_mag_30Rnd_556x45_M855A1_Stanag;
-    class rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red;
-    class rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red;
-    class rhs_mag_30Rnd_556x45_Mk262_Stanag;
-    class rhs_mag_30Rnd_556x45_Mk318_Stanag;
-
-    #include "magazines\CfgMagAK.hpp"
-    #include "magazines\CfgMagNATO556.hpp"
-    #include "magazines\CfgMagAK556.hpp"
-    #include "magazines\CfgMagMisc.hpp"
-    #include "magazines\CfgMagRifleMisc.hpp"
 };
 
 class BettIR_Config {
