@@ -73,5 +73,8 @@ if (isNull _unit) exitWith {};
         [_unit, "ACM_Vial_Fentanyl", 2, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACM_Vial_Lidocaine", 2, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACM_Vial_Ondansetron", 2, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "ACM_Vial_CalciumChloride", 2, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "ACM_Vial_Esmolol", 2, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "ACM_Vial_Ertapenem", 2, _order, _overflow] call EFUNC(common,addItem);
     };
 };

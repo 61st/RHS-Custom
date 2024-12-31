@@ -1076,12 +1076,14 @@ class CfgVehicles {
             class MainTurret: MainTurret {
                 weapons[] = {
                     QGVAR(autocannon_35mm_CTWS),
-                    QUOTE(rhs_weap_m240_bradley_coax),
+                    QUOTE(ACE_LMG_coax_ext_MAG58),
                     QGVAR(missiles_titan)
                     };
                 magazines[] = {
-                    "rhs_mag_1100Rnd_762x51_M240",
-                    "rhs_mag_1100Rnd_762x51_M240",
+                    "200Rnd_762x51_Belt_Red",
+                    "200Rnd_762x51_Belt_Red",
+                    "200Rnd_762x51_Belt_Red",
+                    "200Rnd_762x51_Belt_Red",
 
                     QGVAR(100Rnd_35mm_MP_shells_Tracer_Red),
                     QGVAR(100Rnd_35mm_MP_shells_Tracer_Red),
@@ -1330,8 +1332,8 @@ class CfgVehicles {
         };
         driverCanSee = "4+8+2+32+16";
         gunnerCanSee = "4+2+8+32+16";
-        weapons[] = {"TruckHorn","SmokeLauncher","rhsusf_weap_duke"};
-        magazines[] = {"SmokeLauncherMag","rhsusf_mag_duke"};
+        weapons[] = {"TruckHorn","SmokeLauncher"};
+        magazines[] = {"SmokeLauncherMag"};
         class Turrets {};
         threat[] = {0,0,0};
     };

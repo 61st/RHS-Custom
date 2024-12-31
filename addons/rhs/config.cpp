@@ -22,11 +22,16 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "lxim_main",
+            "tsp_breach_shock",
             "cba_main",
             "rhs_main_loadorder",
             "rhsgref_main_loadorder",
             "rhssaf_main_loadorder",
-            "rhsusf_main_loadorder"
+            "rhsusf_main_loadorder",
+            "ace_compat_rhs_usf3_explosives", 
+            "ace_compat_rhs_saf3_explosives", 
+            "ace_compat_rhs_gref3_explosives", 
+            "ace_compat_rhs_afrf3_explosives"
         };
         author = QAUTHOR;
         authors[] = {
