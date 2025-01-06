@@ -164,7 +164,33 @@ class CfgVehicles {
         class EventHandlers;
         class Components;
     };
-        class rhsusf_m1a1tank_base : MBT_01_base_F {
+    // Abrams
+    class rhsusf_m1a1tank_base : MBT_01_base_F {
+        acre_hasInfantryPhone = 1;
+        acre_infantryPhoneIntercom[] = {"CrewIntercom"};
+        acre_infantryPhoneControlActions[] = {"CrewIntercom"};
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Upper Rack";
+                shortName = "R.Up";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"crew"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Lower Rack";
+                shortName = "R.Low";
+            };
+        };
         class Turrets : Turrets {
             class MainTurret : MainTurret {
                 class OpticsIn {
@@ -270,13 +296,130 @@ class CfgVehicles {
         class Components;
     };
     class rhsusf_MATV_base : MRAP_01_base_F {
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_intercom";
+                shortName = "$STR_ACRE_sys_intercom_intercom";
+                allowedPositions[] = {"crew", {"cargo", "all"}};
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {{"turret", "all"}, {"cargo", 1}};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {{"cargo", "all"}};
+            };
+        };
         armor = 220; // 100
         audible = 5; // 6
         maxOmega = 600; // 230.38
         maxSpeed = 115; // 105
         normalSpeedForwardCoef = 0.7; // 0.48
     };
+    // M113
+    class APC_Tracked_02_base_F;
+    class rhsusf_m113tank_base: APC_Tracked_02_base_F {
+        acre_hasInfantryPhone = 1;
+        acre_infantryPhoneIntercom[] = {"CrewIntercom"};
+        acre_infantryPhoneControlActions[] = {"CrewIntercom"};
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                numLimitedPositions = 3;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                limitedPositions[] = {"crew"};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"crew"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {{"cargo", "all"}};
+            };
+        };
+    };
+    // Ambulance
+    class rhsusf_caiman_base;
+    class rhsusf_M1220_usarmy_d: rhsusf_caiman_base {};
+    class rhsusf_M1230a1_usarmy_d: rhsusf_M1220_usarmy_d {
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                numLimitedPositions = 3;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                limitedPositions[] = {"crew"};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"crew"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {{"cargo", "all"}};
+            };
+        };
+    };
     class rhsusf_hmmwe_base: MRAP_01_base_F {
+        class AcreIntercoms {};
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Dash Lower";
+                shortName = "D.Low";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"crew", "all"};
+            };
+            class Rack_2 {
+                displayName = "Dash Upper";
+                shortName = "D.Up";
+                componentName = "ACRE_VRC110";
+                allowedPositions[] = {"crew", "all"};
+            };
+        };
         dlc="RHS_USAF";
         category="Car";
         insideSoundCoef=0.40000001;
@@ -289,8 +432,8 @@ class CfgVehicles {
                     1,
                     150
                 };
-                frequency="0.95	+	((rpm/	3400) factor[(604/	3400),(1058/	3400)])*0.15";
-                volume="engineOn*camPos*(((rpm/	3400) factor[(453/	3400),(831/	3400)])	*	((rpm/	3400) factor[(1360/	3400),(982/	3400)]))";
+                frequency="0.95 + ((rpm/ 3400) factor[(604/ 3400),(1058/ 3400)])*0.15";
+                volume="engineOn*camPos*(((rpm/ 3400) factor[(453/ 3400),(831/ 3400)]) * ((rpm/ 3400) factor[(1360/ 3400),(982/ 3400)]))";
             };
             class Engine {
                 sound[]= {
@@ -299,8 +442,8 @@ class CfgVehicles {
                     1,
                     250
                 };
-                frequency="0.9	+	((rpm/	3400) factor[(1058/	3400),(1587/	3400)])*0.2";
-                volume="engineOn*camPos*(((rpm/	3400) factor[(1058/	3400),(1360/	3400)])	*	((rpm/	3400) factor[(1738/	3400),(1511/	3400)]))";
+                frequency="0.9 + ((rpm/ 3400) factor[(1058/ 3400),(1587/ 3400)])*0.2";
+                volume="engineOn*camPos*(((rpm/ 3400) factor[(1058/ 3400),(1360/ 3400)]) * ((rpm/ 3400) factor[(1738/ 3400),(1511/ 3400)]))";
             };
             class Engine1_ext {
                 sound[]= {
@@ -309,8 +452,8 @@ class CfgVehicles {
                     1,
                     300
                 };
-                frequency="0.9	+		((rpm/	3400) factor[(1587/	3400),(2116/	3400)])*0.2";
-                volume="engineOn*camPos*(((rpm/	3400) factor[(1436/	3400),(1738/	3400)])	*	((rpm/	3400) factor[(2267/	3400),(1889/	3400)]))";
+                frequency="0.9 +  ((rpm/ 3400) factor[(1587/ 3400),(2116/ 3400)])*0.2";
+                volume="engineOn*camPos*(((rpm/ 3400) factor[(1436/ 3400),(1738/ 3400)]) * ((rpm/ 3400) factor[(2267/ 3400),(1889/ 3400)]))";
             };
             class Engine2_ext {
                 sound[]= {
@@ -319,8 +462,8 @@ class CfgVehicles {
                     1,
                     350
                 };
-                frequency="0.9	+	((rpm/	3400) factor[(2116/	3400),(2720/	3400)])*0.2";
-                volume="engineOn*camPos*(((rpm/	3400) factor[(1889/	3400),(2342/	3400)])	*	((rpm/	3400) factor[(2569/	3400),(2796/	3400)]))";
+                frequency="0.9 + ((rpm/ 3400) factor[(2116/ 3400),(2720/ 3400)])*0.2";
+                volume="engineOn*camPos*(((rpm/ 3400) factor[(1889/ 3400),(2342/ 3400)]) * ((rpm/ 3400) factor[(2569/ 3400),(2796/ 3400)]))";
             };
             class Engine3_ext {
                 sound[]= {
@@ -329,8 +472,8 @@ class CfgVehicles {
                     1,
                     400
                 };
-                frequency="0.95	+	((rpm/	3400) factor[(2720/	3400),(3400/	3400)])*0.1";
-                volume="engineOn*camPos*((rpm/	3400) factor[(2871/	3400),(3400/	3400)])";
+                frequency="0.95 + ((rpm/ 3400) factor[(2720/ 3400),(3400/ 3400)])*0.1";
+                volume="engineOn*camPos*((rpm/ 3400) factor[(2871/ 3400),(3400/ 3400)])";
             };
             class IdleThrust {
                 sound[]= {
@@ -339,8 +482,8 @@ class CfgVehicles {
                     1,
                     200
                 };
-                frequency="0.95	+	((rpm/	3400) factor[(604/	3400),(1058/	3400)])*0.15";
-                volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3400) factor[(453/	3400),(831/	3400)])	*	((rpm/	3400) factor[(1360/	3400),(982/	3400)]))";
+                frequency="0.95 + ((rpm/ 3400) factor[(604/ 3400),(1058/ 3400)])*0.15";
+                volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 3400) factor[(453/ 3400),(831/ 3400)]) * ((rpm/ 3400) factor[(1360/ 3400),(982/ 3400)]))";
             };
             class EngineThrust {
                 sound[]= {
@@ -349,8 +492,8 @@ class CfgVehicles {
                     1,
                     350
                 };
-                frequency="0.9	+	((rpm/	3400) factor[(1058/	3400),(1587/	3400)])*0.2";
-                volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3400) factor[(1058/	3400),(1360/	3400)])	*	((rpm/	3400) factor[(1738/	3400),(1511/	3400)]))";
+                frequency="0.9 + ((rpm/ 3400) factor[(1058/ 3400),(1587/ 3400)])*0.2";
+                volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 3400) factor[(1058/ 3400),(1360/ 3400)]) * ((rpm/ 3400) factor[(1738/ 3400),(1511/ 3400)]))";
             };
             class Engine1_Thrust_ext {
                 sound[]= {
@@ -359,8 +502,8 @@ class CfgVehicles {
                     1,
                     400
                 };
-                frequency="0.9	+		((rpm/	3400) factor[(1587/	3400),(2116/	3400)])*0.2";
-                volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3400) factor[(1436/	3400),(1738/	3400)])	*	((rpm/	3400) factor[(2267/	3400),(1889/	3400)]))";
+                frequency="0.9 +  ((rpm/ 3400) factor[(1587/ 3400),(2116/ 3400)])*0.2";
+                volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 3400) factor[(1436/ 3400),(1738/ 3400)]) * ((rpm/ 3400) factor[(2267/ 3400),(1889/ 3400)]))";
             };
             class Engine2_Thrust_ext {
                 sound[]= {
@@ -369,8 +512,8 @@ class CfgVehicles {
                     1,
                     425
                 };
-                frequency="0.9	+	((rpm/	3400) factor[(2116/	3400),(2720/	3400)])*0.2";
-                volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3400) factor[(1889/	3400),(2342/	3400)])	*	((rpm/	3400) factor[(3400/	3400),(2796/	3400)]))";
+                frequency="0.9 + ((rpm/ 3400) factor[(2116/ 3400),(2720/ 3400)])*0.2";
+                volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 3400) factor[(1889/ 3400),(2342/ 3400)]) * ((rpm/ 3400) factor[(3400/ 3400),(2796/ 3400)]))";
             };
             class Engine3_Thrust_ext {
                 sound[]= {
@@ -379,8 +522,8 @@ class CfgVehicles {
                     1,
                     450
                 };
-                frequency="0.95	+	((rpm/	3400) factor[(2720/	3400),(3400/	3400)])*0.1";
-                volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	3400) factor[(2871/	3400),(3400/	3400)])";
+                frequency="0.95 + ((rpm/ 3400) factor[(2720/ 3400),(3400/ 3400)])*0.1";
+                volume="engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/ 3400) factor[(2871/ 3400),(3400/ 3400)])";
             };
             class Idle_int {
                 sound[]= {
@@ -388,8 +531,8 @@ class CfgVehicles {
                     0.25118864,
                     1
                 };
-                frequency="0.95	+	((rpm/	3400) factor[(604/	3400),(1058/	3400)])*0.15";
-                volume="engineOn*(1-camPos)*(((rpm/	3400) factor[(453/	3400),(831/	3400)])	*	((rpm/	3400) factor[(1360/	3400),(982/	3400)]))";
+                frequency="0.95 + ((rpm/ 3400) factor[(604/ 3400),(1058/ 3400)])*0.15";
+                volume="engineOn*(1-camPos)*(((rpm/ 3400) factor[(453/ 3400),(831/ 3400)]) * ((rpm/ 3400) factor[(1360/ 3400),(982/ 3400)]))";
             };
             class Engine_int {
                 sound[]= {
@@ -397,8 +540,8 @@ class CfgVehicles {
                     0.31622776,
                     1
                 };
-                frequency="0.9	+	((rpm/	3400) factor[(1058/	3400),(1587/	3400)])*0.2";
-                volume="engineOn*(1-camPos)*(((rpm/	3400) factor[(1058/	3400),(1360/	3400)])	*	((rpm/	3400) factor[(1738/	3400),(1511/	3400)]))";
+                frequency="0.9 + ((rpm/ 3400) factor[(1058/ 3400),(1587/ 3400)])*0.2";
+                volume="engineOn*(1-camPos)*(((rpm/ 3400) factor[(1058/ 3400),(1360/ 3400)]) * ((rpm/ 3400) factor[(1738/ 3400),(1511/ 3400)]))";
             };
             class Engine1_int {
                 sound[]= {
@@ -406,8 +549,8 @@ class CfgVehicles {
                     0.39810717,
                     1
                 };
-                frequency="0.9	+		((rpm/	3400) factor[(1587/	3400),(2116/	3400)])*0.2";
-                volume="engineOn*(1-camPos)*(((rpm/	3400) factor[(1436/	3400),(1738/	3400)])	*	((rpm/	3400) factor[(2267/	3400),(1889/	3400)]))";
+                frequency="0.9 +  ((rpm/ 3400) factor[(1587/ 3400),(2116/ 3400)])*0.2";
+                volume="engineOn*(1-camPos)*(((rpm/ 3400) factor[(1436/ 3400),(1738/ 3400)]) * ((rpm/ 3400) factor[(2267/ 3400),(1889/ 3400)]))";
             };
             class Engine2_int {
                 sound[]= {
@@ -415,8 +558,8 @@ class CfgVehicles {
                     0.50118721,
                     1
                 };
-                frequency="0.9	+	((rpm/	3400) factor[(2116/	3400),(2720/	3400)])*0.2";
-                volume="engineOn*(1-camPos)*(((rpm/	3400) factor[(1889/	3400),(2342/	3400)])	*	((rpm/	3400) factor[(3400/	3400),(2796/	3400)]))";
+                frequency="0.9 + ((rpm/ 3400) factor[(2116/ 3400),(2720/ 3400)])*0.2";
+                volume="engineOn*(1-camPos)*(((rpm/ 3400) factor[(1889/ 3400),(2342/ 3400)]) * ((rpm/ 3400) factor[(3400/ 3400),(2796/ 3400)]))";
             };
             class Engine3_int {
                 sound[]= {
@@ -424,8 +567,8 @@ class CfgVehicles {
                     0.63095737,
                     1
                 };
-                frequency="0.95	+	((rpm/	3400) factor[(2720/	3400),(3400/	3400)])*0.1";
-                volume="engineOn*(1-camPos)*((rpm/	3400) factor[(2871/	3400),(3400/	3400)])";
+                frequency="0.95 + ((rpm/ 3400) factor[(2720/ 3400),(3400/ 3400)])*0.1";
+                volume="engineOn*(1-camPos)*((rpm/ 3400) factor[(2871/ 3400),(3400/ 3400)])";
             };
             class IdleThrust_int {
                 sound[]= {
@@ -433,8 +576,8 @@ class CfgVehicles {
                     0.3548134,
                     1
                 };
-                frequency="0.95	+	((rpm/	3400) factor[(604/	3400),(1058/	3400)])*0.15";
-                volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3400) factor[(453/	3400),(831/	3400)])	*	((rpm/	3400) factor[(1360/	3400),(982/	3400)]))";
+                frequency="0.95 + ((rpm/ 3400) factor[(604/ 3400),(1058/ 3400)])*0.15";
+                volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 3400) factor[(453/ 3400),(831/ 3400)]) * ((rpm/ 3400) factor[(1360/ 3400),(982/ 3400)]))";
             };
             class EngineThrust_int {
                 sound[]= {
@@ -442,8 +585,8 @@ class CfgVehicles {
                     0.44668359,
                     1
                 };
-                frequency="0.9	+	((rpm/	3400) factor[(1058/	3400),(1587/	3400)])*0.2";
-                volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3400) factor[(1058/	3400),(1360/	3400)])	*	((rpm/	3400) factor[(1738/	3400),(1511/	3400)]))";
+                frequency="0.9 + ((rpm/ 3400) factor[(1058/ 3400),(1587/ 3400)])*0.2";
+                volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 3400) factor[(1058/ 3400),(1360/ 3400)]) * ((rpm/ 3400) factor[(1738/ 3400),(1511/ 3400)]))";
             };
             class Engine1_Thrust_int {
                 sound[]= {
@@ -451,8 +594,8 @@ class CfgVehicles {
                     0.56234133,
                     1
                 };
-                frequency="0.9	+		((rpm/	3400) factor[(1587/	3400),(2116/	3400)])*0.2";
-                volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3400) factor[(1436/	3400),(1738/	3400)])	*	((rpm/	3400) factor[(2267/	3400),(1889/	3400)]))";
+                frequency="0.9 +  ((rpm/ 3400) factor[(1587/ 3400),(2116/ 3400)])*0.2";
+                volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 3400) factor[(1436/ 3400),(1738/ 3400)]) * ((rpm/ 3400) factor[(2267/ 3400),(1889/ 3400)]))";
             };
             class Engine2_Thrust_int {
                 sound[]= {
@@ -460,8 +603,8 @@ class CfgVehicles {
                     0.70794576,
                     1
                 };
-                frequency="0.9	+	((rpm/	3400) factor[(2116/	3400),(2720/	3400)])*0.2";
-                volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/	3400) factor[(1889/	3400),(2342/	3400)])	*	((rpm/	3400) factor[(3400/	3400),(2796/	3400)]))";
+                frequency="0.9 + ((rpm/ 3400) factor[(2116/ 3400),(2720/ 3400)])*0.2";
+                volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 3400) factor[(1889/ 3400),(2342/ 3400)]) * ((rpm/ 3400) factor[(3400/ 3400),(2796/ 3400)]))";
             };
             class Engine3_Thrust_int {
                 sound[]= {
@@ -469,8 +612,8 @@ class CfgVehicles {
                     0.79432821,
                     1
                 };
-                frequency="0.95	+	((rpm/	3400) factor[(2720/	3400),(3400/	3400)])*0.1";
-                volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/	3400) factor[(2116/	3400),(3400/	3400)])";
+                frequency="0.95 + ((rpm/ 3400) factor[(2720/ 3400),(3400/ 3400)])*0.1";
+                volume="engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*((rpm/ 3400) factor[(2116/ 3400),(3400/ 3400)])";
             };
             class TiresRockOut {
                 sound[]= {
@@ -762,9 +905,11 @@ class CfgVehicles {
             init="if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;};";
         };
     };
-     // RHS MRZR-4
+    // RHS MRZR-4
     class rhsusf_mrzr_base;
     class rhsusf_mrzr4_d : rhsusf_mrzr_base {
+        class AcreIntercoms {};
+        class AcreRacks {};
         accuracy = 1.25; // 0.25
         accuracyDarkNightLightsOff = 0.0005; // 0.001
         accuracyNightLightsOff = 0.003; // 0.006
@@ -775,9 +920,43 @@ class CfgVehicles {
         maxOmega = 950; // 837.76
         visualTargetSize = 0.2; // n.a.
     };
+    // Strykers
     class rhsusf_stryker_base: Wheeled_APC_F {
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"all"};
+                limitedPositions[] = {};
+                numLimitedPositions = 1;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {"all"};
+                limitedPositions[] = {};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"all"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {"all"};
+            };
+        };
     };
-    class rhsusf_stryker_m1126_base : rhsusf_stryker_base {
+    class rhsusf_stryker_m1126_base: rhsusf_stryker_base {
         armor = 220; // 120
         audible = 15; // 14
         class Turrets : Turrets {
@@ -801,10 +980,100 @@ class CfgVehicles {
                 };
             };
         };
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"all"};
+                limitedPositions[] = {};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {"all"};
+                limitedPositions[] = {};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"all"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {"all"};
+            };
+        };
     };
-    class rhsusf_stryker_m1126_m2_base : rhsusf_stryker_m1126_base {
+    class rhsusf_stryker_m1126_m2_base: rhsusf_stryker_m1126_base {};
+    class rhsusf_stryker_m1127_base: rhsusf_stryker_m1126_base {
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"all"};
+                limitedPositions[] = {};
+                numLimitedPositions = 3;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {"all"};
+                limitedPositions[] = {};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"all"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {"all"};
+            };
+        };
     };
     class rhsusf_stryker_m1134_base : rhsusf_stryker_m1126_m2_base {
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"all"};
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC110";
+                mountedRadio = "ACRE_PRC152";
+                allowedPositions[] = {"all"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {"all"};
+            };
+        };
         class Turrets : Turrets {
             class MainTurret : MainTurret {
                 class OpticsIn {
@@ -839,7 +1108,41 @@ class CfgVehicles {
             };
         };
     };
+    // Bradley
     class RHS_M2A2_Base : APC_Tracked_03_base_F {
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                numLimitedPositions = 1;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                limitedPositions[] = {"crew"};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"driver", "commander", "gunner", "crew"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {{"cargo", "all"}};
+            };
+        };
         armor = 510; // 290
         audible = 17; // 18
         class Turrets : Turrets {
@@ -875,7 +1178,43 @@ class CfgVehicles {
         visualTargetSize = 1.95; // 1.5
         radarTargetSize = 1.95; // 1.5
     };
-    class RHS_CH_47F_base;
+    class Heli_Transport_02_base_F;
+    class RHS_CH_47F_base: Heli_Transport_02_base_F {
+        acre_hasInfantryPhone = 0;
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                numLimitedPositions = 4;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                limitedPositions[] = {"crew"};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"driver", "copilot", "crew"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {{"cargo", "all"}};
+            };
+        };
+    };
     class RHS_CH_47F : RHS_CH_47F_base {
         accuracy = 0.35; // 0.5
         accuracyDarkNightLightsOff = 0.003; // 0.001
@@ -890,6 +1229,29 @@ class CfgVehicles {
     };
     class Heli_Attack_01_base_F;
     class RHS_AH64_base : Heli_Attack_01_base_F {
+        acre_hasInfantryPhone = 0;
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Upper Rack";
+                shortName = "R.Up";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"crew"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Lower Rack";
+                shortName = "R.Low";
+            };
+        };
         accuracy = 0.44; // 0.5
         accuracyDarkNightLightsOff = 0.0015; // 0.001
         accuracyNightLightsOff = 0.009; // 0.006
@@ -897,7 +1259,7 @@ class CfgVehicles {
         armor = 95; // 50
         audible = 62; // 50
         camouflage = 86; // 100
-        fuelConsumptionRate	= 0.2;
+        fuelConsumptionRate = 0.2;
         incomingMissileDetectionSystem = 16; // 0
         irTargetSize = 0.84; // 0.9
         LockDetectionSystem = "2 + 8 + 4"; // 0
@@ -906,7 +1268,42 @@ class CfgVehicles {
         radarType = 8; // 1
     };
     class Heli_Transport_01_base_F;
-    class RHS_UH60_Base : Heli_Transport_01_base_F {};
+    class RHS_UH60_Base: Heli_Transport_01_base_F {
+        acre_hasInfantryPhone = 0;
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                numLimitedPositions = 4;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                limitedPositions[] = {"crew"};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"driver", "copilot","crew"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {{"cargo", "all"}};
+            };
+        };
+    };
     class RHS_UH60M_base : RHS_UH60_Base {
         accuracy = 0.42; // 0.5
         accuracyDarkNightLightsOff = 0.002; // 0.001
@@ -923,10 +1320,43 @@ class CfgVehicles {
     };
     class Helicopter_Base_H;
     class RHS_MELB_base : Helicopter_Base_H {
-		bodyFrictionCoef=0.2;
-		cyclicAsideForceCoef=2;
-		cyclicForwardForceCoef=0.43;
-		liftForceCoef=1.8;
+        acre_hasInfantryPhone = 0;
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                numLimitedPositions = 4;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                limitedPositions[] = {"crew"};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Upper Rack";
+                shortName = "R.Up";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"crew"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Lower Rack";
+                shortName = "R.Low";
+            };
+        };
+        bodyFrictionCoef=0.2;
+        cyclicAsideForceCoef=2;
+        cyclicForwardForceCoef=0.43;
+        liftForceCoef=1.8;
         accuracy = 1.1; // 0.5
         accuracyDarkNightLightsOff = 0.0005; // 0.001
         accuracyNightLightsOff = 0.003; // 0.006
@@ -941,9 +1371,56 @@ class CfgVehicles {
         nvScanner = 1; // 0
         radarTargetSize = 0.65; // 0.8
     };
-    /* mraps ------------------------------------------------------------------------------------------------------------ */
-    class rhsusf_M1239_base: MRAP_01_base_F {};
-    class rhsusf_M1239_CROWS_base: rhsusf_M1239_base {};
+    //mraps
+    class rhsusf_M1239_base: MRAP_01_base_F {
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_intercom";
+                shortName = "$STR_ACRE_sys_intercom_intercom";
+                allowedPositions[] = {"crew", {"cargo", "all"}, {"ffv", "all"}};
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Upper Rack";
+                shortName = "R.Up";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {{"cargo", 0, 1}, {"ffv", {0}}};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Lower Rack";
+                shortName = "R.Low";
+            };
+        };
+    }; 
+
+    class rhsusf_M1239_CROWS_base: rhsusf_M1239_base {
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_intercom";
+                shortName = "$STR_ACRE_sys_intercom_intercom";
+                allowedPositions[] = {"crew", {"cargo", "all"}, {"ffv", "all"}};
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Upper Rack";
+                shortName = "R.Up";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {{"cargo", 0, 1}, {"ffv", {0}}};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Lower Rack";
+                shortName = "R.Low";
+            };
+        };
+    };
     class rhsusf_M1239_Deploy_base: rhsusf_M1239_CROWS_base {
         ace_refuel_fuelCargo = 1000;
         ace_repair_canRepair = 1;
@@ -960,7 +1437,6 @@ class CfgVehicles {
         ace_rearm_defaultSupply = 1200;
     };
 
-    
     class APC_Wheeled_03_base_F: Wheeled_APC_F {
         class Turrets: Turrets {
             class MainTurret: MainTurret {};
@@ -2216,6 +2692,42 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         faction = QUOTE(PREFIX);
+        acre_hasInfantryPhone = 1;
+        acre_infantryPhoneIntercom[] = {"CrewIntercom"};
+        acre_infantryPhoneControlActions[] = {"CrewIntercom"};
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                numLimitedPositions = 1;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                limitedPositions[] = {"crew"};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"driver", "commander", "gunner"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {{"cargo", "all"}};
+            };
+        };
         forceInGarage = 0;
         crew = "B_crew_F";
         typicalCargo[] = {"B_soldier_F"};
@@ -2229,6 +2741,42 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         faction = QUOTE(PREFIX);
+        acre_hasInfantryPhone = 1;
+        acre_infantryPhoneIntercom[] = {"CrewIntercom"};
+        acre_infantryPhoneControlActions[] = {"CrewIntercom"};
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                numLimitedPositions = 1;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                limitedPositions[] = {"crew"};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"driver", "commander", "gunner"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {{"cargo", "all"}};
+            };
+        };
         forceInGarage = 1;
         crew = "B_crew_F";
         class MyAmbulance {
@@ -2245,6 +2793,42 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         faction = QUOTE(PREFIX);
+        acre_hasInfantryPhone = 1;
+        acre_infantryPhoneIntercom[] = {"CrewIntercom"};
+        acre_infantryPhoneControlActions[] = {"CrewIntercom"};
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                limitedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                numLimitedPositions = 1;
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {{"cargo", "all"}, {"ffv", "all"}};
+                limitedPositions[] = {"crew"};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"driver", "commander", "gunner"};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {{"cargo", "all"}};
+            };
+        };
         forceInGarage = 1;
         transportAmmo = 0;
         ace_refuel_fuelCargo = 1000;
@@ -2255,5 +2839,40 @@ class CfgVehicles {
         typicalCargo[] = {"B_soldier_F"};
         editorSubcategory = "lxim_EdSubcat_vehicles_green";
         hiddenSelectionsTextures[] = {QPATHTOF(data\outlaw_01_ext_g.paa),QPATHTOF(data\outlaw_02_ext_g.paa),QPATHTOF(data\outlaw_turret_g.paa),QPATHTOF(data\outlaw_03_ext_g.paa),QPATHTOF(data\camonet_woodland_co.paa),QPATHTOF(data\cage_woodland_co.paa)};
+    };
+    // Mk V Special Operations Craft
+    class RHS_Ship;
+    class rhsusf_mkvsoc: RHS_Ship {
+        class AcreIntercoms {
+            class CrewIntercom {
+                displayName = "$STR_ACRE_sys_intercom_crewIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortCrewIntercom";
+                allowedPositions[] = {"crew"};
+                connectedByDefault = 1;
+            };
+            class PaxIntercom {
+                displayName = "$STR_ACRE_sys_intercom_passengerIntercom";
+                shortName = "$STR_ACRE_sys_intercom_shortPassengerIntercom";
+                allowedPositions[] = {{"cargo", "all"}};
+                limitedPositions[] = {"crew"};
+                numLimitedPositions = 2;
+                connectedByDefault = 1;
+            };
+        };
+        class AcreRacks {
+            class Rack_1 {
+                displayName = "Crew Rack";
+                shortName = "Crew";
+                componentName = "ACRE_VRC103";
+                mountedRadio = "ACRE_PRC117F";
+                allowedPositions[] = {"driver", "commander", {"turret", {5}}};
+                intercom[] = {"CrewIntercom"};
+            };
+            class Rack_2: Rack_1 {
+                displayName = "Pax Rack";
+                shortName = "Pax";
+                allowedPositions[] = {{"cargo", "all"}};
+            };
+        };
     };
 };

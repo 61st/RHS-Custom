@@ -24,6 +24,14 @@ class CfgVehicles {
                     icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
                     showDisabled = 0;
                 };
+                class GVAR(Medical_Supplies_Action_CLS) {
+                    displayName = "Unpack CLS Bag";
+                    condition = "[_player] call lxim_medbags_fnc_canUnpackCLS";
+                    statement = "[_player] call lxim_medbags_fnc_doUnpackCLS";
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                    icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
+                    showDisabled = 0;
+                };
                 class GVAR(Medical_Supplies_Action_Trauma) {
                     displayName = "Unpack Trauma Kit";
                     condition = "[_player] call lxim_medbags_fnc_canUnpackTrauma";
@@ -84,6 +92,19 @@ class CfgVehicles {
         vehicleClass = "Items";
         class TransportItems {
             name = QGVAR(MedicKit);
+            count = 1;
+        };
+    };
+    class GVAR(Item_CLS): Item_Base_F {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "CLS Bag";
+        editorPreview = QPATHTOF(data\previews\medickit.jpg);
+        vehicleClass = "Items";
+        class TransportItems {
+            name = QGVAR(CLS);
             count = 1;
         };
     };

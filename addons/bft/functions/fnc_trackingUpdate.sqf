@@ -50,7 +50,7 @@ _groupsToDrawMarkers = _groupsToDrawMarkers select {!(_x getVariable [QGVAR(hide
 if !(GVAR(showOwnGroup)) then {
     _groupsToDrawMarkers = _groupsToDrawMarkers select {
         {
-            !(_x in (units (side lxim_unit)));
+            !(_x in (units (group lxim_unit)));
         } count units _x > 0;
     };
 };

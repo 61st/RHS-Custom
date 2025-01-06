@@ -131,10 +131,4 @@ class CfgMagazines {
         displayNameShort="AP";
         count=2;
     };
-    class GVAR(2Rnd_BB_missiles): 2Rnd_GAT_missiles {
-        ammo = QGVAR(Titan_BB_round);
-        displayName = "BB Missile";
-        displayNameShort="BB";
-        count=2;
-    };
 };

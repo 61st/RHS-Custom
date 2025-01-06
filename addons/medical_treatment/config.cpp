@@ -11,6 +11,7 @@ class CfgPatches {
             "ace_main", 
             "ace_medical_treatment", 
             "ACM_core",
+            "ACM_circulation",
             "lxim_main"
         };
         author = QAUTHOR;

@@ -38,6 +38,22 @@ class CfgWeapons {
         };
     };
 
+    class GVAR(CLS): ACE_ItemCore {
+        scope = 2;
+        author = QAUTHOR;
+        ACE_isMedicalItem = 1;
+        displayName = "CLS Bag";
+        descriptionShort = "Contains materials to resupply CLS";
+        editorPreview = QPATHTOF(data\previews\medickit.jpg);
+        picture = QPATHTOF(data\ui\medickit_ca.paa);
+        model="\A3\Weapons_F\Items\Medikit";
+        icon = "iconObject_1x1";
+        mapSize = 0.015;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 24;
+        };
+    };
+
     class GVAR(Trauma): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
@@ -54,7 +70,7 @@ class CfgWeapons {
         };
     };
 
-        class GVAR(Fluid): ACE_ItemCore {
+    class GVAR(Fluid): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
         ACE_isMedicalItem = 1;

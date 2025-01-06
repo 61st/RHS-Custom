@@ -21,7 +21,7 @@ private ["_leader", "_vehicle", "_side", "_sides"];
 _leader = leader _group;
 _vehicle = vehicle _leader;
 _side = side _leader;
-_sides = ["GUER", "west", "east", "CIV"];
+_sides = ["GUER", "WEST", "EAST", "CIV"];
 
 if (_vehicle == _leader) exitWith {
     if (
