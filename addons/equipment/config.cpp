@@ -43,6 +43,7 @@ class CfgPatches {
             "cba_main",
             "cba_xeh",
             "ace_vector",
+            "ace_fortify",
             "A3_Weapons_F",
             "cba_jr",
             "ace_xm157"
@@ -62,5 +63,5 @@ class CfgFunctions {
 #include "jr_classes.hpp"
 #include "RscInGameUI.hpp"
 #include "CfgMagazines.hpp"
-
+#include "ACEX_Fortify_Presets.hpp"
 

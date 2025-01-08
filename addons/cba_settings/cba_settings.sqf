@@ -51,6 +51,9 @@ force force lxim_bft_showUnitNames = true;
 force force lxim_bft_teamColors = "ACE";
 force force lxim_bft_updateInterval = 1;
 
+// 61st - common
+lxim_common_showNotifcations = true;
+
 // 61st - Difficulties
 force lxim_difficulties_armorAccuracyFactor = 0.5;
 
@@ -105,8 +108,8 @@ force force ace_advanced_throwing_showMouseControls = true;
 ace_advanced_throwing_showThrowArc = true;
 
 // ACE Advanced Vehicle Damage
-force force ace_vehicle_damage_enableCarDamage = true;
-force force ace_vehicle_damage_enabled = true;
+force force ace_vehicle_damage_enableCarDamage = false;
+force force ace_vehicle_damage_enabled = false;
 
 // ACE AI
 force force ace_ai_assignNVG = true;
@@ -144,13 +147,13 @@ force force ace_common_swayFactor = 0.1;
 
 // ACE Cook-off
 force force ace_cookoff_ammoCookoffDuration = 0.5;
-force ace_cookoff_cookoffDuration = 1;
+force force ace_cookoff_cookoffDuration = 1;
 force force ace_cookoff_destroyVehicleAfterCookoff = true;
 force force ace_cookoff_enableAmmobox = true;
 force force ace_cookoff_enableAmmoCookoff = true;
 force force ace_cookoff_enableFire = true;
 force force ace_cookoff_probabilityCoef = 3;
-force ace_cookoff_removeAmmoDuringCookoff = true;
+force force ace_cookoff_removeAmmoDuringCookoff = true;
 
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 2;
@@ -185,9 +188,9 @@ force force acex_field_rations_timeWithoutWater = 2;
 force force acex_field_rations_waterSourceActions = 2;
 
 // ACE Fire
-force force ace_fire_dropWeapon = 2;
-force force ace_fire_enabled = false;
-force force ace_fire_enableFlare = true;
+force force ace_fire_dropWeapon = 1;
+force force ace_fire_enabled = true;
+force force ace_fire_enableFlare = false;
 force force ace_fire_enableScreams = true;
 
 // ACE Fortify
@@ -197,9 +200,9 @@ force force ace_fortify_timeMin = 1.5;
 force force acex_fortify_settingHint = 1;
 
 // ACE Fragmentation Simulation
-force force ace_frag_enabled = true;
-force force ace_frag_reflectionsEnabled = true;
-force force ace_frag_spallEnabled = true;
+force force ace_frag_enabled = false;
+force force ace_frag_reflectionsEnabled = false;
+force force ace_frag_spallEnabled = false;
 force ace_frag_spallIntensity = 1;
 
 // ACE G-Forces
@@ -251,6 +254,7 @@ force force ace_cargo_enable = true;
 force force ace_cargo_enableDeploy = true;
 force force ace_cargo_enableRename = true;
 force force ace_cargo_loadTimeCoefficient = 5;
+ace_cargo_openAfterUnload = 0;
 force force ace_cargo_paradropTimeCoefficent = 2.5;
 force force ace_rearm_distance = 20;
 force force ace_rearm_enabled = true;
@@ -302,6 +306,7 @@ force force ace_map_gestures_onlyShowFriendlys = false;
 // ACE Map Tools
 force force ace_maptools_drawStraightLines = true;
 force force ace_maptools_plottingBoardAllowChannelDrawing = 1;
+ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 1;
@@ -467,6 +472,7 @@ force force ace_scopes_deduceBarometricPressureFromTerrainAltitude = true;
 force force ace_scopes_defaultZeroRange = 100;
 force force ace_scopes_enabled = true;
 force ace_scopes_forceUseOfAdjustmentTurrets = false;
+ace_scopes_inScopeAdjustment = false;
 force force ace_scopes_overwriteZeroRange = true;
 force force ace_scopes_simplifiedZeroing = false;
 force force ace_scopes_zeroReferenceBarometricPressure = 1013.25;
@@ -502,8 +508,8 @@ force force ace_fastroping_autoAddFRIES = true;
 force force ace_fastroping_requireRopeItems = true;
 force force ace_gunbag_swapGunbagEnabled = true;
 force force ace_hitreactions_minDamageToTrigger = 0.1;
-force ace_hitreactions_weaponDropChanceArmHitAI = 0;
-force ace_hitreactions_weaponDropChanceArmHitPlayer = 0;
+force force ace_hitreactions_weaponDropChanceArmHitAI = 0;
+force force ace_hitreactions_weaponDropChanceArmHitPlayer = 0;
 force force ace_laser_dispersionCount = 2;
 force force ace_laser_showLaserOnMap = 1;
 force force ace_marker_flags_placeAnywhere = false;
@@ -511,8 +517,8 @@ force force ace_microdagr_mapDataAvailable = 2;
 force force ace_microdagr_waypointPrecision = 3;
 force force ace_noradio_enabled = true;
 force force ace_optionsmenu_showNewsOnMainMenu = false;
-force ace_overpressure_backblastDistanceCoefficient = 1;
-force ace_overpressure_overpressureDistanceCoefficient = 1;
+force force ace_overpressure_backblastDistanceCoefficient = 1;
+force force ace_overpressure_overpressureDistanceCoefficient = 1;
 force force ace_parachute_failureChance = 0.15;
 force force ace_parachute_hideAltimeter = true;
 force force ace_tagging_quickTag = 1;
@@ -524,6 +530,7 @@ force force ace_vehiclelock_vehicleStartingLockState = -1;
 
 // ACE Vehicles
 force force ace_novehicleclanlogo_enabled = true;
+ace_vehicles_hideEjectAction = true;
 force force ace_vehicles_keepEngineRunning = false;
 force force ace_vehicles_speedLimiterStep = 5;
 force force ace_viewports_enabled = true;
@@ -583,11 +590,11 @@ force force ACM_airway_airwayAdjunctReusable = false;
 force force ACM_airway_airwayCollapseChance = 1;
 force force ACM_airway_airwayObstructionBloodChance = 1;
 force force ACM_airway_airwayObstructionVomitChance = 1;
-force force ACM_airway_allowACCUVAC = 2;
-force force ACM_airway_allowNPA = 2;
-force force ACM_airway_allowOPA = 2;
-force force ACM_airway_allowSGA = 2;
-force force ACM_airway_allowSuctionBag = 1;
+force force ACM_airway_allowACCUVAC = 1;
+force force ACM_airway_allowNPA = 0;
+force force ACM_airway_allowOPA = 0;
+force force ACM_airway_allowSGA = 1;
+force force ACM_airway_allowSuctionBag = 0;
 force force ACM_airway_enable = true;
 force force ACM_airway_treatmentTimeNPA = 5;
 force force ACM_airway_treatmentTimeOPA = 3;
@@ -603,33 +610,34 @@ force force ACM_breathing_chestInjuryChance = 1;
 force force ACM_breathing_Hardcore_ChestInjury = false;
 force force ACM_breathing_Hardcore_HemothoraxBleeding = false;
 force force ACM_breathing_hemothoraxChance = 0.2;
-force force ACM_breathing_locationThoracostomy = 3;
+force force ACM_breathing_locationThoracostomy = 0;
 force force ACM_breathing_pneumothoraxDeteriorateChance = 1;
 force force ACM_breathing_pneumothoraxEnabled = true;
+force force ACM_breathing_showCyanosisSeverity = true;
 force force ACM_breathing_treatmentTimeInspectChest = 6;
 
 // ACM: Circulation
-force ACM_circulation_AEDDistanceLimit = 5;
-force ACM_circulation_allowAED = 0;
-force force ACM_circulation_allowIO = 2;
+force force ACM_circulation_AEDDistanceLimit = 5;
+force force ACM_circulation_allowAED = 0;
+force force ACM_circulation_allowIO = 1;
 force force ACM_circulation_allowIV = 1;
-force ACM_circulation_BloodType_Ratio_A = 28;
-force ACM_circulation_BloodType_Ratio_AB = 4;
-force ACM_circulation_BloodType_Ratio_ABN = 1;
-force ACM_circulation_BloodType_Ratio_AN = 3;
-force ACM_circulation_BloodType_Ratio_B = 18;
-force ACM_circulation_BloodType_Ratio_BN = 2;
-force ACM_circulation_BloodType_Ratio_O = 39;
-force ACM_circulation_BloodType_Ratio_ON = 5;
-force ACM_circulation_cardiacArrestBleedRate = 0.03;
-force ACM_circulation_cardiacArrestChance = 0.1;
-force ACM_circulation_cardiacArrestDeteriorationRate = 1;
-force ACM_circulation_coagulationClotting = true;
-force ACM_circulation_coagulationClottingAffectAI = true;
-force ACM_circulation_CPREffectiveness = 1;
-force ACM_circulation_Hardcore_PostCardiacArrest = false;
-force ACM_circulation_IVComplications = false;
-force ACM_circulation_IVComplicationsDeteriorate = false;
+force force ACM_circulation_BloodType_Ratio_A = 28;
+force force ACM_circulation_BloodType_Ratio_AB = 4;
+force force ACM_circulation_BloodType_Ratio_ABN = 1;
+force force ACM_circulation_BloodType_Ratio_AN = 3;
+force force ACM_circulation_BloodType_Ratio_B = 18;
+force force ACM_circulation_BloodType_Ratio_BN = 2;
+force force ACM_circulation_BloodType_Ratio_O = 39;
+force force ACM_circulation_BloodType_Ratio_ON = 5;
+force force ACM_circulation_cardiacArrestBleedRate = 0.05;
+force force ACM_circulation_cardiacArrestChance = 0.3;
+force force ACM_circulation_cardiacArrestDeteriorationRate = 1;
+force force ACM_circulation_coagulationClotting = true;
+force force ACM_circulation_coagulationClottingAffectAI = true;
+force force ACM_circulation_CPREffectiveness = 1;
+force force ACM_circulation_Hardcore_PostCardiacArrest = false;
+force force ACM_circulation_IVComplications = true;
+force force ACM_circulation_IVComplicationsDeteriorate = true;
 force force ACM_circulation_selfIO = 0;
 force force ACM_circulation_selfIV = 0;
 force force ACM_circulation_treatmentTimeIO_EZ = 4;
@@ -649,20 +657,30 @@ force force ACM_core_treatmentTimeWrappedStitch = 2;
 force force ACM_core_treatmentTimeWrapSplint = 5;
 
 // ACM: Damage
-force force ACM_damage_AIStayDownChance = 0.5;
-force force ACM_damage_bodyTraumaCardiacArrestThreshold = 12;
+force force ACM_damage_AIStayDownChance = 1;
+force force ACM_damage_bodyTraumaCardiacArrestThreshold = 0;
 force force ACM_damage_bodyTraumaCardiacArrestThresholdAI = 16;
 force force ACM_damage_bodyTraumaDeathThreshold = 0;
 force force ACM_damage_bodyTraumaDeathThresholdAI = 24;
 force force ACM_damage_enable = true;
-force force ACM_damage_headTraumaCardiacArrestThreshold = 10;
-force force ACM_damage_headTraumaCardiacArrestThresholdAI = 12;
+force force ACM_damage_headTraumaCardiacArrestThreshold = 0;
+force force ACM_damage_headTraumaCardiacArrestThresholdAI = 8;
 force force ACM_damage_headTraumaDeathThreshold = 0;
 force force ACM_damage_headTraumaDeathThresholdAI = 19;
 force force ACM_damage_internalBleedingChanceMultiplier = 1;
 
 // ACM: Disability
 force force ACM_disability_tourniquetImpactLimbs = true;
+
+// // ACM: Evacuation
+// force ACM_evacuation_allowConvert = 2;
+// force ACM_evacuation_clearCasualtyLoadout = false;
+// force ACM_evacuation_enable = true;
+// force ACM_evacuation_locationConvert = 0;
+// force ACM_evacuation_playerFaction = WEST;
+// force ACM_evacuation_requireAntibiotics = true;
+// force ACM_evacuation_ticketCountCasualty = 5;
+// force ACM_evacuation_ticketCountRespawn = 20;
 
 // ACRE2
 force acre_sys_core_automaticAntennaDirection = true;
@@ -684,6 +702,13 @@ force acre_sys_zeus_zeusDefaultVoiceSource = false;
 // Backpack On Chest
 force force bocr_main_disabled = false;
 force force bocr_main_walk = true;
+
+// Better CAS Environment
+force BCE_Access_list = 2;
+force BCE_CamNoise_sdr = 0.5;
+force force BCE_FriendlyTrack_fn = false;
+force BCE_Landmarks_fn = false;
+force force BCE_UnitTrack_fn = false;
 
 // Better CAS Environment (Server)
 force force BCE_AI_CAS_Support_fn = true;
@@ -717,7 +742,7 @@ force force crowsEW_spectrum_tfarSideTrack = false;
 force force ctab_compass_enable = true;
 force force ctab_core_bft_mode = 0;
 force force ctab_core_helmetcam_mode = 1;
-force force ctab_core_sync_time = 4;
+force force ctab_core_sync_time = 30;
 force force ctab_core_uav_mode = 1;
 force force ctab_core_useAceMicroDagr = true;
 force force ctab_core_useArmaMarker = true;
@@ -821,14 +846,15 @@ force force sss_logistics_visualAids = true;
 force force sss_logistics_visualAidsLive = true;
 force force sss_optionadminAccess = false;
 force force sss_optionadminSide = false;
-force force sss_optionautoParachute = true;
 force force sss_optioncleanupCrew = true;
-force force sss_optiondebug = false;
+force sss_optiondebugGeneral = false;
 force force sss_optiondebugPerf = false;
 force force sss_optiondeleteVehicleOnEntityRemoval = true;
 force force sss_optionejectInterval = 0.5;
 force force sss_optionmarkerScope = "ACCESS";
 force force sss_optionnotifyScope = "ACCESS";
+sss_optionparachuteClass = "B_Parachute";
+force sss_optionremoteControlAddMap = true;
 force force sss_optionremoveEntityOnVehicleDeletion = true;
 force force sss_optionterminalActions = "ACE";
 force force sss_optionterminalRequireAuth = true;
@@ -846,6 +872,7 @@ force force sss_transport_visualAidsLive = true;
 
 // TSP Breach
 force tsp_cba_breach = true;
+tsp_cba_breach_ace = true;
 force tsp_cba_breach_ammo = "[
 	""B_12Gauge_Slug_NoCartridge"", ""B_12Gauge_Pellets_Submunition"",
 	""rhs_ammo_12g_slug"", ""rhs_ammo_12g_00buckshot"", ""rhs_ammo_m576_buckshot"",
@@ -857,6 +884,9 @@ force tsp_cba_breach_ammo = "[
 force tsp_cba_breach_ammo_multiplier = 1;
 force tsp_cba_breach_auto = 5;
 force tsp_cba_breach_break = true;
+force tsp_cba_breach_lock_blacklist = "[]";
+force tsp_cba_breach_lock_door = 0.75;
+force tsp_cba_breach_lock_house = 0.25;
 force tsp_cba_breach_lockpick = "[0, 0.75, 0.5, 0.05]";
 force tsp_cba_breach_military = "[
 	""Land_Budova4_in"",
@@ -929,6 +959,7 @@ force tsp_cba_breach_reinforced = "[
 	""Land_Cargo_House_V3_F""
 ]";
 force tsp_cba_breach_shock = 240;
+tsp_cba_breach_vanilla = false;
 force tsp_cba_breach_walls = "[
 	[""AHHH"", ""Land_BrickWall_04_l_5m_F"", ""Land_BrickWall_04_l_5m_d_F""],
 	[""AHHH"", ""Land_BrickWall_03_l_5m_v2_F"", ""Land_BrickWall_03_l_5m_v2_d_F""],
@@ -983,6 +1014,14 @@ force tsp_cba_melee_damage = 1;
 force tsp_cba_melee_disarm = 1;
 force tsp_cba_melee_speed = 15;
 force tsp_cba_melee_stamina = 1;
+
+// TUN Firesupport
+Tun_firesupport_alwaysShowTRPmarkers = true;
+force Tun_firesupport_debug = false;
+Tun_firesupport_enableFiringPosMarker = true;
+Tun_firesupport_enableShowTRPmarkers = true;
+force Tun_firesupport_is_required = true;
+Tun_firesupport_trpMarkerType = "mil_destroy_noShadow";
 
 // Tun Utilities - Uncon Info
 force tuncon_unconinfo_allowNearestUnit = true;

@@ -19,9 +19,9 @@ params [["_side", playerSide]];
 private ["_friendlySides", "_sides"];
 
 _friendlySides = [];
-_sides = [east,west,resistance,civilian];
-if (!(_side isEqualTo civilian) && !(GVAR(showCivilians))) then {
-    _sides = [east,west,resistance];
+_sides = [EAST,WEST,RESISTANCE,CIVILIAN];
+if (!(_side isEqualTo CIVILIAN) && !(GVAR(showCivilians))) then {
+    _sides = [EAST,WEST,RESISTANCE];
 };
 
 if (GVAR(friendlySidesDynamic)) then {
@@ -32,10 +32,10 @@ if (GVAR(friendlySidesDynamic)) then {
     } forEach _sides;
 } else {
     switch (_side) do {
-        case east: {_friendlySides = GVAR(friendlySides_east)};
-        case west: {_friendlySides = GVAR(friendlySides_west)};
-        case resistance: {_friendlySides = GVAR(friendlySides_resistance)};
-        case civilian: {_friendlySides = GVAR(friendlySides_civilian)};
+        case east: {_friendlySides = GVAR(friendlySides_EAST)};
+        case west: {_friendlySides = GVAR(friendlySides_WEST)};
+        case resistance: {_friendlySides = GVAR(friendlySides_RESISTANCE)};
+        case civilian: {_friendlySides = GVAR(friendlySides_CIVILIAN)};
         default {_friendlySides = []};
     };
 };

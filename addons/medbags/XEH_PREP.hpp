@@ -10,5 +10,7 @@ PREP(doUnpackFluid);
 PREP(canUnpackFluid);
 PREP(canUnpackmopp);
 PREP(doUnpackmopp);
+PREP(canUnpackCLS);
+PREP(doUnpackCLS);
 // PREP(doTake);
 // PREP(canTake);

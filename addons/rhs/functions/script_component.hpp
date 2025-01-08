@@ -1,1 +1,1 @@
-#include "\z\lxim\addons\rhs_fixes\script_component.hpp"
+#include "\z\lxim\addons\rhs\script_component.hpp"
